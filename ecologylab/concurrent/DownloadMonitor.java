@@ -360,16 +360,6 @@ implements Runnable
       }
  */
    }
-   protected Thread makeDownloadThread(int i, String s)
-   {
-      return new Thread(toString()+"-download "+i+" "+s)
-      {
-	 public void run()
-	 {			  	
-	    performDownloads();
-	 }
-      };
-   }
    private Thread newDownloadThread(int i)
    {
       return newDownloadThread(i, "");
@@ -384,9 +374,14 @@ implements Runnable
 	       }
 	    };
 	   */
-      Thread newDownload = makeDownloadThread(i, s);
-      
-      return newDownload; 
+	   Thread newDownload = new Thread(toString()+"-download "+i+" "+s)
+	   {
+	       public void run()
+	       {			  	
+			  performDownloads();
+	       }
+	   };
+	   return newDownload; 
    }
 
    private void startDownloadMonitor()
