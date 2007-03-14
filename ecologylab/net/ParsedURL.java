@@ -80,6 +80,14 @@ extends Debug
    }
    
    /**
+    * 
+    * @return	true if this refers to a file, and that file exists.
+    */
+   public boolean isNotFileOrExists()
+   {
+	   return (file == null) || file.exists();
+   }
+   /**
     * Create a ParsedURL from a file.
     * If the file is a directory, append "/" to the path, so that relative URLs
     * will be formed properly later.
@@ -1262,6 +1270,13 @@ extends Debug
  		    else	// no redirect, eveything is kewl
 	    			inStream			= connection.getInputStream();
  	      }
+ 	      catch (SocketTimeoutException e)
+ 	      {
+ 	    	  bad = true;
+ 	    	  timeout = true;
+ 	    	  println( e + ": from url=" + this.toString());
+// 	    	  e.printStackTrace();
+ 	      }
  	      catch (FileNotFoundException e)
  	      { 
  			 bad			= true;
@@ -1287,6 +1302,16 @@ extends Debug
        // just because we read the headers???
     }
     
+    /**
+     * check for timeout while connection or read
+     */
+    boolean timeout = false;
+    
     final static String IE5_USER_AGENT	= 
 	      "Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0";
+    
+    public boolean getTimeout()
+    {
+    	return timeout;
+    }
 }
