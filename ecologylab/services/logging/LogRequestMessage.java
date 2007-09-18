@@ -25,28 +25,16 @@ public class LogRequestMessage extends RequestMessage
 	/**
 	 * Save the logging messages to the session log file
 	 */
-	@Override public ResponseMessage performService(ObjectRegistry objectRegistry) 
+	public ResponseMessage performService(ObjectRegistry objectRegistry) 
 	{
-		debug("services: received Logging Messages " );
-        debug(xmlString);
-        try
-        {
-            debug(this.translateToXML());
-        }
-        catch (XmlTranslationException e1)
-        {
-            // TODO Auto-generated catch block
-            e1.printStackTrace();
-        }
+		Debug.println("services: received Logging Messages " );
+//		FileOutputStream outFile = (FileOutputStream) objectRegistry.lookupObject(LoggingDef.keyStringForFileObject);
 		
 		if( outFile != null )
 		{
 			try 
 			{	
 				String actionStr	=	getMessageString();
-                
-                debug(actionStr);
-                
 				outFile.write(actionStr.getBytes());
 			} 
 			catch (XmlTranslationException e) 
@@ -90,27 +78,27 @@ public class LogRequestMessage extends RequestMessage
 	protected String getMessageString() throws XmlTranslationException
 	{
 //		TagMapEntry	tagMapEntry	= this.getTagMapEntry(getClass(), false);
-		String xmlString1	= xmlString();
+		String xmlString	= xmlString();
 	
 		// if not on server, do normal translate to XML
-		if (xmlString1 == null)
-			xmlString1		= this.translateToXML(false);
+		if (xmlString == null)
+			xmlString		= this.translateToXML(false);
 
 		// if on server, peel message(s) out of the XML we received, without parsing it!
 		
 //		int start			= xmlString.indexOf(tagMapEntry.openTag) + tagMapEntry.openTag.length();
 		// start of the real stuff is the end of the first tag -- whatever it is
-		int start			= xmlString1.indexOf('>') + 1;
+		int start			= xmlString.indexOf('>') + 1;
 		// end of the real stuff is the start of the close tag... 
 		// which also should be the start of the last tag -- whatever it is
-		int end				= xmlString1.lastIndexOf('<');
+		int end				= xmlString.lastIndexOf('<');
 //		int end				= xmlString.indexOf(tagMapEntry.closeTag);
 		if( (start==0) || (end==-1) )
 		{
-			debug("RECEIVE MESSAGE : " + xmlString1);
+			debug("RECEIVE MESSAGE : " + xmlString);
 			return "\n";
 		}
-		return xmlString1.substring(start, end) + "\n";
+		return (String) xmlString.substring(start, end) + "\n";
 	}
 
 	/**
