@@ -1,4 +1,4 @@
-package ecologylab.serialization;
+package ecologylab.serialization.constants;
 
 /**
  * Character Constants for which extra care needs to be taken while parsing.

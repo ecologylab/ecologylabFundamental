@@ -7,7 +7,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.regex.Pattern;
 
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * Type system entry for {@link java.net.URL URL}.

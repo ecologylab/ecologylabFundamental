@@ -2,7 +2,7 @@ package ecologylab.serialization.library.itunes;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 /**
  * XMLNS (namespace) corresponding to itunes podcasts.

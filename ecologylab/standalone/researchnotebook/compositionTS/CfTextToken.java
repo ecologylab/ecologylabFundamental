@@ -1,7 +1,7 @@
 package ecologylab.standalone.researchnotebook.compositionTS;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 public class CfTextToken extends ElementState{
 	@simpl_scalar String delims_before; 

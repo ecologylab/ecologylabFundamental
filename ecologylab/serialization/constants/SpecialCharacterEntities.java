@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ecologylab.serialization;
+package ecologylab.serialization.constants;
 
 /**
  * XML character entity names for special markup.

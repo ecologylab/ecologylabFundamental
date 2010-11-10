@@ -5,7 +5,7 @@ package ecologylab.serialization.types.scalar;
 
 import java.io.File;
 
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * @author Zachary O. Toups (toupsz@cs.tamu.edu)

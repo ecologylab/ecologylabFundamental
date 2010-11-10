@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ecologylab.serialization;
+package ecologylab.serialization.interfaces;
 
 import java.io.File;
 

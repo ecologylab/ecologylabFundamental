@@ -6,8 +6,9 @@ import java.util.ArrayList;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.ElementState.bibtex_type;
+import ecologylab.serialization.enums.Format;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 @bibtex_type("article")
 public class Entry extends ElementState
@@ -296,7 +297,7 @@ public class Entry extends ElementState
 		e.setAddress("Piscataway, NJ, USA");
 		e.setKeywords(keywords);
 
-		e.serialize(System.out, FORMAT.BIBTEX);
+		e.serialize(System.out, Format.BIBTEX);
 	}
 
 

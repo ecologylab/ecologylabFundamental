@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 import ecologylab.generic.Debug;
 import ecologylab.generic.ReflectionTools;
-import ecologylab.serialization.XMLTools;
+import ecologylab.serialization.tools.XMLTools;
 
 /**
  * This class implements a registry of instances of Type. Each key in this registry is the name of

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
-import ecologylab.serialization.SIMPLTranslationException;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
+import ecologylab.serialization.enums.Hint;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 /**
  * RSS parser <code>channel</code> element {@link ecologylab.serialization.ElementState ElementState} declaration.
  * Used with most RSS versions.

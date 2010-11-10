@@ -29,8 +29,8 @@ import ecologylab.oodss.distributed.exception.MessageTooLargeException;
 import ecologylab.oodss.messages.DefaultServicesTranslations;
 import ecologylab.oodss.messages.ResponseMessage;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
-import ecologylab.serialization.XMLTools;
+import ecologylab.serialization.exception.SIMPLTranslationException;
+import ecologylab.serialization.tools.XMLTools;
 
 /**
  * Provides a framework for interaction logging. Uses ecologylab.serialization to serialize user and agent

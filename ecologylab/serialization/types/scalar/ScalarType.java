@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import ecologylab.generic.Debug;
 import ecologylab.serialization.FieldDescriptor;
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * Basic unit of the scalar type system. Manages marshalling from a Java class that represents a

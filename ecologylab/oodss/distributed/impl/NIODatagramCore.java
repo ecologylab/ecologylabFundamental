@@ -27,8 +27,8 @@ import ecologylab.generic.StartAndStoppable;
 import ecologylab.oodss.distributed.common.NetworkingConstants;
 import ecologylab.oodss.distributed.exception.MessageTooLargeException;
 import ecologylab.oodss.messages.ServiceMessage;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * 

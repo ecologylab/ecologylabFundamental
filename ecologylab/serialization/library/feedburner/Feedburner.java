@@ -5,8 +5,8 @@ package ecologylab.serialization.library.feedburner;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.enums.Hint;
 
 /**
  * @author andruid

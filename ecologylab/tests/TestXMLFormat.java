@@ -4,8 +4,8 @@
 package ecologylab.tests;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * @author Zachary O. Toups (toupsz@cs.tamu.edu)

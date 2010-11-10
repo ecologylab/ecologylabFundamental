@@ -3,10 +3,10 @@ package ecologylab.oodss.messages;
 
 import ecologylab.collections.Scope;
 import ecologylab.generic.Debug;
-import ecologylab.serialization.Hint;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
+import ecologylab.serialization.enums.Hint;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 @simpl_inherit
 public class CfCollaborationGetSurrogate extends RequestMessage {

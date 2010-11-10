@@ -2,7 +2,7 @@ package ecologylab.standalone.researchnotebook.testxml;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 public class ImageResult extends ElementState{
 	@xml_tag("mms:Title") @simpl_scalar @simpl_hints(Hint.XML_LEAF) String title; 

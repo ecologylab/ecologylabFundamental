@@ -1,9 +1,10 @@
-package ecologylab.serialization.tlv;
+package ecologylab.serialization.parsers.tlv;
 
 import ecologylab.serialization.ClassDescriptor;
 import ecologylab.serialization.FieldDescriptor;
-import ecologylab.serialization.FieldTypes;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.constants.FieldTypes;
+import ecologylab.serialization.tools.TLVTools;
 
 /**
  * This is the basic tlv parser for parsing tlv messages generated from
@@ -75,8 +76,8 @@ public class TLVParser implements FieldTypes
 		// Start event for TLV data.
 		listenerObject.startTLV();
 
-		int type = Utils.getInt(dataArray, 0);
-		int length = Utils.getInt(dataArray, 4);
+		int type = TLVTools.getInt(dataArray, 0);
+		int length = TLVTools.getInt(dataArray, 4);
 
 		currentClassDescriptor = translationScope.getClassDescriptorByTLVId(type);
 
@@ -108,8 +109,8 @@ public class TLVParser implements FieldTypes
 	{
 		try
 		{
-			int type = Utils.getInt(dataArray, start);
-			int length = Utils.getInt(dataArray, start + 4);
+			int type = TLVTools.getInt(dataArray, start);
+			int length = TLVTools.getInt(dataArray, start + 4);
 			FieldDescriptor localCurrentFieldDescriptor = currentFieldDescriptor;
 			boolean isScalar = false;
 
@@ -117,8 +118,6 @@ public class TLVParser implements FieldTypes
 
 			currentFieldDescriptor = (currentType == WRAPPER) ? currentFieldDescriptor.getWrappedFD()
 					: currentClassDescriptor.getFieldDescriptorByTLVId(type);
-
-			//if(currentFieldDescriptor.isPolymorphic()) currentFieldDescriptor = currentFieldDescriptor.elementClassDescriptor(type).pseudoFieldDescriptor();
 			
 			String currentObjectName = currentFieldDescriptor.elementName(type);
 

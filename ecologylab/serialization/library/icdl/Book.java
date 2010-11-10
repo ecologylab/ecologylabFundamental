@@ -5,7 +5,7 @@ package ecologylab.serialization.library.icdl;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 /**
  * Book item in ICDL BookXMLResults response.

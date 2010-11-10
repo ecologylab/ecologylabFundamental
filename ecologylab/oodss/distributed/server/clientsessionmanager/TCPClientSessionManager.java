@@ -34,8 +34,8 @@ import ecologylab.oodss.exceptions.BadClientException;
 import ecologylab.oodss.messages.RequestMessage;
 import ecologylab.oodss.messages.ResponseMessage;
 import ecologylab.oodss.messages.UpdateMessage;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * The base class for all ContextManagers, objects that track the state and respond to clients on a

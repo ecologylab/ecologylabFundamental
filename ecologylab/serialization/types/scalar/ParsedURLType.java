@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 import ecologylab.appframework.PropertiesAndDirectories;
 import ecologylab.net.ParsedURL;
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * Type system entry for java.awt.Color. Uses a hex string as initialization.

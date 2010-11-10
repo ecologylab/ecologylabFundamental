@@ -1,7 +1,7 @@
 package ecologylab.oodss.logging;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
 
 /**
  * A basic operation that only logs the time that operation took place.

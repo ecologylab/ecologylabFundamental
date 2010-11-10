@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 import ecologylab.standalone.researchnotebook.testxml.Image;
 import ecologylab.standalone.researchnotebook.testxml.SiteSet;
 

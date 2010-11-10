@@ -6,8 +6,8 @@ package ecologylab.serialization.library.icdl;
 import java.util.ArrayList;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
+import ecologylab.serialization.enums.Hint;
 /**
  * The root element in a reply to ICDL BookXMLResults.
  * 

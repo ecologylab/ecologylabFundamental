@@ -6,9 +6,9 @@ package ecologylab.standalone;
 import java.util.ArrayList;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
 import ecologylab.serialization.ElementState.xml_tag;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 import ecologylab.serialization.library.jnlp.information.AssociationElement;
 /**
  * @author Zachary O. Toups (toupsz@cs.tamu.edu)

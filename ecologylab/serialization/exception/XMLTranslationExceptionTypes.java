@@ -1,4 +1,4 @@
-package ecologylab.serialization;
+package ecologylab.serialization.exception;
 
 /**
  * Types of exceptions that occur during operation of the translation framework.

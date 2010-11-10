@@ -6,14 +6,17 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
-import org.json.simple.JSONObject;
 import org.json.simple.parser.ContentHandler;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.xml.sax.SAXException;
 
 import ecologylab.generic.Debug;
 import ecologylab.net.ParsedURL;
+import ecologylab.serialization.constants.FieldTypes;
+import ecologylab.serialization.exception.RootElementException;
+import ecologylab.serialization.exception.SIMPLTranslationException;
+import ecologylab.serialization.interfaces.DeserializationHookStrategy;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 import ecologylab.serialization.types.element.Mappable;
 
 public class ElementStateJSONHandler extends Debug implements ContentHandler, FieldTypes,
@@ -29,7 +32,7 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 
 	SIMPLTranslationException		jsonTranslationException;
 
-	ArrayList<FieldDescriptor>	fdStack									= new ArrayList<FieldDescriptor>();
+	ArrayList<FieldDescriptor>	fdStack								= new ArrayList<FieldDescriptor>();
 
 	ParsedURL										purlContext;
 
@@ -37,9 +40,9 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 
 	DeserializationHookStrategy	deserializationHookStrategy;
 
-	//int													numOfCollectionElements	= 0;
-	
-	ArrayList<Integer> 					elementsInCollection = new ArrayList<Integer>();
+	// int numOfCollectionElements = 0;
+
+	ArrayList<Integer>					elementsInCollection	= new ArrayList<Integer>();
 
 	public ElementStateJSONHandler(TranslationScope translationScope)
 	{
@@ -50,7 +53,7 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 	{
 		try
 		{
-			
+
 			JSONParser parser = new JSONParser();
 			parser.parse(charSequence.toString(), this);
 			return root;
@@ -67,7 +70,7 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 	public boolean endArray() throws ParseException, IOException
 	{
 		pop();
-		//numOfCollectionElements = 0;
+		// numOfCollectionElements = 0;
 		return true;
 	}
 
@@ -77,7 +80,7 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 		if ((jsonTranslationException == null) && (root != null))
 			root.deserializationPostHook();
 
-		//ElementState.recycleDeserializationMappings();
+		// ElementState.recycleDeserializationMappings();
 	}
 
 	@Override
@@ -322,7 +325,7 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 	@Override
 	public boolean startObject() throws ParseException, IOException
 	{
-		//hack to deal with json arrays with list tag outside the array.
+		// hack to deal with json arrays with list tag outside the array.
 		if (currentFD != null)
 			if (currentFD.isCollection() && !currentFD.isPolymorphic())
 			{
@@ -341,7 +344,7 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 					}
 				}
 				incrementTop();
-				//numOfCollectionElements++;
+				// numOfCollectionElements++;
 			}
 
 		return true;
@@ -437,7 +440,7 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 				}
 				else
 					childFD.setFieldToComposite(currentElementState, childES);
-				
+
 				// maybe we
 				// should do
 				// this on close
@@ -530,35 +533,35 @@ public class ElementStateJSONHandler extends Debug implements ContentHandler, Fi
 	{
 		return purlContext;
 	}
-	
+
 	public Integer pop()
 	{
 		int num = 0;
-		
-		if(this.elementsInCollection.size() > 0)
+
+		if (this.elementsInCollection.size() > 0)
 		{
 			num = this.elementsInCollection.get(elementsInCollection.size() - 1);
 			this.elementsInCollection.remove(elementsInCollection.size() - 1);
 		}
 		return num;
 	}
-	
+
 	public void push(Integer num)
 	{
 		this.elementsInCollection.add(num);
 	}
-	
+
 	public int top()
 	{
 		int num = 0;
-		
-		if(this.elementsInCollection.size() > 0)
+
+		if (this.elementsInCollection.size() > 0)
 		{
 			num = this.elementsInCollection.get(elementsInCollection.size() - 1);
 		}
 		return num;
 	}
-	
+
 	public void incrementTop()
 	{
 		int num = pop();

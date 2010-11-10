@@ -4,8 +4,7 @@
 package ecologylab.standalone;
 
 import ecologylab.generic.Debug;
-import ecologylab.serialization.SIMPLTranslationException;
-import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 import ecologylab.serialization.library.jnlp.JnlpState;
 import ecologylab.serialization.library.jnlp.JnlpTranslations;
 

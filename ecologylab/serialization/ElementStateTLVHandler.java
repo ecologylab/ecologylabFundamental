@@ -7,8 +7,13 @@ import java.util.Map;
 
 import ecologylab.generic.Debug;
 import ecologylab.net.ParsedURL;
-import ecologylab.serialization.tlv.TLVEvents;
-import ecologylab.serialization.tlv.TLVParser;
+import ecologylab.serialization.constants.FieldTypes;
+import ecologylab.serialization.exception.RootElementException;
+import ecologylab.serialization.exception.SIMPLTranslationException;
+import ecologylab.serialization.interfaces.DeserializationHookStrategy;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
+import ecologylab.serialization.parsers.tlv.TLVEvents;
+import ecologylab.serialization.parsers.tlv.TLVParser;
 import ecologylab.serialization.types.element.Mappable;
 
 public class ElementStateTLVHandler extends Debug implements TLVEvents, FieldTypes,
@@ -16,7 +21,7 @@ public class ElementStateTLVHandler extends Debug implements TLVEvents, FieldTyp
 {
 	TranslationScope									translationScope;
 
-	TLVParser													tlvParser								= null;
+	TLVParser													tlvParser	= null;
 
 	ElementState											root;
 
@@ -26,14 +31,13 @@ public class ElementStateTLVHandler extends Debug implements TLVEvents, FieldTyp
 
 	private SIMPLTranslationException	tlvTranslationException;
 
-	ArrayList<FieldDescriptor>				fdStack									= new ArrayList<FieldDescriptor>();
+	ArrayList<FieldDescriptor>				fdStack		= new ArrayList<FieldDescriptor>();
 
 	ParsedURL													purlContext;
 
 	File															fileContext;
 
 	DeserializationHookStrategy				deserializationHookStrategy;
-
 
 	public ElementStateTLVHandler(TranslationScope translationScope)
 	{
@@ -107,7 +111,7 @@ public class ElementStateTLVHandler extends Debug implements TLVEvents, FieldTyp
 	public void endTLV()
 	{
 		if ((tlvTranslationException == null) && (root != null))
-			root.deserializationPostHook();		
+			root.deserializationPostHook();
 
 	}
 

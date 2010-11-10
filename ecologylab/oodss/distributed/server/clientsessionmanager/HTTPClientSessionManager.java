@@ -11,8 +11,8 @@ import ecologylab.oodss.messages.BadSemanticContentResponse;
 import ecologylab.oodss.messages.RequestMessage;
 import ecologylab.oodss.messages.ResponseMessage;
 import ecologylab.oodss.messages.UpdateMessage;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 public abstract class HTTPClientSessionManager<S extends Scope> extends TCPClientSessionManager<S>
 {

@@ -9,8 +9,8 @@ import ecologylab.oodss.distributed.server.NIOServerProcessor;
 import ecologylab.oodss.messages.RequestMessage;
 import ecologylab.oodss.messages.ResponseMessage;
 import ecologylab.oodss.messages.UpdateMessage;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * Stores information about the connection context for the client on the server. Should be extended

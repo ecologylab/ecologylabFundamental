@@ -3,10 +3,8 @@
  */
 package ecologylab.serialization.types.scalar;
 
-import java.lang.reflect.Field;
-
-import ecologylab.serialization.ScalarUnmarshallingContext;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * For marshalling Class objects themselves. Particularly useful in ports.

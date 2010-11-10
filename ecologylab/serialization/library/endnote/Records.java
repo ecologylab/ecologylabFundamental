@@ -6,7 +6,7 @@ package ecologylab.serialization.library.endnote;
 import java.util.ArrayList;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
 
 public @simpl_inherit class Records extends ElementState
 {

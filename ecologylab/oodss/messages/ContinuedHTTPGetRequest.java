@@ -3,8 +3,8 @@ package ecologylab.oodss.messages;
 import java.util.Hashtable;
 
 import ecologylab.collections.Scope;
-import ecologylab.serialization.Hint;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
+import ecologylab.serialization.enums.Hint;
 
 @simpl_inherit
 public class ContinuedHTTPGetRequest extends HttpRequest

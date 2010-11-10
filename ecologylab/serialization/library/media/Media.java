@@ -1,8 +1,8 @@
 package ecologylab.serialization.library.media;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.enums.Hint;
 
 /**
  * Root class for inserting elements from the Yahoo Media XML Namespace.

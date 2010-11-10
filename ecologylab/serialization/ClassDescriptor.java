@@ -8,6 +8,12 @@ import java.util.Iterator;
 
 import ecologylab.generic.HashMapArrayList;
 import ecologylab.generic.ReflectionTools;
+import ecologylab.serialization.annotations.simpl_descriptor_classes;
+import ecologylab.serialization.annotations.simpl_inherit;
+import ecologylab.serialization.constants.FieldTypes;
+import ecologylab.serialization.enums.Hint;
+import ecologylab.serialization.exception.SIMPLTranslationException;
+import ecologylab.serialization.tools.XMLTools;
 import ecologylab.serialization.types.element.Mappable;
 
 /**
@@ -95,8 +101,8 @@ public class ClassDescriptor<ES extends ElementState, FD extends FieldDescriptor
 	private static final HashMap<String, ClassDescriptor>	globalClassDescriptorsMap			= new HashMap<String, ClassDescriptor>();
 
 	private ArrayList<FD>																	unresolvedScopeAnnotationFDs;
-	
-	private String bibtexType = "";
+
+	private String																				bibtexType										= "";
 
 	// private HashMap<String, Class<? extends ElementState>> nameSpaceClassesById = new
 	// HashMap<String, Class<? extends ElementState>>();
@@ -123,16 +129,15 @@ public class ClassDescriptor<ES extends ElementState, FD extends FieldDescriptor
 	{
 		return tagName;
 	}
-	
+
 	public String getBibtexType()
 	{
-		if(this.bibtexType == null || this.bibtexType.equals(""))
+		if (this.bibtexType == null || this.bibtexType.equals(""))
 		{
 			return tagName;
-		}		
+		}
 		return bibtexType;
 	}
-
 
 	/**
 	 * Obtain Optimizations object in the global scope of root Optimizations. Uses just-in-time / lazy
@@ -279,7 +284,7 @@ public class ClassDescriptor<ES extends ElementState, FD extends FieldDescriptor
 
 	public FD getFieldDescriptorByTLVId(int tlvId)
 	{
-	// TODO -- add support for name space lookup in context here
+		// TODO -- add support for name space lookup in context here
 		if (unresolvedScopeAnnotationFDs != null)
 			resolveUnresolvedScopeAnnotationFDs();
 
@@ -355,8 +360,8 @@ public class ClassDescriptor<ES extends ElementState, FD extends FieldDescriptor
 					fieldDescriptorClass = superFieldDescriptorClass;
 			}
 		}
-		
-		if(classWithFields.isAnnotationPresent(bibtex_type.class))
+
+		if (classWithFields.isAnnotationPresent(bibtex_type.class))
 		{
 			bibtex_type bibtexTypeAnnotation = classWithFields.getAnnotation(bibtex_type.class);
 			bibtexType = bibtexTypeAnnotation.value();

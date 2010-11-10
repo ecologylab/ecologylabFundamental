@@ -4,7 +4,7 @@
 package ecologylab.appframework.types.prefs;
 
 import ecologylab.net.ParsedURL;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
 import ecologylab.serialization.types.scalar.ScalarType;
 import ecologylab.serialization.types.scalar.TypeRegistry;
 import ecologylab.appframework.types.prefs.RangeIntState;

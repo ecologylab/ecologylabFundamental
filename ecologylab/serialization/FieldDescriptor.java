@@ -27,6 +27,11 @@ import ecologylab.collections.Scope;
 import ecologylab.generic.HashMapArrayList;
 import ecologylab.generic.ReflectionTools;
 import ecologylab.serialization.TranslationScope.GRAPH_SWITCH;
+import ecologylab.serialization.constants.FieldTypes;
+import ecologylab.serialization.enums.Hint;
+import ecologylab.serialization.exception.SIMPLTranslationException;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
+import ecologylab.serialization.tools.XMLTools;
 import ecologylab.serialization.types.scalar.MappingConstants;
 import ecologylab.serialization.types.scalar.ScalarType;
 import ecologylab.serialization.types.scalar.TypeRegistry;
@@ -39,46 +44,41 @@ import ecologylab.serialization.types.scalar.TypeRegistry;
  */
 public class FieldDescriptor extends ElementState implements FieldTypes
 {
-	public static final String	NULL	= ScalarType.DEFAULT_VALUE_STRING;
+	public static final String												NULL											= ScalarType.DEFAULT_VALUE_STRING;
 
 	@simpl_scalar
-	protected Field							field;
+	protected Field																		field;
 
 	/**
 	 * The tag name that this field is translated to XML with. For polymorphic fields, the value of
 	 * this field is meaningless, except for wrapped collections and maps.
 	 */
 	@simpl_scalar
-	private String							tagName;
+	private String																		tagName;
 
 	/**
 	 * Used to specify old translations, for backwards compatability. Never written.
 	 */
 	@simpl_nowrap
 	@simpl_collection("other_tag")
-	private ArrayList<String>		otherTags;
+	private ArrayList<String>													otherTags;
 
 	/**
 	 * Descriptor for the class that this field is declared in.
 	 */
-	protected ClassDescriptor		declaringClassDescriptor;
+	protected ClassDescriptor													declaringClassDescriptor;
 
 	@simpl_scalar
-	private int									type;
+	private int																				type;
 
 	/**
 	 * This slot makes sense only for attributes and leaf nodes
 	 */
 	@simpl_scalar
-	private ScalarType<?>				scalarType;
+	private ScalarType<?>															scalarType;
 
 	@simpl_scalar
-	private Hint								xmlHint;
-
-	public Hint getXmlHint()
-	{
-		return xmlHint;
-	}
+	private Hint																			xmlHint;
 
 	@simpl_scalar
 	private boolean																		isEnum;
@@ -1690,7 +1690,7 @@ public class FieldDescriptor extends ElementState implements FieldTypes
 
 		if (TranslationScope.graphSwitch == GRAPH_SWITCH.ON)
 		{
-			ElementState alreadyUnmarshalledObject = ElementState.getFromMap(attributes, graphContext);
+			ElementState alreadyUnmarshalledObject = graphContext.getFromMap(attributes);
 
 			if (alreadyUnmarshalledObject != null)
 				result = alreadyUnmarshalledObject;
@@ -2002,6 +2002,11 @@ public class FieldDescriptor extends ElementState implements FieldTypes
 		appendable.append(tagName);
 		appendable.append('=');
 
+	}
+
+	public Hint getXmlHint()
+	{
+		return xmlHint;
 	}
 
 }

@@ -4,7 +4,7 @@
 package ecologylab.serialization.library.jnlp.information;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 import ecologylab.serialization.types.element.Mappable;
 
 /**

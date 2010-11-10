@@ -2,8 +2,8 @@ package ecologylab.standalone;
 
 import java.io.File;
 
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 import ecologylab.serialization.library.rest.Fields;
 import ecologylab.serialization.library.rest.RESTTranslationSpace;
 

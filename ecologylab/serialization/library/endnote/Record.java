@@ -4,7 +4,7 @@
 package ecologylab.serialization.library.endnote;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 /**
  * @author Zachary O. Toups (toupsz@cs.tamu.edu)

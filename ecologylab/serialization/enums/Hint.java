@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ecologylab.serialization;
+package ecologylab.serialization.enums;
 
 /**
  * @author andruid

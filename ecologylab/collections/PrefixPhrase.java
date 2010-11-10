@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.Set;
 
 import ecologylab.generic.Debug;
-import ecologylab.net.ParsedURL;
 
 /**
  * Recursive unit (bucket) for prefix pattern matching.

@@ -6,9 +6,8 @@ package ecologylab.standalone;
 import java.util.ArrayList;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
-import ecologylab.serialization.ElementState.simpl_nowrap;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  *

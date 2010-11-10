@@ -3,9 +3,8 @@ package ecologylab.tests;
 import java.io.IOException;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
-import ecologylab.serialization.ElementState.simpl_scalar;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 public class TestReferenceAndPrimitiveScalars extends ElementState {
 

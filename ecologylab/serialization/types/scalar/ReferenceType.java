@@ -5,7 +5,7 @@ package ecologylab.serialization.types.scalar;
 
 import java.io.IOException;
 
-import ecologylab.serialization.XMLTools;
+import ecologylab.serialization.tools.XMLTools;
 
 /**
  *

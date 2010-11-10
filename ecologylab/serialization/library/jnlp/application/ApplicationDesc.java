@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import ecologylab.appframework.types.prefs.PrefSet;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * @author Zachary O. Toups (zach@ecologylab.net)

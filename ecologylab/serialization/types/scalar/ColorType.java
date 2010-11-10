@@ -4,9 +4,8 @@
 package ecologylab.serialization.types.scalar;
 
 import java.awt.Color;
-import java.lang.reflect.Field;
 
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * Type system entry for java.awt.Color. Uses a hex string as initialization.

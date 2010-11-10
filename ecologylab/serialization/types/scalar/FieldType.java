@@ -3,10 +3,9 @@
  */
 package ecologylab.serialization.types.scalar;
 
-import java.awt.Color;
 import java.lang.reflect.Field;
 
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * For marshalling the name of a field, for transmission to other platforms.

@@ -1,7 +1,7 @@
 package ecologylab.serialization.library.rest;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 public class ResultsInfo extends ElementState
 {

@@ -21,8 +21,8 @@ import ecologylab.appframework.PropertiesAndDirectories;
 import ecologylab.oodss.logging.Logging;
 import ecologylab.oodss.logging.MixedInitiativeOp;
 import ecologylab.oodss.logging.translationScope.MixedInitiativeOpClassesProvider;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * The main application for playing back log files.

@@ -13,6 +13,10 @@ import java.util.Map;
 import ecologylab.collections.Scope;
 import ecologylab.generic.HashMapArrayList;
 import ecologylab.net.ParsedURL;
+import ecologylab.serialization.enums.Format;
+import ecologylab.serialization.exception.SIMPLTranslationException;
+import ecologylab.serialization.interfaces.DeserializationHookStrategy;
+import ecologylab.serialization.tools.XMLTools;
 import ecologylab.serialization.types.scalar.ScalarType;
 import ecologylab.serialization.types.scalar.TypeRegistry;
 
@@ -951,7 +955,7 @@ public final class TranslationScope extends ElementState
 		return deserialize(xmlFile);
 	}
 
-	public ElementState deserializeByteArray(byte[] byteArray, FORMAT format) throws SIMPLTranslationException
+	public ElementState deserializeByteArray(byte[] byteArray, Format format) throws SIMPLTranslationException
 	{
 		ElementState result = null;
 		switch (format)
@@ -972,7 +976,7 @@ public final class TranslationScope extends ElementState
 		return result;
 	}
 
-	public ElementState deserializeCharSequence(CharSequence charSequence, FORMAT format)
+	public ElementState deserializeCharSequence(CharSequence charSequence, Format format)
 			throws SIMPLTranslationException
 	{
 		ElementState result = null;

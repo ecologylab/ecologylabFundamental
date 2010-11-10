@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 import ecologylab.serialization.library.dc.Dc;
 import ecologylab.serialization.library.feedburner.Feedburner;
 import ecologylab.serialization.library.media.Media;

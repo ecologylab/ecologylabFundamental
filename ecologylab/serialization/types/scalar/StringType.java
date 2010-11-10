@@ -5,8 +5,8 @@ package ecologylab.serialization.types.scalar;
 
 import java.io.IOException;
 
-import ecologylab.serialization.ScalarUnmarshallingContext;
-import ecologylab.serialization.XMLTools;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
+import ecologylab.serialization.tools.XMLTools;
 
 /**
  * Type system entry for {@link java.lang.String String}. A very simple case.

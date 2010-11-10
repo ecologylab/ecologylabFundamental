@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 
 import ecologylab.serialization.FieldDescriptor;
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 /**
  * Type system entry for byte, a built-in primitive.

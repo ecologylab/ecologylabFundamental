@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 /**
  * Primary element of the media XML name space. As in <media:content>

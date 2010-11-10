@@ -1,4 +1,4 @@
-package ecologylab.serialization.tlv;
+package ecologylab.serialization.tools;
 
 /*
  *   
@@ -39,7 +39,7 @@ import java.io.PrintStream;
  * those used for conversion of BigIntegers to
  * byte arrays, hexadecimal printing of byte arrays etc.
  */
-public class Utils {
+public class TLVTools {
 
     /** UTF-8 encoding name. */
     public static final String utf8 = "UTF-8";

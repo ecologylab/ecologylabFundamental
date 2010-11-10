@@ -6,9 +6,9 @@ package ecologylab.standalone.xmlpolymorph;
 import java.util.ArrayList;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
 import ecologylab.serialization.ElementState.simpl_collection;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 import ecologylab.serialization.library.rss.Channel;
 import ecologylab.serialization.library.rss.Item;
 import ecologylab.serialization.library.rss.RssTranslations;

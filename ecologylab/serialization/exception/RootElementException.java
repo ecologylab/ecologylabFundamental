@@ -1,7 +1,9 @@
 /**
  * 
  */
-package ecologylab.serialization;
+package ecologylab.serialization.exception;
+
+import ecologylab.serialization.TranslationScope;
 
 /**
  * An exception to throw when lookup of the root element fails in the TranslationSpace.
@@ -10,6 +12,11 @@ package ecologylab.serialization;
  */
 public class RootElementException extends SIMPLTranslationException
 {
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= 1L;
+
 	/**
 	 * @param msg
 	 */

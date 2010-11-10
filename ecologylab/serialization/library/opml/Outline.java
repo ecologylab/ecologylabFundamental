@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
 
 /**
  * Nestable Outline Processor Markup Language construct.

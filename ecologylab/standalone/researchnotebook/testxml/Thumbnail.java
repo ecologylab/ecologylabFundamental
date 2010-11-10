@@ -2,7 +2,7 @@ package ecologylab.standalone.researchnotebook.testxml;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 public class Thumbnail extends ElementState{
 	@xml_tag("mms:Url") @simpl_scalar @simpl_hints(Hint.XML_LEAF) ParsedURL url;

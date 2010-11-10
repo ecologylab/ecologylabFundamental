@@ -1,4 +1,4 @@
-package ecologylab.serialization;
+package ecologylab.serialization.constants;
 
 public interface FieldTypes
 {
@@ -11,11 +11,9 @@ public interface FieldTypes
 
 	public static final int	IGNORED_ATTRIBUTE					= -1;
 
-	public static final int SCALAR										= 0x12;
+	public static final int	SCALAR										= 0x12;
 
-	public static final int	COMPOSITE_ELEMENT						= 3;
-	
-	
+	public static final int	COMPOSITE_ELEMENT					= 3;
 
 	/**
 	 * This means that we don't bother to parse the element, because the programmer developing
@@ -31,10 +29,9 @@ public interface FieldTypes
 
 	public static final int	MAP_SCALAR								= 7;
 
-
 	public static final int	WRAPPER										= 0x0a;
 
-	public static final int	PSEUDO_FIELD_DESCRIPTOR		= 0x0d;	
+	public static final int	PSEUDO_FIELD_DESCRIPTOR		= 0x0d;
 
 	public static final int	NAMESPACE_IGNORED_ELEMENT	= -2;
 
@@ -49,7 +46,7 @@ public interface FieldTypes
 	public static final int	NAME_SPACE_SCALAR					= NAME_SPACE_MASK + SCALAR;
 
 	public static final int	NAME_SPACE_NESTED_ELEMENT	= NAME_SPACE_MASK + COMPOSITE_ELEMENT;
-//
-//	public static final int	NAME_SPACE_LEAF_NODE			= NAME_SPACE_MASK + LEAF;
+	//
+	// public static final int NAME_SPACE_LEAF_NODE = NAME_SPACE_MASK + LEAF;
 
 }

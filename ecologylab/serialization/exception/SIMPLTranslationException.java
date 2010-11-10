@@ -1,4 +1,4 @@
-package ecologylab.serialization;
+package ecologylab.serialization.exception;
 
 import ecologylab.generic.Debug;
 import ecologylab.net.ParsedURL;

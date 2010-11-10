@@ -3,8 +3,8 @@
  */
 package ecologylab.serialization.library.endnote;
 
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 public class TestEndnoteXML
 {

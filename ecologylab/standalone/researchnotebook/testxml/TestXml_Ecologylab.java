@@ -15,8 +15,8 @@ import java.util.Calendar;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 import ecologylab.standalone.researchnotebook.compositionTS.Anchors;
 import ecologylab.standalone.researchnotebook.compositionTS.Categories;
 import ecologylab.standalone.researchnotebook.compositionTS.Category;

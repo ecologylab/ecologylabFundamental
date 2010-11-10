@@ -3,7 +3,7 @@ package ecologylab.serialization.library.rest;
 import java.net.URL;
 
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 /**
  * Rest Search Results

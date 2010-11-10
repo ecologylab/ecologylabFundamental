@@ -2,7 +2,7 @@ package ecologylab.oodss.messages;
 
 
 import ecologylab.collections.Scope;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
 
 @simpl_inherit
 public class UrlMessage extends RequestMessage

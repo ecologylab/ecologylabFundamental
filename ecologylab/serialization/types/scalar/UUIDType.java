@@ -2,7 +2,7 @@ package ecologylab.serialization.types.scalar;
 
 import java.util.UUID;
 
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 public class UUIDType extends ScalarType<UUID> {
 

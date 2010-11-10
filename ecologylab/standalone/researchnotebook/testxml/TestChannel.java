@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 public class TestChannel extends ElementState{
 	@simpl_scalar @simpl_hints(Hint.XML_LEAF) String title;

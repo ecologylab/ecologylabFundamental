@@ -4,7 +4,7 @@ import java.util.Date;
 
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.Hint;
+import ecologylab.serialization.enums.Hint;
 
 // TestChannel.java 
 public class TestItem extends ElementState{

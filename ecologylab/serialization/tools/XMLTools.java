@@ -1,4 +1,4 @@
-package ecologylab.serialization;
+package ecologylab.serialization.tools;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -37,9 +37,20 @@ import ecologylab.collections.Scope;
 import ecologylab.generic.HashMapArrayList;
 import ecologylab.generic.StringInputStream;
 import ecologylab.net.ParsedURL;
+import ecologylab.serialization.ElementState;
 import ecologylab.serialization.ElementState.bibtex_key;
 import ecologylab.serialization.ElementState.bibtex_tag;
+import ecologylab.serialization.ElementState.simpl_collection;
+import ecologylab.serialization.ElementState.simpl_composite;
+import ecologylab.serialization.ElementState.simpl_format;
+import ecologylab.serialization.ElementState.simpl_hints;
+import ecologylab.serialization.ElementState.simpl_map;
+import ecologylab.serialization.ElementState.simpl_scalar;
 import ecologylab.serialization.ElementState.xml_tag;
+import ecologylab.serialization.constants.CharacterConstants;
+import ecologylab.serialization.constants.SpecialCharacterEntities;
+import ecologylab.serialization.enums.Hint;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 import ecologylab.serialization.types.scalar.MappingConstants;
 import ecologylab.serialization.types.scalar.ScalarType;
 import ecologylab.serialization.types.scalar.TypeRegistry;
@@ -1500,12 +1511,12 @@ public class XMLTools extends TypeRegistry implements CharacterConstants, Specia
 		return result;
 	}
 
-	static boolean isScalar(Field field)
+	public static boolean isScalar(Field field)
 	{
 		return field.isAnnotationPresent(ElementState.simpl_scalar.class);
 	}
 
-	static Hint simplHint(Field field)
+	public static Hint simplHint(Field field)
 	{
 		ElementState.simpl_hints hintsAnnotation = field.getAnnotation(ElementState.simpl_hints.class);
 		return (hintsAnnotation == null) ? Hint.XML_ATTRIBUTE : hintsAnnotation.value()[0];

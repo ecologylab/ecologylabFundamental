@@ -3,7 +3,7 @@ package ecologylab.serialization.types.scalar;
 import java.io.IOException;
 
 import ecologylab.serialization.FieldDescriptor;
-import ecologylab.serialization.ScalarUnmarshallingContext;
+import ecologylab.serialization.interfaces.ScalarUnmarshallingContext;
 
 public class ReferenceBooleanType extends ScalarType<Boolean>
 {

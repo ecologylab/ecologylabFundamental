@@ -15,9 +15,9 @@ import ecologylab.net.NetTools;
 import ecologylab.oodss.distributed.common.ServerConstants;
 import ecologylab.oodss.messages.ErrorResponse;
 import ecologylab.oodss.messages.ResponseMessage;
-import ecologylab.serialization.SIMPLTranslationException;
-import ecologylab.serialization.XMLTools;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
+import ecologylab.serialization.exception.SIMPLTranslationException;
+import ecologylab.serialization.tools.XMLTools;
 
 /**
  * Allows the application to send application-specific content to the log, at the beginning of a

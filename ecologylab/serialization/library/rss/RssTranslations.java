@@ -3,8 +3,8 @@ package ecologylab.serialization.library.rss;
 import ecologylab.generic.Debug;
 import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * Translations for all RSS parsing.

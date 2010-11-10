@@ -1,12 +1,15 @@
 package ecologylab.concurrent;
 
-import java.util.*;
 import java.nio.channels.ClosedByInterruptException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Vector;
 
 import ecologylab.appframework.Memory;
 import ecologylab.appframework.OutOfMemoryErrorHandler;
 import ecologylab.appframework.StatusReporter;
-import ecologylab.collections.FloatWeightSet;
 import ecologylab.generic.Debug;
 import ecologylab.generic.DispatchTarget;
 import ecologylab.generic.Generic;

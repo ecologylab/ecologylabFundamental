@@ -8,7 +8,7 @@ import java.util.LinkedHashMap;
 
 import ecologylab.collections.Scope;
 import ecologylab.serialization.ElementState;
-import ecologylab.serialization.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_inherit;
 import ecologylab.serialization.types.scalar.ScalarType;
 
 /**

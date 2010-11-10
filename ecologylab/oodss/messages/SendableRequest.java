@@ -3,7 +3,7 @@
  */
 package ecologylab.oodss.messages;
 
-import ecologylab.serialization.SIMPLTranslationException;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * Interface to indicate that a message can be sent over the network. Used for type checking in

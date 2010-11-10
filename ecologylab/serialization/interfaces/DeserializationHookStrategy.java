@@ -1,7 +1,10 @@
 /**
  * 
  */
-package ecologylab.serialization;
+package ecologylab.serialization.interfaces;
+
+import ecologylab.serialization.ElementState;
+import ecologylab.serialization.FieldDescriptor;
 
 /**
  * Used to connect the state of an object (outside the ElementState subclasses being created)

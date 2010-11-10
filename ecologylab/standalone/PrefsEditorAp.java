@@ -6,8 +6,8 @@ package ecologylab.standalone;
 import ecologylab.appframework.ApplicationEnvironment;
 import ecologylab.appframework.types.prefs.PrefsTranslationsProvider;
 import ecologylab.appframework.types.prefs.gui.PrefsEditor;
-import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.TranslationScope;
+import ecologylab.serialization.exception.SIMPLTranslationException;
 
 /**
  * Standalone app to open a prefs editing dialog.
