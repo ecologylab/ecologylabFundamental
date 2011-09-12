@@ -1,0 +1,18 @@
+<container>
+	<item_collection1>
+		<item_one var="1" testing="1" />
+		<item_one var="2" testing="1" />
+		<item_one var="3" testing="1" />
+		<item_two var="1" test_string="one" />
+		<item_two var="2" test_string="two" />
+		<item_two var="3" test_string="three" />
+	</item_collection1>
+	<item_collection2>
+		<item_two var="1" test_string="one" />
+		<item_two var="2" test_string="two" />
+		<item_two var="3" test_string="three" />
+		<item_one random_string="four" />
+		<item_one random_string="five" />
+		<item_one random_string="six" />
+	</item_collection2>
+</container>

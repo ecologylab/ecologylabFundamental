@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.tigris.subversion.subclipse.core.svnnature">
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabFundamental/trunk,ecologylabFundamental" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabGame/trunk,ecologylabGame" />
+	<project reference="0.9.3,https://svn.ecologylab.net/javaOSC/trunk,JavaOSC" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabGraphics/trunk,ecologylabGraphics" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabAudio/trunk,ecologylabAudio" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabLocationAware/trunk,ecologylabLocationAware" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabAuthentication/trunk,ecologylabAuthentication" />
+	<project reference="0.9.3,https://svn.ecologylab.net/tteclog/trunk,MR-TeC" />
+	<project reference="0.9.3,https://svn.ecologylab.net/cf/trunk,cf" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabGeneratedSemantics/trunk,ecologylabGeneratedSemantics" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabImageAwt/trunk,ecologylabImageAwt" />
+	<project reference="0.9.3,https://svn.ecologylab.net/simplTranslators/trunk,simplTranslators" />
+	<project reference="0.9.3,https://svn.ecologylab.net/simplTutorials/trunk,simplTutorials" />
+	<project reference="0.9.3,https://svn.ecologylab.net/multivalent/trunk,multivalent" />	
+	<project reference="0.9.3,https://svn.ecologylab.net/TTeC/trunk,TeC" />
+	<project reference="0.9.3,https://svn.ecologylab.net/jtidy/trunk,jtidy" />
+	<project reference="0.9.3,https://svn.ecologylab.net/metadataExtractor/trunk,metadataExtractor" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabInteractive/trunk,ecologylabInteractive" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabInteractiveSemantics/trunk,ecologylabInteractiveSemantics" />	
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabSemanticsCyberneko/trunk,ecologylabSemanticsCyberneko" />	
+	<project reference="0.9.3,https://svn.ecologylab.net/cyberneko/trunk,cyberneko" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabSemantics/trunk,ecologylabSemantics" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabSemanticsLocationAware/trunk,ecologylabSemanticsLocationAware" />
+	<project reference="0.9.3,https://svn.ecologylab.net/ecologylabSemanticsApp/trunk,ecologylabSemanticsApp" />
+	<project reference="0.9.3,https://svn.ecologylab.net/geoTools/trunk,GeoTools" />								
+</provider>
+</psf>
