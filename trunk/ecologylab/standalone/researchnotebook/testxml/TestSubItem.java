@@ -1,0 +1,9 @@
+package ecologylab.standalone.researchnotebook.testxml;
+
+import ecologylab.serialization.ElementState;
+
+public class TestSubItem extends ElementState{	
+	@simpl_scalar String priority;
+	
+	@simpl_scalar String target; 
+}
