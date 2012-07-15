@@ -11,6 +11,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.lang.reflect.TypeVariable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -71,8 +73,7 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 
 	public static final String												NULL												= ScalarType.DEFAULT_VALUE_STRING;
 
-	public static final Class[]												SET_METHOD_STRING_ARG				=
-																																								{ String.class };
+	public static final Class[]												SET_METHOD_STRING_ARG				= { String.class };
 
 	@simpl_scalar
 	protected Field																		field;																													// TODO
@@ -108,6 +109,8 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 	 */
 	@simpl_collection("generic_type_var")
 	private ArrayList<GenericTypeVar>									genericTypeVars;
+	
+	ClassDescriptor																		genericTypeVarsContextCD;
 
 	// ///////////////// next fields are for polymorphic fields
 	// ////////////////////////////////////////
@@ -179,6 +182,8 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 	 * The FieldDescriptor for the field in a wrap.
 	 */
 	private FieldDescriptor														wrappedFD;
+	
+	private FieldDescriptor														wrapper;
 
 	private HashMap<Integer, ClassDescriptor>					tlvClassDescriptors;
 
@@ -263,6 +268,7 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 		super(wrapperTag, null);
 		this.declaringClassDescriptor = baseClassDescriptor;
 		this.wrappedFD = wrappedFD;
+		wrappedFD.wrapper = this;
 		this.type = WRAPPER;
 	}
 
@@ -328,9 +334,12 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 		{
 			comment = javaParser.getJavaDocComment(field);
 		}
-		isGeneric = (field.getGenericType() instanceof ParameterizedType) ? true : false;
-		if (isGeneric)
+		
+		Type genericType = field.getGenericType();
+		isGeneric = genericType instanceof ParameterizedType || genericType instanceof TypeVariable;
+		if (genericType instanceof ParameterizedType)
 		{
+			// when it is parameterized, we need to take care of dependencies
 			genericParametersString = XMLTools.getJavaGenericParametersString(field);
 			ArrayList<Class> dependedClasses = XMLTools.getJavaGenericDependencies(field);
 			if (dependedClasses != null)
@@ -545,7 +554,7 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 			{
 				if (genericTypeVars == null)
 				{
-					genericTypeVars = new ArrayList<GenericTypeVar>();
+//					genericTypeVars = new ArrayList<GenericTypeVar>();
 					deriveGenericTypeVariables();
 				}
 			}
@@ -553,7 +562,7 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 
 		return genericTypeVars;
 	}
-
+	
 	// added a setter to enable environment specific implementation -Fei
 	public void setGenericTypeVars(ArrayList<GenericTypeVar> derivedGenericTypeVariables)
 	{
@@ -563,10 +572,15 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 		}
 	}
 
+	public ArrayList<GenericTypeVar> getGenericTypeVarsContext()
+	{
+		return genericTypeVarsContextCD.getGenericTypeVars();
+	}
+	
 	// This method is modified, refer to FundamentalPlatformSpecific package -Fei
 	private void deriveGenericTypeVariables()
 	{
-		FundamentalPlatformSpecifics.get().deriveGenericTypeVariables(this);
+		FundamentalPlatformSpecifics.get().deriveFieldGenericTypeVars(this);
 	}
 
 	private void initPolymorphClassDescriptorsArrayList(int initialSize)
@@ -1569,6 +1583,8 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 
 	public ClassDescriptor getChildClassDescriptor(String tagName)
 	{
+		resolveUnresolvedClassesAnnotation();
+		resolveUnresolvedScopeAnnotation();
 		ClassDescriptor childClassDescriptor = !isPolymorphic() ? elementClassDescriptor
 				: polymorphClassDescriptors.get(tagName);
 
@@ -1713,6 +1729,7 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 	protected void setWrappedFD(FieldDescriptor wrappedFD)
 	{
 		this.wrappedFD = wrappedFD;
+		wrappedFD.wrapper = this;
 	}
 
 	public boolean belongsTo(ClassDescriptor c)
@@ -2108,6 +2125,8 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 
 	public boolean isCollectionTag(String tagName)
 	{
+		resolveUnresolvedClassesAnnotation();
+		resolveUnresolvedScopeAnnotation();
 		return isPolymorphic() ? polymorphClassDescriptors.containsKey(tagName)
 				: collectionOrMapTagName.equals(tagName);
 	}
@@ -2263,6 +2282,16 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 	public boolean isUsageExcluded(FieldUsage usage)
 	{
 		return excludedUsages != null && excludedUsages.contains(usage);
+	}
+
+	public FieldDescriptor getWrapper()
+	{
+		return wrapper;
+	}
+
+	protected void setWrapper(FieldDescriptor wrapper)
+	{
+		this.wrapper = wrapper;
 	}
 	
 }
