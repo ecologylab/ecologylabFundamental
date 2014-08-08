@@ -20,7 +20,7 @@ import ecologylab.serialization.annotations.simpl_inherit;
  * ***WARNING!!!***
  * 
  * Performing transformations (such as setFrame()) on the result of shape() will cause this object
- * to become out of synch with its underlying Rectangle2D. DO NOT DO THIS!
+ * to become out of sync with its underlying Rectangle2D. DO NOT DO THIS!
  * 
  * If other transformation methods are required, either notify me, or implement them yourself. :D
  * 
@@ -32,10 +32,10 @@ import ecologylab.serialization.annotations.simpl_inherit;
 public @simpl_inherit
 class PolygonState extends ElementState implements Shape
 {
-	private Polygon												shape							= null;
+	private Polygon															shape							= null;
 
 	@simpl_collection("point2_d_double")
-	private ArrayList<Point2DDoubleState>	polygonVerticies	= new ArrayList<Point2DDoubleState>();
+	private final ArrayList<Point2DDoubleState>	polygonVerticies	= new ArrayList<Point2DDoubleState>();
 
 	public PolygonState()
 	{

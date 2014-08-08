@@ -43,7 +43,6 @@ implements CrossLanguageTypeConstants
 	 * 
 	 * @return	true, because this type cannot be unmarshalled in Java.
 	 */
-	@Override
 	public boolean isMarshallOnly()
 	{
 		return true;

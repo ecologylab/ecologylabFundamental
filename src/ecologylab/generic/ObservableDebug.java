@@ -59,8 +59,7 @@ extends Observable
    {   	
       Debug.println(buffy);
    }
-   @Override
-public String toString()
+   public String toString()
    {
       return Debug.toString(this);
    }

@@ -50,7 +50,6 @@ public class LongType extends ScalarType<Long> implements CrossLanguageTypeConst
 	 * @param value
 	 *          String representation of the instance.
 	 */
-	@Override
 	public Long getInstance(String value, String[] formatStrings,
 			ScalarUnmarshallingContext scalarUnmarshallingContext)
 	{
@@ -62,7 +61,6 @@ public class LongType extends ScalarType<Long> implements CrossLanguageTypeConst
 	 * 
 	 * @see ecologylab.serialization.types.ScalarType#setField(Object, Field, String)
 	 */
-	@Override
 	public boolean setField(Object object, Field field, String value)
 	{
 		boolean result = false;
@@ -102,7 +100,6 @@ public class LongType extends ScalarType<Long> implements CrossLanguageTypeConst
 	 * 
 	 * In this case, "0".
 	 */
-	@Override
 	public String defaultValueString()
 	{
 		return DEFAULT_VALUE_STRING;

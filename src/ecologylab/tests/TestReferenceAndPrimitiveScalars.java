@@ -1,6 +1,7 @@
 package ecologylab.tests;
 
 import java.io.File;
+import java.io.IOException;
 
 import ecologylab.serialization.ElementState;
 import ecologylab.serialization.SIMPLTranslationException;
@@ -66,7 +67,6 @@ public class TestReferenceAndPrimitiveScalars extends ElementState
 		sb.append(prefix + ": " + o + "\n");
 	}
 
-	@Override
 	public String toString()
 	{
 		StringBuilder res = new StringBuilder();

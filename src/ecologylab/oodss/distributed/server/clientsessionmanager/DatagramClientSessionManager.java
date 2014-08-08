@@ -51,7 +51,6 @@ public class DatagramClientSessionManager<S extends Scope, PARENT extends Scope>
 		return super.processRequest(request, address);
 	}
 
-	@Override
 	public InetSocketAddress getAddress()
 	{
 		return address;

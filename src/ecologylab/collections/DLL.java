@@ -223,8 +223,7 @@ implements Iterable<T>
     * 
     * @return an {@code Iterator} object for iterating over all elements in this {@code DLL}.
     */
-   @Override
-public Iterator<T> iterator()
+   public Iterator<T> iterator()
    {
 	   return new DLLIterator();
    }
@@ -240,14 +239,12 @@ public Iterator<T> iterator()
 	   DLL<T> firstObject = DLL.this;
 	   boolean stop = false;
 	 
-	   @Override
-	public boolean hasNext()
+	   public boolean hasNext()
 	   {
 		   return !stop && (currentNode != null && currentNode.object != null);
 	   }
 	
-	   @Override
-	public T next()
+	   public T next()
 	   {
 		   T currentObject 	= currentNode.object;
 		   currentNode 		= currentNode.next();
@@ -257,8 +254,7 @@ public Iterator<T> iterator()
 		   return currentObject;
 	   }
 		
-	   @Override
-	public void remove()
+	   public void remove()
 	   {
 		   // optional method that is not needed in our case. 
 	   }

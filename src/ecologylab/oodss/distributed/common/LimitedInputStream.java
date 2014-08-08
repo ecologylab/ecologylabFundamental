@@ -1,8 +1,8 @@
 package ecologylab.oodss.distributed.common;
 
 import java.io.FilterInputStream;
-import java.io.IOException;
 import java.io.InputStream;
+import java.io.IOException;
 
 public class LimitedInputStream extends FilterInputStream
 {
@@ -16,13 +16,11 @@ public class LimitedInputStream extends FilterInputStream
 		this.limit = this.left = limit;
 	}
 	
-	@Override
 	public boolean markSupported()
 	{
 		return false;
 	}
 	
-	@Override
 	public int read(byte[] b, int off, int len) throws IOException
 	{
 		if(len > left)
@@ -39,7 +37,6 @@ public class LimitedInputStream extends FilterInputStream
 		return ret;
 	}
 	
-	@Override
 	public int read(byte[] b) throws IOException
 	{
 		if(b.length > left)
@@ -63,7 +60,6 @@ public class LimitedInputStream extends FilterInputStream
 		}
 	}
 	
-	@Override
 	public int read() throws IOException
 	{
 		int ret;
@@ -82,13 +78,11 @@ public class LimitedInputStream extends FilterInputStream
 		return ret;
 	}
 	
-	@Override
 	public int available() throws IOException
 	{
 		return Math.min(left, in.available());
 	}
 
-	@Override
 	public long skip(long n) throws IOException
 	{
 		long ret = 0;
@@ -107,13 +101,11 @@ public class LimitedInputStream extends FilterInputStream
 		return ret;
 	}
 	
-	@Override
 	public void mark(int readLimit)
 	{
 		
 	}
 	
-	@Override
 	public void reset()
 	{
 		

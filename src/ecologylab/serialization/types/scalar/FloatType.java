@@ -60,7 +60,6 @@ implements CrossLanguageTypeConstants
 	 * @param value
 	 *          String representation of the instance.
 	 */
-	@Override
 	public Float getInstance(String value, String[] formatStrings,
 			ScalarUnmarshallingContext scalarUnmarshallingContext)
 	{
@@ -72,7 +71,6 @@ implements CrossLanguageTypeConstants
 	 * 
 	 * @see ecologylab.serialization.types.ScalarType#setField(Object, Field, String)
 	 */
-	@Override
 	public boolean setField(Object object, Field field, String value)
 	{
 		boolean result = false;
@@ -112,7 +110,6 @@ implements CrossLanguageTypeConstants
 	 * 
 	 * @return "0"
 	 */
-	@Override
 	public String defaultValueString()
 	{
 		return DEFAULT_VALUE_STRING;

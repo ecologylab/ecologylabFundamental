@@ -1,7 +1,5 @@
 package ecologylab.serialization;
 
-import java.util.List;
-import java.util.ArrayList;
 import ecologylab.generic.Debug;
 import ecologylab.net.ParsedURL;
 
@@ -40,30 +38,14 @@ public class SIMPLTranslationException extends Exception implements
 
     private int               exceptionType    = 0;
 
-	private ArrayList<SimplIssue> simplIssues;
-
-	private ArrayList<Exception> childExceptions;
-
     public SIMPLTranslationException()
     {
         super();
-    	this.simplIssues = new ArrayList<SimplIssue>();
-        this.childExceptions = new ArrayList<Exception>();
     }
 
-    public SIMPLTranslationException(SimplIssue si)
-    {
-    	this();
-    	this.simplIssues.add(si);
-    }
-
-    
     public SIMPLTranslationException(String msg)
     {
         super(msg);
-
-    	this.simplIssues = new ArrayList<SimplIssue>();
-        childExceptions = new ArrayList<Exception>();
     }
 
     public SIMPLTranslationException(String msg, Exception e)
@@ -122,11 +104,4 @@ public class SIMPLTranslationException extends Exception implements
     		break;
     	}
     }
-
-    public Object remnant;
-	public void setRemnantObject(Object result) {
-		// TODO Auto-generated method stub
-		this.remnant = result;
-	}
-
 }

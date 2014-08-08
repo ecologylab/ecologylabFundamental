@@ -29,7 +29,7 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 
 	public FeatureVector ( int size )
 	{
-		values = new HashMap<T,Double>(size);
+		values = (HashMap<T,Double>) new HashMap<T,Double>(size);
 	}
 
 	public FeatureVector ( IFeatureVector<T> copyMe )
@@ -52,7 +52,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		return new FeatureVector<T>(this);
 	}
 
-	@Override
 	public double get ( T term )
 	{
 		if (values == null)
@@ -183,7 +182,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		add(1, v);
 	}
 
-	@Override
 	public double dot ( IFeatureVector<T> v )
 	{
 		return dot(v, false);
@@ -209,7 +207,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		return dot;
 	}
 
-	@Override
 	public Set<T> elements ( )
 	{
 		if (values == null)
@@ -217,7 +214,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		return new HashSet<T>(values.keySet());
 	}
 
-	@Override
 	public Set<Double> values ( )
 	{
 		if (values == null)
@@ -231,7 +227,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 	 * 
 	 * @return HashMap backing this FeatureVector
 	 */
-	@Override
 	public Map<T, Double> map ( )
 	{
 		if (values == null)
@@ -267,7 +262,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		max = UNCALCULATED;
 	}
 
-	@Override
 	public double norm ( )
 	{
 		if (norm == UNCALCULATED)
@@ -275,7 +269,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		return norm;
 	}
 
-	@Override
 	public double max ( )
 	{
 		if (max == UNCALCULATED)
@@ -364,7 +357,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		resetNorm();
 	}
 
-	@Override
 	public IFeatureVector<T> unit ( )
 	{
 		FeatureVector<T> v = new FeatureVector<T>(this);
@@ -372,13 +364,11 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		return v;
 	}
 
-	@Override
 	public double dotSimplex ( IFeatureVector<T> v )
 	{
 		return dot(v, true);
 	}
 
-	@Override
 	public int commonDimensions ( IFeatureVector<T> v )
 	{
 		Set<T> v_elements = v.elements();
@@ -386,7 +376,6 @@ public class FeatureVector<T> extends Observable implements IFeatureVector<T>
 		return v_elements.size();
 	}
 
-	@Override
 	public FeatureVector<T> simplex ( )
 	{
 		FeatureVector<T> v = new FeatureVector<T>(this);

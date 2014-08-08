@@ -2,10 +2,13 @@ package ecologylab.serialization.types.scalar;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import ecologylab.serialization.ScalarUnmarshallingContext;
 import ecologylab.serialization.XMLTools;
 import ecologylab.serialization.annotations.simpl_collection;
+import ecologylab.serialization.annotations.simpl_inherit;
+import ecologylab.serialization.annotations.simpl_map;
 import ecologylab.serialization.annotations.simpl_nowrap;
 
 public class EnumeratedType extends ReferenceType<Enum>
@@ -15,7 +18,7 @@ public class EnumeratedType extends ReferenceType<Enum>
 	ArrayList<String> enumStringConstants = new ArrayList<String>();
 	
 	String enumTypeSimpleName = ""; 
-	 
+
 	public EnumeratedType()
 	{
 		super(Enum.class, null, null, null, null);
@@ -47,7 +50,7 @@ public class EnumeratedType extends ReferenceType<Enum>
 
        boolean result		= false;
        Enum<?> referenceObject;
-       
+
        try
        {
       	 	referenceObject = XMLTools.createEnumeratedType(field, valueString);
@@ -64,7 +67,6 @@ public class EnumeratedType extends ReferenceType<Enum>
        return result;
    }
 	
-	@Override
 	public String getSimpleName()
 	{
 		return enumTypeSimpleName;

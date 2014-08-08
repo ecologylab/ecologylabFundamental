@@ -32,12 +32,10 @@ extends Debug implements BasicFloatSet<E>
   
   public final class DefaultWeightStrategy extends WeightingStrategy<E>
   {
-    @Override
-	public double getWeight(E e) {
+    public double getWeight(E e) {
       return e.getWeight();
     }
-    @Override
-	public boolean hasChanged() {
+    public boolean hasChanged() {
       return true;
     }
   };
@@ -258,8 +256,7 @@ extends Debug implements BasicFloatSet<E>
    * 			 0 for recompute upwards from el.
    * 			 1 for recompute all.
    **/
-  @Override
-public synchronized void delete(E el, int recompute)
+  public synchronized void delete(E el, int recompute)
   {
     int index		= el.getIndex();
     if ((size == 0) || (index < 0))
@@ -429,7 +426,7 @@ public synchronized void delete(E el, int recompute)
 
     //if there are more than one in our set, there is a tie, so choose which to get!
     if (numMax > 1)
-      result		= maxArrayList.get(MathTools.random(numMax));
+      result		= (FloatSetElement) maxArrayList.get(MathTools.random(numMax));
     //maxArrayListClear();
 
     return (E) result;
@@ -548,10 +545,10 @@ public synchronized void delete(E el, int recompute)
     else
     {
       if ( incrementalSums != null )
-        result		= incrementalSums[size - 1] / (size-1);
+        result		= incrementalSums[size - 1] / (float)(size-1);
       else if( setSum != 0 )
       {
-        result		= setSum / (size-1);
+        result		= (float) (setSum / ((float)(size-1)));
       }
       else
       {
@@ -568,7 +565,7 @@ public synchronized void delete(E el, int recompute)
         if( num==0 )
           result = 0;
         else
-          result		= sum / (num);
+          result		= (float) (sum / ((float) num));
 
       }
 
@@ -597,7 +594,7 @@ public synchronized void delete(E el, int recompute)
     if( num==0 )
       result = 0;
     else
-      result		= sum / (size-1);
+      result		= (float) (sum / ((float) (size-1)));
     //System.out.println("Mean By Iteration SUM=" + sum + " size="+ size + " result="+result );		
     return result;
   }
@@ -749,13 +746,11 @@ public synchronized void delete(E el, int recompute)
 
   // ------------------------ utilities ---------------------------- //
   //
-  @Override
-public int size()
+  public int size()
   {
     return size - 1;		   // leave out the sentinel
   }
-  @Override
-public String toString()
+  public String toString()
   {
     /*
 		 for (int i=0; i!=size; i++)
@@ -776,8 +771,7 @@ public String toString()
    * Check to see if the set has any elements.
    * @return
    */
-  @Override
-public boolean isEmpty()
+  public boolean isEmpty()
   {
     return size <= 1;
   }
@@ -787,8 +781,7 @@ public boolean isEmpty()
    * @param i
    * @return
    */
-  @Override
-public E get(int i)
+  public E get(int i)
   {
     return (E) elements[i];
   }
@@ -797,8 +790,7 @@ public E get(int i)
    * 
    * @return
    */
-  @Override
-public E lastElement()
+  public E lastElement()
   {
     return (size == 0) ? null : (E) elements[size - 1];
   }
@@ -933,8 +925,7 @@ public E lastElement()
     return pruneSize;
   }
 
-  @Override
-public void decrement(E el) {}
+  public void decrement(E el) {}
 
   /**
    * Method Overriden by {@link cf.model.VisualPool VisualPool} to return true 

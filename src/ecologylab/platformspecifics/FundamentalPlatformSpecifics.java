@@ -57,10 +57,9 @@ public class FundamentalPlatformSpecifics
 						dead = true;
 						throw new RuntimeException("Can't initialize FundamentalPlatformSpecifics");
 					}
-					else{
-                        iFundamentalPlatformSpecifics = (IFundamentalPlatformSpecifics)ReflectionTools.getInstance(platformSpecificsClass);
-                    }
-                }
+					else
+						iFundamentalPlatformSpecifics = ReflectionTools.getInstance(platformSpecificsClass);
+				}
 			}
 
 		return iFundamentalPlatformSpecifics;

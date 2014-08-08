@@ -39,8 +39,7 @@ implements Iterator<O>
    * @return The next field in the Object.<br>
    * If the next object is a non-null collection, it iterates through the objects of that collection 
    */
-  @Override
-public O next() 
+  public O next() 
   {
     try
     {
@@ -99,14 +98,12 @@ public O next()
     return currentObject;
   }
 
-  @Override
-public void remove() 
+  public void remove() 
   {
     throw new UnsupportedOperationException();
   }
 
-  @Override
-public boolean hasNext()
+  public boolean hasNext()
   {    
     return iterator.hasNext() || (collectionIterator != null && collectionIterator.hasNext());
   }

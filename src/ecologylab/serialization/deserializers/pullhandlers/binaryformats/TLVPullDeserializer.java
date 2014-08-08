@@ -12,7 +12,6 @@ import ecologylab.serialization.ClassDescriptor;
 import ecologylab.serialization.DeserializationHookStrategy;
 import ecologylab.serialization.ElementState;
 import ecologylab.serialization.FieldDescriptor;
-import ecologylab.serialization.FieldType;
 import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.SimplTypesScope;
 import ecologylab.serialization.TranslationContext;
@@ -140,7 +139,7 @@ public class TLVPullDeserializer extends BinaryPullDeserializer
 
 			currentFieldDescriptor = rootClassDescriptor.getFieldDescriptorByTLVId(type());
 
-			FieldType fieldType = currentFieldDescriptor.getType();
+			int fieldType = currentFieldDescriptor.getType();
 
 			switch (fieldType)
 			{
@@ -195,7 +194,7 @@ public class TLVPullDeserializer extends BinaryPullDeserializer
 		deserializationPostHook(root, translationContext);
 		if (deserializationHookStrategy != null)
 			deserializationHookStrategy.deserializationPostHook(root, 
-					currentFieldDescriptor == null || currentFieldDescriptor.getType() == FieldType.IGNORED_ELEMENT
+					currentFieldDescriptor == null || currentFieldDescriptor.getType() == IGNORED_ELEMENT
 					? null : currentFieldDescriptor);
 		
 		return root;

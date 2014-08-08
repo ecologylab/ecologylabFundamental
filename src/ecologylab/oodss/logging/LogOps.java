@@ -1,5 +1,6 @@
 package ecologylab.oodss.logging;
 
+import ecologylab.serialization.ElementState;
 import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.SimplTypesScope;
 import ecologylab.serialization.annotations.simpl_inherit;

@@ -139,7 +139,7 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 	final int										maxBufferSizeToWrite;
 
 	/** used to prevent writes from getting interrupt()'ed */
-	private Object							threadSemaphore												= new Object();
+	private final Object				threadSemaphore												= new Object();
 
 	private volatile boolean		runMethodDone													= false;
 
@@ -166,51 +166,14 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 	 */
 	public Logging(String logFileName, int maxOpsBeforeWrite)
 	{
-		this(	logFileName,
-					false,
-					maxOpsBeforeWrite,
-					Pref.lookupInt(LOGGING_MODE_PARAM, NO_LOGGING),
-					Pref.lookupString(LOGGING_HOST_PARAM, "localhost"),
-					Pref.lookupInt(LOGGING_PORT_PARAM, ServicesHostsAndPorts.LOGGING_PORT),
-					null);
-	}
-
-	/**
-	 * Instantiates a Logging object based on the supplied parameters. This constructor does not rely
-	 * on {@link ecologylab.appframework.types.prefs.Pref Pref}s.
-	 * 
-	 * @param logFileName
-	 *          the name of the file to which the log will be written.
-	 * @param logFileNameAbsolute
-	 *          TODO
-	 * @param maxOpsBeforeWrite
-	 *          the maximum number of ops to record in memory before writing them to the set media.
-	 * @param logMode
-	 *          the media to which the logger will write, such as a memory-mapped file or a server.
-	 * @param loggingHost
-	 *          the host to which to log if using networked logging (may be null if local logging is
-	 *          desired).
-	 * @param loggingPort
-	 *          the port of the host to which to log if using networked logging (may be 0 if local
-	 *          logging is desired).
-	 * @deprecated Use {@link #Logging(String,boolean,int,int,String,int,ApplicationEnvironment)}
-	 *             instead
-	 */
-	@Deprecated
-	public Logging(	String logFileName,
-									boolean logFileNameAbsolute,
-									int maxOpsBeforeWrite,
-									int logMode,
-									String loggingHost,
-									int loggingPort)
-	{
-		this(	logFileName,
-					logFileNameAbsolute,
-					maxOpsBeforeWrite,
-					logMode,
-					loggingHost,
-					loggingPort,
-					null);
+		this(logFileName,
+				false,
+				maxOpsBeforeWrite,
+				Pref.lookupInt(LOGGING_MODE_PARAM, NO_LOGGING),
+				Pref.lookupString(LOGGING_HOST_PARAM, "localhost"),
+				Pref.lookupInt(LOGGING_PORT_PARAM, ServicesHostsAndPorts.LOGGING_PORT),
+				MemoryMappedFileLogWriter.DEFAULT_LOG_FILE_INCREMENT,
+				null);
 	}
 
 	/**
@@ -234,13 +197,14 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 	 * @param environment
 	 *          TODO
 	 */
-	public Logging(	String logFileName,
-									boolean logFileNameAbsolute,
-									int maxOpsBeforeWrite,
-									int logMode,
-									String loggingHost,
-									int loggingPort,
-									ApplicationEnvironment environment)
+	public Logging(String logFileName,
+			boolean logFileNameAbsolute,
+			int maxOpsBeforeWrite,
+			int logMode,
+			String loggingHost,
+			int loggingPort,
+			long memoryMappingSize,
+			ApplicationEnvironment environment)
 	{
 		this(maxOpsBeforeWrite);
 
@@ -341,7 +305,7 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 
 					if (logDir == null)
 					{
-						debug("Can't write to logDir=" + logDir);
+						debug("Can't write to logDir: " + logDir);
 					}
 					else
 					{
@@ -364,11 +328,11 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 						{
 							e.printStackTrace();
 						}
-						debug("Logging to file: " + logFile.getAbsolutePath());
+						debug("Logging to file: " + logFile.getAbsolutePath() + ".");
 
 						try
 						{
-							logWriters.add(new MemoryMappedFileLogWriter(logFile));
+							logWriters.add(new MemoryMappedFileLogWriter(logFile, memoryMappingSize));
 						}
 						catch (IOException e)
 						{
@@ -389,9 +353,9 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 				try
 				{
 					loggingClient = new NIOClient(loggingHost,
-																				loggingPort,
-																				DefaultServicesTranslations.get(),
-																				new Scope());
+							loggingPort,
+							DefaultServicesTranslations.get(),
+							new Scope());
 
 					// CONNECT TO SERVER
 					if (loggingClient.connect())
@@ -467,7 +431,7 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 			{
 				synchronized (incomingOpsBuffer)
 				{
-					SimplTypesScope.serialize(op, incomingOpsBuffer, StringFormat.XML);					
+					SimplTypesScope.serialize(op, incomingOpsBuffer, StringFormat.XML);
 				}
 
 				// final int bufferLength = incomingOpsBuffer.length();
@@ -537,7 +501,7 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 		{
 			finished = true;
 
-			debug("initiating shutdown sequence...");
+			debug("Initiating shutdown sequence for logger...");
 
 			int timesToWait = 100;
 
@@ -545,8 +509,8 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 			{
 				debug("waiting on run method to finish log writing (attempts remaining " + timesToWait
 						+ ")...");
-				thread.interrupt();
-				Generic.sleep(500);
+				// thread.interrupt();
+				Generic.sleep(1000);
 			}
 
 			if (timesToWait == 0)
@@ -776,38 +740,53 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 	protected class MemoryMappedFileLogWriter extends LogWriter
 	{
 		// BufferedWriter bufferedWriter;
-		MappedByteBuffer				buffy								= null;
+		MappedByteBuffer							buffy												= null;
 
-		FileChannel							channel							= null;
+		FileChannel										channel											= null;
 
-		private CharsetEncoder	encoder							= Charset.forName(NetworkingConstants.CHARACTER_ENCODING)
-																													.newEncoder();
+		private final CharsetEncoder	encoder											= Charset
+																																	.forName(
+																																			NetworkingConstants.CHARACTER_ENCODING)
+																																	.newEncoder();
 
-		private File						logFile;
+		private final File						logFile;
 
 		/**
 		 * The base size for the log file, and the amount it will be incremented whenever its buffer
 		 * overflows.
 		 */
-		static final int				LOG_FILE_INCREMENT	= 1024 * 512;
+		private final long						logFileIncrement;
 
-		private int							endOfMappedBytes		= LOG_FILE_INCREMENT;
+		static final long							DEFAULT_LOG_FILE_INCREMENT	= 1024 * 512;
 
-		MemoryMappedFileLogWriter(File logFile) throws IOException
+		private long									endOfMappedBytes;
+
+		/** Reference to RandomAccessFile to ensure it is closed at the end. */
+		private RandomAccessFile			randomAccessFile;
+
+		MemoryMappedFileLogWriter(File logFile, long logFileIncrement) throws IOException
 		{
 			this.logFile = logFile;
+			this.logFileIncrement = logFileIncrement;
+			this.endOfMappedBytes = logFileIncrement;
 
-			channel = new RandomAccessFile(logFile, "rw").getChannel();
+			randomAccessFile = new RandomAccessFile(logFile, "rw");
+			channel = randomAccessFile.getChannel();
 
 			// allocate LOG_FILE_INCREMENT for the file size; this will be
 			// incremented as necessary
-			buffy = channel.map(MapMode.READ_WRITE, 0, LOG_FILE_INCREMENT);
+			buffy = channel.map(MapMode.READ_WRITE, 0, logFileIncrement);
 
 			// if (bufferedWriter == null)
 			// throw new IOException("Can't log to File with null
 			// buffereredWriter.");
 			// this.bufferedWriter = bufferedWriter;
 			Logging.this.debugA("Logging to " + logFile + " " + buffy);
+		}
+
+		MemoryMappedFileLogWriter(File logFile) throws IOException
+		{
+			this(logFile, DEFAULT_LOG_FILE_INCREMENT);
 		}
 
 		/**
@@ -826,7 +805,6 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 			{
 				e.printStackTrace();
 			}
-
 		}
 
 		@Override
@@ -837,39 +815,41 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 				buffy.force();
 
 				// shrink the file to the appropriate size
-				int fileSize = 0;
+				long fileSize = 0;
 
-				fileSize = endOfMappedBytes - LOG_FILE_INCREMENT + buffy.position();
+				fileSize = endOfMappedBytes - logFileIncrement + buffy.position();
 
 				buffy = null;
 
 				channel.close();
+				randomAccessFile.close();
 
 				channel = null;
+				randomAccessFile = null;
 
-				// do garbage collection to ensure that the file is no longer
-				// mapped
+				// do garbage collection to ensure that the file is no longer mapped
 				System.runFinalization();
 				System.gc();
 
-				debug("final log file size is " + fileSize + " bytes.");
-
-				debug("truncating log.");
+				debug("Final log file size is " + fileSize + " bytes.");
 
 				boolean truncated = false;
 				int numTries = 0;
 
 				while (!truncated)
 				{
+					RandomAccessFile tempForTruncate = new RandomAccessFile(logFile, "rw");
+
 					try
 					{
-						new RandomAccessFile(logFile, "rw").getChannel().truncate(fileSize);
+						tempForTruncate.getChannel()
+								.truncate(fileSize);
 
 						truncated = true;
 					}
 					catch (IOException e)
 					{
-						debug("truncation failed because the file is still mapped, attempting to garbage collect...AGAIN.");
+						debug("Truncation failed because the file is still mapped, attempting to garbage collect...AGAIN.");
 
 						// do garbage collection to ensure that the file is no
 						// longer mapped
@@ -877,6 +857,10 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 						System.gc();
 
 						numTries++;
+					}
+					finally
+					{
+						tempForTruncate.close();
 					}
 
 					if (numTries == 100)
@@ -895,7 +879,6 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 
 		private void putInBuffer(ByteBuffer incoming)
 		{
-
 			try
 			{
 				int remaining = buffy.remaining();
@@ -903,10 +886,11 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 				if (remaining < incoming.remaining())
 				{ // we want to write more than will fit; so we just write
 					// what we can first...
-					debug("not enough space in the buffer: " + remaining + "/"
-							+ incoming.remaining() + "; old range: " + (endOfMappedBytes - LOG_FILE_INCREMENT) + "-"
-							+ endOfMappedBytes+"; new range: " + (endOfMappedBytes) + "-"
-							+ (endOfMappedBytes + LOG_FILE_INCREMENT));
+					debug("Insufficient buffer space: " + remaining + "/"
+							+ incoming.remaining() + "; old range: " + (endOfMappedBytes - logFileIncrement)
+							+ "-"
+							+ endOfMappedBytes + "; new range: " + (endOfMappedBytes) + "-"
+							+ (endOfMappedBytes + logFileIncrement) + ".");
 
 					byte[] temp = new byte[remaining];
 					incoming.get(temp, 0, remaining);
@@ -917,8 +901,8 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 					buffy.force();
 
 					// then shift buffy to map to the next segment of the file
-					buffy = channel.map(MapMode.READ_WRITE, endOfMappedBytes, LOG_FILE_INCREMENT);
-					endOfMappedBytes += LOG_FILE_INCREMENT;
+					buffy = channel.map(MapMode.READ_WRITE, endOfMappedBytes, logFileIncrement);
+					endOfMappedBytes += logFileIncrement;
 
 					// recursively call on the remainder of incoming
 					putInBuffer(incoming);
@@ -926,7 +910,7 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 				else
 				{
 					if (show(5))
-						debug("writing to buffer: " + remaining + "bytes remaining before resize");
+						debug("Writing to buffer: " + remaining + " bytes remaining before resize.");
 
 					buffy.put(incoming);
 				}
@@ -1014,7 +998,7 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 	protected class NetworkLogWriter extends LogWriter
 	{
 		NIOClient			loggingClient;
-		
+
 		/** Object for sending a batch of ops to the LoggingServer. */
 		final LogOps	logOps;
 
@@ -1100,7 +1084,8 @@ public class Logging<T extends MixedInitiativeOp> extends ElementState implement
 				firstHalf.setBuffer(new StringBuilder(bufferToLog.subSequence(0, half)));
 
 				LogOps secondHalf = new LogOps();
-				secondHalf.setBuffer(new StringBuilder(bufferToLog.subSequence(half, bufferToLog.length())));
+				secondHalf
+						.setBuffer(new StringBuilder(bufferToLog.subSequence(half, bufferToLog.length())));
 
 				this.writeLogMessage(firstHalf);
 				this.writeLogMessage(secondHalf);

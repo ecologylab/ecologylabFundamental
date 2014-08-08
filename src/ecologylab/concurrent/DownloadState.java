@@ -2,8 +2,8 @@ package ecologylab.concurrent;
 
 import java.io.IOException;
 
-import ecologylab.generic.Continuation;
 import ecologylab.generic.Debug;
+import ecologylab.generic.Continuation;
 
 /**
  * Closure that keeps state about a download, as it progresses.
@@ -59,10 +59,6 @@ extends Debug
 			downloadable.performDownload();
 			if(site != null)
 				site.countNormalDownload();
-			//ajit-added below condition for documents in local repository
-			//download monitor can't do it after return from here
-			if(site != null && downloadable.getDownloadLocation().isFile())
-				site.endDownload();
 		}
 	}
 	protected synchronized void callContinuation()
@@ -77,7 +73,6 @@ extends Debug
 		}
 	}
 
-	@Override
 	public String toString()
 	{
 		String downloadableString = downloadable == null ? "recycled" : downloadable.toString();

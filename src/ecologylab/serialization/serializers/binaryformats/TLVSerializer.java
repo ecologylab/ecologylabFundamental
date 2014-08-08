@@ -159,6 +159,9 @@ public class TLVSerializer extends BinarySerializer implements FieldTypes
 	{
 		for (FieldDescriptor childFd : fieldDescriptors)
 		{
+			if (childFd.isUsageExcluded(FieldUsage.SERIALIZATION_IN_STREAM))
+				continue;
+
 			ByteArrayOutputStream byteArrayOutputStreamCollection = new ByteArrayOutputStream();
 			DataOutputStream collectionBuffer = new DataOutputStream(byteArrayOutputStreamCollection);
 

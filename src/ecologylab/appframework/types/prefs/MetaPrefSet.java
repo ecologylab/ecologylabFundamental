@@ -62,7 +62,6 @@ public class MetaPrefSet extends ElementState
 	 * 
 	 * @param child
 	 */
-	@Override
 	protected void createChildHook(ElementState child)
 	{
 		MetaPref metaPref = (MetaPref) child;

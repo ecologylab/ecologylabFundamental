@@ -42,7 +42,6 @@ public class NIOTools extends Debug
 
 		Boolean b = (Boolean) AccessController.doPrivileged(new PrivilegedAction()
 		{
-			@Override
 			public Object run()
 			{
 				Boolean success = Boolean.FALSE;

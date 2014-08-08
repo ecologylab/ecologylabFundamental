@@ -31,7 +31,6 @@ public class Bounds
 	{
 		// TODO Auto-generated constructor stub
 	}
-	@Override
 	public boolean equals(Object other)
    {
       Bounds fb = (Bounds)other;
@@ -39,8 +38,7 @@ public class Bounds
       return ((fb != null) && (fb.xMin == this.xMin) && (fb.xMax == this.xMax)
 	      && (fb.yMin == this.yMin) && (fb.yMax == this.yMax));
    }
-    @Override
-	public String toString()
+    public String toString()
    {
       return "Bounds[" + xMin+","+yMin+"; "+xMax+","+yMax +"]";
    }

@@ -12,7 +12,6 @@ import java.nio.channels.SelectionKey;
 import java.nio.charset.CharacterCodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
-import java.util.Arrays;
 import java.util.Iterator;
 
 import ecologylab.collections.Scope;
@@ -168,7 +167,6 @@ public class DoubleThreadedNIOServer<S extends Scope> extends AbstractNIOServer<
 				applicationObjectScope, DEFAULT_IDLE_TIMEOUT, DEFAULT_MAX_MESSAGE_LENGTH_CHARS);
 	}
 
-	@Override
 	public void processRead(Object sessionToken, NIOServerIOThread base, SelectionKey sk,
 			ByteBuffer bs, int bytesRead) throws BadClientException
 	{
@@ -228,7 +226,6 @@ public class DoubleThreadedNIOServer<S extends Scope> extends AbstractNIOServer<
 				translationScopeIn, registryIn);
 	}
 
-	@Override
 	public void run()
 	{
 		Iterator<TCPClientSessionManager> contextIter;
@@ -318,7 +315,6 @@ public class DoubleThreadedNIOServer<S extends Scope> extends AbstractNIOServer<
 	/**
 	 * @see ecologylab.oodss.distributed.impl.Shutdownable#shutdown()
 	 */
-	@Override
 	public void shutdown()
 	{
 		// TODO Auto-generated method stub
@@ -329,7 +325,6 @@ public class DoubleThreadedNIOServer<S extends Scope> extends AbstractNIOServer<
 	 * @see ecologylab.oodss.distributed.server.NIOServerProcessor#invalidate(java.lang.Object,
 	 *      ecologylab.oodss.distributed.impl.NIOServerIOThread, java.nio.channels.SocketChannel)
 	 */
-	@Override
 	public boolean invalidate(String sessionId, boolean forcePermanent)
 	{
 		BaseSessionManager cm = clientSessionManagerMap.get(sessionId);
@@ -452,14 +447,5 @@ public class DoubleThreadedNIOServer<S extends Scope> extends AbstractNIOServer<
 	public StringBuilderPool getSharedStringBuilderPool() 
 	{
 		return stringBuilderPool;
-	}
-
-	@Override
-	public void increaseSharedBufferPoolSize(int newCapacity) {
-		char[] tempCharBufferArray = Arrays.copyOf(charBufferPool.acquire().array(), charBufferPool.acquire().array().length);
-		byte[] tempBtyeBufferArray = Arrays.copyOf(byteBufferPool.acquire().array(), byteBufferPool.acquire().array().length);
-		instantiateBufferPools(newCapacity);
-		System.arraycopy(tempCharBufferArray, 0, charBufferPool.acquire().array(), 0, tempCharBufferArray.length);
-		System.arraycopy(tempBtyeBufferArray, 0, byteBufferPool.acquire().array(), 0, tempBtyeBufferArray.length);
 	}
 }

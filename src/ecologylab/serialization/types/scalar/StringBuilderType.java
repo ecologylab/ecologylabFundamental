@@ -92,7 +92,6 @@ public class StringBuilderType extends ReferenceType<StringBuilder> implements
 	 */
 	// FIXME -- Add String delimitersAfter to TextChunk -- interleaved with TextTokens, and
 	// get rid of this!!!
-	@Override
 	public boolean allowDelimitersInTokens()
 	{
 		return true;

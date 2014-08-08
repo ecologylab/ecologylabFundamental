@@ -35,7 +35,6 @@ public abstract class Manager extends Debug implements Shutdownable
 	/**
 	 * @see ecologylab.oodss.distributed.impl.Shutdownable#addDependentShutdownable(ecologylab.oodss.distributed.impl.Shutdownable)
 	 */
-	@Override
 	public void addDependentShutdownable(Shutdownable s)
 	{
 		this.shutdownDependents.add(s);
@@ -44,7 +43,6 @@ public abstract class Manager extends Debug implements Shutdownable
 	/**
 	 * @see ecologylab.oodss.distributed.impl.Shutdownable#addShutdownListener(java.awt.event.ActionListener)
 	 */
-	@Override
 	public void addShutdownListener(ActionListener l)
 	{
 		this.shutdownListeners.add(l);
@@ -53,7 +51,6 @@ public abstract class Manager extends Debug implements Shutdownable
 	/**
 	 * @see ecologylab.oodss.distributed.impl.Shutdownable#shutdown()
 	 */
-	@Override
 	public void shutdown()
 	{
 		if (!shutdownCalled)

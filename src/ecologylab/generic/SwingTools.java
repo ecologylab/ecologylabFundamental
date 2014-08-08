@@ -85,8 +85,7 @@ class ColorChooserDialog extends JDialog {
             okButton.addActionListener(okListener);
         }
         okButton.addActionListener(new ActionListener() {
-            @Override
-			public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {
                 hide();
             }
         });
@@ -115,8 +114,7 @@ class ColorChooserDialog extends JDialog {
             cancelButton.addActionListener(cancelListener);
         }
         cancelButton.addActionListener(new ActionListener() {
-            @Override
-			public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {
                 hide();
             }
         });
@@ -124,8 +122,7 @@ class ColorChooserDialog extends JDialog {
 
         JButton resetButton = new JButton(resetString);
         resetButton.addActionListener(new ActionListener() {
-           @Override
-		public void actionPerformed(ActionEvent e) {
+           public void actionPerformed(ActionEvent e) {
                reset();
            }
         });
@@ -150,8 +147,7 @@ class ColorChooserDialog extends JDialog {
         setLocationRelativeTo(c);
     }
 
-    @Override
-	public void show() {
+    public void show() {
         initialColor = chooserPane.getColor();
         super.show();
     }
@@ -162,8 +158,7 @@ class ColorChooserDialog extends JDialog {
 
     static class Closer extends WindowAdapter 
     {
-        @Override
-		public void windowClosing(WindowEvent e) {
+        public void windowClosing(WindowEvent e) {
             Window w = e.getWindow();
             w.hide();
         }
@@ -171,8 +166,7 @@ class ColorChooserDialog extends JDialog {
 
     static class DisposeOnClose extends ComponentAdapter 
     {
-        @Override
-		public void componentHidden(ComponentEvent e) {
+        public void componentHidden(ComponentEvent e) {
             Window w = (Window)e.getComponent();
             w.dispose();
         }
@@ -188,8 +182,7 @@ class ColorTracker implements ActionListener {
         chooser = c;
     }
 
-    @Override
-	public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {
         color = chooser.getColor();
     }
 

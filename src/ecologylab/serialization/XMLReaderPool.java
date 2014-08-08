@@ -3,6 +3,7 @@
  */
 package ecologylab.serialization;
 
+import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
 import ecologylab.generic.ResourcePool;

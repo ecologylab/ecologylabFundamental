@@ -4,6 +4,7 @@
 package ecologylab.appframework.types.prefs;
 
 import ecologylab.generic.Debug;
+import ecologylab.platformspecifics.FundamentalPlatformSpecifics;
 import ecologylab.serialization.SimplTypesScope;
 
 /**

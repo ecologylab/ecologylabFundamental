@@ -53,7 +53,6 @@ public class CharType extends ScalarType<Character> implements CrossLanguageType
 	 * @param value
 	 *          String representation of the instance.
 	 */
-	@Override
 	public Character getInstance(String value, String[] formatStrings,
 			ScalarUnmarshallingContext scalarUnmarshallingContext)
 	{
@@ -66,7 +65,6 @@ public class CharType extends ScalarType<Character> implements CrossLanguageType
 	 * @see ecologylab.serialization.types.ScalarType#setField(java.lang.Object,
 	 *      java.lang.reflect.Field, java.lang.String)
 	 */
-	@Override
 	public boolean setField(Object object, Field field, String value)
 	{
 		boolean result = false;
@@ -106,7 +104,6 @@ public class CharType extends ScalarType<Character> implements CrossLanguageType
 	 * 
 	 * In this case, "false".
 	 */
-	@Override
 	public String defaultValueString()
 	{
 		return DEFAULT_VALUE_STRING;

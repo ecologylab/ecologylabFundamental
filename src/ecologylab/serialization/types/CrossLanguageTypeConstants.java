@@ -66,8 +66,6 @@ public interface CrossLanguageTypeConstants
 	public static final String	OBJC_HASHMAPARRAYLIST		= "NSDictionaryList";
 
 	public static final String	OBJC_SCOPE							= "NSScope";
-	
-	public static final String	OBJC_PATTERN					= "NSRegularExpression";
 
 	/*
 	 * C Sharp Scalar Types
@@ -116,11 +114,7 @@ public interface CrossLanguageTypeConstants
 
 	public static final String	DOTNET_SCOPE						= "Scope"; // ecologylab.collections
 	
-	public static final String 	DOTNET_UUID							= "Guid";
-	
-	public static final String	DOTNET_PATTERN				= "System.Text.RegularExpressions.Regex";
-	
-	public static final String 	DOTNET_BINARY_DATA			= "MemoryStream";
+	public static final String DOTNET_UUID							= "Guid";
 	
 	/*
 	 * Java Scalar Types
@@ -175,6 +169,9 @@ public interface CrossLanguageTypeConstants
 	
 	public static final String	JAVA_PATTERN					= "Pattern";
 	
-	public static final String  JAVA_BINARY_DATA		= "ByteBuffer";
+	public static final String	DOTNET_PATTERN				= "System.Text.RegularExpressions.Regex";
+	
+	public static final String	OBJC_PATTERN					= "NSRegularExpression";
+	
 
 }

@@ -21,7 +21,6 @@ public class ErrorResponse extends ExplanationResponse
 		this.explanation	= response;
 	}
 
-	@Override
 	public boolean isOK()
 	{
 		return false;

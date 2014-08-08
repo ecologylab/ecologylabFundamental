@@ -46,8 +46,7 @@ public class ThreadDebugger extends Debug
 
 		threadToggler = new ActionListener()
   		{
-  			@Override
-			public void actionPerformed(ActionEvent e)
+  			public void actionPerformed(ActionEvent e)
   			{
   				String action = e.getActionCommand();
   				// ignore "start " / "pause " - we have the thread name as the key into the hashtable
@@ -210,35 +209,28 @@ public class ThreadDebugger extends Debug
 	static class WindowObservable extends ObservableDebug
 	   implements WindowListener
 	{
-	   @Override
-	public void windowClosing(WindowEvent e)
+	   public void windowClosing(WindowEvent e)
 	   {
 	      println("ThreadDebugger.windowClosing()");
 	      setChanged();
 	      notifyObservers("thread_debugger_close");
 	   }
-	   @Override
-	public void windowOpened(WindowEvent e)
+	   public void windowOpened(WindowEvent e)
 	   {
 	   }
-	   @Override
-	public void windowClosed(WindowEvent e)
+	   public void windowClosed(WindowEvent e)
 	   {
 	   }
-	   @Override
-	public void windowIconified(WindowEvent e)
+	   public void windowIconified(WindowEvent e)
 	   {
 	   }
-	   @Override
-	public void windowDeiconified(WindowEvent e)
+	   public void windowDeiconified(WindowEvent e)
 	   {
 	   }
-	   @Override
-	public void windowActivated(WindowEvent e)
+	   public void windowActivated(WindowEvent e)
 	   {
 	   }
-	   @Override
-	public void windowDeactivated(WindowEvent e)
+	   public void windowDeactivated(WindowEvent e)
 	   {
 	   }
 	}

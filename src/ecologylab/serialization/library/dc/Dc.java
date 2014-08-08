@@ -177,7 +177,6 @@ public class Dc extends ElementState
 	}
 	
 	
-	@Override
 	public String toString()
 	{
 		return "Dc {\n" + 

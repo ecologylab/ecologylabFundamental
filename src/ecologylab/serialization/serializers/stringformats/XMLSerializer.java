@@ -133,6 +133,9 @@ public class XMLSerializer extends StringSerializer implements FieldTypes
 
 		for (FieldDescriptor childFd : attributeFieldDescriptors)
 		{
+			if (childFd.isUsageExcluded(FieldUsage.SERIALIZATION_IN_STREAM))
+				continue;
+			
 			try
 			{
 				writeValueAsAtrribute(object, childFd, appendable, translationContext);
@@ -174,6 +177,9 @@ public class XMLSerializer extends StringSerializer implements FieldTypes
 	{
 		for (FieldDescriptor childFd : elementFieldDescriptors)
 		{
+			if (childFd.isUsageExcluded(FieldUsage.SERIALIZATION_IN_STREAM))
+				continue;
+			
 			switch (childFd.getType())
 			{
 			case SCALAR:
@@ -326,9 +332,12 @@ public class XMLSerializer extends StringSerializer implements FieldTypes
 	private void writeScalarCollectionLeaf(Object object, FieldDescriptor fd, Appendable appendable,
 			TranslationContext translationContext) throws SIMPLTranslationException, IOException
 	{
-		appendable.append('<').append(fd.elementStart()).append('>');
-		fd.appendCollectionScalarValue(appendable, object, translationContext, Format.XML);
-		appendable.append('<').append('/').append(fd.elementStart()).append('>');
+		if (!fd.isDefaultValue(object.toString()))
+		{
+			appendable.append('<').append(fd.elementStart()).append('>');
+			fd.appendCollectionScalarValue(appendable, object, translationContext, Format.XML);
+			appendable.append('<').append('/').append(fd.elementStart()).append('>');
+		}
 	}
 
 	/**

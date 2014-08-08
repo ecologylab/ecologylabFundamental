@@ -6,8 +6,8 @@ package ecologylab.appframework;
 import java.io.IOException;
 
 import ecologylab.concurrent.Downloadable;
-import ecologylab.generic.Continuation;
 import ecologylab.generic.Debug;
+import ecologylab.generic.Continuation;
 import ecologylab.io.DownloadProcessor;
 
 /**
@@ -29,7 +29,6 @@ implements DownloadProcessor<T>
 	/*
 	 * A no-op to conform to the interface spec. We have no threads to stop :-)
 	 */
-	@Override
 	public void stop()
 	{
 	}
@@ -43,7 +42,6 @@ implements DownloadProcessor<T>
 	 *          Ignored, since we are not asynchronous, there are no callbacks.
 	 */
 	// TODO improve error handling here
-	@Override
 	public void download(T downloadable, Continuation<T> continuation)
 	{
 		try

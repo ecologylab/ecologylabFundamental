@@ -5,6 +5,7 @@ import java.net.URLDecoder;
 import java.nio.channels.SelectionKey;
 
 import ecologylab.collections.Scope;
+import ecologylab.net.ParsedURL;
 import ecologylab.oodss.distributed.impl.NIOServerIOThread;
 import ecologylab.oodss.distributed.server.NIOServerProcessor;
 import ecologylab.oodss.messages.HttpRequest;
@@ -106,31 +107,10 @@ public class HTTPPostClientSessionManager extends HTTPClientSessionManager
 	 * @return The request message contained in the message.
 	 * @throws SIMPLTranslationException
 	 */
-	@Override
 	protected RequestMessage translateOODSSRequest(CharSequence messageCharSequence,
 			String startLineString) throws SIMPLTranslationException
 	{
 		return (RequestMessage) translationScope.deserialize(messageCharSequence, StringFormat.JSON);
-	}
-	
-	/**
-	 * Translates an incoming character sequence identified to be a POST request.
-	 * 
-	 * This implementation expects the POST request to contain a nested OODSS request.
-	 * 
-	 * @param messageCharSequence
-	 * @param startLineString
-	 *          TODO
-	 * @return
-	 * @throws SIMPLTranslationException
-	 */
-	@Override
-	protected RequestMessage translatePostRequest(CharSequence messageCharSequence,
-			String startLineString) throws SIMPLTranslationException
-	{
-		String messageString = messageCharSequence.toString();
-
-		return this.translateOODSSRequest(messageString, startLineString);
 	}
 
 }

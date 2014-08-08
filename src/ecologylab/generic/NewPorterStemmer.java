@@ -127,8 +127,7 @@ extends Debug
     * or a reference to the internal buffer can be retrieved by getResultBuffer
     * and getResultLength (which is generally more efficient.)
     */
-   @Override
-public String toString() 
+   public String toString() 
    { 
       // force ArrayCopy here, otherwise StringBuffer gets shared and SLOW
       return b.substring(0, i_end); 

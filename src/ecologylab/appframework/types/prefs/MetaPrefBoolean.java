@@ -38,7 +38,6 @@ public class MetaPrefBoolean extends MetaPref<Boolean>
      * 
      * @return Default value of MetaPref
      */
-	@Override
 	public Boolean getDefaultValue()
 	{
 		return defaultValue;

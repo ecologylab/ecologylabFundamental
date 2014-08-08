@@ -93,9 +93,6 @@ public class GenericTypeVar extends Debug
 	@simpl_composite
 	GenericTypeVar						referredGenericTypeVar					= null;
 	
-	/**
-	 * A list of GenericTypeVars that can be referred to recursively inside this GenericTypeVar.
-	 */
 	ArrayList<GenericTypeVar> scope;
 
 	public GenericTypeVar()
@@ -133,6 +130,32 @@ public class GenericTypeVar extends Debug
 		this.constraintGenericTypeVar = constraintGenericTypeVar;
 	}
 
+	// this method has been moved to the platform specific package in the corresponding project
+	
+//	public static ArrayList<GenericTypeVar> getGenericTypeVars(Type parameterizedType)
+//	{
+//		return getGenericTypeVars((ParameterizedTypeImpl) parameterizedType);
+//	}
+
+	// this method has been moved to the platform specific package in the corresponding project
+	
+//	public static ArrayList<GenericTypeVar> getGenericTypeVars(ParameterizedTypeImpl parameterizedType)
+//	{
+//		Type[] types = parameterizedType.getActualTypeArguments();
+//
+//		if (types == null | types.length <= 0)
+//			return null;
+//
+//		ArrayList<GenericTypeVar> returnValue = new ArrayList<GenericTypeVar>();
+//		for (Type t : types)
+//		{
+//			GenericTypeVar g = getGenericTypeVar(t);
+//			returnValue.add(g);
+//		}
+//
+//		return returnValue;
+//	}
+	
 	public ArrayList<GenericTypeVar> getConstraintGenericTypeVarArgs()
 	{
 		return constraintGenericTypeVarArgs;
@@ -355,12 +378,9 @@ public class GenericTypeVar extends Debug
 	
 	public boolean isDef()
 	{
-		return name != null && name.length() > 0 && (constraintClassDescriptor != null || constraintGenericTypeVar != null) && referredGenericTypeVar == null;
+		return name != null && name.length() > 0 && (constraintClassDescriptor != null || constraintGenericTypeVar != null);
 	}
 	
-	/**
-	 * Return a string representation of this GenericTypeVar object. The syntax is like in Java.
-	 */
 	@Override
 	public String toString()
 	{
@@ -409,7 +429,7 @@ public class GenericTypeVar extends Debug
 				}
 			}
 		}
-		
+//		
 //		if (name != null && name.length() > 0)
 //			sb.append(name);
 //
@@ -446,9 +466,5 @@ public class GenericTypeVar extends Debug
 
 		return sb.toString();
 	}
-	
-	// these methods has been moved to the platform specific package in the corresponding project:
-//	public static ArrayList<GenericTypeVar> getGenericTypeVars(Type parameterizedType);
-//	public static ArrayList<GenericTypeVar> getGenericTypeVars(ParameterizedTypeImpl parameterizedType);
 	
 }

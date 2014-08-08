@@ -22,8 +22,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
 
-import javax.xml.bind.DatatypeConverter;
-
+import sun.misc.BASE64Encoder;
 import ecologylab.collections.Scope;
 import ecologylab.generic.ObjectOrHashMap;
 import ecologylab.oodss.distributed.common.ServerConstants;
@@ -356,7 +355,7 @@ public class NIOServerIOThread extends NIONetworking implements ServerConstants
 
 		for (int i = 0; i < hostAddresses.length; i++)
 		{
-			debug("setting up accept on " + hostAddresses[i] + ": " + portNumber);
+			debug("setting up accept on " + hostAddresses[i]);
 
 			// acquire the static ServerSocketChannel object
 			ServerSocketChannel channel = ServerSocketChannel.open();
@@ -429,7 +428,7 @@ public class NIOServerIOThread extends NIONetworking implements ServerConstants
 		dispensedTokens++;
 
 		// convert to normal characters and return as a String
-		return DatatypeConverter.printBase64Binary(digester.digest());
+		return new String((new BASE64Encoder()).encode(digester.digest()));
 	}
 
 	@Override

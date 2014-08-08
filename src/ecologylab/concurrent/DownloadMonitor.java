@@ -6,6 +6,7 @@ import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Vector;
 
 import ecologylab.appframework.Memory;
@@ -110,7 +111,6 @@ public class DownloadMonitor<T extends Downloadable> extends Monitor implements
 	 * is called, and then the DispatchTarget is called. In the error case, handleIOError() or
 	 * handleTimeout() is called.
 	 */
-	@Override
 	public void download(T thatDownloadable, Continuation<T> continuation)
 	{
 		synchronized (toDownload)
@@ -204,7 +204,6 @@ public class DownloadMonitor<T extends Downloadable> extends Monitor implements
 	{
 		return new Thread(THREAD_GROUP, toString() + "-download " + i + " " + s)
 		{
-			@Override
 			public void run()
 			{
 				performDownloads();
@@ -348,19 +347,6 @@ public class DownloadMonitor<T extends Downloadable> extends Monitor implements
 						recycleClosure 	= false;
 						thatClosure 		= toDownload.get(closureNum);
 						downloadable 		= thatClosure.downloadable;
-						
-						DownloadableLogRecord logRecord = downloadable.getLogRecord();
-						if (logRecord != null)
-							logRecord.addQueuePeekInterval(
-									(System.currentTimeMillis() - logRecord.getEnQueueTimestamp()) / 1000);
-						
-						if (downloadable.isCached())
-						{
-							if (logRecord != null) logRecord.setHtmlCacheHit(true);
-						  debug("downloadable cached, skip site checking and download intervals");
-						  break;
-						}
-						
 						BasicSite site 	= downloadable.getDownloadSite();						
 						if(site != null && site.shouldIgnore())
 						{
@@ -540,13 +526,11 @@ public class DownloadMonitor<T extends Downloadable> extends Monitor implements
 		debug("exiting -- " + Thread.currentThread());
 	}
 
-	@Override
 	public String toString()
 	{
 		return super.toString() + "[" + name + "]";
 	}
 
-	@Override
 	public void stop()
 	{
 		stop(false);
@@ -767,7 +751,6 @@ public class DownloadMonitor<T extends Downloadable> extends Monitor implements
 	 * this will cause the main loop (performDownloads()) stops after isIdle() == true. (after sleeping for some time)
 	 * 
 	 */
-	@Override
 	public void requestStop()
 	{
 		stopRequested = true;

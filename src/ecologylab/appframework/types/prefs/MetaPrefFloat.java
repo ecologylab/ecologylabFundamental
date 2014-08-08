@@ -44,7 +44,6 @@ public class MetaPrefFloat extends MetaPref<Float>
      * 
      * @return Default value of MetaPref
      */
-	@Override
 	public Float getDefaultValue()
 	{
 		return defaultValue;

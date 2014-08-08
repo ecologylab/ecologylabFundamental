@@ -24,7 +24,6 @@ public class Tr extends HtmlElement
 	}
 	
 	boolean printOnceLock = false;
-	@Override
 	public String toString()
 	{
 		if(printOnceLock)

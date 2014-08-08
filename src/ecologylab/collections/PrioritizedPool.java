@@ -228,7 +228,6 @@ public class PrioritizedPool<E extends SetElement>
 		return weightSets.length;
 	}
 
-	@Override
 	public boolean isEmpty()
 	{
 		for(WeightSet<E>  weightSet : weightSets)
@@ -238,7 +237,6 @@ public class PrioritizedPool<E extends SetElement>
 		return true; //Reaches here only if all weightsets are empty
 	}
 
-	@Override
 	public Iterator<E> iterator()
 	{
 		// TODO Auto-generated method stub
@@ -257,7 +255,6 @@ public class PrioritizedPool<E extends SetElement>
 				weightSetIterators[i++] = weightSet.iterator();
 		}
 
-		@Override
 		public boolean hasNext()
 		{
 			// no more pools to iterate through
@@ -271,7 +268,6 @@ public class PrioritizedPool<E extends SetElement>
 			return weightSetIterators[idx].hasNext();
 		}
 
-		@Override
 		public E next()
 		{
 			if (idx >= weightSetIterators.length)
@@ -287,7 +283,6 @@ public class PrioritizedPool<E extends SetElement>
 				return next;
 		}
 
-		@Override
 		public void remove()
 		{
 			// does nothing

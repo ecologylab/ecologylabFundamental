@@ -38,7 +38,6 @@ public abstract class RequestMessage<S extends Scope> extends ServiceMessage<S> 
 	 * 
 	 * @return false.
 	 */
-	@Override
 	public boolean isDisposable()
 	{
 		return false;

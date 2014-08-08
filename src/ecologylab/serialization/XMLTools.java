@@ -8,15 +8,14 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.StringBufferInputStream;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.lang.reflect.GenericDeclaration;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.lang.reflect.TypeVariable;
 import java.lang.reflect.WildcardType;
 import java.net.URL;
-import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -120,7 +119,7 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 
 		putEntityInTable("#8217", '\'');
 		// &#8220; is really � = &#147;
-	  putEntityInTable("#8220", '�');//If this line will not compile for you, set the encoding to UTF8
+		putEntityInTable("#8220", '�');
 		// &#8221; is really � = &#148;
 		putEntityInTable("#8221", '�');
 		// &#8212; is really � = &#151; -- em dash
@@ -625,7 +624,6 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 	 * 
 	 * @return the abbreviated name of this class - without the package qualifier
 	 */
-	@Override
 	public String getClassSimpleName()
 	{
 		return getClassSimpleName(this);
@@ -649,13 +647,11 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 	 * 
 	 * @return the package name of the class
 	 */
-	@Override
 	public String getPackageName()
 	{
 		return getPackageName(this);
 	}
 
-	@Override
 	public String toString()
 	{
 		return getClassSimpleName(this);
@@ -694,20 +690,17 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 		builder.setErrorHandler(new org.xml.sax.ErrorHandler()
 		{
 			// ignore fatal errors (an exception is guaranteed)
-			@Override
 			public void fatalError(SAXParseException exception) throws SAXException
 			{
 			}
 
 			// treat validation errors as fatal
-			@Override
 			public void error(SAXParseException e) throws SAXParseException
 			{
 				throw e;
 			}
 
 			// dump warnings too
-			@Override
 			public void warning(SAXParseException err) throws SAXParseException
 			{
 				println(builder + "** Warning" + ", line " + err.getLineNumber() + ", urn "
@@ -975,25 +968,10 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 		{
 			nestedObject = thatClass.newInstance();
 		}
-		catch (IllegalAccessException e)
-		{
-			try
-			{
-				Constructor c = thatClass.getConstructor(null);
-				c.setAccessible(true);
-				return (T)c.newInstance(null);
-			}
-			catch(Exception ex)
-			{
-				throw new SIMPLTranslationException("Instantiation ERROR for " + thatClass
-						+ ". Is there a public constructor with no arguments?", ex);
-			}			
-		}
-		catch(Exception e)
+		catch (Exception e)
 		{
 			throw new SIMPLTranslationException("Instantiation ERROR for " + thatClass
 					+ ". Is there a public constructor with no arguments?", e);
-
 		}
 		return nestedObject;
 	}
@@ -1393,7 +1371,7 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 						if (c >= 255)
 						{
 							// println("escapeXML() ERROR: " + ((int) c));
-							int cInt = c;
+							int cInt = (int) c;
 							buffy.append('&').append('#').append(cInt).append(';');
 						}
 						else if (c >= 0x20)
@@ -1432,7 +1410,7 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 						if (c >= 255)
 						{
 							// println("escapeXML() ERROR: " + ((int) c));
-							int cInt = c;
+							int cInt = (int) c;
 							appendable.append('&').append('#').append(String.valueOf(cInt)).append(';');
 						}
 						else if (c >= 0x20)
@@ -1455,7 +1433,6 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 	 * 
 	 * @deprecated
 	 */
-	@Deprecated
 	public static Document getDocument(String contents)
 	{
 		return XMLTools.buildDOM(new StringBufferInputStream(contents));
@@ -1564,18 +1541,18 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 		return result;
 	}
 
-	public static boolean isScalar(Field field)
+	static boolean isScalar(Field field)
 	{
 		return field.isAnnotationPresent(simpl_scalar.class);
 	}
 	
-	public static boolean isCompositeAsScalarvalue(Field field)
+	static boolean isCompositeAsScalarvalue(Field field)
 	{
 		return field.isAnnotationPresent(simpl_composite_as_scalar.class);
 	}
 	
 
-	public static Hint simplHint(Field field)
+	static Hint simplHint(Field field)
 	{
 		simpl_hints hintsAnnotation = field.getAnnotation(simpl_hints.class);
 		return (hintsAnnotation == null) ? Hint.XML_ATTRIBUTE : hintsAnnotation.value()[0];
@@ -1633,7 +1610,7 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 
 	public static boolean isEnum(Field thatField)
 	{
-		return isEnum(thatField.getType()) || thatField.getType().isEnum();
+		return isEnum(thatField.getType());
 	}
 
 	public static boolean isEnum(Class thatClass)
@@ -1933,10 +1910,6 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 		else if (Field.class == fieldType)
 		{
 			result = CrossLanguageTypeConstants.DOTNET_FIELD;
-		}
-		else if (ByteBuffer.class == fieldType)
-		{
-			result = CrossLanguageTypeConstants.DOTNET_BINARY_DATA;
 		}
 		else
 		{
@@ -2329,10 +2302,6 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 		{
 			result = CrossLanguageTypeConstants.JAVA_FIELD;
 		}
-		else if (ByteBuffer.class == fieldType)
-		{
-			result = CrossLanguageTypeConstants.JAVA_BINARY_DATA;
-		}
 		else
 		{
 			// Assume the field is custom object
@@ -2352,21 +2321,6 @@ public class XMLTools extends Debug implements CharacterConstants, SpecialCharac
 		input = input.replaceAll(p1, "");
 		input = input.replaceAll(p2, keepInnerText ? "$2" : "");
 		return input;
-	}
-
-	public static boolean isEnumCollection(Field f) {
-		if(representAsCollection(f))
-		{
-			ArrayList<Class<?>> classes = XMLTools.getGenericParameters(f);
-			if(classes.isEmpty())
-			{
-				return false;
-			}else{
-				return classes.get(0).isEnum();
-			}
-		}else{
-			return false;
-		}
 	}
 
 }

@@ -506,8 +506,7 @@ final class DigitList implements Cloneable {
     /**
      * equality test between two digit lists.
      */
-    @Override
-	public boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         if (this == obj)                      // quick check
             return true;
         if (!(obj instanceof DigitList))         // (1) same object?
@@ -525,8 +524,7 @@ final class DigitList implements Cloneable {
     /**
      * Generates the hash code for the digit list.
      */
-    @Override
-	public int hashCode() {
+    public int hashCode() {
         int hashcode = decimalAt;
 
         for (int i = 0; i < count; i++) {
@@ -540,8 +538,7 @@ final class DigitList implements Cloneable {
      * Creates a copy of this object.
      * @return a clone of this instance.
      */
-    @Override
-	public Object clone() {
+    public Object clone() {
         try {
             DigitList other = (DigitList) super.clone();
             char[] newDigits = new char[digits.length];
@@ -594,8 +591,7 @@ final class DigitList implements Cloneable {
     // The digit part of -9223372036854775808L
     private static final char[] LONG_MIN_REP = "9223372036854775808".toCharArray();
 
-    @Override
-	public String toString() {
+    public String toString() {
         if (isZero()) {
             return "0";
         }

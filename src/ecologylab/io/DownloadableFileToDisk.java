@@ -10,9 +10,8 @@ import java.io.OutputStream;
 import ecologylab.appframework.StatusReporter;
 import ecologylab.concurrent.BasicSite;
 import ecologylab.concurrent.Downloadable;
-import ecologylab.concurrent.DownloadableLogRecord;
-import ecologylab.generic.Continuation;
 import ecologylab.generic.Debug;
+import ecologylab.generic.Continuation;
 import ecologylab.net.ParsedURL;
 
 public class DownloadableFileToDisk 
@@ -56,7 +55,6 @@ implements Downloadable, Continuation<Object>
 		this(target, inputStream, destination, null);
 	}
 
-	@Override
 	public void handleIoError(Throwable e)
 	{
 		closeStreams();
@@ -68,7 +66,6 @@ implements Downloadable, Continuation<Object>
 		return downloadDone;
 	}
 
-	@Override
 	public void performDownload() throws IOException
 	{
 		debug("performDownload() top");
@@ -156,27 +153,23 @@ implements Downloadable, Continuation<Object>
 		}
 	}
 
-	@Override
 	public void callback(Object o)
 	{
 		System.out.println("Finished download file: " + target + " -> " + destination);
 	}
 
-	@Override
 	public boolean isRecycled()
 	{
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
 	public BasicSite getSite()
 	{
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public ParsedURL location()
 	{
 		return target;
@@ -185,13 +178,11 @@ implements Downloadable, Continuation<Object>
 	 * 
 	 * @return	What to tell the user about what is being downloaded.
 	 */
-	@Override
 	public String message()
 	{
 		return null;
 	}
 
-	@Override
 	public void recycle()
 	{
 	}
@@ -216,20 +207,6 @@ implements Downloadable, Continuation<Object>
 	{
 		// TODO Auto-generated method stub
 		return location();
-	}
-
-  @Override
-  public boolean isCached()
-  {
-    // TODO Auto-generated method stub
-    return false;
-  }
-
-	@Override
-	public DownloadableLogRecord getLogRecord()
-	{
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

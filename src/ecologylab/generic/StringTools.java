@@ -18,6 +18,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import ecologylab.collections.CollectionTools;
+import ecologylab.net.ParsedURL;
 import ecologylab.serialization.XMLTools;
 
 /**
@@ -608,7 +609,7 @@ public class StringTools extends Debug
 			encrypter.update(message.toLowerCase().getBytes());
 
 			// convert to normal characters and return as a String
-			return new String(Base64Coder.encode(encrypter.digest()));
+			return new String((new Base64Coder()).encode(encrypter.digest()));
 
 		}
 		catch (NoSuchAlgorithmException e)
@@ -944,18 +945,6 @@ public class StringTools extends Debug
 			buffy.append(key).append(delim2).append(value);
 		}
 		return buffy.toString();
-	}
-	
-	public static String join(String delim, String... parts)
-	{
-	  StringBuilder sb = new StringBuilder();
-	  for (int i = 0; i < parts.length; ++i)
-	  {
-	    if (i > 0)
-	      sb.append(delim);
-      sb.append(parts[i]);
-	  }
-	  return sb.toString();
 	}
 
 	public static final String	QUOTED_PRINTABLE_CAPTURE_PATTERN_STRING	= "(=.{2})*(=\\s)*";

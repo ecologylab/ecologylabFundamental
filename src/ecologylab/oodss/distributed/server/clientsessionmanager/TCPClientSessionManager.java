@@ -23,7 +23,6 @@ import java.util.zip.Inflater;
 
 import ecologylab.collections.Scope;
 import ecologylab.generic.StringTools;
-import ecologylab.oodss.distributed.common.NetworkingConstants;
 import ecologylab.oodss.distributed.common.ServerConstants;
 import ecologylab.oodss.distributed.common.SessionObjects;
 import ecologylab.oodss.distributed.impl.MessageWithMetadata;
@@ -232,7 +231,7 @@ public abstract class TCPClientSessionManager<S extends Scope, PARENT extends Sc
 					 * no header yet; if it's too large, bad client; if it's not too large yet, just exit,
 					 * it'll get checked again when more data comes down the pipe
 					 */
-					if (msgBufIncoming.length() > NetworkingConstants.MAX_HTTP_HEADER_LENGTH)
+					if (msgBufIncoming.length() > ServerConstants.MAX_HTTP_HEADER_LENGTH)
 					{
 						// clear the buffer
 						BadClientException e = new BadClientException(
@@ -705,7 +704,7 @@ public abstract class TCPClientSessionManager<S extends Scope, PARENT extends Sc
 	protected RequestMessage translateOtherRequest(CharSequence messageCharSequence,
 			String startLineString) throws SIMPLTranslationException
 	{
-		return null;
+		return (RequestMessage) null;
 	}
 
 	/**
@@ -851,15 +850,6 @@ public abstract class TCPClientSessionManager<S extends Scope, PARENT extends Sc
 
 			if (!usingCompression)
 			{
-				// assert that the size of the message is smaller than the buffer.
-				// if not, increase the buffer.
-				if (msgBufOutgoing.length() + headerBufOutgoing.length() > outgoingChars.capacity())
-				{
-					int newCapacity = outgoingChars.capacity()*2;
-					this.frontend.increaseSharedBufferPoolSize(newCapacity);
-					outgoingChars = this.frontend.getSharedCharBufferPool().acquire();
-				}
-				
 				msgBufOutgoing.getChars(0, msgBufOutgoing.length(), outgoingChars.array(),
 						headerBufOutgoing.length());
 
@@ -908,7 +898,6 @@ public abstract class TCPClientSessionManager<S extends Scope, PARENT extends Sc
 		// debug("...done ("+(System.currentTimeMillis()-currentTime)+"ms)");
 	}
 
-	@Override
 	public synchronized void sendUpdateToClient(UpdateMessage<?> update)
 	{
 		StringBuilder msgBufOutgoing = this.frontend.getSharedStringBuilderPool().acquire();
@@ -1129,7 +1118,6 @@ public abstract class TCPClientSessionManager<S extends Scope, PARENT extends Sc
 		}
 	}
 
-	@Override
 	public InetSocketAddress getAddress()
 	{
 		return (InetSocketAddress) ((SocketChannel) getSocketKey().channel()).socket()

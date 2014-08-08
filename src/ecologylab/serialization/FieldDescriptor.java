@@ -29,10 +29,12 @@ import ecologylab.generic.StringBuilderBaseUtils;
 import ecologylab.generic.StringTools;
 import ecologylab.platformspecifics.FundamentalPlatformSpecifics;
 import ecologylab.serialization.MetaInformation.Argument;
+import ecologylab.serialization.annotations.FieldUsage;
 import ecologylab.serialization.annotations.Hint;
 import ecologylab.serialization.annotations.simpl_classes;
 import ecologylab.serialization.annotations.simpl_collection;
 import ecologylab.serialization.annotations.simpl_composite;
+import ecologylab.serialization.annotations.simpl_exclude_usage;
 import ecologylab.serialization.annotations.simpl_filter;
 import ecologylab.serialization.annotations.simpl_hints;
 import ecologylab.serialization.annotations.simpl_inherit;
@@ -50,12 +52,12 @@ import ecologylab.serialization.library.html.Div;
 import ecologylab.serialization.library.html.Input;
 import ecologylab.serialization.library.html.Td;
 import ecologylab.serialization.library.html.Tr;
-import ecologylab.serialization.simplstringformats.FormatRegistry;
 import ecologylab.serialization.types.CollectionType;
 import ecologylab.serialization.types.FundamentalTypes;
 import ecologylab.serialization.types.ScalarType;
 import ecologylab.serialization.types.TypeRegistry;
 import ecologylab.serialization.types.element.IMappable;
+import ecologylab.serialization.types.scalar.EnumeratedType;
 
 /**
  * Used to provide convenient access for setting and getting values, using the
@@ -65,45 +67,38 @@ import ecologylab.serialization.types.element.IMappable;
  */
 @SuppressWarnings("rawtypes")
 @simpl_inherit
-public class FieldDescriptor extends DescriptorBase implements IMappable<String>,
+public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMappable<String>,
 		Cloneable
 {
 
-	public static final String NULL = ScalarType.DEFAULT_VALUE_STRING;
+	public static final String												NULL												= ScalarType.DEFAULT_VALUE_STRING;
 
-	public static final Class[] SET_METHOD_STRING_ARG = { String.class };
+	public static final Class[]												SET_METHOD_STRING_ARG				= { String.class };
 
 	@simpl_scalar
-	protected Field field;
-	// TODO
+	protected Field																		field;																													// TODO
 
 	/**
 	 * For nested elements, and collections or maps of nested elements. The class descriptor
 	 */
 
 	@simpl_composite
-	private ClassDescriptor elementClassDescriptor;
+	private ClassDescriptor														elementClassDescriptor;
 
 	@simpl_scalar
-	private String mapKeyFieldName;
+	private String																		mapKeyFieldName;
 
-	@simpl_scalar
-	/**
-	 * Represents the simple name of the field type.
-	 */
-	private String fieldTypeSimpleName;
-	
 	/**
 	 * Descriptor for the class that this field is declared in.
 	 */
 	@simpl_composite
-	protected ClassDescriptor declaringClassDescriptor;
+	protected ClassDescriptor													declaringClassDescriptor;
 
 	@simpl_scalar
-	private Class elementClass;
+	private Class																			elementClass;
 
 	@simpl_scalar
-	protected boolean isGeneric;
+	protected boolean																	isGeneric;
 
 	/**
 	 * For composite or collection fields declared with generic type variables, this field stores the
@@ -113,9 +108,9 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 * type var(s) with different values.
 	 */
 	@simpl_collection("generic_type_var")
-	private ArrayList<GenericTypeVar> genericTypeVars;
+	private ArrayList<GenericTypeVar>									genericTypeVars;
 	
-	ClassDescriptor genericTypeVarsContextCD;
+	ClassDescriptor																		genericTypeVarsContextCD;
 
 	// ///////////////// next fields are for polymorphic fields
 	// ////////////////////////////////////////
@@ -140,95 +135,100 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	@Deprecated
 	// we now use the package name to infer namespaces.
 	@simpl_map("library_namespace")
-	private HashMap<String, String>	libraryNamespaces = new HashMap<String, String>();
+	private HashMap<String, String>										libraryNamespaces						= new HashMap<String, String>();
 
 	@simpl_scalar
-	private FieldType type;
+	private int																				type;
 
 	/**
 	 * This slot makes sense only for attributes and leaf nodes
 	 */
 	@simpl_scalar
-	private ScalarType<?> scalarType;
+	private ScalarType<?>															scalarType;
+
+	@simpl_composite("enumerated_type")
+	private EnumeratedType														enumType;
 
 	@simpl_scalar
-	private CollectionType collectionType;
+	private CollectionType														collectionType;
 
 	@simpl_scalar
-	private Hint xmlHint;
+	private Hint																			xmlHint;
 
 	@simpl_scalar
-	private boolean	isEnum;
-	
-	private EnumerationDescriptor enumDescriptor; 
+	private boolean																		isEnum;
 
 	/**
 	 * An option for scalar formatting.
 	 */
-	private String[] format;
+	private String[]																	format;
 
 	@simpl_scalar
-	private boolean isCDATA;
+	private boolean																		isCDATA;
 
 	@simpl_scalar
-	private boolean needsEscaping;
+	private boolean																		needsEscaping;
 
 	@simpl_scalar
-	Pattern filterRegex;
+	Pattern																						filterRegex;
 	
 	@simpl_scalar
-	int filterGroup;
+	int																								filterGroup;
 
 	@simpl_scalar
-	String filterReplace;
+	String																						filterReplace;
 
 	/**
 	 * The FieldDescriptor for the field in a wrap.
 	 */
-	private FieldDescriptor wrappedFD;
+	private FieldDescriptor														wrappedFD;
 	
-	private FieldDescriptor	wrapper;
+	private FieldDescriptor														wrapper;
 
 	private HashMap<Integer, ClassDescriptor>					tlvClassDescriptors;
 
-	private String unresolvedScopeAnnotation		= null;
+	private String																		unresolvedScopeAnnotation		= null;
 
-	private Class[] unresolvedClassesAnnotation	= null;
+	private Class[]																		unresolvedClassesAnnotation	= null;
 
 	/**
  * 
  */
 	@simpl_scalar
-	private String collectionOrMapTagName;
+	private String																		collectionOrMapTagName;
 
 	@simpl_scalar
-	private String compositeTagName;
+	private String																		compositeTagName;
 
 	/**
 	 * Used for Collection and Map fields. Tells if the XML should be wrapped by an intermediate
 	 * element.
 	 */
 	@simpl_scalar
-	private boolean	wrapped;
+	private boolean																		wrapped;
 
-	private Method	setValueMethod;
+	private Method																		setValueMethod;
 
-	private String	bibtexTag = "";
+	private String																		bibtexTag										= "";
 
-	private boolean isBibtexKey = false;
+	private boolean																		isBibtexKey									= false;
 
 	@simpl_scalar
-	private String fieldType;
+	private String																		fieldType;
 
-	protected String genericParametersString;
+	// @simpl_scalar
+	protected String																	genericParametersString;
 
-	private ArrayList<ClassDescriptor> dependencies	= new ArrayList<ClassDescriptor>();
+	private ArrayList<ClassDescriptor>								dependencies								= new ArrayList<ClassDescriptor>();
 	
+	@simpl_collection("excluded_usage")
+	private ArrayList<FieldUsage>											excludedUsages;
+
 	/**
 	 * if is null, this field is not a cloned one. <br />
 	 * if not null, refers to the descriptor that this field is cloned from.
 	 */
-	private FieldDescriptor	clonedFrom;
+	private FieldDescriptor														clonedFrom;
 
 	/**
 	 * Default constructor only for use by translateFromXML().
@@ -249,7 +249,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		super(baseClassDescriptor.getTagName(), null);
 		this.declaringClassDescriptor = baseClassDescriptor;
 		this.field = null;
-		this.type = FieldType.PSEUDO_FIELD_DESCRIPTOR;
+		this.type = PSEUDO_FIELD_DESCRIPTOR;
 		this.scalarType = null;
 		this.bibtexTag = baseClassDescriptor.getBibtexType();
 	}
@@ -269,7 +269,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		this.declaringClassDescriptor = baseClassDescriptor;
 		this.wrappedFD = wrappedFD;
 		wrappedFD.wrapper = this;
-		this.setType(FieldType.WRAPPER);
+		this.type = WRAPPER;
 	}
 
 	/**
@@ -281,7 +281,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 *          Coarse pre-evaluation of the field's annotation type. Does not differentiate scalars
 	 *          from elements, or check for semantic consistency.
 	 */
-	public FieldDescriptor(ClassDescriptor declaringClassDescriptor, Field field, FieldType annotationType) // String
+	public FieldDescriptor(ClassDescriptor declaringClassDescriptor, Field field, int annotationType) // String
 	// nameSpacePrefix
 	{
 		super(XMLTools.getXmlTagName(field), field.getName()); // uses field name or @simpl_tag
@@ -290,12 +290,14 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		this.field = field;
 		this.field.setAccessible(true);
 		this.fieldType = field.getType().getSimpleName();
-		
 		if (field.isAnnotationPresent(simpl_map_key_field.class))
-		{
 			this.mapKeyFieldName = field.getAnnotation(simpl_map_key_field.class).value();
+		if (field.isAnnotationPresent(simpl_exclude_usage.class))
+		{
+			this.excludedUsages = new ArrayList<FieldUsage>();
+			for (FieldUsage usage : field.getAnnotation(simpl_exclude_usage.class).value())
+				this.excludedUsages.add(usage);
 		}
-		
 		// this.name = (field != null) ? field.getName() : "NULL";
 
 		derivePolymorphicDescriptors(field);
@@ -303,16 +305,21 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		this.bibtexTag = XMLTools.getBibtexTagName(field);
 		this.isBibtexKey = XMLTools.getBibtexKey(field);
 
-		this.setType(FieldType.UNSET_TYPE); // for debugging!
+		// TODO XmlNs
+		// if (nameSpacePrefix != null)
+		// {
+		// tagName = nameSpacePrefix + tagName;
+		// }
+		type = UNSET_TYPE; // for debugging!
 
-		if (annotationType == FieldType.SCALAR)
-		{
+		if (annotationType == SCALAR)
 			type = deriveScalarSerialization(field);
-		}
 		else
-		{
 			type = deriveNestedSerialization(field, annotationType);
-		}
+
+		// looks old: -- implement this next???
+		// if (XMLTools.isNested(field))
+		// setupXmlText(ClassDescriptor.getClassDescriptor((Class<ElementState>) field.getType()));
 
 		String fieldName = field.getName();
 		StringBuilder capFieldName = new StringBuilder(fieldName);
@@ -322,9 +329,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		setValueMethod = ReflectionTools.getMethod(declaringClassDescriptor.getDescribedClass(),
 				setMethodName, SET_METHOD_STRING_ARG);
 
-		/// TODO: Nuke this deprecated method.
 		addNamespaces();
-		
 		if (javaParser != null)
 		{
 			comment = javaParser.getJavaDocComment(field);
@@ -338,34 +343,28 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 			genericParametersString = XMLTools.getJavaGenericParametersString(field);
 			ArrayList<Class> dependedClasses = XMLTools.getJavaGenericDependencies(field);
 			if (dependedClasses != null)
-			{
 				for (Class dependedClass : dependedClasses)
-				{
 					addDependency(dependedClass);
-				}
-			}
 		}
 	}
 
-	
-	//TODO: THIS TYPE LOGIC IS *PURE UNADULTERATED GARBAGE*. 
-	protected FieldDescriptor(String tagName, String comment, FieldType type,
+	protected FieldDescriptor(String tagName, String comment, int type,
 			ClassDescriptor elementClassDescriptor, ClassDescriptor declaringClassDescriptor,
 			String fieldName, ScalarType scalarType, Hint xmlHint, String fieldType)
 	{
 		this(tagName, comment, type, elementClassDescriptor, declaringClassDescriptor, fieldName,
 				scalarType, xmlHint, fieldType,
-				(type == FieldType.COLLECTION_ELEMENT || type == FieldType.COLLECTION_SCALAR) ? FundamentalTypes.ARRAYLIST_TYPE
+				(type == COLLECTION_ELEMENT || type == COLLECTION_SCALAR) ? FundamentalTypes.ARRAYLIST_TYPE
 						: null);
 	}
 
-	protected FieldDescriptor(String tagName, String comment, FieldType type,
+	protected FieldDescriptor(String tagName, String comment, int type,
 			ClassDescriptor elementClassDescriptor, ClassDescriptor declaringClassDescriptor,
 			String fieldName, ScalarType scalarType, Hint xmlHint, String fieldType,
 			CollectionType collectionType)
 	{
 		super(tagName, fieldName, comment);
-		assert (type != FieldType.COMPOSITE_ELEMENT || elementClassDescriptor != null);
+		assert (type != COMPOSITE_ELEMENT || elementClassDescriptor != null);
 
 		this.type = type;
 		this.elementClassDescriptor = elementClassDescriptor;
@@ -385,11 +384,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	protected void setUnresolvedScopeAnnotation(String scopeName)
 	{
 		this.unresolvedScopeAnnotation = scopeName;
-	}
-	
-	public EnumerationDescriptor getEnumerationDescriptor()
-	{
-		return this.enumDescriptor;
 	}
 
 	/**
@@ -413,8 +407,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 				declaringClassDescriptor.registerUnresolvedScopeAnnotationFD(this);
 			}
 		}
-		
-		
 		// @xml_classes
 		final simpl_classes classesAnnotationObj = field.getAnnotation(simpl_classes.class);
 		final Class[] classesAnnotation = (classesAnnotationObj == null) ? null : classesAnnotationObj
@@ -423,6 +415,13 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		{
 			unresolvedClassesAnnotation = classesAnnotation;
 			declaringClassDescriptor.registerUnresolvedClassesAnnotationFD(this);
+			// initPolymorphClassDescriptorsArrayList(classesAnnotation.length);
+			// for (Class thatClass : classesAnnotation)
+			// {
+			// ClassDescriptor classDescriptor = ClassDescriptor.getClassDescriptor(thatClass);
+			// registerPolymorphicDescriptor(classDescriptor);
+			// polymorphClasses.put(classDescriptor.getTagName(), classDescriptor.getDescribedClass());
+			// }
 		}
 		return polymorphClassDescriptors != null;
 	}
@@ -463,7 +462,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 */
 	private boolean resolveScopeAnnotation(final String scopeAnnotation)
 	{
-		println(scopeAnnotation);
 		SimplTypesScope scope = SimplTypesScope.get(scopeAnnotation);
 		if (scope != null)
 		{
@@ -477,10 +475,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 				polymorphClasses.put(tagName, classDescriptor.getDescribedClass());
 				tlvClassDescriptors.put(tagName.hashCode(), classDescriptor);
 			}
-		}
-		else
-		{
-		  warning("Failed to resolve simpl_scope: " + scopeAnnotation);
 		}
 		return scope != null;
 	}
@@ -521,6 +515,8 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		if (result)
 		{
 			unresolvedScopeAnnotation = null;
+
+			// declaringClassDescriptor.mapPolymorphicClassDescriptors(this);
 		}
 		return result;
 	}
@@ -534,15 +530,13 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	boolean resolveUnresolvedClassesAnnotation()
 	{
 		if (unresolvedClassesAnnotation == null)
-		{
 			return true;
-		}
 
 		boolean result = resolveClassesAnnotation(unresolvedClassesAnnotation);
-		
 		if (result)
 		{
 			unresolvedClassesAnnotation = null;
+			// declaringClassDescriptor.mapPolymorphicClassDescriptors(this);
 		}
 		return result;
 	}
@@ -560,6 +554,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 			{
 				if (genericTypeVars == null)
 				{
+//					genericTypeVars = new ArrayList<GenericTypeVar>();
 					deriveGenericTypeVariables();
 				}
 			}
@@ -591,19 +586,11 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	private void initPolymorphClassDescriptorsArrayList(int initialSize)
 	{
 		if (polymorphClassDescriptors == null)
-		{
 			polymorphClassDescriptors = new HashMapArrayList<String, ClassDescriptor>(initialSize);
-		}
-			
 		if (polymorphClasses == null)
-		{
 			polymorphClasses = new HashMap<String, Class>(initialSize);
-		}
-		
 		if (tlvClassDescriptors == null)
-		{
 			tlvClassDescriptors = new HashMap<Integer, ClassDescriptor>(initialSize);
-		}
 	}
 
 	/**
@@ -617,15 +604,11 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 * 
 	 * @return SCALAR, IGNORED_ATTRIBUTE< or IGNORED_ELEMENT
 	 */
-	private FieldType deriveScalarSerialization(Field scalarField)
+	private int deriveScalarSerialization(Field scalarField)
 	{
-		FieldType result = deriveScalarSerialization(scalarField.getType(), scalarField);
-		
+		int result = deriveScalarSerialization(scalarField.getType(), scalarField);
 		if (xmlHint == Hint.XML_TEXT || xmlHint == Hint.XML_TEXT_CDATA)
-		{
 			this.declaringClassDescriptor.setScalarTextFD(this);
-		}
-		
 		return result;
 	}
 
@@ -642,35 +625,26 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 * 
 	 * @return SCALAR, IGNORED_ATTRIBUTE< or IGNORED_ELEMENT
 	 */
-	private FieldType deriveScalarSerialization(Class thatClass, Field field)
+	private int deriveScalarSerialization(Class thatClass, Field field)
 	{
 		isEnum = XMLTools.isEnum(field);
 		xmlHint = XMLTools.simplHint(field); // TODO -- confirm that default case is acceptable
 		scalarType = TypeRegistry.getScalarType(thatClass);
 
-		this.fieldTypeSimpleName = field.getType().getSimpleName();
-		
-		if(this.isEnum)
+		if (isEnum)
 		{
-			try{
-			this.enumDescriptor = EnumerationDescriptor.get(thatClass);
-			}
-			catch(SIMPLDescriptionException sde)
-			{
-				throw new RuntimeException(sde);
-			}
+			enumType = new EnumeratedType(field);
 		}
-		
-		if (isEnum == false && scalarType == null)
+
+		if (scalarType == null)
 		{
 			String msg = "Can't find ScalarType to serialize field: \t\t" + thatClass.getSimpleName()
 					+ "\t" + field.getName() + ";";
 			warning("In class " + declaringClassDescriptor.getDescribedClass().getName(), msg);
-			return (xmlHint == Hint.XML_ATTRIBUTE) ? FieldType.IGNORED_ATTRIBUTE : FieldType.IGNORED_ELEMENT;
+			return (xmlHint == Hint.XML_ATTRIBUTE) ? IGNORED_ATTRIBUTE : IGNORED_ELEMENT;
 		}
 
 		format = XMLTools.getFormatAnnotation(field);
-		
 		if (xmlHint != Hint.XML_ATTRIBUTE)
 		{
 			needsEscaping = scalarType.needsEscaping();
@@ -688,7 +662,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 				filterReplace = filterAnnotation.replace();
 			}
 		}
-		return FieldType.SCALAR;
+		return SCALAR;
 	}
 
 	/**
@@ -699,9 +673,11 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 * @param annotationType
 	 *          Partial type information from the field declaration annotations, which are required.
 	 */
-	private FieldType deriveNestedSerialization(Field field, FieldType annotationType)
+	// FIXME -- not complete!!!! return to finish other cases!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	@SuppressWarnings("unchecked")
+	private int deriveNestedSerialization(Field field, int annotationType)
 	{
-		FieldType result = annotationType;
+		int result = annotationType;
 		Class fieldClass = field.getType();
 		switch (annotationType)
 		{
@@ -709,6 +685,9 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 
 			String compositeTag = field.getAnnotation(simpl_composite.class).value();
 			Boolean isWrap = field.isAnnotationPresent(simpl_wrap.class);
+
+			// if (!checkAssignableFrom(ElementState.class, field, fieldClass, "@simpl_composite"))
+			// result = IGNORED_ELEMENT;
 
 			boolean compositeTagIsNullOrEmpty = StringTools.isNullOrEmpty(compositeTag);
 			if (!isPolymorphic())
@@ -718,7 +697,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 					warning("In " + declaringClassDescriptor.getDescribedClass()
 							+ "\n\tCan't translate  @simpl_composite() " + field.getName()
 							+ " because its tag argument is missing.");
-					return FieldType.IGNORED_ELEMENT;
+					return IGNORED_ELEMENT;
 				}
 
 				if (!isWrap & !compositeTagIsNullOrEmpty)
@@ -746,10 +725,8 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		case COLLECTION_ELEMENT:
 			final String collectionTag = field.getAnnotation(simpl_collection.class).value();
 			if (!checkAssignableFrom(Collection.class, field, fieldClass, "@xml_collection"))
-			{
-				return FieldType.IGNORED_ELEMENT;
-			}
-			
+				return IGNORED_ELEMENT;
+
 			if (!isPolymorphic())
 			{
 				Class collectionElementClass = getTypeArgClass(field, 0); // 0th type arg for
@@ -760,14 +737,14 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 					warning("In " + declaringClassDescriptor.getDescribedClass()
 							+ "\n\tCan't translate  @xml_collection() " + field.getName()
 							+ " because its tag argument is missing.");
-					return FieldType.IGNORED_ELEMENT;
+					return IGNORED_ELEMENT;
 				}
 				if (collectionElementClass == null)
 				{
 					warning("In " + declaringClassDescriptor.getDescribedClass()
 							+ "\n\tCan't translate  @xml_collection() " + field.getName()
 							+ " because the parameterized type argument for the Collection is missing.");
-					return FieldType.IGNORED_ELEMENT;
+					return IGNORED_ELEMENT;
 				}
 				if (!TypeRegistry.containsScalarType(collectionElementClass))
 				{
@@ -776,19 +753,18 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 				}
 				else
 				{
-					result = FieldType.COLLECTION_SCALAR;
+					result = COLLECTION_SCALAR;
 					deriveScalarSerialization(collectionElementClass, field);
 					// FIXME -- add error handling for IGNORED due to scalar type lookup fails
 					if (scalarType == null)
 					{
-						result = FieldType.IGNORED_ELEMENT;
+						result = IGNORED_ELEMENT;
 						warning("Can't identify ScalarType for serialization of " + collectionElementClass);
 					}
 				}
 			}
 			else
 			{
-				// If Polymorphic... 
 				if (collectionTag != null && !collectionTag.isEmpty())
 				{
 					warning("In " + declaringClassDescriptor.getDescribedClass()
@@ -796,17 +772,14 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 							+ " because it is declared polymorphic with @xml_classes.");
 				}
 			}
-
 			collectionOrMapTagName = collectionTag;
 			collectionType = TypeRegistry.getCollectionType(field);
 			break;
 		case MAP_ELEMENT:
 			String mapTag = field.getAnnotation(simpl_map.class).value();
 			if (!checkAssignableFrom(Map.class, field, fieldClass, "@xml_map"))
-			{
-				return FieldType.IGNORED_ELEMENT;
-			}
-			
+				return IGNORED_ELEMENT;
+
 			if (!isPolymorphic())
 			{
 				Class mapElementClass = getTypeArgClass(field, 1); // "1st" type arg for Map<FooState>
@@ -816,14 +789,14 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 					warning("In " + declaringClassDescriptor.getDescribedClass()
 							+ "\n\tCan't translate  @xml_map() " + field.getName()
 							+ " because its tag argument is missing.");
-					return FieldType.IGNORED_ELEMENT;
+					return IGNORED_ELEMENT;
 				}
 				if (mapElementClass == null)
 				{
 					warning("In " + declaringClassDescriptor.getDescribedClass()
 							+ "\n\tCan't translate  @xml_map() " + field.getName()
 							+ " because the parameterized type argument for the Collection is missing.");
-					return FieldType.IGNORED_ELEMENT;
+					return IGNORED_ELEMENT;
 				}
 
 				elementClassDescriptor = ClassDescriptor.getClassDescriptor(mapElementClass);
@@ -851,31 +824,27 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		default:
 			break;
 		}
-		
 		switch (annotationType)
 		// set-up wrap as appropriate
 		{
 		case COLLECTION_ELEMENT:
 		case MAP_ELEMENT:
 			if (!field.isAnnotationPresent(simpl_nowrap.class))
-			{
 				wrapped = true;
-			}
-			
 			collectionType = TypeRegistry.getCollectionType(field);
 			break;
 		case COMPOSITE_ELEMENT:
 			if (field.isAnnotationPresent(simpl_wrap.class))
-			{
 				wrapped = true;
-			}
-			break;
 		}
 
-		if (result == FieldType.UNSET_TYPE)
+		/*
+		 * else { // deriveTagFromClasses // TODO Monday }
+		 */
+		if (result == UNSET_TYPE)
 		{
 			warning("Programmer error -- can't derive type.");
-			result = FieldType.IGNORED_ELEMENT;
+			result = IGNORED_ELEMENT;
 		}
 
 		return result;
@@ -914,7 +883,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 * 
 	 * @return The class of the type variable, if it exists.
 	 */
-	
+	@SuppressWarnings("unchecked")
 	// This method is modified to enable platform specific implementation
 	public Class<?> getTypeArgClass(Field field, int i)
 	{
@@ -932,22 +901,21 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 
 	public boolean isCollection()
 	{
-		FieldType ft = type;
-		switch (ft)
+		switch (type)
 		{
-			case MAP_ELEMENT:
-			case MAP_SCALAR:
-			case COLLECTION_ELEMENT:
-			case COLLECTION_SCALAR:
-				return true;
-			default:
-				return false;
+		case MAP_ELEMENT:
+		case MAP_SCALAR:
+		case COLLECTION_ELEMENT:
+		case COLLECTION_SCALAR:
+			return true;
+		default:
+			return false;
 		}
 	}
 
 	public boolean isNested()
 	{
-		return this.getType() == FieldType.COMPOSITE_ELEMENT;
+		return type == COMPOSITE_ELEMENT;
 	}
 
 	public boolean isEnum()
@@ -982,12 +950,12 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 			ScalarUnmarshallingContext scalarUnMarshallingContext)
 	{
 		boolean result = false;
-		
-		if (context != null && isScalar())
+		// if ((valueString != null) && (context != null)) andruid & andrew 4/14/09 -- why not allow set
+		// to null?!
+		if (context != null && isScalar() /* do we really need this check??? */)
 		{
 			result = scalarType.setField(context, field, valueString, null, scalarUnMarshallingContext);
 		}
-		
 		return result;
 	}
 
@@ -1019,31 +987,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		}
 		catch (IllegalAccessException e)
 		{
-			try
-			{
-				field.setAccessible(true);
-				field.set(context, value);
-			}
-			catch(Exception ee)
-			{
-				ee.printStackTrace();
-			}
-		}
-	}
-	
-
-	public void setFieldToScalarDefault(Object context, ScalarUnmarshallingContext scalarContext)
-	{
-		if(this.isScalar() && this.isEnum() == false)
-		{
-			if(this.scalarType == null)
-			{
-				throw new RuntimeException("isScalar() evaluated to true, but scalarType is null!");
-			}
-			
-			this.setFieldToScalar(context, this.scalarType.defaultValueString(), scalarContext);
-		}else{
-			warning("setFieldToScalarDefault called on non-scalar field");
+			e.printStackTrace();
 		}
 	}
 
@@ -1106,14 +1050,9 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	 * 
 	 * @return The OptimizationTypes type of the field.
 	 */
-	public FieldType getType()
+	public int getType()
 	{
 		return type;
-	}
-	
-	public void setType(FieldType ft)
-	{
-		this.type = ft;
 	}
 
 	public Object getNested(Object context)
@@ -1181,14 +1120,10 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 
 	public boolean isDefaultValue(Object value)
 	{
-		if (this.getType() == FieldType.SCALAR)
-		{
+		if (this.getType() == FieldTypes.SCALAR)
 			return value == null || isDefaultValue(value.toString());
-		}
 		else
-		{
 			return value == null;
-		}
 	}
 
 	/**
@@ -1223,16 +1158,11 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 			A valueAnchor = new A();
 
 			if (valueCssClass != null) // does this cause problems? if so, is it because mmd is wrong?
-			{
 				// andruid & aaron 7/8/11
 				valueDiv.setCssClass(valueCssClass);
-			}
-			
 			if (schemaOrgItemProp != null)
-			{
 				valueDiv.setSchemaOrgItemProp(schemaOrgItemProp);
-			}
-			
+
 			labelTd.setAlign("right");
 			labelTd.setCssClass(labelCssClass);
 
@@ -1285,9 +1215,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		if (instance != null)
 		{
 			if (!isFirst)
-			{
 				value.append(", ");
-			}
 			scalarType.appendValue(value, this, instance, null, Format.XML);
 		}
 
@@ -1330,9 +1258,9 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	public String toString()
 	{
 		String name = (field != null) ? field.getName() : "NO_FIELD";
-		String clazz = declaringClassDescriptor == null ? "NO_CLASS" : declaringClassDescriptor.getDescribedClass().toString();
-		String typeStr = type == null ? "NO_TYPE" : Integer.toHexString(type.getTypeID());
-		return this.getClassSimpleName() + "[" + name + " < " + clazz + " type=0x" + typeStr + "]";
+		return this.getClassSimpleName() + "[" + name + " < "
+				+ declaringClassDescriptor.getDescribedClass() + " type=0x" + Integer.toHexString(type)
+				+ "]";
 	}
 
 	/**
@@ -1363,13 +1291,9 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	public HashMap<String, Class> getPolymorphicClasses()
 	{
 		if (polymorphClasses == null)
-		{
 			return null;
-		}
 		else
-		{
 			return polymorphClasses;
-		}
 	}
 
 	public void writeHtmlWrap(boolean close, int size, String displayLabel, Tr tr) throws IOException
@@ -1435,66 +1359,44 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	public void setFieldToScalar(Object context, String value,
 			ScalarUnmarshallingContext scalarUnmarshallingContext)
 	{
-		// Allows for empty values. 
-		if (value == null)
+		if ((value == null) /* || (value.length() == 0) removed by Alex to allow empty delims */)
 		{
+			// error("Can't set scalar field with empty String");
 			return;
 		}
-		
 		value = filterValue(value);
-		
 		if (!isCDATA)
-		{
 			value = XMLTools.unescapeXML(value);
-		}
-		
-		if(this.isEnum)
+		if (setValueMethod != null)
 		{
-			try{
-				Object unmarshalledEnum = this.getEnumerationDescriptor().unmarshal(value);
-				this.setField(context, unmarshalledEnum);
-			}
-			catch(Exception e)
+			// if the method is found, invoke the method
+			// fill the String value with the value of the attr node
+			// args is the array of objects containing arguments to the method to be invoked
+			// in our case, methods have only one arg: the value String
+			Object[] args = new Object[1];
+			args[0] = value;
+			try
 			{
-				// We need better error handling here, obvi. but this should bubble up an exception 
-				// to current error handling code. 
-				throw new RuntimeException(e);
+				setValueMethod.invoke(context, args); // run set method!
 			}
-		
+			catch (InvocationTargetException e)
+			{
+				weird("couldnt run set method for " + tagName + " even though we found it");
+				e.printStackTrace();
+			}
+			catch (IllegalAccessException e)
+			{
+				weird("couldnt run set method for " + tagName + " even though we found it");
+				e.printStackTrace();
+			}
+			catch (IllegalArgumentException e)
+			{
+				e.printStackTrace();
+			}
 		}
-		else
+		else if (scalarType != null && !scalarType.isMarshallOnly())
 		{
-			if (setValueMethod != null)
-			{
-				// if the method is found, invoke the method
-				// fill the String value with the value of the attr node
-				// args is the array of objects containing arguments to the method to be invoked
-				// in our case, methods have only one arg: the value String
-				Object[] args = new Object[1];
-				args[0] = value;
-				try
-				{
-					setValueMethod.invoke(context, args); // run set method!
-				}
-				catch (InvocationTargetException e)
-				{
-					weird("couldnt run set method for " + tagName + " even though we found it");
-					e.printStackTrace();
-				}
-				catch (IllegalAccessException e)
-				{
-					weird("couldnt run set method for " + tagName + " even though we found it");
-					e.printStackTrace();
-				}
-				catch (IllegalArgumentException e)
-				{
-					e.printStackTrace();
-				}
-			}
-			else if (scalarType != null && !scalarType.isMarshallOnly())
-			{
-				scalarType.setField(context, field, value, format, scalarUnmarshallingContext);
-			}
+			scalarType.setField(context, field, value, format, scalarUnmarshallingContext);
 		}
 	}
 
@@ -1681,8 +1583,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 
 	public ClassDescriptor getChildClassDescriptor(String tagName)
 	{
-		resolveUnresolvedClassesAnnotation();
-		resolveUnresolvedScopeAnnotation();
 		ClassDescriptor childClassDescriptor = !isPolymorphic() ? elementClassDescriptor
 				: polymorphClassDescriptors.get(tagName);
 
@@ -1742,7 +1642,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	FieldDescriptor(String tag)
 	{
 		this.tagName = tag;
-		this.type = FieldType.IGNORED_ELEMENT;
+		this.type = IGNORED_ELEMENT;
 		this.field = null;
 		this.declaringClassDescriptor = null;
 	}
@@ -2019,14 +1919,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 
 	public ClassDescriptor elementClassDescriptor(String tagName)
 	{
-	  if (isPolymorphic())
-	  {
-	    if (polymorphClassDescriptors == null)
-	      derivePolymorphicDescriptors(field);
-	    if (polymorphClassDescriptors != null)
-	      return polymorphClassDescriptors.get(tagName);
-	  }
-    return elementClassDescriptor;
+		return (!isPolymorphic()) ? elementClassDescriptor : polymorphClassDescriptors.get(tagName);
 	}
 
 	public ClassDescriptor elementClassDescriptor(int tlvId)
@@ -2145,7 +2038,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		}
 	}
 
-	
 	@Override
 	public String getCSharpNamespace()
 	{
@@ -2202,22 +2094,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	{
 		try
 		{
-			if(this.isEnum)
-			{
-				EnumerationDescriptor ed = this.getEnumerationDescriptor();
-				if(ed == null)
-				{
-					throw new RuntimeException("Null enumerator descriptor; add rehydration code.");
-				}
-				String enumValue = ed.marshal(this.getValue(object));
-				
-				String escapedValue = FormatRegistry.get(format).escape(enumValue);
-				appendable.append(escapedValue);
-			}
-			else
-			{
-				scalarType.appendValue(appendable, this, object, translationContext, format);
-			}
+			scalarType.appendValue(appendable, this, object, translationContext, format);
 		}
 		catch (Exception ex)
 		{
@@ -2246,8 +2123,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 
 	public boolean isCollectionTag(String tagName)
 	{
-		resolveUnresolvedClassesAnnotation();
-		resolveUnresolvedScopeAnnotation();
 		return isPolymorphic() ? polymorphClassDescriptors.containsKey(tagName)
 				: collectionOrMapTagName.equals(tagName);
 	}
@@ -2286,10 +2161,10 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		{
 			this.metaInfo = new ArrayList<MetaInformation>();
 
-			FieldType type = this.getType();
+			int type = getType();
 			String collectionMapTagValue = getCollectionOrMapTagName();
 
-			if (type == FieldType.COMPOSITE_ELEMENT)
+			if (type == FieldTypes.COMPOSITE_ELEMENT)
 			{
 				// @simpl_composite
 				metaInfo.add(new MetaInformation(simpl_composite.class));
@@ -2298,7 +2173,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 				if (isWrapped())
 					metaInfo.add(new MetaInformation(simpl_wrap.class));
 			}
-			else if (type == FieldType.COLLECTION_ELEMENT || type == FieldType.COLLECTION_SCALAR)
+			else if (type == FieldTypes.COLLECTION_ELEMENT || type == FieldTypes.COLLECTION_SCALAR)
 			{
 				addDependency(List.class);
 
@@ -2314,7 +2189,7 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 					metaInfo.add(new MetaInformation(simpl_nowrap.class));
 				}
 			}
-			else if (type == FieldType.MAP_ELEMENT)
+			else if (type == FieldTypes.MAP_ELEMENT)
 			{
 				// @simpl_map
 				metaInfo.add(new MetaInformation(simpl_map.class, false, collectionMapTagValue));
@@ -2390,11 +2265,21 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 		return metaInfo;
 	}
 
-	public String getFieldTypeSimpleName()
+	public EnumeratedType getEnumerateType()
 	{
-		return this.fieldTypeSimpleName;
+		return enumType;
 	}
 	
+	public ArrayList<FieldUsage> getExcludedUsages()
+	{
+		return excludedUsages;
+	}
+	
+	public boolean isUsageExcluded(FieldUsage usage)
+	{
+		return excludedUsages != null && excludedUsages.contains(usage);
+	}
+
 	public FieldDescriptor getWrapper()
 	{
 		return wrapper;
@@ -2403,11 +2288,6 @@ public class FieldDescriptor extends DescriptorBase implements IMappable<String>
 	protected void setWrapper(FieldDescriptor wrapper)
 	{
 		this.wrapper = wrapper;
-	}
-	
-	protected String getFieldTypeName()
-	{
-		return fieldType;
 	}
 	
 }

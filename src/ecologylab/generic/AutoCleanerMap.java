@@ -163,7 +163,6 @@ public class AutoCleanerMap<KEY, VALUE> extends ConcurrentHashMap<KEY, VALUE> im
 		}
 	}
 
-	@Override
 	public void run()
 	{
 		Debug.println("Starting up AutoMapCleaner.");

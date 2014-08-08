@@ -12,8 +12,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.xml.bind.DatatypeConverter;
-
+import sun.misc.BASE64Encoder;
 import ecologylab.collections.Scope;
 import ecologylab.generic.CharBufferPool;
 import ecologylab.generic.HashMapArrayList;
@@ -43,14 +42,14 @@ public class NIODatagramServer<S extends Scope> extends NIODatagramCore<S> imple
 {
 	private long																										sidIndex								= 1;
 
-	private ConcurrentHashMap<String, DatagramClientSessionManager>	sidToSessionManager			= new ConcurrentHashMap<String, DatagramClientSessionManager>();
+	private final ConcurrentHashMap<String, DatagramClientSessionManager>	sidToSessionManager			= new ConcurrentHashMap<String, DatagramClientSessionManager>();
 
-	private ConcurrentHashMap<SocketAddress, String>								socketAddressesToSids		= new ConcurrentHashMap<SocketAddress, String>();
+	private final ConcurrentHashMap<SocketAddress, String>								socketAddressesToSids		= new ConcurrentHashMap<SocketAddress, String>();
 
-	private ConcurrentHashMap<String, SocketAddress>								sidsToSocketAddresses		= new ConcurrentHashMap<String, SocketAddress>();
+	private final ConcurrentHashMap<String, SocketAddress>								sidsToSocketAddresses		= new ConcurrentHashMap<String, SocketAddress>();
 
 	/** Map in which keys are sessionTokens, and values are associated SessionHandles */
-	private HashMapArrayList<Object, SessionHandle>									clientSessionHandleMap	= new HashMapArrayList<Object, SessionHandle>();
+	private final HashMapArrayList<Object, SessionHandle>									clientSessionHandleMap	= new HashMapArrayList<Object, SessionHandle>();
 
 	// protected S applicationObjectScope;
 
@@ -76,9 +75,11 @@ public class NIODatagramServer<S extends Scope> extends NIODatagramCore<S> imple
 	public NIODatagramServer(	int portNumber,
 														SimplTypesScope translationScope,
 														S objectRegistry,
-														boolean useCompression)
+			boolean useCompression, int initialPoolSize,
+			int minimumPoolSize, int maximumSize)
 	{
-		super(translationScope, objectRegistry, useCompression);
+		super(translationScope, objectRegistry, useCompression, initialPoolSize, minimumPoolSize,
+				maximumSize);
 
 		// this.applicationObjectScope = objectRegistry;
 
@@ -134,7 +135,7 @@ public class NIODatagramServer<S extends Scope> extends NIODatagramCore<S> imple
 	 */
 	public NIODatagramServer(int portNumber, SimplTypesScope translationScope, S objectRegistry)
 	{
-		this(portNumber, translationScope, objectRegistry, false);
+		this(portNumber, translationScope, objectRegistry, false, 1, 1, 32);
 	}
 
 	@Override
@@ -336,7 +337,7 @@ public class NIODatagramServer<S extends Scope> extends NIODatagramCore<S> imple
 		dispensedTokens++;
 
 		// convert to normal characters and return as a String
-		return DatatypeConverter.printBase64Binary(digester.digest());
+		return new String((new BASE64Encoder()).encode(digester.digest()));
 	}
 
 	public int getPortNumber()
@@ -475,11 +476,5 @@ public class NIODatagramServer<S extends Scope> extends NIODatagramCore<S> imple
 		{
 			e.printStackTrace();
 		}
-	}
-
-	@Override
-	public void increaseSharedBufferPoolSize(int newCapacity) {
-		// TODO Auto-generated method stub
-		
 	}
 }

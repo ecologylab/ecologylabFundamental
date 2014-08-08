@@ -80,7 +80,6 @@ public class RestSearchResult extends ElementState
 		return SearchResults;
 	}
 	
-	@Override
 	public String toString()
 	{
 		return "RestSearchResult{\n" + 

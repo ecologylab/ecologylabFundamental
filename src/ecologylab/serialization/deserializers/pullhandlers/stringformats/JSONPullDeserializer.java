@@ -1,5 +1,6 @@
 package ecologylab.serialization.deserializers.pullhandlers.stringformats;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,15 +13,18 @@ import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.JsonToken;
 
-
+import ecologylab.generic.Debug;
+import ecologylab.net.ParsedURL;
 import ecologylab.serialization.ClassDescriptor;
 import ecologylab.serialization.DeserializationHookStrategy;
 import ecologylab.serialization.FieldDescriptor;
-import ecologylab.serialization.FieldType;
+import ecologylab.serialization.FieldTypes;
 import ecologylab.serialization.SIMPLTranslationException;
-import ecologylab.serialization.SimplTypesScope;
+import ecologylab.serialization.ScalarUnmarshallingContext;
 import ecologylab.serialization.TranslationContext;
+import ecologylab.serialization.SimplTypesScope;
 import ecologylab.serialization.deserializers.pullhandlers.DeserializationProcedureState;
+import ecologylab.serialization.deserializers.pullhandlers.PullDeserializer;
 import ecologylab.serialization.types.element.IMappable;
 
 /**
@@ -31,13 +35,7 @@ import ecologylab.serialization.types.element.IMappable;
  */
 public class JSONPullDeserializer extends StringPullDeserializer
 {
-  
-  /**
-   * This field is purely used for debugging; should be removed from production.
-   */
-  @Deprecated
-  StringBuilder debugContext;
-  
+
 	/**
 	 * JsonParser object from the Jackson JSON parsing library. Implements a pull API for parsing JSON
 	 */
@@ -95,7 +93,6 @@ public class JSONPullDeserializer extends StringPullDeserializer
 	 * @throws IOException
 	 * @throws SIMPLTranslationException
 	 */
-	@Override
 	public Object parse(CharSequence charSequence) throws SIMPLTranslationException
 	{
 		try
@@ -133,8 +130,6 @@ public class JSONPullDeserializer extends StringPullDeserializer
 
 	private Object parse() throws IOException, JsonParseException, SIMPLTranslationException
 	{
-	  debugContext = new StringBuilder();
-	  
 		// all JSON documents start with an opening brace.
 		if (jp.nextToken() != JsonToken.START_OBJECT)
 		{
@@ -147,20 +142,10 @@ public class JSONPullDeserializer extends StringPullDeserializer
 		Object root = null;
 
 		// find the classdescriptor for the root element.
-		ClassDescriptor<?> rootClassDescriptor = translationScope.getClassDescriptorByTag(jp
+		ClassDescriptor rootClassDescriptor = translationScope.getClassDescriptorByTag(jp
 				.getCurrentName());
 
 		root = rootClassDescriptor.getInstance();
-		
-		// Logic to set all field descritpro scalars to defaults. 
-		for(FieldDescriptor fd : rootClassDescriptor.allFieldDescriptors())
-		{
-			if(fd.isScalar() && (fd.isEnum() == false))
-			{
-				fd.setFieldToScalarDefault(root, translationContext);
-			}
-		}
-
 		// root.setupRoot();
 		
 		deserializationPreHook(root, translationContext);
@@ -192,14 +177,6 @@ public class JSONPullDeserializer extends StringPullDeserializer
 	private void createObjectModel(Object root, ClassDescriptor rootClassDescriptor)
 			throws JsonParseException, IOException, SIMPLTranslationException
 	{
-	  debug(debugContext.toString()
-	        + "createObjectModel("
-	        + (root == null ? "<null>" : root.toString())
-	        + ", "
-	        + (rootClassDescriptor == null ? "<null>" : rootClassDescriptor.toString())
-	        + ")");
-	  debugContext.append("----");
-	  
 		FieldDescriptor currentFieldDescriptor = null;
 		Object subRoot = null;
 		
@@ -210,39 +187,13 @@ public class JSONPullDeserializer extends StringPullDeserializer
 		{
 			if (!handleSimplId(jp.getText(), root))
 			{
-//				currentFieldDescriptor = (currentFieldDescriptor != null)
-//						&& (currentFieldDescriptor.getType() == IGNORED_ELEMENT) ? FieldDescriptor.IGNORED_ELEMENT_FIELD_DESCRIPTOR
-//						: (currentFieldDescriptor != null && currentFieldDescriptor.getType() == WRAPPER) ? currentFieldDescriptor
-//								.getWrappedFD()
-//								: rootClassDescriptor.getFieldDescriptorByTag(jp.getText(), translationScope, null);
-								
-			  FieldDescriptor oldCurrentFieldDescritpr = currentFieldDescriptor;
-			  byte path = 0;
-			  String fieldTag = null;
-				if (currentFieldDescriptor != null && currentFieldDescriptor.getType() == FieldType.IGNORED_ELEMENT)
-				{
-				  path = 1;
-				  currentFieldDescriptor = FieldDescriptor.IGNORED_ELEMENT_FIELD_DESCRIPTOR;
-				}
-				else
-				{
-				  if (currentFieldDescriptor != null && currentFieldDescriptor.getType() == FieldType.WRAPPER)
-				  {
-				    path = 2;
-				    currentFieldDescriptor = currentFieldDescriptor.getWrappedFD();
-				  }
-				  else
-				  {
-				    path = 3;
-				    fieldTag = jp.getText();
-				    currentFieldDescriptor = rootClassDescriptor.getFieldDescriptorByTag(fieldTag, translationScope, null);
-				  }
-				}
-				
-				FieldType fieldType = currentFieldDescriptor.getType();
-				
-				String message = debugContext.toString() + "processing field " + currentFieldDescriptor.getName();
-        debug(message);
+				currentFieldDescriptor = (currentFieldDescriptor != null)
+						&& (currentFieldDescriptor.getType() == IGNORED_ELEMENT) ? FieldDescriptor.IGNORED_ELEMENT_FIELD_DESCRIPTOR
+						: (currentFieldDescriptor != null && currentFieldDescriptor.getType() == WRAPPER) ? currentFieldDescriptor
+								.getWrappedFD()
+								: rootClassDescriptor.getFieldDescriptorByTag(jp.getText(), translationScope, null);
+
+				int fieldType = currentFieldDescriptor.getType();
 
 				switch (fieldType)
 				{
@@ -289,13 +240,13 @@ public class JSONPullDeserializer extends StringPullDeserializer
 					}
 					else
 					{
-							while (jp.nextToken() != JsonToken.END_ARRAY)
-							{
-								subRoot = getSubRoot(currentFieldDescriptor, jp.getCurrentName());
-								Collection collection = (Collection) currentFieldDescriptor
-										.automaticLazyGetCollectionOrMap(root);
-								collection.add(subRoot);
-							}
+						while (jp.nextToken() != JsonToken.END_ARRAY)
+						{
+							subRoot = getSubRoot(currentFieldDescriptor, jp.getCurrentName());
+							Collection collection = (Collection) currentFieldDescriptor
+									.automaticLazyGetCollectionOrMap(root);
+							collection.add(subRoot);
+						}
 					}
 					break;
 				case MAP_ELEMENT:
@@ -373,12 +324,8 @@ public class JSONPullDeserializer extends StringPullDeserializer
 		deserializationPostHook(root, translationContext);
 		if (deserializationHookStrategy != null)
 			deserializationHookStrategy.deserializationPostHook(root, 
-					currentFieldDescriptor == null || currentFieldDescriptor.getType() == FieldType.IGNORED_ELEMENT
+					currentFieldDescriptor == null || currentFieldDescriptor.getType() == IGNORED_ELEMENT
 					? null : currentFieldDescriptor);
-		
-		int debugContextLen = debugContext.length();
-		if (debugContextLen > 0)
-  		debugContext.delete(debugContextLen - 4, debugContextLen);
 	}
 
 	/**
@@ -395,7 +342,7 @@ public class JSONPullDeserializer extends StringPullDeserializer
 	private Object getSubRoot(FieldDescriptor currentFieldDescriptor, String tagName)
 			throws SIMPLTranslationException, JsonParseException, IOException
 	{
-		jp.nextToken();  // OBJECT_START
+		jp.nextToken();
 
 		Object subRoot = null;
 
@@ -406,24 +353,14 @@ public class JSONPullDeserializer extends StringPullDeserializer
 			{
 				jp.nextToken();
 				subRoot = translationContext.getFromMap(jp.getText());
-				jp.nextToken();  // OBJECT_END
+				jp.nextToken();
 			}
 			else
 			{
-				ClassDescriptor<?> subRootClassDescriptor = currentFieldDescriptor
+				ClassDescriptor subRootClassDescriptor = currentFieldDescriptor
 						.getChildClassDescriptor(tagName);
 
 				subRoot = subRootClassDescriptor.getInstance();
-				
-				// Logic to set all field descritpro scalars to defaults. 
-				for(FieldDescriptor fd : subRootClassDescriptor.allFieldDescriptors())
-				{
-					if(fd.isScalar() && (fd.isEnum() == false))
-					{
-						fd.setFieldToScalarDefault(subRoot, translationContext);
-					}
-				}
-
 				
 				deserializationPreHook(subRoot, translationContext);
 				if (deserializationHookStrategy != null)
@@ -439,7 +376,6 @@ public class JSONPullDeserializer extends StringPullDeserializer
 			if (newSubRoot != null)
 				subRoot = newSubRoot;
 		}
-		
 		return subRoot;
 	}
 

@@ -48,7 +48,6 @@ implements CrossLanguageTypeConstants
 	 * 
 	 * @see ecologylab.serialization.types.ScalarType#getInstance(java.lang.String, String[], ScalarUnmarshallingContext)
 	 */
-	@Override
 	public ParsedURL getInstance(String value, String[] formatStrings, ScalarUnmarshallingContext scalarUnmarshallingContext)
 	{
 	   File file	= null;
@@ -67,7 +66,7 @@ implements CrossLanguageTypeConstants
 	   }
 	   else if (PropertiesAndDirectories.isWindows())
 	   {
-	  	 if (value.length() > 1 && value.charAt(1) == ':') 
+	  	 if (value.charAt(1) == ':') 
 	  		 file				= ecologylab.io.Files.newFile(value);
 	  	 else if (value.startsWith("\\\\"))
 	  		 file				= new File(value);
@@ -125,7 +124,6 @@ implements CrossLanguageTypeConstants
 		return URL_DELIMS;
 	}
 	
-	@Override
 	public boolean allowNewLines()
 	{
 		return false;
@@ -138,7 +136,6 @@ implements CrossLanguageTypeConstants
 	 */
 	//FIXME -- Add String delimitersAfter to TextChunk -- interleaved with TextTokens, and
 	//get rid of this!!!
-	@Override
 	public boolean allowDelimitersInTokens()
 	{
 		return true;
@@ -147,7 +144,6 @@ implements CrossLanguageTypeConstants
 	 * When editing, do not allow the user to include these characters in the resulting value String.
 	 * @return
 	 */
-	@Override
 	public String illegalChars()
 	{
 		return " !{}\t\n\r";
@@ -157,7 +153,6 @@ implements CrossLanguageTypeConstants
 	 * 
 	 * @return	false for URLs
 	 */
-	@Override
 	public boolean composedOfTerms()
 	{
 		return false;
@@ -168,7 +163,6 @@ implements CrossLanguageTypeConstants
 	 * 
 	 * @return	The URL implementation, here, returns a slash.
 	 */
-	@Override
 	public String primaryDelimiter()
 	{
 		return PRIMARY_URL_DELIM;

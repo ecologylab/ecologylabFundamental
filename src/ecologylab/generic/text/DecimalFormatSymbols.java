@@ -346,12 +346,11 @@ final public class DecimalFormatSymbols implements Cloneable, Serializable
 	/**
 	 * Standard override.
 	 */
-	@Override
 	public Object clone()
 	{
 		try
 		{
-			return super.clone();
+			return (DecimalFormatSymbols) super.clone();
 			// other fields are bit-copied
 		}
 		catch (CloneNotSupportedException e)
@@ -363,7 +362,6 @@ final public class DecimalFormatSymbols implements Cloneable, Serializable
 	/**
 	 * Override equals.
 	 */
-	@Override
 	public boolean equals(Object obj)
 	{
 		if (obj == null)
@@ -410,8 +408,8 @@ final public class DecimalFormatSymbols implements Cloneable, Serializable
 		digit = '#';
 		minusSign = '-';
 		exponential = 'E';
-		perMill = '\u00E4';
-		infinity = "\u00B0";
+		perMill = 'ä';
+		infinity = "°";
 		NaN = "NaN";
 		currencySymbol = "$";
 		intlCurrencySymbol = "USD";

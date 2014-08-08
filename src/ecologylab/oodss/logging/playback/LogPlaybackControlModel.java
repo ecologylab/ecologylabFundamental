@@ -16,21 +16,23 @@ import ecologylab.oodss.logging.MixedInitiativeOp;
 import ecologylab.oodss.logging.Prologue;
 
 /**
- * Model of playback for logged operations. Controls advancement through a log during playback, as well as rewind, etc.
+ * Model of playback for logged operations. Controls advancement through a log during playback, as
+ * well as rewind, etc.
  * 
  * @author Zachary O. Toups (toupsz@cs.tamu.edu)
  */
-public class LogPlaybackControlModel<E extends MixedInitiativeOp, T extends Logging<E>> implements BoundedRangeModel
+public class LogPlaybackControlModel<E extends MixedInitiativeOp, T extends Logging<E>> implements
+		BoundedRangeModel
 {
-	protected T							log;
+	protected T													log;
 
-	private int							currentPlaybackOp	= 0;
+	private int													currentPlaybackOp	= 0;
 
-	private boolean					singleEventMode	= false;
+	private final boolean								singleEventMode		= false;
 
-	private List<ChangeListener>	changeListeners	= new LinkedList<ChangeListener>();
-	
-	protected long						startTime 			= 0;
+	private final List<ChangeListener>	changeListeners		= new LinkedList<ChangeListener>();
+
+	protected long											startTime					= 0;
 
 	/**
 	 * 
@@ -44,7 +46,7 @@ public class LogPlaybackControlModel<E extends MixedInitiativeOp, T extends Logg
 	{
 		return log;
 	}
-	
+
 	/**
 	 * Returns the control to the first op.
 	 * 
@@ -165,7 +167,8 @@ public class LogPlaybackControlModel<E extends MixedInitiativeOp, T extends Logg
 	@Override
 	public void setExtent(int arg0) throws UnsupportedOperationException
 	{
-		throw new UnsupportedOperationException("Extent set by underlying data; cannot set extent manually.");
+		throw new UnsupportedOperationException(
+				"Extent set by underlying data; cannot set extent manually.");
 	}
 
 	@Override
@@ -228,7 +231,8 @@ public class LogPlaybackControlModel<E extends MixedInitiativeOp, T extends Logg
 	}
 
 	/**
-	 * Returns the next operation after the current one if one exists, otherwise returns the current operation.
+	 * Returns the next operation after the current one if one exists, otherwise returns the current
+	 * operation.
 	 * 
 	 * @return
 	 */
@@ -244,20 +248,20 @@ public class LogPlaybackControlModel<E extends MixedInitiativeOp, T extends Logg
 			return this.getCurrentOp();
 		}
 	}
-	
+
 	public Prologue getLogPrologue()
 	{
 		return this.log.getPrologue();
 	}
-	
+
 	public void setStartPoint()
 	{
 		startTime = this.getCurrentOp().getSessionTime();
 	}
-	
+
 	public long getTimeOffset()
 	{
 		return this.getCurrentOp().getSessionTime() - startTime;
 	}
-	
+
 }

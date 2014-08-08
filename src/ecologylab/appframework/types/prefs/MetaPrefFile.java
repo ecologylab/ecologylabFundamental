@@ -57,8 +57,7 @@ public class MetaPrefFile extends MetaPref<File>
      * 
      * @return Default value of MetaPref
      */
-    @Override
-	public File getDefaultValue()
+    public File getDefaultValue()
     {
         return defaultValue;
     }

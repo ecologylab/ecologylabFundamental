@@ -1,0 +1,4807 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_26-b03-383-11A511 (Apple Inc.)
+Application-Name: TeC2.0
+Permissions: all-permissions
+
+Name: ecologylab/concurrent/DownloadMonitor.class
+SHA1-Digest: uQT/jMFhN2tfNISVqqB3s0wwYA8=
+
+Name: ecologylab/standalone/TestRegex.java
+SHA1-Digest: WaG7MPfNiVfGhckDDUiNFIXx0bs=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestSubItem2.clas
+ s
+SHA1-Digest: jRP23nAzKAcny+UZ/5Ewn1poMO4=
+
+Name: ecologylab/serialization/ElementState$bibtex_type.class
+SHA1-Digest: mAxXxih6cqzFbLjini+cjfGGw3w=
+
+Name: ecologylab/appframework/Memory.class
+SHA1-Digest: IAFChib/GaSOMWx44D2pZ+2c2lw=
+
+Name: ecologylab/serialization/library/jnlp/information/MenuElement.cl
+ ass
+SHA1-Digest: 4FmM6+7bkddHTbKsr7kHgEXF9Yg=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/HTTPPos
+ tClientSessionManager.java
+SHA1-Digest: KoruGpRPf7LqeIgL4DFBOFHOCsk=
+
+Name: ecologylab/serialization/tlv/TLVEvents.java
+SHA1-Digest: Y4ukOwm93REqmboE8/aYvtaK384=
+
+Name: ecologylab/serialization/library/dc/Dc.java
+SHA1-Digest: TH3+Bk8NftnYKK6nbUTVZdnIJKU=
+
+Name: config/preferences/siteGuideExample_parsed.xml
+SHA1-Digest: /S+0wqlOIs5htpZKPTxaTk3/9rE=
+
+Name: ecologylab/generic/HashMapWriteSynch2Args.class
+SHA1-Digest: QVNVsPM7G2Gi6MXXEDDup36rat8=
+
+Name: ecologylab/oodss/distributed/client/NIODatagramClient.class
+SHA1-Digest: YE7JVpmHw5PHiR0cATSWC5CDdrM=
+
+Name: ecologylab/serialization/library/geom/SpatialVector.class
+SHA1-Digest: X/60xJlZew9M9VgZonPF7jxi9yQ=
+
+Name: ecologylab/serialization/ElementState$simpl_composite.class
+SHA1-Digest: d821jv/gEKrqIMKVULZFz6hHcFs=
+
+Name: ecologylab/oodss/distributed/client/package.html
+SHA1-Digest: nWln3Z2mDbRiUQ5Yp2QRb2SuUAI=
+
+Name: ecologylab/serialization/types/scalar/ReferenceLongType.java
+SHA1-Digest: xc19L3p5uJNMoDq7oWEdHtd01n8=
+
+Name: ecologylab/tests/serialization/objectGraphTest/ListEqEq.class
+SHA1-Digest: /beu6YI+MM4ZyTDx3pXAJg+8Gcw=
+
+Name: ecologylab/serialization/types/scalar/BooleanType.java
+SHA1-Digest: E2JPNAn0T7p607HwCQ9GVdfyy+g=
+
+Name: ecologylab/serialization/ElementState$simpl_db.class
+SHA1-Digest: NwXwQdjJw5T1f9iEk5O+W0mnNdA=
+
+Name: ecologylab/serialization/library/rss/Channel.class
+SHA1-Digest: Wr2xAhO4/5XEoYFEEcFnZUSvnHI=
+
+Name: ecologylab/appframework/types/AssetsTranslations.class
+SHA1-Digest: UkNDOOsohdonNVWr79TlUwuLaiA=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/SurrogateSe
+ t.class
+SHA1-Digest: OUZkbxU3g0m7HphFQKgYekKC1rM=
+
+Name: ecologylab/generic/text/Format$Field.class
+SHA1-Digest: Aorno7pRYAH/ovuce2wIuvtl1nQ=
+
+Name: ecologylab/serialization/serializers/ISimplSerializationPost.cla
+ ss
+SHA1-Digest: jGXduzG3rehENg6jo7kRPZwYf94=
+
+Name: ecologylab/serialization/ClassDescriptor.java
+SHA1-Digest: E9wAtDSrMsxE3X8HdT2d4mVKBKI=
+
+Name: ecologylab/serialization/annotations/DbHint.class
+SHA1-Digest: /j3BhZXnmDxnIiXeQ4KT32OGadM=
+
+Name: ecologylab/collections/OverlappingAnyKeySets.class
+SHA1-Digest: LhGQbcujHcE1IE+1FMo19sgHLgM=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Preferences
+ .java
+SHA1-Digest: H2xkaFKk0SyqkpSUtpramp3rUj4=
+
+Name: ecologylab/serialization/types/element/IntState.class
+SHA1-Digest: 86yjpZqErGAtiY0CgEiXa52bN2I=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/RejectDomai
+ nSet.java
+SHA1-Digest: FakJw/2lBV/N/fj2Ivmv9ZWFN48=
+
+Name: ecologylab/standalone/researchnotebook/gui/ResearchNotebook.java
+SHA1-Digest: qbPLyKjGiJjrRGj71MmWJSff5JA=
+
+Name: ecologylab/generic/text/EfficientDecimalFormat.java
+SHA1-Digest: 7Hjnl48GTRxOR36b1EY+jjy6j10=
+
+Name: ecologylab/generic/ImageTools.java
+SHA1-Digest: fFc+MsqmmrB/1FsvT4iGuVp1pzk=
+
+Name: ecologylab/serialization/types/scalar/CollectionTypeType.class
+SHA1-Digest: lDw3jOI0TE5kke7ASVnIx1DbffI=
+
+Name: ecologylab/serialization/library/rest/Record.java
+SHA1-Digest: AZUWoq4TmMdAxYsW3Me2TcWMRDE=
+
+Name: ecologylab/serialization/annotations/bibtex_type.java
+SHA1-Digest: qScVo9SKlTbqo5lE21BiQClsGl4=
+
+Name: ecologylab/oodss/distributed/impl/NIOServerIOThread.java
+SHA1-Digest: 9jD1M+cJdczpGRiWQzwYfwn3hVk=
+
+Name: ecologylab/serialization/library/package.html
+SHA1-Digest: HQ+V7BQ3gpHe0X6SU3sbNIQd1cI=
+
+Name: ecologylab/serialization/library/rest/ResultsInfo.class
+SHA1-Digest: aCV9WRIFAZ/YwYpAfeJyH4MekZE=
+
+Name: ecologylab/appframework/types/prefs/PrefOpTranslations.java
+SHA1-Digest: m8rXHQCwtM4GHyBgbfVAY6cP0IQ=
+
+Name: ecologylab/collections/MergeD.java
+SHA1-Digest: ysjwvVuxe/L/mpqBBn7nP1VLbLk=
+
+Name: ecologylab/serialization/types/element/StringState.java
+SHA1-Digest: CHKUmHKXwJ3jAKxFvBH3PDqLPGk=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ images/upload.wikimedia.org-220px-Picasso-Necklace.jpg
+SHA1-Digest: QEfZo/bzeiE/2+r5ch/HVx3O9TU=
+
+Name: ecologylab/tests/serialization/objectGraphTest/PointDotEquals.ja
+ va
+SHA1-Digest: hmbKwJMAUquieS5U1X9tvS1Hn+8=
+
+Name: ecologylab/oodss/logging/Logging.class
+SHA1-Digest: daYP0YIVBknWZyDE/Qg/2C8WnFs=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Paragraph.c
+ lass
+SHA1-Digest: 9U/Td3Pr6efcVieWpJG47Hq5czg=
+
+Name: ecologylab/net/NetTools.java
+SHA1-Digest: bZY0wi/Y+6m0zifhIWxGZaHS+nE=
+
+Name: ecologylab/generic/ScaledValueObserver.java
+SHA1-Digest: 9+5VnQZy+aRSkDR8ckBwIh83Jkc=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore$PacketHandlerP
+ ool.class
+SHA1-Digest: z+LF+kTdUvfk9s8/yUNSBzoxiHg=
+
+Name: ecologylab/standalone/researchnotebook/testxml/SiteSet.class
+SHA1-Digest: zuUawKtjRk00A8y7YPIhrCIbjwo=
+
+Name: ecologylab/serialization/library/apple/StringProperty.java
+SHA1-Digest: n96MQHvmKaC1yjM7Yv1WFv//CGk=
+
+Name: ecologylab/tests/TestServer.java
+SHA1-Digest: sVPYsp9Kfkp667YVpg+/wBvn6qk=
+
+Name: ecologylab/serialization/annotations/simpl_tag.class
+SHA1-Digest: 0hBUYcAVelkRTuCWc89bPA2aoxU=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ JSONPushHandler.java
+SHA1-Digest: /n4yPJy4d15WbItLyKnouZm/t6c=
+
+Name: ecologylab/generic/Generic.class
+SHA1-Digest: VOnWXnOMSXZsq1qRxu8sNutg8l4=
+
+Name: ecologylab/tests/serialization/TestPrimitives.java
+SHA1-Digest: 2v7hg3tFebBK68syQewfspEikcU=
+
+Name: ecologylab/serialization/ElementState$simpl_format.class
+SHA1-Digest: 3wf3Ez7V9a0+mWfPN6Bx/LDii54=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/ClientS
+ essionManager.java
+SHA1-Digest: DrA/eUx0hjOw5V1fN+BY6dCVrWw=
+
+Name: ecologylab/collections/WeightSet.java
+SHA1-Digest: X7LjBkjip7DEGeBXGAr/qawhnnE=
+
+Name: .project
+SHA1-Digest: hRUdvViEwPavhpJQZqQU0JXL1D0=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ BibTeXHandler.java
+SHA1-Digest: 9cbgeyf/F0k9mmL/8CRyAMEC6Uw=
+
+Name: ecologylab/oodss/messages/Pong.class
+SHA1-Digest: W8GnLFfdjJDhn2w/mwDlT2cYuZE=
+
+Name: ecologylab/standalone/researchnotebook/gui/ResearchNotebook.clas
+ s
+SHA1-Digest: xQd5crIwnta16H01MkZZCzk0eOU=
+
+Name: ecologylab/generic/Describable.java
+SHA1-Digest: XnIrP6HWFGtPPExiyyFUoNF8X2o=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/Datagra
+ mClientSessionManager.class
+SHA1-Digest: 4G8iStfu0EH4j3CB0592FuwsbFI=
+
+Name: ecologylab/generic/Line2D.java
+SHA1-Digest: M4y5VZ7EHdhPdisUMNAo1bXKkiY=
+
+Name: ecologylab/serialization/Hint.class
+SHA1-Digest: 9bfAvt3WrERKlZqoW6Fe81IONc0=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore$PacketReciever
+ .class
+SHA1-Digest: V6vrAgorZT52RqkFvS1fFgwEByc=
+
+Name: ecologylab/serialization/library/apple/DictionaryProperty.java
+SHA1-Digest: SaiVcvMbXv8zUyw+zT4LY6q54M4=
+
+Name: ecologylab/serialization/annotations/simpl_format.java
+SHA1-Digest: wtUCyQkZfo5+FsjpdLl/hp/GgOI=
+
+Name: ecologylab/appframework/types/prefs/PrefFile.class
+SHA1-Digest: KsxDFW5YpRPyNQg5jjhGmXzaJ8s=
+
+Name: .settings/org.eclipse.jdt.core.prefs
+SHA1-Digest: UlUjtMrzKFAySEYvZ+4sGbKphEQ=
+
+Name: ecologylab/serialization/library/jnlp/AllPermissionsElement.java
+SHA1-Digest: K+V9OjIxD779ApZYUn55IvsTDTU=
+
+Name: ecologylab/generic/ValueFactory.java
+SHA1-Digest: SmLVHEkHyXtxb5II283Ic02CGc4=
+
+Name: ecologylab/serialization/formatenums/StringFormat.class
+SHA1-Digest: rG34lB2/fyGxRb6eu2V7OxdhNM4=
+
+Name: config/preferences/metaprefs.xml
+SHA1-Digest: vL+3/kITFSeK0bdiMSzJ2NSQSbM=
+
+Name: ecologylab/serialization/FieldTypes.java
+SHA1-Digest: S5ouMi3GLDWOjI/qRVVezIoFy8E=
+
+Name: ecologylab/standalone/researchnotebook/testxml/rssResult.xml
+SHA1-Digest: veLsSIEQeLp9e5+bhmybxSp5FPo=
+
+Name: ecologylab/appframework/ApplicationPropertyNames.class
+SHA1-Digest: 3Nz7mPjVsJhCvo2f9ih9nUoF08o=
+
+Name: ecologylab/serialization/library/html/Tr.class
+SHA1-Digest: Sql2zPfofVpmiTDpZmF6WA415bk=
+
+Name: ecologylab/serialization/ScalarUnmarshallingContext.class
+SHA1-Digest: 35ZAhOlBXyb8HyhjN4SRSektIYs=
+
+Name: ecologylab/serialization/library/apple/DictionaryProperty.class
+SHA1-Digest: mlZmjDzq+VxB/CZCjRbpREnkWo8=
+
+Name: ecologylab/appframework/Environment.java
+SHA1-Digest: jz3wqhJ+jR408SLn9O3TAc38hKo=
+
+Name: ecologylab/serialization/serializers/ISimplSerializationPre.java
+SHA1-Digest: alJ8rd8IGngt0ct29qtbtRfifak=
+
+Name: ecologylab/serialization/types/element/IMappable.java
+SHA1-Digest: gg0zjYTpueI3BjcuRaWL7PCk6V8=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1.
+ xml
+SHA1-Digest: ERgF4uJok4fvwNxvMwW6ePMp+mw=
+
+Name: Makefile
+SHA1-Digest: qRXZ5Ox8XLB6RP3az/C2mKGm77Y=
+
+Name: ecologylab/generic/CappedResourcePool.java
+SHA1-Digest: PmaXMBeBKRljSUcawbM4Pzvuu5Y=
+
+Name: ecologylab/io/ByteBufferPool.java
+SHA1-Digest: gNW+3x9lQmc1mFFnR0kH4Y1yjVc=
+
+Name: lib/json_simple-1.1.jar
+SHA1-Digest: XjA6A9BOZ4jd36NlUnJYCuD8E7s=
+
+Name: ecologylab/serialization/types/element/Mappable.java
+SHA1-Digest: rCsHor4Wv+fsyNtG2Swp272tbbI=
+
+Name: ecologylab/serialization/library/geom/SpatialVector.java
+SHA1-Digest: 5fB32YCiLbzZcUA4NY8QiJbWZlo=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$7.class
+SHA1-Digest: A6KvFYAMDbSHp8MB5EgrcMVRhls=
+
+Name: ecologylab/oodss/distributed/impl/NIOCore$SocketModeChangeReques
+ t.class
+SHA1-Digest: YaLCALe86CxMLp4EZ7sG5tMPglE=
+
+Name: ecologylab/serialization/library/media/Content.java
+SHA1-Digest: 4KDQhKKejJWqqPBDmEBGgRHJIZc=
+
+Name: ecologylab/net/ParsedURL.class
+SHA1-Digest: //nojSjMfQ9u595ncLUQvtFzx64=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/HTTPCli
+ entSessionManager.class
+SHA1-Digest: kHgn05V8L5/7tno3ldcnF+5I+xY=
+
+Name: ecologylab/serialization/library/rest/Fields.class
+SHA1-Digest: zVuo+8+eAMUpHea2qeT0JH36flQ=
+
+Name: ecologylab/oodss/messages/MultiRequestMessage.java
+SHA1-Digest: /nBKWvce76YKgRKaeB8qUGABH7s=
+
+Name: ecologylab/oodss/logging/playback/PlaybackControlCommands.class
+SHA1-Digest: 024ACzdOFJMdXQs7mJBk5zsVo+s=
+
+Name: ecologylab/oodss/distributed/common/LimitedInputStream.class
+SHA1-Digest: a7dZN8dLPLojnRtTCEnQ72M7UT8=
+
+Name: ecologylab/serialization/library/rss/RssState.class
+SHA1-Digest: RgreWNwyM/de/LuLLqd1Qvp0idw=
+
+Name: ecologylab/io/XMLFileFilter.java
+SHA1-Digest: 3E3OxkgzvKDzcyzugAnbceJftNI=
+
+Name: ecologylab/serialization/library/rest/Header.java
+SHA1-Digest: ZLsv68eRs4fvvTJBXu53zxsbjVA=
+
+Name: ecologylab/serialization/annotations/simpl_tag.java
+SHA1-Digest: ckPbF9cvXz4T4OLBf83hSUFZA7I=
+
+Name: ecologylab/generic/SwingTools.java
+SHA1-Digest: kcVfLQTE9fyuI9LnGjImZ/pRN1M=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/binaryformat
+ s/TLVPullDeserializer.class
+SHA1-Digest: AKkXbYG8QB61Pg/PtB+EdDT7+5M=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXArticle.java
+SHA1-Digest: czBMnZ0NrmrRZLzTOgnnE5EUt2Y=
+
+Name: ecologylab/serialization/annotations/simpl_wrap.java
+SHA1-Digest: nVH5EaNqO0csM6qCsPdNwo3ys98=
+
+Name: ecologylab/generic/ExceptionHandler.class
+SHA1-Digest: gFxq+IMQglPnUvECrgbb82l2Gw4=
+
+Name: ecologylab/concurrent/Downloadable.class
+SHA1-Digest: AoS874DRFBdtzpJCNzx+g6u8WGY=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ images/pablo-picasso.paintings.name-picasso-femme-en-pleurs.jpg
+SHA1-Digest: LnDQCPf2MPR+6SuJdmE8qKGRXvI=
+
+Name: ecologylab/generic/package.html
+SHA1-Digest: WZo8xP4MtAbghoB6LPVU5jXulbM=
+
+Name: ecologylab/oodss/distributed/impl/PreppedRequest.java
+SHA1-Digest: y/Ym1FnbjoAdKUd477LiUhVi1pk=
+
+Name: ecologylab/generic/HashMappableArrayList.java
+SHA1-Digest: all2SWQLXRToDQhWwaz0PtDahTo=
+
+Name: ecologylab/collections/FloatWeightSet.java
+SHA1-Digest: 16X5EwZEK1aMyxr9PfNxs5AfYy4=
+
+Name: ecologylab/tests/TestClient.java
+SHA1-Digest: uAfX9BnGBQhfXiNmf90wflVAYo8=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3.
+ html
+SHA1-Digest: xf5Sua86eE11zaX8vWYbHlQ0s2M=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ images/upload.wikimedia.org-170px-Kvinnohuvud1-hstd.JPG
+SHA1-Digest: WoG/GBX1ZG56HLRZJYpL9ukkTXo=
+
+Name: ecologylab/appframework/ApplicationProperties.class
+SHA1-Digest: QNHwYZ7UbqNaZGdzKPO/r+zuz8E=
+
+Name: ecologylab/serialization/library/rest/nsdl/NSDLTranslationSpace.
+ class
+SHA1-Digest: MzkcPoIqFbtprumhOGSzWpXpgr4=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Category.cl
+ ass
+SHA1-Digest: qqugxeMQ4GrMuAOFOLPXcJ7EGgk=
+
+Name: ecologylab/serialization/library/xaml/PanelChildState$Dock.class
+SHA1-Digest: lcUx7lxY1lOv9h6zSopQaN3yDUA=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Values.clas
+ s
+SHA1-Digest: T83uCjCLpG9/nLcQDHFkh7JdZqo=
+
+Name: ecologylab/collections/WeightingStrategy.java
+SHA1-Digest: 0zNUc62bpD8Qk10rH0J2rVrCDis=
+
+Name: ecologylab/serialization/annotations/simpl_filter.class
+SHA1-Digest: VDADgOFJKhhQP0XXKgTu7h9xzaM=
+
+Name: ecologylab/serialization/library/html/Div.class
+SHA1-Digest: LZaofBNO44dy1pHG2qphlCjiM4E=
+
+Name: ecologylab/generic/BooleanSlot.java
+SHA1-Digest: 8EWmVpBhZKNHC2IQpgDpKp0H+o0=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Composition
+ State.java
+SHA1-Digest: ORI3vFsf+DzV/3Lv9V4ZJ/tm5Rs=
+
+Name: ecologylab/serialization/library/icdl/ICDLTranslations.java
+SHA1-Digest: j5Kw7PlNmjzWSfyWWhO1Zn+tmNc=
+
+Name: ecologylab/serialization/library/jnlp/information/Description.cl
+ ass
+SHA1-Digest: TncVeRmc4FQb0qIKA3xkBeujLWU=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/ImageElemen
+ t.class
+SHA1-Digest: Bfu1Iy+YGME8/M4OiyRv2yJing4=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/farm4.static.flickr.com-3050483412_c686473687_m.jpg
+SHA1-Digest: rX393CTMPDqzSczf9xM0ElMSBUY=
+
+Name: toolbarButtonGraphics/media/Volume16.gif
+SHA1-Digest: IqpN7UvgXH8LnyCYhIsw8dsp+1o=
+
+Name: ecologylab/serialization/types/scalar/ReferenceBooleanType.java
+SHA1-Digest: V8Yr7bRs2oRxBtm+9Ku6m1a6FPc=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Anchor.java
+SHA1-Digest: ul/h0FILp1SQaR4/iDxQRNd1Cjo=
+
+Name: ecologylab/oodss/logging/LogOps.class
+SHA1-Digest: meRAjjjLx5WLRAOluR2WNe/m6iY=
+
+Name: ecologylab/oodss/distributed/server/ServerMessages.class
+SHA1-Digest: 6K883hp9SCIUaMDyrZdM+Qa9bz8=
+
+Name: ecologylab/generic/ImageTools.class
+SHA1-Digest: een1glqAC5Gj7vLvUQb8s+42Ny8=
+
+Name: ecologylab/serialization/library/geom/Rectangular.class
+SHA1-Digest: 8x4exHRw7jmhWQw9NDy5c1yHfPQ=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/InterestMod
+ el.class
+SHA1-Digest: kN7TeotLi5DQh2zvCG3GMMkf21c=
+
+Name: ecologylab/concurrent/Monitor.java
+SHA1-Digest: w4gF6tmCwvBrz/kutU6uI1DQpGs=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/InterestMod
+ elEntry.java
+SHA1-Digest: n4SOM4bRGN3lH3lMuciU0bT+fEg=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXPhdThesis.class
+SHA1-Digest: EddVruxjEKPgpcpT/Awb4ukqFQM=
+
+Name: ecologylab/serialization/SimplTypesScope$GRAPH_SWITCH.class
+SHA1-Digest: 3qcGeecQfCPkC+gY32/AN4dguvk=
+
+Name: ecologylab/collections/ConcurrentHashMapArrayList.java
+SHA1-Digest: X03tkuYF/BYsDgirTiymQa+jf1U=
+
+Name: ecologylab/oodss/logging/translationScope/MixedInitiativeOpClass
+ esProvider.class
+SHA1-Digest: X982kKghl3S+udW8N1KtzIC+Xe8=
+
+Name: ecologylab/serialization/annotations/simpl_nowrap.class
+SHA1-Digest: /mlRikexI1Aa5RG6+DjlJPIJpkI=
+
+Name: ecologylab/standalone/xmlpolymorph/Schmannel.class
+SHA1-Digest: 5zHrvaZDjT+GPDc2ntgaKQy+0X8=
+
+Name: ecologylab/generic/StartAndStoppable.java
+SHA1-Digest: CYQNn21R1oQB6PiZIAneA/RlXLs=
+
+Name: ecologylab/collections/BasicFloatSet.class
+SHA1-Digest: g62VOC/2tybdM+9+bfNtbV23sDI=
+
+Name: ecologylab/serialization/bibtex/BibTeXEvents.class
+SHA1-Digest: 0QozH/uMyuJvx5GTs7CI+VEW6xs=
+
+Name: ecologylab/serialization/types/element/IMappable.class
+SHA1-Digest: FQNhV4l6PV7bV9BU3C9a0iV+UyE=
+
+Name: ecologylab/oodss/messages/MessageTypes.class
+SHA1-Digest: 4WJn5gj+qcjCj7fA5ICJMYxe2gE=
+
+Name: ecologylab/generic/HashMapWriteSynch.java
+SHA1-Digest: rqSoCZvX+IwsVIoZekcQdV8iaJE=
+
+Name: ecologylab/generic/ReflectionTools.java
+SHA1-Digest: vkVIrY/J5KnVf6T2qe9W2VZiQBs=
+
+Name: ecologylab/oodss/exceptions/SaveFailedException.class
+SHA1-Digest: p6NXuegZ/LfvIM7512zBudXvtyA=
+
+Name: ecologylab/net/PURLConnection.class
+SHA1-Digest: 38t/Sf+3gXUDlkMtAggKyiwfDLM=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2.
+ jpg
+SHA1-Digest: IA9YVptYX86puQqzMmDDMJ2KSRk=
+
+Name: ecologylab/serialization/bibtex/BibTeXParser.class
+SHA1-Digest: bEJii2UjYLnbX+dmN3AycpkAPJc=
+
+Name: ecologylab/serialization/library/jnlp/resource/J2se.class
+SHA1-Digest: EvlP0nkhDPGW7gOdac/9SKsVvwY=
+
+Name: ecologylab/serialization/SpecialCharacterEntities.class
+SHA1-Digest: +zj1JM1M/ZTUWQ5OJF7R61du1C0=
+
+Name: ecologylab/serialization/library/endnote/Author.class
+SHA1-Digest: ekn5PktgrvUYUEhk7ESA7g33a7k=
+
+Name: ecologylab/standalone/TestServer.class
+SHA1-Digest: +FMB9DO/qCSr5dzZVZN5HKP9760=
+
+Name: ecologylab/concurrent/BasicSite.java
+SHA1-Digest: pmT+TZFAD+Ly14l1fLEjP0JzrPs=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/TestComposi
+ tion$Composition.class
+SHA1-Digest: LNpWel0QmFObbc+99rfzPgoUBDA=
+
+Name: ecologylab/serialization/types/scalar/ReferenceType.class
+SHA1-Digest: DA/IHm5RK8WSFjWjzs7rj6vDx8Y=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestComposition.x
+ ml
+SHA1-Digest: 47P4v0N2ynz8kRi0uI6xE5UPdPE=
+
+Name: ecologylab/serialization/library/jnlp/application/ApplicationDes
+ c.java
+SHA1-Digest: pGdckwAGTWjZg/AhonBc+xajrUQ=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestXml_Ecologyla
+ b$TestRssState.class
+SHA1-Digest: Y8VBIveun1xVfNtSrFTEAiDEEZ0=
+
+Name: toolbarButtonGraphics/media/Pause24.gif
+SHA1-Digest: r+GDGCu6suOZPJaYNlzH+YJ1ZBc=
+
+Name: toolbarButtonGraphics/media/Stop16.gif
+SHA1-Digest: /9rcoLrODkPkmVsLCS0TsEBlbxk=
+
+Name: ecologylab/appframework/types/prefs/WidgetTypes.class
+SHA1-Digest: gvgFtD2JBy2LgSKjj2h+ltEBrdY=
+
+Name: ecologylab/tests/ClassTagged.java
+SHA1-Digest: aJmhnmGwMVX3juUcoofn5hrZo/Y=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestXml_Ecologyla
+ b.java
+SHA1-Digest: fhfdp9++1gfH3JvV5UQjXJz1kCU=
+
+Name: ecologylab/oodss/messages/DisconnectRequest.class
+SHA1-Digest: w21KRCPTacY5GaFCJmhb2B/2c6Q=
+
+Name: ecologylab/oodss/distributed/impl/Manager.class
+SHA1-Digest: p3842x/AwCQzKJ2hr4FyMTO4U4E=
+
+Name: ecologylab/appframework/types/prefs/PrefOp.class
+SHA1-Digest: vgbQQ48bA5EqEqFGivrEpYlPGls=
+
+Name: ecologylab/serialization/library/rss/test.xml
+SHA1-Digest: lukGw/mIi2wgP6m9LDkJnpy61Y0=
+
+Name: ecologylab/net/NetTools.class
+SHA1-Digest: 2nemKd9D4RVc8Zy8q1+NTH85jWg=
+
+Name: ecologylab/appframework/ApplicationEnvironment$LaunchType.class
+SHA1-Digest: 6K99TP7bFwob0Bl/l0Ozobm8Zy0=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Screen.java
+SHA1-Digest: jDaEC/49kAzptPcGe97mPULy8gk=
+
+Name: ecologylab/serialization/deserializers/parsers/tlv/Utils.java
+SHA1-Digest: aQL7uog/O42WZeyiWgWACloEVA4=
+
+Name: ecologylab/serialization/library/geom/TestFloats.java
+SHA1-Digest: XKul5ExYDoPfx0QGviM1Hu5B3bk=
+
+Name: ecologylab/serialization/ElementStateOrmBase.java
+SHA1-Digest: RV4QZ0IQ/C4UaV+VfhB8BDRj1C0=
+
+Name: ecologylab/appframework/types/prefs/ChoiceInt.class
+SHA1-Digest: 5RFi735Px6JdDR6k9BkbGwzfm4o=
+
+Name: ecologylab/serialization/annotations/simpl_other_tags.class
+SHA1-Digest: E+S3sZt7HoybyAlgHHM+7lVgZCA=
+
+Name: ecologylab/io/StreamUtils.class
+SHA1-Digest: Q1g9QthOlpRpUAQKkFYHI9J+Py4=
+
+Name: ecologylab/serialization/types/SimplBaseType.java
+SHA1-Digest: Tira0GHDCAuV6VPJSyIbvjMzY04=
+
+Name: ecologylab/serialization/package.html
+SHA1-Digest: xOtmtAyhANVLU7txjgzTNQnwwL8=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXForm
+ atException.class
+SHA1-Digest: +Qa8UaPg08oZtmPgyzpAQPFmLpg=
+
+Name: ecologylab/oodss/distributed/package.html
+SHA1-Digest: hEA0vttokCn9CMc1e+lb3drYt3w=
+
+Name: ecologylab/oodss/logging/SendPrologue.java
+SHA1-Digest: 9ShiZ5xkvtUsYJRwQ3WCOYhkLlo=
+
+Name: ecologylab/net/MimeType.class
+SHA1-Digest: brPVvc5s/FDlCjvCcF4IGuPvdKo=
+
+Name: ecologylab/io/LockFile.java
+SHA1-Digest: LGqTubf2FovXwBSni1AbDbLGKYY=
+
+Name: ecologylab/serialization/library/rss/RssTranslationScopt.xml
+SHA1-Digest: 1siob0Far2XOIc9ANH0Q4BeCDZ4=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ images/upload.wikimedia.org-170px-Les_Demoiselles_d%27Avignon.jpg
+SHA1-Digest: ymlpth9qp7KLTRFofkuZKInEcuU=
+
+Name: lib/svnant.jar
+SHA1-Digest: lH6w7hG6Wri6j//TMqmeM0//hps=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/XMLPullDeserializer.class
+SHA1-Digest: YleFpN9+m88z+xuhk0Nf9z9I0R8=
+
+Name: ecologylab/serialization/simpl_use_equals_equals.class
+SHA1-Digest: 0IXJzcTkgGOD3znBUXvpgB8YgXQ=
+
+Name: ecologylab/appframework/types/prefs/Choice.class
+SHA1-Digest: HeF8CPfH/5hp7W6twFSAwQ6QomQ=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Composition
+ State.class
+SHA1-Digest: Joz8KCA6jkiDAr+Yu95x4B8ZcAI=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ SAXHandler.java
+SHA1-Digest: sEk/JkAjM0glaAD4EexOJqHgQ0c=
+
+Name: ecologylab/generic/AutoCleanerMap.java
+SHA1-Digest: soORuxChnlpCLtbjb3Qxghm+D/s=
+
+Name: ecologylab/serialization/library/jnlp/resource/Nativelib.class
+SHA1-Digest: hTIdMnFS7cZEnaKCtwKwPZdUH1E=
+
+Name: ecologylab/concurrent/BasicSite.class
+SHA1-Digest: 3pULcuuKbj2cBOYFV35iNvqwSFk=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/InterestMod
+ el.java
+SHA1-Digest: ysUCX9Q1H2DKoge9mRplG3tPF6A=
+
+Name: ecologylab/collections/ArrayListFloatSet.class
+SHA1-Digest: OzGDxj8rLqqytnfsZ3gR256TfR4=
+
+Name: ecologylab/appframework/types/prefs/MetaPref.class
+SHA1-Digest: K7dUsqRtzyaqxiN5ifML2P4iS2Y=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXTechReport.java
+SHA1-Digest: 8bK765ksiIBYkUbzaCAxxxkCw3A=
+
+Name: lib/antform.jar
+SHA1-Digest: IuWlMnb9+cC1cpcGaNfTGxvLEXY=
+
+Name: ecologylab/serialization/types/scalar/CompositeAsScalarType.java
+SHA1-Digest: MCHKBPYIAXOqtPwBH7EIQHnDNcA=
+
+Name: lib/svnkit.jar
+SHA1-Digest: /vA7sIwyef4MZgLFNtQwIdoZGIk=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefFloat.class
+SHA1-Digest: 31ArhWOvPENoLvi3DArAExsf5z0=
+
+Name: ecologylab/generic/ConsoleUtils.class
+SHA1-Digest: XQKwBIgK3KmTD9Qw/6ub3s6Td4E=
+
+Name: ecologylab/oodss/distributed/server/varieties/WebLaunchAppServer
+ .class
+SHA1-Digest: +2NaoTH11B/7FhxtjUQ0y+UXtts=
+
+Name: ecologylab/serialization/ObservableElementState.java
+SHA1-Digest: 4SftIS3CrT5iLIWHazx1lk0LAlU=
+
+Name: ecologylab/serialization/ClassDescriptor$FieldDescriptorsDerived
+ EventListener.class
+SHA1-Digest: zcm8/pZUR9kt5jGPqq13UPsLF7o=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/BaseSes
+ sionManager.java
+SHA1-Digest: eX/e6K+RqV1/N+MMZiQNEtDfVyQ=
+
+Name: ecologylab/concurrent/ThreadDebugger.java
+SHA1-Digest: rf8EuFPSeoio1menkxlT88KuPFs=
+
+Name: ecologylab/oodss/messages/HttpGetRequest.java
+SHA1-Digest: 9j4gZLIP8xvQm1dY4QuF8JA6LtE=
+
+Name: ecologylab/generic/CharArrayPool.java
+SHA1-Digest: IJQGypQFY2ihKGWwKsufxpU6KGI=
+
+Name: ecologylab/serialization/XMLTranslationFlow.png
+SHA1-Digest: dDUtl7Y/7onedqJ33EnKbYGY9vk=
+
+Name: ecologylab/collections/OverlappingSets.class
+SHA1-Digest: pTPgPf6KSg/aAi4nL5zwWmWE4EE=
+
+Name: ecologylab/oodss/messages/ExplanationResponse.java
+SHA1-Digest: xZQNfqRr/H9+KihV8x95M/2EWgE=
+
+Name: ecologylab/oodss/distributed/common/NetworkingConstants.java
+SHA1-Digest: wuy5lakLQUvCqTCAXPTw/aNh+zI=
+
+Name: ecologylab/appframework/TraceSlots.java
+SHA1-Digest: xCb1KgUs0ppTnLdwxWg9UFQMSfo=
+
+Name: ecologylab/serialization/tlv/TLVParser.class
+SHA1-Digest: W+8VhEE25xPrt2h0bvqMuXZYX4M=
+
+Name: ecologylab/generic/ExceptionHandler.java
+SHA1-Digest: TkgkeX8Lf9CUiiEWMpjNeMb7MVg=
+
+Name: ecologylab/serialization/library/yahoo/ThumbnailState.class
+SHA1-Digest: Yk84EQZmDvXLPE55CGY1MKj5nmg=
+
+Name: ecologylab/serialization/types/SimplBaseType.class
+SHA1-Digest: vqYiDP1b8w3xFOqcfEUbDLIcJJo=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2-
+ images/farm5.static.flickr.com-4668339872_b247808aa4_m.jpg
+SHA1-Digest: 5eBdiZpDaWDWJE8CXCWpMO8CD70=
+
+Name: ecologylab/generic/Bounds.class
+SHA1-Digest: UJ3pLzrfQ5nJ1xVaiRAX2TS4PVM=
+
+Name: ecologylab/serialization/ElementState$simpl_bind_from.class
+SHA1-Digest: SBn5s0WsqnC/SrN2kXmOwG0edxQ=
+
+Name: ecologylab/serialization/XMLTools.java
+SHA1-Digest: ZJ44n+M+TI3uZww83owzwzn83x8=
+
+Name: ecologylab/tests/serialization/objectGraphTest/ListDotEquals.jav
+ a
+SHA1-Digest: WwlGoJgI1YVG5zpRnPy4xrTPCmc=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestSubItem.class
+SHA1-Digest: 1NzNiL+dbyMI4pIFJ8hR8KVQmEA=
+
+Name: ecologylab/serialization/library/rss/Item.class
+SHA1-Digest: tnfL/fpaM13BfTc9Qgk4S7UAmHs=
+
+Name: ecologylab/oodss/messages/RequestMessage.java
+SHA1-Digest: SC1uu5LxrpTn1J6u52UZROU52Bg=
+
+Name: ecologylab/serialization/tlv/Utils.java
+SHA1-Digest: zQiMpM06RaC3g3yista/i5TtX3o=
+
+Name: ecologylab/serialization/simpl_inherit.class
+SHA1-Digest: Gz8mSlhMQOdVZqaN4eh8/icRL/w=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/WikipediaPa
+ ge.class
+SHA1-Digest: ewY94LyshtgRO7BXRtVgxjiMRRA=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/Session
+ Handle.java
+SHA1-Digest: KGNb5C39aJdgiMUHINw5IcDegWQ=
+
+Name: ecologylab/serialization/ElementObserver.class
+SHA1-Digest: WmmKi+jQ79k56QdI4u5WDU43vqU=
+
+Name: ecologylab/generic/ObservableDebug.class
+SHA1-Digest: e1q+3OmIbfYBIWNMWiFwwJ/H1lQ=
+
+Name: ecologylab/serialization/library/geom/PointInt.class
+SHA1-Digest: smlFhILGDrUrMCQUCni0PFryCwU=
+
+Name: ecologylab/serialization/library/html/Td.class
+SHA1-Digest: HfHDSzxu1bjgeK0BQ8JGqQEviGA=
+
+Name: ecologylab/collections/DLL$DLLIterator.class
+SHA1-Digest: Q7geVAaf6RSGKZaqvuo83qr5lnc=
+
+Name: lib/ecj.jar
+SHA1-Digest: ZySUZdJipe2V214vZMlCrS3n6ZY=
+
+Name: ecologylab/serialization/library/geom/RectangularShape.java
+SHA1-Digest: R6KBhp23+uD77bewyrl9VpaitTU=
+
+Name: ecologylab/serialization/library/geom/Rectangle2DDoubleState.jav
+ a
+SHA1-Digest: Jq55SpACXlrUfM1GGItk0Vsok8o=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefEditorWidgets.java
+SHA1-Digest: bsMkCLM3EWCqtunBWZPI4f12Fbg=
+
+Name: ecologylab/concurrent/ThreadDebugger$WindowObservable.class
+SHA1-Digest: ZHaBbFFvHbWsms0t2+2V6ylVPiM=
+
+Name: ecologylab/standalone/researchnotebook/testxml/NewFile.xml
+SHA1-Digest: CgwichbjuyGlG8EwxddBd9MvvEA=
+
+Name: ecologylab/generic/ColorTracker.class
+SHA1-Digest: CZKy0pjRsdMVc/Qt4/IQo/aBZJs=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ SAXHandler.class
+SHA1-Digest: oNJmcI1pM4vRBTzB6xNNq7TSA6k=
+
+Name: ecologylab/appframework/types/AssetsState.java
+SHA1-Digest: vHGk1GW7rV38j/w+72om+hMrJlY=
+
+Name: ecologylab/generic/StringBuilderPool.class
+SHA1-Digest: avKUFFDL5BW1yvjxuItV99A+Th4=
+
+Name: ecologylab/collections/MultiAncestorScope.class
+SHA1-Digest: wHhUGqJthmh3kmyNPM+yhqXQhHk=
+
+Name: ecologylab/serialization/library/jnlp/resource/Property.java
+SHA1-Digest: ihLyKRx1zfO3q6QCtgRbKMxxmiU=
+
+Name: ecologylab/serialization/ElementState$simpl_composite_as_scalar.
+ class
+SHA1-Digest: NfdfKRzhyf1gtlZKnTIrdlxkAEk=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefSet.java
+SHA1-Digest: ZIEMofq0kMZnNArviERT4bMctU0=
+
+Name: ecologylab/oodss/distributed/impl/NIONetworking.class
+SHA1-Digest: yXvPENPXP5fK6duO+lUebDT2DfY=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionInfo.java
+SHA1-Digest: OxdaXAC8fpvX4RPm8gd2RGT6XPo=
+
+Name: ecologylab/generic/ColorChooserDialog$1.class
+SHA1-Digest: Nbs0ShBmqYcxQxrAUvLCVWjd3eI=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/TestComposi
+ tion.class
+SHA1-Digest: qojEvTIpbZkfSHb0rkK2tCWXYvY=
+
+Name: toolbarButtonGraphics/media/Play24.gif
+SHA1-Digest: ZKq2XHxyvFKdK7MmoVsnqtIlZfc=
+
+Name: ecologylab/appframework/types/prefs/PrefsTranslationsProvider.ja
+ va
+SHA1-Digest: 99WslrolmdAlObi++y86QxEM0FY=
+
+Name: ecologylab/serialization/annotations/simpl_scope.java
+SHA1-Digest: chXDk7PFXm5KXb6HmvnnGOwTPqw=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3.
+ jpg
+SHA1-Digest: DLVf5YPO24F/gerpHGcBPkxyqSo=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXArticle.java
+SHA1-Digest: ThMSL1P9yzHvq7jJIJGa3ue3cCg=
+
+Name: ecologylab/oodss/logging/LogueMessage.java
+SHA1-Digest: m3N8OAnw/XnDu/lJOUIZA8tiHto=
+
+Name: ecologylab/serialization/library/media/package.html
+SHA1-Digest: s2kv6p2lvyTMYF320Gid2yXSQ90=
+
+Name: ecologylab/generic/text/DigitList.java
+SHA1-Digest: jiuUyPZZ/9X9KhIyT/jUekZeaco=
+
+Name: ecologylab/appframework/SimpleDownloadProcessor.java
+SHA1-Digest: 3hXNfUW9L8yd61GAqhlnU+o6TEQ=
+
+Name: ecologylab/net/ConnectionHelper.class
+SHA1-Digest: k6NqeYujdRXOQsQlemP9I0F2+tk=
+
+Name: ecologylab/serialization/bibtex/BibTeXEntryTranslationScope.java
+SHA1-Digest: 3Gupo08a+i/beDULeRoHvMpX5Y8=
+
+Name: ecologylab/serialization/annotations/DbHint.java
+SHA1-Digest: geVruxIqS6ujD4ykMJXNFPwablU=
+
+Name: ecologylab/serialization/library/opml/package.html
+SHA1-Digest: aM3AMseBq65k16778fJlPiSKwlc=
+
+Name: ecologylab/collections/CollectionTools.java
+SHA1-Digest: paesRUhSCMTGIDAOmj3Lat2Ljy4=
+
+Name: ecologylab/collections/ArrayListX.java
+SHA1-Digest: i7Txm3js5GDzEORxwe40LKFiWo0=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXArticle.class
+SHA1-Digest: 4SW9qMVGb580BUYQnV92u4T9+9U=
+
+Name: ecologylab/serialization/library/endnote/KeywordList.java
+SHA1-Digest: JVPSXU7oJ5hgQiEnDB7l/qrxvt8=
+
+Name: ecologylab/appframework/types/prefs/gui/package.html
+SHA1-Digest: dlHQ3CPL5LRi/UXz7QYVSfe9uyA=
+
+Name: toolbarButtonGraphics/media/StepBack24.gif
+SHA1-Digest: 2qTpj/bNzAapKl45KvQMm9wKxZE=
+
+Name: ecologylab/oodss/logging/LogEvent.class
+SHA1-Digest: VykwoZhaqzVo0ZcfTe8kcdLCJsQ=
+
+Name: ecologylab/serialization/MetaInformation.class
+SHA1-Digest: SUdxw/iPQWqNu+GoJ2YgpSEuoWU=
+
+Name: ecologylab/serialization/library/html/Input.class
+SHA1-Digest: g7Hi6mh4Twyt/JHVQ6PbatDncnE=
+
+Name: ecologylab/oodss/distributed/impl/NIOCore.java
+SHA1-Digest: UyFgigQtr3iQ6Nk91FSuCYM6qpM=
+
+Name: ecologylab/generic/NewPorterStemmer.class
+SHA1-Digest: r/d1Z/aQO2lRp0DdKnSp7BQwUCA=
+
+Name: ecologylab/serialization/library/apple/PList.class
+SHA1-Digest: Wy4qCimwu2R2LSKRDYAHTqzY5u8=
+
+Name: ecologylab/oodss/distributed/common/NetworkingConstants.class
+SHA1-Digest: tb4FzbqD26ARflogwFAp096sxAM=
+
+Name: ecologylab/serialization/library/jnlp/information/HomepageElemen
+ t.class
+SHA1-Digest: j3cC9dRoGg8y9JtGmnYdWnsjk70=
+
+Name: ecologylab/textformat/NamedStyle.class
+SHA1-Digest: wiqOkY1EOb41CYe9Bt5gXoKDlj8=
+
+Name: ecologylab/io/DownloadableFileToDisk.java
+SHA1-Digest: RjmHzdTgQPsff2yXLf5WAd4IAbs=
+
+Name: ecologylab/serialization/DeserializationHookStrategy.java
+SHA1-Digest: 3GBmb4QLuI8bQqyfy5V0qIifkr8=
+
+Name: ecologylab/serialization/GenericTypeVar.java
+SHA1-Digest: sxJIJJ5c2tXFTAeh0k6Veyz+fbI=
+
+Name: ecologylab/tests/serialization/objectGraphTest/ObjectGraphTest.j
+ ava
+SHA1-Digest: 7E/+PwFGLOysGT2MTWiH9btF0hc=
+
+Name: ecologylab/serialization/ElementState$simpl_filter.class
+SHA1-Digest: dzzUA41X+J7rckMFDh8PuYJ5iT8=
+
+Name: ecologylab/oodss/messages/SetPreferences.class
+SHA1-Digest: 6751Q6ZIM886JGOpQlvIgxOPdwU=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Query.java
+SHA1-Digest: 55cfu08/8tcmPZJpsQ9uGK46rQA=
+
+Name: ecologylab/generic/HashMapWriteSynch2Args.java
+SHA1-Digest: puXAt4W0a7NsQU3oHB6DL7N2/h8=
+
+Name: ecologylab/standalone/researchnotebook/gui/ResearchNotebook$Tree
+ Listener.class
+SHA1-Digest: A3yrDxz5bS+0y8kSoicwp4gtu1I=
+
+Name: ecologylab/io/Files.class
+SHA1-Digest: 5tMBTUTGyhEhRdlvHkSeR0abuJU=
+
+Name: ecologylab/serialization/library/rest/RESTTranslationSpace.java
+SHA1-Digest: AzzTmO/Jy23Uwuw5CPnB5XSvV98=
+
+Name: ecologylab/serialization/library/media/Media.class
+SHA1-Digest: mGhXdwjeuVIZvXLkIBA5Wwzxl0I=
+
+Name: ecologylab/io/NIOTools.class
+SHA1-Digest: fuHvF3K4AIN/MTtYtrAxzd4ZYbU=
+
+Name: ecologylab/generic/DataTransferTools.java
+SHA1-Digest: TRcBfhpfAp9UiPY6ZWDd0o7K2VM=
+
+Name: ecologylab/tests/TestScalarCollection.class
+SHA1-Digest: FatkxNgLRjBb2fTz+nWyDrqrrx0=
+
+Name: ecologylab/generic/Noise.class
+SHA1-Digest: dBnmPdBx/qlPZjK9Z18GBOM8gjY=
+
+Name: lib/org.eclipse.osgi_3.6.0.v20100517.jar
+SHA1-Digest: HWO5cpJtBT36QnygOEH2fU6sbbI=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/ClientS
+ essionManager.class
+SHA1-Digest: TjdsxiEs+u1OrmkzzmP/uzCuzgs=
+
+Name: ecologylab/concurrent/ThreadEntry.class
+SHA1-Digest: VV+PingbIQPvvSD9yo4Nm60LXh0=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Image.class
+SHA1-Digest: zjSPhNVnEovoyCivk4yZaBYSy+w=
+
+Name: ecologylab/sql/ConnectionWithAutoClose.class
+SHA1-Digest: vx7zyxhki9dW4CHZNZryuQf/AyY=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/ContainerSe
+ t.java
+SHA1-Digest: lIZbpOEZZK/0/RToWRQZiOhEvUo=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2.
+ xml
+SHA1-Digest: K61qozvihnn4Od9zqqWZ4vfDTlE=
+
+Name: ecologylab/oodss/messages/OkResponse.java
+SHA1-Digest: bNsnwKBPLvTZ7TglGScOUnZqkyA=
+
+Name: ecologylab/serialization/library/rss/RDFState.java
+SHA1-Digest: wmFrodq+wu6uq1R+QW0MwpvBJS8=
+
+Name: ecologylab/serialization/types/scalar/DateType.java
+SHA1-Digest: Sk0gyPZb4aOr1Ggs/iBKy9KodvQ=
+
+Name: ecologylab/oodss/messages/MultiRequestMessage.class
+SHA1-Digest: wsHXSEgYxbnvIgUXq/0X+VAHlOg=
+
+Name: ecologylab/generic/Continuation.class
+SHA1-Digest: xN+0YGtaN7qd3NWNdXddjCDY8h8=
+
+Name: lib/ant-contrib-1.0b3.jar
+SHA1-Digest: lDzVyIArKjpkoBDvuG7Bm6wULkA=
+
+Name: ecologylab/collections/LinearAccess.class
+SHA1-Digest: dmuTyWoH3Q5yrU9qRj6+8FQRecY=
+
+Name: ecologylab/appframework/types/prefs/PrefElementState.class
+SHA1-Digest: MTBFVhYZXYdTnkUpCAa33Uj5w5o=
+
+Name: ecologylab/serialization/annotations/bibtex_key.class
+SHA1-Digest: BJKD2dwscAGi+m90AIlahXLUkU8=
+
+Name: ecologylab/oodss/distributed/common/ServicesHostsAndPorts.class
+SHA1-Digest: wNA87bI+NtN9QPTgW+Re/u7wROg=
+
+Name: ecologylab/generic/ReflectionTools.class
+SHA1-Digest: TSQ5gQlzELd81gSSs7LGLvRa7xs=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/CfTextToken
+ .class
+SHA1-Digest: gwEQI8W2L3KRz5KagteG2RXEGqQ=
+
+Name: ecologylab/serialization/library/jnlp/resource/ResourceElementAr
+ ray.java
+SHA1-Digest: w4nIRA+DElEwCnh1w9LqlGPivlU=
+
+Name: ecologylab/serialization/annotations/simpl_composite.java
+SHA1-Digest: DKNZgGPfeTtH6OWH4K7NK59F6ec=
+
+Name: ecologylab/serialization/library/apple/TrueProperty.java
+SHA1-Digest: zXuKzcNdCDXxexU475LarAH+u3A=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefEditorWidgets.class
+SHA1-Digest: KdMioHC5WXitKH7cS/pkmgvfnlo=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/WikipediaPa
+ ge.java
+SHA1-Digest: QMt1UtwB0jIbuCiqs6y7dc+HCpo=
+
+Name: ecologylab/concurrent/DownloadState.class
+SHA1-Digest: sXB9fgI2Y39xWZXbghhDVUZTOh0=
+
+Name: ecologylab/appframework/types/prefs/PrefElementState.java
+SHA1-Digest: 5DNzo4fOWbQkOmC10d8rk/pgj0Q=
+
+Name: ecologylab/io/BasicSite.java
+SHA1-Digest: +ShiFzrR6FenaufcZOVXbGPYtVk=
+
+Name: ecologylab/serialization/annotations/simpl_hints.class
+SHA1-Digest: jjjoZm84nmoLk9757qwCrnysCKU=
+
+Name: ecologylab/generic/ArrayListDebug.java
+SHA1-Digest: VIYlEh03lz96gkUvoNYNje3X2Sc=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$9.class
+SHA1-Digest: g/hr85XL8jiCPY4Ggrfbl2RQFoU=
+
+Name: toolbarButtonGraphics/media/StepForward24.gif
+SHA1-Digest: RaoOsZ5DbuzQ99ze0sSJM6zrK50=
+
+Name: ecologylab/appframework/types/prefs/PrefsTranslationsProvider.cl
+ ass
+SHA1-Digest: 5G/r0td1RrhzJ0eTspOmcxcrp74=
+
+Name: ecologylab/serialization/annotations/simpl_map.class
+SHA1-Digest: I534fcukjC9GcVzkJEvwafKBtfA=
+
+Name: ecologylab/oodss/logging/playback/LogPlaybackControls$ButtonActi
+ on.class
+SHA1-Digest: Vn/jwWPhs/AHa5Rh7y+8lZVBbaA=
+
+Name: ecologylab/generic/ObjectOrHashMap.java
+SHA1-Digest: ByRLLm5DdVL+Pj16revH+4WSL+g=
+
+Name: ecologylab/appframework/types/prefs/PrefString.java
+SHA1-Digest: N8P/oza3UJ3ZS7OWN4iQa6ux7zw=
+
+Name: ecologylab/serialization/library/jnlp/JnlpState.class
+SHA1-Digest: /Na78/T4PPHBGV60IioYEpCEGww=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/NamedStyle.
+ class
+SHA1-Digest: 9kEZOEP4NKmUV6qT09UJkmgaITk=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Paragraphs.
+ java
+SHA1-Digest: H9lGZfKw063PkAizucUdqZryf9c=
+
+Name: ecologylab/standalone/xmlpolymorph/BItem.java
+SHA1-Digest: w5Zoq8GIImq3ldmKp9iBVCHar7E=
+
+Name: ecologylab/appframework/types/prefs/RangeIntState.java
+SHA1-Digest: mIgWg5YgSFLyb86eoWHjbC176cM=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionTreePanel.j
+ ava
+SHA1-Digest: eq9MFrBjgsp12ELeV2HwFrgo6pA=
+
+Name: eclipse/ecologylabTabsFormat.xml
+SHA1-Digest: Ys2mOOXUO2BDzE4RknQJici7Aac=
+
+Name: ecologylab/standalone/TestXml.java
+SHA1-Digest: R3wyf2TsZyY9me3aE93CVI72atM=
+
+Name: ecologylab/appframework/types/AssetState.java
+SHA1-Digest: 7f0yCK/D9E6Q7aBZwU+8I6hv9z0=
+
+Name: ecologylab/serialization/bibtex/BibTeXFormatException.java
+SHA1-Digest: 0k68LrUkqWsKopMKeWDdUL91m18=
+
+Name: ecologylab/oodss/logging/LoggingContextScope.class
+SHA1-Digest: eXyGaOyaX81tOqCf3dJWYIbGcCg=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore$MessageMetaDat
+ a.class
+SHA1-Digest: Gmmi/ptCcnE+Df4tiPCt5TdyMQ8=
+
+Name: ecologylab/oodss/messages/HttpRequest.class
+SHA1-Digest: 6kFWpqQKSAxBwurf3yIQ5qsZPwE=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefString.class
+SHA1-Digest: qdaIM8br16tkZixOQsv79U9acYA=
+
+Name: ecologylab/generic/StringBuffersPool.class
+SHA1-Digest: ZuWXo7w5TsiYbBol5V3uwvX1xzU=
+
+Name: ecologylab/serialization/library/jnlp/resource/ResourceElementAr
+ ray.class
+SHA1-Digest: jlhggS4oNlzm+dy2gRQcLa/dP2M=
+
+Name: ecologylab/serialization/SerializationHookStrategy.java
+SHA1-Digest: 6SFTiTht7KHEChQH83aRclUqkK4=
+
+Name: ecologylab/appframework/types/prefs/PrefLong.java
+SHA1-Digest: gOxkWA/7Fc2K7pKbw3PgjDM9L0k=
+
+Name: ecologylab/oodss/logging/Logging$FileLogWriter.class
+SHA1-Digest: sbZVEXqStSL/HFHN8+vOd4quk/k=
+
+Name: ecologylab/oodss/messages/UpdateMessage.class
+SHA1-Digest: xfIjt83wexl/woOO4IekVBIAI5k=
+
+Name: lib/jackson-core-lgpl-1.7.8.jar
+SHA1-Digest: 6juZX5960T+pWP2kYs7ZaFu7kFQ=
+
+Name: ecologylab/serialization/library/rest/nsdl/NSDLSearchService.jav
+ a
+SHA1-Digest: LuyBFgnrUFcPl+HJHIW51A/XGvY=
+
+Name: ecologylab/oodss/logging/SendEpilogue.java
+SHA1-Digest: 2RewNyAUF2RPDZ8je0H58s+ie9g=
+
+Name: ecologylab/serialization/DeserializationHookStrategy.class
+SHA1-Digest: JngqZkTNQWKXs5jjGC74zNUqe24=
+
+Name: ecologylab/appframework/types/prefs/PrefEnum.java
+SHA1-Digest: UTtX5VrjlOIOAg709fW2k+Fecdk=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/package
+ .html
+SHA1-Digest: F2IFKCOgnF1uz9soBdTfziSbJDk=
+
+Name: ecologylab/appframework/types/AssetsState.class
+SHA1-Digest: 7jN93MYEhEvx2XOim9+PZ0eJ5Kw=
+
+Name: ecologylab/serialization/library/yahoo/package.html
+SHA1-Digest: UZHgdqqlty98zDr03LOJsp/6r0Q=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXInBook.java
+SHA1-Digest: LBtKDxjmRfT37cE/pPTbkr+OJWc=
+
+Name: ecologylab/standalone/xmlpolymorph/BItem.class
+SHA1-Digest: GcMEftlmV0v8q0GB1udtcD6cO8k=
+
+Name: ecologylab/serialization/library/xaml/XamlTranslations.java
+SHA1-Digest: yPxiWlTuEHkTUM/VbTvzBTpxM7o=
+
+Name: ecologylab/serialization/types/scalar/ScalarTypeType.class
+SHA1-Digest: 2fW0cDBPypo7ec1elqOwK7aqU6Q=
+
+Name: ecologylab/oodss/exceptions/ClientOfflineException.class
+SHA1-Digest: ghX/elMRJP0BUfHsD691x7aV25E=
+
+Name: ecologylab/generic/ValueFactory2.class
+SHA1-Digest: qCSWs9Mvng2Ts+xGr6jtViCEy4w=
+
+Name: ecologylab/serialization/types/scalar/StringType.java
+SHA1-Digest: OfNNXWaS7+Hw5+N7KqtueozvSGc=
+
+Name: ecologylab/generic/Displacement1D.class
+SHA1-Digest: ry0PYjU+D9EOgirBOzLev3rxv0c=
+
+Name: ecologylab/serialization/library/geom/Point2DDoubleState.java
+SHA1-Digest: KNy4t5lA1mphAYpOfsPLWxO4N9s=
+
+Name: ecologylab/serialization/library/jnlp/information/AssociationEle
+ ment.class
+SHA1-Digest: iPaSCZg/27pPl3WoDraYCdIo8WU=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Image.java
+SHA1-Digest: Hr3/s/bb9Ap0+5YSauU8LMdNz+o=
+
+Name: ecologylab/serialization/library/rest/Fields.java
+SHA1-Digest: H25DL0a9ZdKkmC9fftzz9x7tKio=
+
+Name: ecologylab/serialization/library/apple/Property.class
+SHA1-Digest: a0qUW2GdPKmB+r36Q/F3/mapolA=
+
+Name: ecologylab/serialization/library/media/Media.java
+SHA1-Digest: HrcUEy2MC/znRiyjCiUALL09Haw=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ images/upload.wikimedia.org-220px-Picasso_la_vie.jpg
+SHA1-Digest: g0oeC27tjm3l2jgpIdB90IxxFTM=
+
+Name: ecologylab/oodss/logging/playback/LogPlaybackControlModel.class
+SHA1-Digest: VL7jM98QPL+5NGQSOqww/vjyags=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/HTTPGet
+ ClientSessionManager.class
+SHA1-Digest: 7wYMSYMKSMGI297rgcSdrj4ElQA=
+
+Name: ecologylab/serialization/annotations/simpl_inherit.java
+SHA1-Digest: z/aD3MUjcntwm6IsgXGk5iEcjqc=
+
+Name: ecologylab/tests/serialization/TestPrimitives.class
+SHA1-Digest: /ER96sJIaKz/p7OpPNIqdFOfcDM=
+
+Name: ecologylab/generic/StringTools.java
+SHA1-Digest: yABtSpRsAwSDN5Ohu9tqpT7YWNo=
+
+Name: ecologylab/serialization/CharacterConstants.java
+SHA1-Digest: uJEnmVUbIcK8xTWlwwwznq/mWQo=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefInt.java
+SHA1-Digest: D7g+W+/DorhtV57rZKz+usMZ1S4=
+
+Name: ecologylab/io/AssetsRoot.class
+SHA1-Digest: pD7SJWbhG3u66vNPWMsmEJmVq/0=
+
+Name: ecologylab/serialization/library/geom/PolygonState.class
+SHA1-Digest: z8C7HEaAunOH6PhUbm0WXXPfFj0=
+
+Name: ecologylab/serialization/library/media/Description.java
+SHA1-Digest: NQwf4t1P5fXhZhwn5W+sqn5J4YI=
+
+Name: ecologylab/serialization/XMLTools$1.class
+SHA1-Digest: 2YU2NQRLcIR5T/5eJVKXWLGgiCg=
+
+Name: ecologylab/serialization/types/scalar/CharType.class
+SHA1-Digest: egzhbwdsdDoW6t1vGSF8fWMYQ28=
+
+Name: ecologylab/generic/OneLevelNestingIterator.java
+SHA1-Digest: UIpOKnyr5YJL0Q270dU/zLtj2Fs=
+
+Name: ecologylab/appframework/types/prefs/package.html
+SHA1-Digest: r0ZqOiF8yeg4Whynhlz6Bu0vlKY=
+
+Name: ecologylab/serialization/types/FundamentalTypes.java
+SHA1-Digest: +PlfS45xqn95Na4gfR8LSwwO7xI=
+
+Name: ecologylab/oodss/logging/SendPrologue.class
+SHA1-Digest: PG0oNUGlVAX/q3KGEO6wWeTopYo=
+
+Name: ecologylab/serialization/annotations/simpl_use_equals_equals.cla
+ ss
+SHA1-Digest: haLTqbWorjudsHKMKX+tf7fnJRU=
+
+Name: ecologylab/oodss/messages/IgnoreRequest.java
+SHA1-Digest: fbTNCAy1EtxO1HGQmbraBoKEIWo=
+
+Name: ecologylab/serialization/deserializers/parsers/tlv/Utils.class
+SHA1-Digest: i6XCYVEyL2duGAMj7qBE3ez9mZE=
+
+Name: ecologylab/appframework/OutOfMemoryErrorHandler.java
+SHA1-Digest: MRWxJpJ83jt9T7HRIkCqmE2B6IY=
+
+Name: ecologylab/serialization/library/jnlp/resource/Nativelib.java
+SHA1-Digest: RW+/ADUzNOasi7JPw69LaMoobuc=
+
+Name: ecologylab/oodss/messages/Ping.class
+SHA1-Digest: nBe5LQF2TXjCQ4J39L1QHUJcgnI=
+
+Name: ecologylab/oodss/logging/BasicOp.java
+SHA1-Digest: g3vozhz2/shYW4CRpSegIXotyhU=
+
+Name: ecologylab/collections/AbstractSetElement.java
+SHA1-Digest: RritoyiqUgZiwaI+5tQVyO1LK/g=
+
+Name: ecologylab/serialization/library/jnlp/resource/ResourceElement.j
+ ava
+SHA1-Digest: RJEca+3W09/cGc15KqjmUEU+I1Y=
+
+Name: ecologylab/generic/HashMapWriteSynch.class
+SHA1-Digest: i/PEj1Aq9l66o0AQL1bPhm/XWHs=
+
+Name: ecologylab/oodss/distributed/common/BaseStates.class
+SHA1-Digest: qwipfAZf4LAxzEo2ZxcSD3T+eug=
+
+Name: ecologylab/serialization/Hint.java
+SHA1-Digest: Q/did4lwb1EALwaJO0rWuMWz65Y=
+
+Name: ecologylab/serialization/types/scalar/PatternType.class
+SHA1-Digest: hIjQKIos+HJGVnFLm7iqQHhWWeY=
+
+Name: ecologylab/oodss/distributed/impl/MessageWithMetadataPool.java
+SHA1-Digest: GHzvtSgZbPT6SgaCdPMZN7p6eJU=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$6.class
+SHA1-Digest: nZ6ZKEypjhztoXSPCLej+0TXgH4=
+
+Name: ecologylab/serialization/types/scalar/FileType.class
+SHA1-Digest: 4xZhDm61lbjkNCliff1+lK8Wh1Q=
+
+Name: ecologylab/standalone/TestXMLTag.java
+SHA1-Digest: 1EVVHL/vxBBl/E7JrUHcFQl8zuA=
+
+Name: ecologylab/serialization/library/jnlp/information/MenuElement.ja
+ va
+SHA1-Digest: cMgT1BnvxUBYC/MPMGR7GANNOeM=
+
+Name: ecologylab/oodss/distributed/common/ClientConstants.java
+SHA1-Digest: zNaWsUVypWGocyJ375CRQEWBiDc=
+
+Name: ecologylab/serialization/annotations/simpl_composite.class
+SHA1-Digest: HMMZYSZ7Itr2uqOkv3sJNNFffL0=
+
+Name: ecologylab/pools/HashMapPool.class
+SHA1-Digest: QdF6tUGmzZ7kmLYX27aCS6SErF0=
+
+Name: ecologylab/serialization/library/apple/BooleanProperty.class
+SHA1-Digest: 5/aYwmPGMKdUxIPCjsiMchH6eOI=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2-
+ images/farm5.static.flickr.com-4697093679_4114479c70_m.jpg
+SHA1-Digest: BQMS3WpgvzalRCf2YuuWIXTr0ww=
+
+Name: ecologylab/concurrent/DownloadMonitor$1.class
+SHA1-Digest: QNyQe6cy+2kx9BP647qbXg1tcyQ=
+
+Name: ecologylab/serialization/deserializers/parsers/tlv/TLVEvents.cla
+ ss
+SHA1-Digest: 1SLR0URWvOGcnzEa5NGUa8zrU1Y=
+
+Name: ecologylab/io/Files.java
+SHA1-Digest: t5h/3Ex9JtyvwJwZNuab68uzggE=
+
+Name: ecologylab/oodss/distributed/client/ReconnectBlocker.java
+SHA1-Digest: DDD+6FR3bbNb62L7jJOm39ZN06c=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Results.class
+SHA1-Digest: NR4NeT+BM1uV6UxBlweTj2DsyKA=
+
+Name: ecologylab/generic/IFeatureVector.java
+SHA1-Digest: u/3Pyeq916CVZy7hBYnkQE9ifqA=
+
+Name: ecologylab/serialization/library/xaml/WpfImageState.class
+SHA1-Digest: hsTvzzS/vbacWC+yYgw5JhhRucw=
+
+Name: ecologylab/generic/ResourcePool.java
+SHA1-Digest: yvKQlkAoLsDSL3LOVPzccd/HnWQ=
+
+Name: ecologylab/generic/ConsoleUtils.java
+SHA1-Digest: fHi23WnSUCTq4XKHmwIV50O7YXs=
+
+Name: ecologylab/serialization/types/scalar/CollectionTypeType.java
+SHA1-Digest: 4CSa140ct3PRQPAPgm89srOHCKE=
+
+Name: ecologylab/serialization/formatenums/BinaryFormat.java
+SHA1-Digest: 4my/O2fgmdHkAcJw4Nm9fLeQGBQ=
+
+Name: ecologylab/serialization/bibtex/entrytypes/AbstractBibTeXEntry.j
+ ava
+SHA1-Digest: tgG+DOvKipt53SzyfTGp2E0v8hQ=
+
+Name: ecologylab/serialization/library/xaml/WpfImageState.java
+SHA1-Digest: HSF9bf7rYIM9mcR2lr2xSixXuv0=
+
+Name: ecologylab/serialization/types/scalar/FieldType.class
+SHA1-Digest: D1xB7MpgOOxfFf4/FA0wWrg9xeE=
+
+Name: ecologylab/oodss/messages/IgnoreRequest.class
+SHA1-Digest: WtFgOikUiMus6uviEW1c+UcJw2Y=
+
+Name: ecologylab/tests/serialization/objectGraphTest/PointEqEq.java
+SHA1-Digest: 83k2ROEM6OYL6aRjcHgdnnfcOeE=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/HTTPCli
+ entSessionManager.java
+SHA1-Digest: sVuxDQBNUN4hAcLX4LKIwNP/sgk=
+
+Name: ecologylab/appframework/SingletonApplicationEnvironment.class
+SHA1-Digest: BsSHy+1TGaY0YodHWkiHqltf/Ms=
+
+Name: ecologylab/serialization/library/rss/Channel2.class
+SHA1-Digest: bYZra97e1pLAz918iI5Io7Xo+q4=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3_
+ thumbnail.jpg
+SHA1-Digest: NO/X76Y4iEfiz4TQvBz0a2voDIs=
+
+Name: ecologylab/serialization/formatenums/Format.java
+SHA1-Digest: fioKwR3CyQhaISJj/jm2U4gV5Ec=
+
+Name: ecologylab/appframework/types/prefs/Choice.java
+SHA1-Digest: kjA0UTc37bjb/8ZUPLs5OILhrL0=
+
+Name: ecologylab/appframework/macos/MacOSApp.class
+SHA1-Digest: db5OAfXS+vdCdeP9Ua1xB4YziBQ=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ TLVHandler.class
+SHA1-Digest: 2PT0991foMlYtbjgE50kn71PPF8=
+
+Name: ecologylab/serialization/serializers/stringformats/StringSeriali
+ zer$1.class
+SHA1-Digest: 147MaNWdJ0Qj9qm3zsxJIF68RvU=
+
+Name: ecologylab/standalone/researchnotebook/gui/ResearchNotebook$1.cl
+ ass
+SHA1-Digest: sjwD/5btDFNN3Wyt4TYxLErzgf8=
+
+Name: ecologylab/serialization/library/jnlp/resource/HrefBasedResource
+ .java
+SHA1-Digest: wgcukB73f3kx2tjLhOYE+JS6tIc=
+
+Name: toolbarButtonGraphics/media/Movie24.gif
+SHA1-Digest: j76kALRkqM18Bgn+yDYPaUjevHM=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Set.java
+SHA1-Digest: aglLreXrnDoFb1ffar1WJDAsAqE=
+
+Name: ecologylab/collections/ChildPrefixMap.class
+SHA1-Digest: RIoHzE7fDmCoD4dER7NtCibWn2U=
+
+Name: ecologylab/serialization/library/jnlp/information/RelatedContent
+ Element.class
+SHA1-Digest: sIcH7LL/1TbjL/O3y3zCksUQzXY=
+
+Name: ecologylab/oodss/distributed/impl/PreppedRequestPool.java
+SHA1-Digest: j6y5Jr9ksPoKK/FqG7n0wTne64Y=
+
+Name: ecologylab/oodss/distributed/server/DoubleThreadedNIOServer.clas
+ s
+SHA1-Digest: bWXAHtdY9L1MBFf6MCGW7bs8m6Y=
+
+Name: ecologylab/tests/TestXMLFormat.class
+SHA1-Digest: iCdKWi6Y9MUoxo4E51SVFOzdnaU=
+
+Name: ecologylab/serialization/library/html/A.java
+SHA1-Digest: sGgiR6z5k4UVBlfqizEQjW/HfCA=
+
+Name: ecologylab/serialization/library/jnlp/resource/HrefBasedResource
+ .class
+SHA1-Digest: K5K+V+Ayzfjy5oKuW/y2lOgTr3M=
+
+Name: ecologylab/serialization/library/rss/Makefile
+SHA1-Digest: nDIUzFQygzNpH+6dFeHw87ZNhHA=
+
+Name: ecologylab/oodss/messages/CfCollaborationGetSurrogate.java
+SHA1-Digest: xxfH87OQo8X4TGzF75wmVeHa088=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXBook.class
+SHA1-Digest: mARvEsf830vMJnFY/paVKhQNc1w=
+
+Name: ecologylab/appframework/types/prefs/PrefBoolean.class
+SHA1-Digest: mmKeXiK30v9rWG68S8yB+Xx2Dgk=
+
+Name: ecologylab/serialization/library/rest/nsdl/NSDLTranslationSpace.
+ java
+SHA1-Digest: OfXWyZUvkjLg3RP3McIVT/IgErI=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Thumbinners
+ .class
+SHA1-Digest: lRYpguid19mRYE6T3w7yxyqHN5g=
+
+Name: ecologylab/serialization/library/endnote/EndnoteNameSpace.java
+SHA1-Digest: fdArDltSIgkylbxrL5FMNSiTSiw=
+
+Name: ecologylab/serialization/library/bibtex/Entry.java
+SHA1-Digest: lpAsA3co7RwyQ+24Lqb1fNAcyvo=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore$PacketHandler.
+ class
+SHA1-Digest: 97it5skGPSJaPl9YlR1Id/eR/dU=
+
+Name: ecologylab/serialization/library/rss/package.html
+SHA1-Digest: 2C0HDq3ACBRHDzXAvBIf6WWXnhs=
+
+Name: ecologylab/generic/Debug.java
+SHA1-Digest: L9r+lreg6SM329+61SUA6Q6uTZc=
+
+Name: ecologylab/oodss/distributed/impl/MessageWithMetadata.class
+SHA1-Digest: a5ebmRupk4zlqoQitQxzJxgjYdk=
+
+Name: ecologylab/oodss/distributed/server/package.html
+SHA1-Digest: PShKw1Q49jfkrE09XugITttaa3U=
+
+Name: ecologylab/collections/PrefixPhrase.class
+SHA1-Digest: qQHfSd9pleKPf8gFcQmfF52Wn3Y=
+
+Name: ecologylab/appframework/types/prefs/PrefEnum.class
+SHA1-Digest: UbCL5BRl3c0XhAYiqeeJ9oOOdP0=
+
+Name: ecologylab/serialization/SaverState.class
+SHA1-Digest: wt6qToJkZK7QVL5UpeHf8Y/sEaU=
+
+Name: ecologylab/serialization/IJavaParser.class
+SHA1-Digest: dy44bISQYFB+AUhpI49TxK78jhw=
+
+Name: ecologylab/collections/FloatWeightSet.class
+SHA1-Digest: ZEuIK5fyTW5pMnOLiNRKZZ+HBKE=
+
+Name: ecologylab/tests/package.html
+SHA1-Digest: xzEc8dqFydwtgPinFx+glpRCFsA=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Search.java
+SHA1-Digest: 640IQPHK/iusyelstW69rtjDOmw=
+
+Name: ecologylab/serialization/FieldDescriptor.class
+SHA1-Digest: /uvyITnHESsdtX4H7DE8XenamVk=
+
+Name: ecologylab/oodss/logging/LogueMessage.class
+SHA1-Digest: Ws0uHGQYaT66ocQ8QF+DcCg3k6c=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXTechReport.clas
+ s
+SHA1-Digest: iXZ7UjJtm9+aPlh8aNh/m12XcrQ=
+
+Name: ecologylab/serialization/annotations/simpl_map_key_field.java
+SHA1-Digest: Y85i9g1amx9mlUFe0T61MDG+Ef0=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionInfo.class
+SHA1-Digest: 8JvwSM3XFn6VbowSV//XjJRogX8=
+
+Name: ecologylab/net/ConnectionHelper.java
+SHA1-Digest: 1Nlm+XHT0WC8IqAWubhzatO8gsc=
+
+Name: ecologylab/net/ConnectionAdapter.java
+SHA1-Digest: nNxzlkHDEIzXTrQ9Jo38tLF4zpQ=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Untraversab
+ leSet.class
+SHA1-Digest: IRbagAYn9qNpgOYrxXPWkpo7iCY=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Container.c
+ lass
+SHA1-Digest: N18Bg7IeIIzdJdVngPsPOK6t+O0=
+
+Name: .classpath
+SHA1-Digest: OA2PG6EiXUFAylEbcDvj0iFZMz4=
+
+Name: ecologylab/serialization/library/endnote/ContributorList.class
+SHA1-Digest: jeXUFWo/31ovUwgmiLj2McDJ6XQ=
+
+Name: ecologylab/generic/FloatSlot.class
+SHA1-Digest: kIMG2GwrwPwoABMt1WrfmGjjI7g=
+
+Name: ecologylab/serialization/types/scalar/ReferenceDoubleType.class
+SHA1-Digest: GsTSMIl4e3MucT+PDC4RZqEJmik=
+
+Name: ecologylab/serialization/library/apple/IntegerProperty.java
+SHA1-Digest: CNskmUBzykfkMai0tRZoyV0/8rY=
+
+Name: ecologylab/generic/Displacement1D.java
+SHA1-Digest: Lfmjgcxo40959lD4iyRl0++3X7M=
+
+Name: ecologylab/serialization/types/scalar/ReferenceFloatType.java
+SHA1-Digest: /098ul5aIAVJpmqWaxQKRIdN3eg=
+
+Name: ecologylab/serialization/serializers/stringformats/BibtexSeriali
+ zer.java
+SHA1-Digest: PqzIzPDSvk4E+huA3WqIqKzR3Ko=
+
+Name: ecologylab/serialization/library/rest/nsdl/NSDLSearchService.cla
+ ss
+SHA1-Digest: F768lDjY5D/2TMwvyNlHDjqo29Y=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/SeedSet.cla
+ ss
+SHA1-Digest: eVFBKfPpO2QCoqF9PDLNRgIqPRU=
+
+Name: ecologylab/serialization/library/jnlp/resource/Jar.java
+SHA1-Digest: G5YXS/MIe1TCFTxLKRE1/KPyAvs=
+
+Name: ecologylab/collections/LinearAccess.java
+SHA1-Digest: yuy9s4M+xWPt4AuuPPoAmN99sBw=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestXml_Ecologyla
+ b.class
+SHA1-Digest: 59ABtLmu1yr9NHgTdVd8ZBSJ0b0=
+
+Name: ecologylab/appframework/MacOSAppHandler.class
+SHA1-Digest: QFkaQ8vDVJLyB/b+K61q6DPhJrg=
+
+Name: ecologylab/serialization/library/apple/KeyProperty.java
+SHA1-Digest: s8lHEREl4K5PECteD9IMOa7EgsE=
+
+Name: ecologylab/serialization/library/html/Input.java
+SHA1-Digest: Wyd9A+W7yA2vsdAIXbRu/IeW2CY=
+
+Name: ecologylab/serialization/library/endnote/ContributorList.java
+SHA1-Digest: yjZZ0wrkCaq792LYMqgVeC8u5gA=
+
+Name: ecologylab/serialization/library/apple/PList.java
+SHA1-Digest: c8ZuIiaGMwDtv4WghOxnwc4ifv4=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2-
+ images/farm5.static.flickr.com-4667695673_fccc9d7bb6_m.jpg
+SHA1-Digest: I9byG9CgIUrgFDO0VycD8NF9hu0=
+
+Name: ecologylab/tests/XmlTextInCollection.class
+SHA1-Digest: Q7HjKqrlTYkmr5Ybds6KKdFPHto=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Container.j
+ ava
+SHA1-Digest: YR6pQLElq/DQzIBP18tRBBFUMr8=
+
+Name: ecologylab/oodss/exceptions/SaveFailedException.java
+SHA1-Digest: 3e9FT1ElMQabgLvMO7FgYB78IB8=
+
+Name: ecologylab/serialization/types/element/ElementTypeTranslationsPr
+ ovider.class
+SHA1-Digest: 0MJQf8/PXLLwuLvWXJE3W2+fLs0=
+
+Name: ecologylab/collections/OverlappingSets.java
+SHA1-Digest: 4ZsAikw9yPBNeAy2HTW3wKNOhss=
+
+Name: ecologylab/appframework/types/prefs/PrefSetBaseClassProvider.cla
+ ss
+SHA1-Digest: nEkB9lmqMwzTjNpxaNG77PQH40Y=
+
+Name: ecologylab/appframework/types/prefs/PrefInt.class
+SHA1-Digest: 2500VQfh6JwKm4U42Iu93QKO3jE=
+
+Name: ecologylab/concurrent/BatchDownload.java
+SHA1-Digest: BD737KRp4qdJlGoBiMgOfKhD+Ws=
+
+Name: ecologylab/collections/WeightSet$FloatWeightComparator.class
+SHA1-Digest: U4sKVBOprG4akLl6v0OzdWn3aj8=
+
+Name: ecologylab/serialization/library/icdl/Book.java
+SHA1-Digest: mrQm3BEYUR8/IgzcxNfr4Rj3N/U=
+
+Name: ecologylab/serialization/library/icdl/Book.class
+SHA1-Digest: 0+vW9YFCB5p6cT1Xf7pZDcWuUSM=
+
+Name: ecologylab/generic/text/Format.java
+SHA1-Digest: 2qpNBYttfTs4md8tJiFpktc+UX8=
+
+Name: ecologylab/appframework/EnvironmentGeneric.java
+SHA1-Digest: WT+AtGNlFXjRBwcHlwZg6mska8c=
+
+Name: ecologylab/serialization/tlv/TLVParser.java
+SHA1-Digest: GtoNee4ewwlPe17yJdGTgpe9Hnc=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefString.java
+SHA1-Digest: aXLiHcJP1KuzJzTV2WZ/F7oxcWs=
+
+Name: ecologylab/generic/StringTools.class
+SHA1-Digest: Jv5aNeb/5LyXLx2e+VXxE36V73w=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ TLVHandler.java
+SHA1-Digest: FX0h2KMRmtE6EeyKb4ud0cHm3GI=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ images/www.cyberspain.com-pic6.jpg
+SHA1-Digest: 3X/diM/58mpQ1V4WLbp4TjEAPOw=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXInBook.java
+SHA1-Digest: oFsj3/AB3BbH27RW7wR87foLysk=
+
+Name: ecologylab/serialization/TranslationContextPool.class
+SHA1-Digest: S5vZ7AVT6tn9i8guj7UXFl2A/DY=
+
+Name: ecologylab/serialization/types/scalar/URLType.java
+SHA1-Digest: kzcKWFeKYLz/lIPYy9xU4Ma6gFY=
+
+Name: ecologylab/appframework/types/prefs/PrefChangedListener.class
+SHA1-Digest: B/0TZlDeyMrgm1OzY3SEiOZG2Ds=
+
+Name: ecologylab/appframework/types/prefs/PrefColor.class
+SHA1-Digest: wPShWKFPaaws8jYhokY0hjImyKs=
+
+Name: ecologylab/serialization/library/apple/FalseProperty.java
+SHA1-Digest: Ox4ug9Rjtpkw00bAWF9QUVk4CV0=
+
+Name: ecologylab/serialization/serializers/stringformats/StringSeriali
+ zer.java
+SHA1-Digest: ZCR7NU4WwwVZF7fb+m+0nAm+uQU=
+
+Name: ecologylab/oodss/distributed/common/ServicesHostsAndPorts.java
+SHA1-Digest: Gg53MYbZdluovTK7CMmaE1WMWmQ=
+
+Name: ecologylab/serialization/library/rest/Header.class
+SHA1-Digest: tKJvwaNKoBmOZQvhisCzODhb9Ew=
+
+Name: ecologylab/generic/HashMapWriteSynchBase.class
+SHA1-Digest: 2LwLPfEslI1qGwlchwdL2T+KRwo=
+
+Name: ecologylab/oodss/distributed/server/NIOServerProcessor.class
+SHA1-Digest: FS2vF+pL1vVgX/gKsX7hhFfK0g0=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/binaryformat
+ s/BinaryPullDeserializer.java
+SHA1-Digest: gOHt9RrYRubojOcG1BoXV7TZp2M=
+
+Name: ecologylab/serialization/library/html/Table.class
+SHA1-Digest: jJ16bKVwMpqzBR4t52m0qA1drJ0=
+
+Name: ecologylab/generic/ColorChooserDialog.class
+SHA1-Digest: W/PHr2GTSEM+70ngyKaoEK4mzRs=
+
+Name: ecologylab/collections/Scope.class
+SHA1-Digest: /gnQ9HV1V9Yo4m6ZJ5B6qkpJxpc=
+
+Name: ecologylab/io/DownloadableFileToDisk.class
+SHA1-Digest: qBln9dUAiKZKWUt0+wS7ddtBxlY=
+
+Name: ecologylab/oodss/logging/BasicOp.class
+SHA1-Digest: EAumkpqZdxTyT5UgY96KfwpgbE4=
+
+Name: ecologylab/serialization/types/scalar/URLType.class
+SHA1-Digest: NNJHGDQcYuk6ZHTOgy4KdTYuBxI=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ thumbnail.jpg
+SHA1-Digest: FyM5b+9Wr189Cc6jK7AzmjeANtQ=
+
+Name: ecologylab/io/BasicSite.class
+SHA1-Digest: Sz9Y10wVjUAW4NeC6FstxY2IG4U=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestChannel.java
+SHA1-Digest: VLhFhj1denOjP/IfWH6JoFDrSXE=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor.java
+SHA1-Digest: PGSSyBMA6lO7SrsC44TcxnDOg78=
+
+Name: ecologylab/serialization/library/apple/KeyProperty.class
+SHA1-Digest: DmaQkambvUG567F/obmCTm/gjRQ=
+
+Name: ecologylab/collections/MultiMap.class
+SHA1-Digest: OlFrPn1/jd6UDA1FEDYJ8u97aWg=
+
+Name: ecologylab/serialization/library/xaml/TextBlockState.class
+SHA1-Digest: OUTZy36In8cF5qthtFSCqrd+YDo=
+
+Name: ecologylab/appframework/ApplicationPropertyNames.java
+SHA1-Digest: 7Jea20HwoBSz+u7UbamV4DvXK54=
+
+Name: ecologylab/appframework/MacOSAppHandler.java
+SHA1-Digest: kE576znxciS+CiDUnr6lZNw5GbA=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/RejectDomai
+ nSet.class
+SHA1-Digest: J1UZFbtbtZkk7ledDMisCRsmQjY=
+
+Name: ecologylab/serialization/ElementState$simpl_collection.class
+SHA1-Digest: H7hTBs+Osk/OIUQ4rDhJd92Fp7Q=
+
+Name: ecologylab/oodss/logging/translationScope/LoggingTranslationsPro
+ vider.java
+SHA1-Digest: 6BMo5GKk3YewT1ezSlpNNnMmwnw=
+
+Name: ecologylab/serialization/library/jnlp/AllPermissionsElement.clas
+ s
+SHA1-Digest: x8u0ZnnjJ9hA4N5/N9waxnValUo=
+
+Name: ecologylab/serialization/library/rest/Record.class
+SHA1-Digest: UPWeW7387N6rB8ScACchqWP3/ok=
+
+Name: ecologylab/tests/TestScalarCollection.java
+SHA1-Digest: fHIB2LKGpgocO31H7Mr01UAyMc0=
+
+Name: ecologylab/serialization/library/endnote/EndnoteNameSpace.class
+SHA1-Digest: IXN69vLPCOMkoVWmLfGTp4/zFoQ=
+
+Name: ecologylab/io/XMLFileNonRecursiveFilter.class
+SHA1-Digest: uLIMbR10g8/AjLiI6FrX+Wpk2Cs=
+
+Name: ecologylab/oodss/logging/MixedInitiativeOp.java
+SHA1-Digest: a4K6KdAuNoIGMlfsHO64SNIEFnI=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Thumbinner.
+ class
+SHA1-Digest: nXdJULNni5qrkcNrQkTZ705hyHc=
+
+Name: ecologylab/appframework/types/prefs/Pref.java
+SHA1-Digest: mtxIVq0wvAjTOytbzta0r8BFCYM=
+
+Name: ecologylab/generic/MathTools.class
+SHA1-Digest: nDWbdJfCIh+YBqLxN20WoKARAe4=
+
+Name: ecologylab/tests/TestReferenceAndPrimitiveScalars.java
+SHA1-Digest: AeEmpbf76MILn6Dv6HQENVI7U4U=
+
+Name: ecologylab/serialization/library/dc/DcTag.java
+SHA1-Digest: RK3nBoJocSX0pOk+u783yozZ0zI=
+
+Name: ecologylab/appframework/types/prefs/ChoiceBoolean.class
+SHA1-Digest: JyNFaZNcUz4atRoqsvLOpiiJb9Q=
+
+Name: ecologylab/serialization/library/apple/keyTest.xml
+SHA1-Digest: TmLXrUgveCjC56ineJnzdmFWONg=
+
+Name: ecologylab/tests/serialization/objectGraphTest/ListDotEquals.cla
+ ss
+SHA1-Digest: QnhOIxSuOFcPfran+osJA/2Gby0=
+
+Name: ecologylab/serialization/annotations/simpl_db.class
+SHA1-Digest: i75OmzWMvtoXnVwQjZCQMlg9MR8=
+
+Name: ecologylab/appframework/Environment.class
+SHA1-Digest: s6fP4AK68sWdTa80VgVSkRGo7RA=
+
+Name: ecologylab/serialization/types/scalar/UUIDType.class
+SHA1-Digest: aVyWDairjgWkD7FeHaycXkCNXzU=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2-
+ images/farm5.static.flickr.com-4668314868_2a3a03a2ec_m.jpg
+SHA1-Digest: V9dcI7bPYakihseHA0hFSIo6gQg=
+
+Name: ecologylab/serialization/library/jnlp/application/ApplicationDes
+ c.class
+SHA1-Digest: JMCc4qtY8m8X+gMB/lQUgkry+3U=
+
+Name: ecologylab/generic/FeatureVector.java
+SHA1-Digest: btfIr6yUjifEqJFYJmrKfyWn9wQ=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/TCPClie
+ ntSessionManager.class
+SHA1-Digest: 6ci5ZIPFISqwwUXv0utHdGVXpgU=
+
+Name: ecologylab/collections/GenericElement.class
+SHA1-Digest: kJLDgRy9XujQ0C+sDpd1bZ09rns=
+
+Name: ecologylab/appframework/types/prefs/PrefDelayedOp.class
+SHA1-Digest: TRqsyvhtv3fCfjybWwVFHxT8c9Q=
+
+Name: ecologylab/serialization/types/CrossLanguageTypeConstants.java
+SHA1-Digest: yrTaT2IdhSzMv/TK53RcUD6MR/s=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/JSONPullDeserializer.java
+SHA1-Digest: YRwwSaBay7beOg9WNvNH+w8J21o=
+
+Name: ecologylab/serialization/library/html/HtmlElement.java
+SHA1-Digest: Yrfx180K9irXb4lBsOXkrrLncDU=
+
+Name: ecologylab/serialization/library/media/Group.class
+SHA1-Digest: E93yIrA10HFBLGybF2+cPf9rKd4=
+
+Name: ecologylab/generic/HashMapWriteSynchBase.java
+SHA1-Digest: FfYgRB4rDY8deMewttTOppe63rE=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXPars
+ er.class
+SHA1-Digest: MWoQ0/UQCD8b9LCG1V9A3JOGRsc=
+
+Name: ecologylab/serialization/serializers/stringformats/XMLSerializer
+ .class
+SHA1-Digest: DJhUQs1Lj3yGBKpX28Pv5ZDH1ZQ=
+
+Name: ecologylab/serialization/simpl_descriptor_classes.class
+SHA1-Digest: 7571Wd4w5VNN4/7TGXuWdLVjPfo=
+
+Name: ecologylab/oodss/messages/RequestMessage.class
+SHA1-Digest: rKDq4RlNh0iaKqZGp2wYqrZ+LcI=
+
+Name: ecologylab/serialization/types/scalar/ReferenceDoubleType.java
+SHA1-Digest: c1OTq1N/Escr1ilnLrp394FbO2c=
+
+Name: ecologylab/io/DownloadProcessor.java
+SHA1-Digest: V0IgtP2g0HhUuWDZ6lb58gWGX4Q=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXInProceedings.c
+ lass
+SHA1-Digest: qLSrZqwryCPBhp+HrCJyEqFgdQ8=
+
+Name: ecologylab/oodss/messages/ServiceMessage.class
+SHA1-Digest: ewujpsU5+eyILgIzYwcXqMWeUbs=
+
+Name: ecologylab/collections/ConcurrentHashSet.java
+SHA1-Digest: bs8fSzrTl8n3Qbvj0x+CPPd0n/I=
+
+Name: ecologylab/generic/HashMapArrayList.java
+SHA1-Digest: ICPyn/uF/xro9RAmIsJScUP9Jv4=
+
+Name: ecologylab/oodss/logging/playback/package.html
+SHA1-Digest: X4flaBrmAim5JUu+fVTFrhAaHSc=
+
+Name: ecologylab/serialization/annotations/simpl_collection.java
+SHA1-Digest: bHc6Ksaiy4CEik3Bh22u9F+4wz0=
+
+Name: ecologylab/serialization/DescriptorBase.java
+SHA1-Digest: CuTU+/uHCJAPSbU2LKBgv8IYFjg=
+
+Name: ecologylab/oodss/messages/ShutdownRequest.class
+SHA1-Digest: q/5jGFY3mayW5ioxg94xstryHBQ=
+
+Name: ecologylab/collections/ConcurrentHashMapArrayList.class
+SHA1-Digest: ffbkkcPiTsvjnQFdDbEawkr2cwg=
+
+Name: ecologylab/serialization/serializers/stringformats/StringSeriali
+ zer.class
+SHA1-Digest: WRoc4KfriaxyrgVU1dIDtPJ16iY=
+
+Name: toolbarButtonGraphics/media/Rewind24.gif
+SHA1-Digest: t5KoFKQ4IXT3rCIHpMYRGa68pHE=
+
+Name: ecologylab/generic/IntSlot.java
+SHA1-Digest: frugpVRer43PXt3MGMjs3tsNTG0=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestXml_Ecologyla
+ b$BingSearch.class
+SHA1-Digest: XJko585q1vpIzoGBMZeuyjQ66/I=
+
+Name: ecologylab/serialization/library/html/Span.class
+SHA1-Digest: PfchjgOCFYX+7smez9ZN3G7zAAQ=
+
+Name: ecologylab/generic/Noise.java
+SHA1-Digest: 3xttSSGGxWdWz4Qe/X1xv/onMnU=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Categories.
+ java
+SHA1-Digest: qh0mzBtd8x19bT88T0h2WT8u82w=
+
+Name: ecologylab/appframework/types/prefs/RangeFloatState.java
+SHA1-Digest: IP4sEG8d51cqHqlrKPXIA9Gruuo=
+
+Name: ecologylab/serialization/ElementState$simpl_nowrap.class
+SHA1-Digest: +DIEY9hF1VBa+mMvVsWsLXdfVPE=
+
+Name: ecologylab/serialization/library/geom/Rectangle2DDoubleState.cla
+ ss
+SHA1-Digest: SKS3V0v7Lu9FkoZO1ZqcsSkaeCg=
+
+Name: ecologylab/serialization/library/jnlp/JnlpTranslations.class
+SHA1-Digest: JVAtYG5nrjo13TfEhQ8IqyEWn0w=
+
+Name: toolbarButtonGraphics/media/Volume24.gif
+SHA1-Digest: UIiYqd2bFgObTJhdK1ieMf6zZU0=
+
+Name: ecologylab/tests/TestServer.class
+SHA1-Digest: 6n/OQaV0k60o2ru5PXROTpWw998=
+
+Name: toolbarButtonGraphics/media/Play16.gif
+SHA1-Digest: FsFf0YMsiIndSPtOVhlaKU8Lvhg=
+
+Name: ecologylab/serialization/library/geom/PointInt.java
+SHA1-Digest: zIw98Ii7LcEiXwMq3KQiCcKF9Ls=
+
+Name: ecologylab/oodss/logging/playback/ExtensionFilter.class
+SHA1-Digest: /regC37K8x2mrguDtDMv+lOzQ50=
+
+Name: ecologylab/serialization/SimplTypesScope.class
+SHA1-Digest: ZDQ4DYWDh+z28LJeH7p3jB+Lp8U=
+
+Name: ecologylab/oodss/logging/LogOps.java
+SHA1-Digest: 4s6HYEDWNq5aL9xtpZVGnraYZ6I=
+
+Name: ecologylab/generic/DomTools.java
+SHA1-Digest: A/dfLgV37uZ+QuU5miLw2TAM+X4=
+
+Name: ecologylab/concurrent/RaiseMonitor.class
+SHA1-Digest: KEB3+ZPYUyFTClz+uaOdTpHB/2Q=
+
+Name: ecologylab/generic/IFeatureVector.class
+SHA1-Digest: qr7WcGinbSCxIRzpzihlAcn+41w=
+
+Name: ecologylab/standalone/researchnotebook/testxml/SearchResponseSta
+ te.class
+SHA1-Digest: SnyWXfHsDMQrNthFgGawfcJ5fFo=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ JSONPushHandler.class
+SHA1-Digest: 3s6OI+0vgrNuO9Dn+Tc2KjtSvVs=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Traversable
+ Set.java
+SHA1-Digest: S/403QkltuwahXHIduPkk9ByewQ=
+
+Name: ecologylab/serialization/types/scalar/DoubleType.java
+SHA1-Digest: c5xo1T8v2MREyn8gc7v8Jc3m5Ws=
+
+Name: ecologylab/oodss/logging/Prologue.class
+SHA1-Digest: uCgrQoFUH501aEtBW9sCuy3PL3c=
+
+Name: ecologylab/appframework/types/prefs/PrefVisual.class
+SHA1-Digest: z1B+MsH+XTz0prhGMVanBi/fDTI=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2_
+ thumbnail.jpg
+SHA1-Digest: NLzD/AFRuyWMBqpw7dEuO7jJ/Pg=
+
+Name: ecologylab/concurrent/package.html
+SHA1-Digest: b2GT4oubfGpmPaFA5/8cPbsbwoc=
+
+Name: ecologylab/serialization/library/jnlp/JnlpTranslations.java
+SHA1-Digest: uIcXy0E9Y+QtcIg/4bnJRb9Ef+o=
+
+Name: ecologylab/serialization/ElementStateBibTeXHandler.class
+SHA1-Digest: XCItB2QKNh/d/7TKc60zqZgfKOk=
+
+Name: ecologylab/collections/WeightSet.class
+SHA1-Digest: fuNXFH9Z6Pz1aSnhSAnZbKTdNNU=
+
+Name: ecologylab/serialization/library/apple/StringProperty.class
+SHA1-Digest: RlpicuyjOA2H4zJEJPoUWPhtOfA=
+
+Name: ecologylab/standalone/TestXml.class
+SHA1-Digest: AQLFJA3dAOdCflxQ5K2A0ewBPYI=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/BibTeXPullDeserializer.class
+SHA1-Digest: Y9tNyzvwUsW+Ze9ghcz3YHtxWC4=
+
+Name: ecologylab/generic/Makefile
+SHA1-Digest: T7WtwN0i9/xcbN8RlbMWPZvYIhM=
+
+Name: ecologylab/serialization/serializers/binaryformats/TLVSerializer
+ $1.class
+SHA1-Digest: 4+dB8gGHUyIyUurn7JQGJ/AqE8s=
+
+Name: ecologylab/generic/ArrayListDebug.class
+SHA1-Digest: oHE0R8r5ScLvb2igRmppfXGjAfQ=
+
+Name: ecologylab/serialization/types/ScalarType.java
+SHA1-Digest: ehpqpM52u7kxbL21ur6Sk4GklE0=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/farm3.static.flickr.com-4192376512_24640b9147_m.jpg
+SHA1-Digest: fFdGpZ4WuUb7LpFMi5+zrOwWDZg=
+
+Name: ecologylab/collections/GenericPrioritizedPool.java
+SHA1-Digest: jCm89f1UK78EVHd6mEBEfBXk7SE=
+
+Name: ecologylab/tests/Composed.java
+SHA1-Digest: 6ayolmChZ8NZdlLHdeVCqBrPwGc=
+
+Name: ecologylab/serialization/types/scalar/package.html
+SHA1-Digest: lqjOlWQOuvUCod0Tixm0yz0TFhg=
+
+Name: ecologylab/oodss/messages/ContinuedHTTPGetRequest.java
+SHA1-Digest: ylYz9s5EDbjLuCWARDsTp/dIwlY=
+
+Name: ecologylab/serialization/ElementState$xml_other_tags.class
+SHA1-Digest: TI4acyY7+YQ5vQku41hkxCWwNDg=
+
+Name: ecologylab/standalone/xmlpolymorph/Schmannel2.class
+SHA1-Digest: ufQiNd/amd5yf5cdDjuf1X3yf7c=
+
+Name: ecologylab/appframework/types/package.html
+SHA1-Digest: X1wCC4r2Xj7j4hErzHrxf2VVUV0=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ JSONHandler.class
+SHA1-Digest: o69T6b70STEY8iKqzJ0J+ffJ41g=
+
+Name: ecologylab/io/StreamUtils.java
+SHA1-Digest: ZyaN7rW6UeH3PF2JB7uqFQ2uPos=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Site.java
+SHA1-Digest: 2gm1HoRCYHJOC8h0koJR0zwPAGo=
+
+Name: ecologylab/serialization/library/media/Thumbnail.java
+SHA1-Digest: IWd/2+qGuk0oRkCTLPBbfMCZRmc=
+
+Name: ecologylab/oodss/logging/LoggingClientSessionManager.class
+SHA1-Digest: obFU8JvEVSz5X0dF4BuTdiwqHOc=
+
+Name: ecologylab/standalone/xmlpolymorph/Schmannel2.java
+SHA1-Digest: 3ZY7t+fcbwYZb6ijg+sfDo9m/6U=
+
+Name: ecologylab/collections/SyncLinkedList.java
+SHA1-Digest: j28HRMn1xQXWarlFyoaDANIhCHQ=
+
+Name: ecologylab/serialization/library/jnlp/information/InformationEle
+ ment.class
+SHA1-Digest: RPkwYOGNIVFW4sflLdOd4EEPmkw=
+
+Name: ecologylab/standalone/TestNameSpace.class
+SHA1-Digest: 2soGIbsHlGey/aiESwe+pOJOMA4=
+
+Name: ecologylab/generic/DataTransferTools.class
+SHA1-Digest: akcgVF3CA4Eim9C0pJdFGKy931M=
+
+Name: ecologylab/oodss/distributed/server/NIOServerDataReader.java
+SHA1-Digest: awAyoKYji508qD9krME/Z6VoIHo=
+
+Name: ecologylab/oodss/messages/SendableRequest.class
+SHA1-Digest: xmNztxbn4nWsbyIfWd/JTqU5z+I=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/www.lifeinkorea.com-1525top.jpg
+SHA1-Digest: DsT54rKeDitqDIb5WJYyroCQ0vY=
+
+Name: ecologylab/standalone/TestServer.java
+SHA1-Digest: t3MKOHCmEaEyNRSmRbITsbrU0vM=
+
+Name: ecologylab/serialization/SpecialCharacterEntities.java
+SHA1-Digest: mNtzjHgMqGnt4UqIekvHQTYGqEo=
+
+Name: ecologylab/serialization/SerializationHookStrategy.class
+SHA1-Digest: 1JliAYgF94mcYcDI91zW0mb/AwU=
+
+Name: ecologylab/serialization/annotations/simpl_wrap.class
+SHA1-Digest: VOOddJNNv9toNEAkeSdaGEFSbhk=
+
+Name: ecologylab/oodss/exceptions/BadClientException$OkEvilHostEntry.c
+ lass
+SHA1-Digest: auDfU+jL8xl8sF2Le/AI71PIyVo=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Anchors.cla
+ ss
+SHA1-Digest: 0CiB1ASKysoByKEpOjw1VBTCzZk=
+
+Name: ecologylab/oodss/logging/playback/View.java
+SHA1-Digest: X1bAhhtah1VvE1Jt+B6iMVJYIYE=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefsTranslationScope.ja
+ va
+SHA1-Digest: VK+3ULwei4M4E1Ojk59kT4n8FJ8=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefFile.java
+SHA1-Digest: gA5qbvtDh87rWOPF9418GqLxP+0=
+
+Name: ecologylab/tests/serialization/Base.class
+SHA1-Digest: 1g/6JzGbMrUTvh8d+U6yOteu03o=
+
+Name: ecologylab/standalone/researchnotebook/testxml/bingWebResult.xml
+SHA1-Digest: qPfupY+w70S6qyLaje/duOWMEZA=
+
+Name: ecologylab/serialization/library/rest/SearchResults.java
+SHA1-Digest: L0hPpciMPsghrB3eQzS6Tfx17oc=
+
+Name: ecologylab/oodss/logging/playback/LogPlaybackControls$1.class
+SHA1-Digest: g7xvLx1ivuZd/cc1EjYdaDqkIBI=
+
+Name: ecologylab/collections/ArrayListInBounds.class
+SHA1-Digest: L3JL1GdUjmtwpbHlbE8NLfSqMAY=
+
+Name: ecologylab/serialization/ImageSerializationContext.java
+SHA1-Digest: KohDnKphkXS8+G9AHcx4VpW1wtE=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Surrogate.c
+ lass
+SHA1-Digest: CdgrnCTRktD9wOZLadbBjgsaItg=
+
+Name: ecologylab/serialization/TranslationScope.class
+SHA1-Digest: EaM2mjSKYDVJBJ27gp4BC+Mhq08=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /AbstractBibTeXEntry.class
+SHA1-Digest: kJnMZJHuHbyzUay9m+q3wTytxdc=
+
+Name: ecologylab/oodss/distributed/server/NIODatagramServer.class
+SHA1-Digest: 5pkddNuT6ofgWz1rAHIJvG/jJbE=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Site.class
+SHA1-Digest: eAM7VbsbD7R75LYJGtSQcWLL2WY=
+
+Name: ecologylab/serialization/library/media/Thumbnail.class
+SHA1-Digest: HDQPTluXJ1HxTiC74PuFX0WwIHw=
+
+Name: ecologylab/serialization/library/endnote/Record.java
+SHA1-Digest: RjpSPCx33XK+osJqO5ThKnbxKIE=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefFloat.java
+SHA1-Digest: vPtWjUUvjjVOftBuDpqNhZ7D6lQ=
+
+Name: ecologylab/serialization/types/scalar/ParsedURLType.class
+SHA1-Digest: c8OGAZ8+bMuUF+REkMrEB0cekYk=
+
+Name: ecologylab/oodss/logging/Epilogue.class
+SHA1-Digest: cOsOn6zH9R0s+Xlq9y75Dbs6OGg=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXEven
+ ts.java
+SHA1-Digest: oy5+u3+r8iSCbniHjaIMu93Eeu0=
+
+Name: ecologylab/tests/serialization/ChannelTest.java
+SHA1-Digest: FXdP3Ogl0jrXh8kK5f74oCZ4FT4=
+
+Name: ecologylab/sql/StatementWithAutoClose.java
+SHA1-Digest: iieKhQTKUzXEjW6/efap5tgMp4g=
+
+Name: ecologylab/collections/RunnablePool.java
+SHA1-Digest: zuwiE8zS50OnDkyDh9Jvu24M4yI=
+
+Name: ecologylab/net/package.html
+SHA1-Digest: 5+xkyBpxz95D123g69TOy7tmPos=
+
+Name: ecologylab/serialization/ElementState$simpl_hints.class
+SHA1-Digest: tQLzJnismdAX0lnqWOtGvJO4K6g=
+
+Name: ecologylab/serialization/ElementObserver.java
+SHA1-Digest: BurbxspNm/fa1ekRvZxRpUSpHBE=
+
+Name: ecologylab/serialization/library/endnote/TestEndnoteXML.class
+SHA1-Digest: SbgoVHtJcg0tMYidX6pYPAPMTuE=
+
+Name: ecologylab/io/AssetsRoot.java
+SHA1-Digest: qUd0TyJ2aGtTwrO2gfSIyPB8toM=
+
+Name: ecologylab/tests/PURLTester.class
+SHA1-Digest: IYJfOtdQbwH4gP5GITVlU3QBXDY=
+
+Name: ecologylab/tests/serialization/objectGraphTest/PointDotEquals.cl
+ ass
+SHA1-Digest: tFYZCa9kLa+YtYwm9MYkR6ZgrlI=
+
+Name: ecologylab/serialization/library/opml/Outline.java
+SHA1-Digest: emsnccJ/VNUxJzu0nbFv9quYQ9U=
+
+Name: ecologylab/serialization/library/jnlp/package.html
+SHA1-Digest: 5Uj0Epg5Ep8J7uaHgS7pV9BgKO0=
+
+Name: ecologylab/serialization/types/scalar/StringBuilderType.class
+SHA1-Digest: OfeuGVDVKGjI4LTVxoJWvKqCxFs=
+
+Name: ecologylab/serialization/library/jnlp/information/ShortcutElemen
+ t.java
+SHA1-Digest: Ey7fHo/Ln5j5ctlXB3gNk+/+KH8=
+
+Name: ecologylab/oodss/messages/CfCollaborationGetSurrogate.class
+SHA1-Digest: uosIg6aKeS8QK+xfplabcT1uA0Y=
+
+Name: ecologylab/oodss/logging/Epilogue.java
+SHA1-Digest: Q20emUVYPkZxqocyoGyIgRLBRTY=
+
+Name: ecologylab/oodss/distributed/client/NIOClient$Reconnecter.class
+SHA1-Digest: mqZ1b8LQL0e3lTlrj+uk+s+jg8A=
+
+Name: ecologylab/serialization/library/apple/ArrayProperty.class
+SHA1-Digest: YyAylucrzXQTj2P1B9uunlFBd54=
+
+Name: ecologylab/oodss/messages/SubmitMessage.java
+SHA1-Digest: z9suqTxlq3TWTGdCs1O0yTvCUnY=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/farm1.static.flickr.com-347709442_7d0a06692f_m.jpg
+SHA1-Digest: Hh6OirRF9SXcUJpR38LvLG8KtfY=
+
+Name: ecologylab/serialization/ElementState$simpl_wrap.class
+SHA1-Digest: +SNEI+StPQ00UQgD4aoNDZz2frc=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$3.class
+SHA1-Digest: Tlf0s+QtDhjkqlKNb948Q0YL+2s=
+
+Name: ecologylab/generic/text/DecimalFormatSymbols.java
+SHA1-Digest: LLjMS28sk8QyE1X4HImcvFiZZYQ=
+
+Name: ecologylab/oodss/messages/SetPreferences.java
+SHA1-Digest: UWP+qHH52wa6JiMez+CMiC34ADc=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$4.class
+SHA1-Digest: TRcsi56trvHUvCFb6EwZ+5hiY1w=
+
+Name: ecologylab/oodss/messages/UpdateMessage.java
+SHA1-Digest: M/1N17lvFdk7lVE3HOQUp+vUHr4=
+
+Name: ecologylab/appframework/Environment$The.class
+SHA1-Digest: NSgz1ScYaGEyAaYvf2XICrdN6G0=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefsTranslationScope.cl
+ ass
+SHA1-Digest: 2W5o60saCvZLQR4QyXoQxQCkMKU=
+
+Name: ecologylab/collections/ArrayListX.class
+SHA1-Digest: DqRbLrAQXwYYhnTlVK1IjQioakQ=
+
+Name: ecologylab/appframework/types/prefs/RangeState.class
+SHA1-Digest: eWt5mx1o99ZY/OIN6ds/QGDQ/Fs=
+
+Name: ecologylab/serialization/library/dc/package.html
+SHA1-Digest: CIhKBY0f5S13bpIRvOEb+w+WFWU=
+
+Name: ecologylab/appframework/types/prefs/PrefChangedListener.java
+SHA1-Digest: Ig/N1tL5qEdwUKUj0iXANleJ3nU=
+
+Name: ecologylab/serialization/types/scalar/LongType.java
+SHA1-Digest: gcBk4Ec0PVGhiNuxdXUMD4S1MxY=
+
+Name: ecologylab/appframework/types/prefs/PreferenceOp.java
+SHA1-Digest: nOZ5Dwrb8P773DEaVfGDvy2bRLk=
+
+Name: ecologylab/serialization/types/scalar/EnumeratedType.java
+SHA1-Digest: IaMpuYMuWgGkE0/h0OX8mu8We8w=
+
+Name: ecologylab/serialization/library/feedburner/package.html
+SHA1-Digest: Zy7AYnBzNlP79Ym616nPtiPkxKk=
+
+Name: ecologylab/io/package.html
+SHA1-Digest: VEIKBOvPfpDHDpJ1h6wqFgBOCsE=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/ImageElemen
+ t.java
+SHA1-Digest: xYzSoCsim+kJo/nt4Yue2m72GH4=
+
+Name: ecologylab/generic/AutoCleanerMap$TimeTracker.class
+SHA1-Digest: VmzYH/K901GIs6qKX953igu7MdU=
+
+Name: ecologylab/oodss/logging/LoggingClientSessionManager.java
+SHA1-Digest: UOwNjNBJx9oPD7xRTtf2N9P4bP4=
+
+Name: ecologylab/collections/SetElement.java
+SHA1-Digest: 7pSrTx9jh9cew646OA5Yf9cXKFI=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2-
+ images/farm5.static.flickr.com-4667717731_64da6b9eba_m.jpg
+SHA1-Digest: l93BGY+kFFZlcXwWoA8PzKJRb+w=
+
+Name: ecologylab/oodss/messages/DefaultServicesTranslations.class
+SHA1-Digest: 8qRZDn8GPxN03ZcX//bYGBx5Uac=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ JSONHandler.java
+SHA1-Digest: HpCiw0/2Uwuj5L7YGmnJxMd9wCM=
+
+Name: ecologylab/serialization/library/geom/Point2DDoubleState.class
+SHA1-Digest: mHEtls3UFXoNDF5NAILn1ixghvw=
+
+Name: eclipse/ecologylabDictionary
+SHA1-Digest: Ktx44bxnVGxf8ldkVBdsHP09CrY=
+
+Name: ecologylab/serialization/library/html/HtmlElement.class
+SHA1-Digest: ZyAS55lPsEQ5k5LeYDOXt/fze4w=
+
+Name: ecologylab/sql/StatementWithAutoClose.class
+SHA1-Digest: Q/Oo1MI+Yrcze+i+0GftbVBoaVw=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$2.class
+SHA1-Digest: gtCqoLBRFtQhqbLtpskB17Dmc1Q=
+
+Name: ecologylab/appframework/types/prefs/PrefOp.java
+SHA1-Digest: V9fM9w2gKj6cMY2bRrb1Jr30cxo=
+
+Name: ecologylab/serialization/bibtex/BibTeXEntryTranslationScope.clas
+ s
+SHA1-Digest: 7VUp9RGolmwQTlWpz1gPL9nyh/8=
+
+Name: ecologylab/tests/serialization/ItemTest.class
+SHA1-Digest: dM4P6DRnyoIp+j8rlGGd6a6AvQc=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/binaryformat
+ s/BinaryPullDeserializer.class
+SHA1-Digest: ptCT4s3blsHjjELDUhxMYPzSnIs=
+
+Name: ecologylab/collections/HashMapWriteSynch3Args.java
+SHA1-Digest: FiDgY8+ftZqCM7/FBFBOMY0s6eI=
+
+Name: ecologylab/appframework/types/prefs/RangeState.java
+SHA1-Digest: t8Cf+uW4woJp15AYKgk+fE+SFFI=
+
+Name: ecologylab/serialization/library/media/Credit.class
+SHA1-Digest: MxysWf7WLJRS97ShyO0w/tUa9q8=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Paragraphs.
+ class
+SHA1-Digest: /rujxnTAlQ5adm2PpzwytUDvsTQ=
+
+Name: ecologylab/serialization/XMLReaderPool.class
+SHA1-Digest: JQyq1fNdjTrwU74fB1lUakkTVpk=
+
+Name: ecologylab/oodss/messages/Ping.java
+SHA1-Digest: LXm3yjcVdLQHraI/2SGgJVan+GI=
+
+Name: ecologylab/serialization/library/xaml/PanelChildState.class
+SHA1-Digest: coXDzdNoKxoShC1/c13smjoOpSY=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2.
+ html
+SHA1-Digest: k9Bw+63YucQlKruFgUnuSOFScuI=
+
+Name: ecologylab/sql/PreparedStatementWithAutoClose.class
+SHA1-Digest: OclbZ/kgNI4mE085MqPGu9AlZj8=
+
+Name: ecologylab/serialization/library/yahoo/Result.java
+SHA1-Digest: eMPXY8LTdtKc3N7fgqe+nv1EUYI=
+
+Name: ecologylab/serialization/TranslationContext.class
+SHA1-Digest: fzwlFGuAFIBUrPcmkuVmbrqTFvE=
+
+Name: ecologylab/oodss/messages/ErrorResponse.class
+SHA1-Digest: /Qnrz8p5WM9Au402/05becsDeqw=
+
+Name: ecologylab/serialization/library/apple/RealProperty.class
+SHA1-Digest: lx9LVjxvJERwRsXNDCK0HYugEKc=
+
+Name: ecologylab/serialization/types/scalar/LongType.class
+SHA1-Digest: /XVxuSj01znCxsu9k41PrwiuItQ=
+
+Name: ecologylab/serialization/library/geom/Ellipse2DDoubleState.class
+SHA1-Digest: 0IVk8+r5JU16yX4evhWRbXL6fe0=
+
+Name: ecologylab/generic/CharsetDecoderPool.java
+SHA1-Digest: QNRo7Qhiy/FzrlAuqlMMgJaPdCU=
+
+Name: javadoc.xml
+SHA1-Digest: Cbd31jW/UyDjc/SIxQHO3s1mkKU=
+
+Name: ecologylab/serialization/library/rss/Item.java
+SHA1-Digest: XXDO1uoHyPI79ovLz+GePBsQQKc=
+
+Name: ecologylab/serialization/ElementStateSAXHandler.class
+SHA1-Digest: fKABqfnvBKPzfBix6VTS/I4xguQ=
+
+Name: ecologylab/collections/HashMapWriteSynch3Args.class
+SHA1-Digest: ivQsOdslG/smimc89LBLwT7oUHQ=
+
+Name: ecologylab/generic/HashMappableArrayList.class
+SHA1-Digest: +St+EZmBEc0HN7okTvOjKEfmrWM=
+
+Name: ecologylab/appframework/StatusReporter.class
+SHA1-Digest: HLOF62XfixY616kOi2+0yVG9Igw=
+
+Name: ecologylab/serialization/bibtex/BibTeXFormatException.class
+SHA1-Digest: D6iZ9fRl1qF+O7q319O+hJ45pFE=
+
+Name: ecologylab/serialization/library/endnote/XmlState.class
+SHA1-Digest: t4oEE/SC6ckcDVG9LNks4Ch/ULc=
+
+Name: ecologylab/tests/TestClient.class
+SHA1-Digest: kge4SwD94iYFjyg3Q7ZlPKgmjns=
+
+Name: ecologylab/generic/StringBuffersPool.java
+SHA1-Digest: ydx0kdhEb8YGRZOnWE2P1V4ry4U=
+
+Name: ecologylab/oodss/logging/NIOLoggingServer.java
+SHA1-Digest: /wz26YiKRXdFcddEs93RImgERaw=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Image.class
+SHA1-Digest: OlFlpTlExZpNL1ZQfqbYfRRq1ZI=
+
+Name: ecologylab/oodss/messages/HttpGetRequest.class
+SHA1-Digest: IjNpmXHIM9F5zDfQ/YZSHVqEz2k=
+
+Name: ecologylab/appframework/types/prefs/RangeFloatState.class
+SHA1-Digest: 09I4htZ1Z0JLwzETniz+SYmgN60=
+
+Name: ecologylab/standalone/TestRegex.class
+SHA1-Digest: t+QlXIlIPEpkdeU8VmoxtXqp2g0=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore.java
+SHA1-Digest: KlKQFKVdYyR5b+CTmrVLvLf4ozw=
+
+Name: ecologylab/serialization/annotations/simpl_composite_as_scalar.j
+ ava
+SHA1-Digest: +NBwMad/SNHskuO4qB/Tb+rLNoY=
+
+Name: ecologylab/oodss/messages/ErrorResponse.java
+SHA1-Digest: 9zoqr1jqQBTcXkQrh0lwvrhaVnI=
+
+Name: ecologylab/serialization/library/media/Group.java
+SHA1-Digest: 19xofsMWBrvbN3faPkn1/jrB/BU=
+
+Name: ecologylab/appframework/types/prefs/ValueChangedListener.java
+SHA1-Digest: vrRhhg7LlWmdVDrku11rDVELnC8=
+
+Name: ecologylab/serialization/library/jnlp/applet/Param.java
+SHA1-Digest: 2h2dkThzZ8nWy8F2vucmGqdcV1U=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXEven
+ ts.class
+SHA1-Digest: Q2h124ri83S6gO4TJujggbhBXng=
+
+Name: ecologylab/serialization/TranslationContextPool.java
+SHA1-Digest: lEv859YE99VApDVgWGkKevvSvWM=
+
+Name: ecologylab/oodss/messages/SendableRequest.java
+SHA1-Digest: sBWoIzjmZQzccQs/ltn/eHhwZwc=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Paragraph.j
+ ava
+SHA1-Digest: lZlBDDPMLUrANpR9yCI+K3d/Xbc=
+
+Name: ecologylab/generic/DebugMode.java
+SHA1-Digest: JI7AkCM5TzWefv8d5UQfdBVIWGo=
+
+Name: ecologylab/oodss/distributed/client/ReconnectBlocker.class
+SHA1-Digest: jeZ5JV1yY1d+Nj1bDE4LU3f4/Ak=
+
+Name: ecologylab/standalone/researchnotebook/testxml/SiteSet.java
+SHA1-Digest: UPqiYSNXSuPzJudgBsvVqk05VFQ=
+
+Name: ecologylab/serialization/types/scalar/ScalarTypeType.java
+SHA1-Digest: XpvP4l9sm9IKLvfFbBsjFUHQDSc=
+
+Name: ecologylab/generic/ColorChooserDialog$DisposeOnClose.class
+SHA1-Digest: e+4h3d3Tsmv9MU3zHvRjNAcLEPs=
+
+Name: ecologylab/serialization/library/opml/Body.java
+SHA1-Digest: tBfUGYufm0cQecksNLfZoY8aRfw=
+
+Name: ecologylab/standalone/PrefsEditorAp.java
+SHA1-Digest: XimHIPtT6aW6vYyhOocc5e5x4V4=
+
+Name: ecologylab/serialization/library/endnote/DateList.java
+SHA1-Digest: z2D0qT7inxAVDsDqZpBcI0cbvIQ=
+
+Name: ecologylab/serialization/XMLFilenameFilter.java
+SHA1-Digest: zJw1ZKN7y7/kgb3lHBKb8kOob/U=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/JSONPullDeserializer.class
+SHA1-Digest: Lyee14jAOiVidGn9J7PgltWG2lg=
+
+Name: ecologylab/serialization/ElementState.java
+SHA1-Digest: YvQA1vqXcDVFioub1byaaW+/Cyg=
+
+Name: ecologylab/generic/ObservableDebug.java
+SHA1-Digest: dAdShI2F/Uv59DxR/G01QLxwp2s=
+
+Name: ecologylab/serialization/library/rest/SearchResults.class
+SHA1-Digest: UiVdYYX4pjZrq4TMEJHh6ihlNso=
+
+Name: ecologylab/oodss/exceptions/BadClientException$EvilHostEntry.cla
+ ss
+SHA1-Digest: uVuCRpD7sMJWKX4ey05+hD5d/Zw=
+
+Name: ecologylab/serialization/library/jnlp/resource/J2se.java
+SHA1-Digest: 5y/hdxV3DTuTpL36WkhsoVJ2DKg=
+
+Name: ecologylab/oodss/distributed/impl/NIOCore.class
+SHA1-Digest: EVTQADcQ7UlYY2biKjsv8iZJBWo=
+
+Name: ecologylab/appframework/types/prefs/PrefColor.java
+SHA1-Digest: IMhiM+Zuv1MubWd9kIIZ5QVNLhU=
+
+Name: ecologylab/collections/PrioritizedPool.class
+SHA1-Digest: E38KsHjquvPGUtM1ANKJbgsB2jA=
+
+Name: ecologylab/generic/Colors.class
+SHA1-Digest: 5iBJBMHBO20pvUO7r0iO/XNhtD0=
+
+Name: ecologylab/serialization/ElementState$xml_tag.class
+SHA1-Digest: twBgdcDO+jMuoNJOO6nFlO4/U/U=
+
+Name: ecologylab/serialization/library/html/Div.java
+SHA1-Digest: YH41/j169vSW73Y6QQZ5buivd2Q=
+
+Name: ecologylab/oodss/logging/playback/LogPlaybackControls.java
+SHA1-Digest: eeunNCorH/Zsve73KUkpTUjd05s=
+
+Name: ecologylab/appframework/types/prefs/WidgetTypes.java
+SHA1-Digest: av4/ecZSUJrpG45uYcd9JgPJLwI=
+
+Name: ecologylab/serialization/library/endnote/Keyword.java
+SHA1-Digest: +NJ8A3Z4tvAGSBYAWPst5UKhs4M=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore$PacketSender.c
+ lass
+SHA1-Digest: VCCGboyn2y4DThy8xdCcD0jWFZI=
+
+Name: ecologylab/standalone/researchnotebook/testxml/ImageResult.class
+SHA1-Digest: ao2ktybbhRWev60u1x01Km43iGg=
+
+Name: ecologylab/collections/MultiMap.java
+SHA1-Digest: qPqZrqdt1VGqZruejsWhcB1o+Ug=
+
+Name: ecologylab/oodss/messages/DisconnectRequest.java
+SHA1-Digest: gmYfqzl/CSi8zNZK9bZo2/Nh5/Q=
+
+Name: ecologylab/serialization/types/CollectionType.java
+SHA1-Digest: AwoXiCu7BwM6GDbGm1M0kOIBkMA=
+
+Name: ecologylab/generic/StringInputStream.java
+SHA1-Digest: +VqO4v0ZRPnoDk+fHeTVk1X+zjw=
+
+Name: ecologylab/serialization/library/endnote/Records.java
+SHA1-Digest: gekW9qsceZ/2ZsTS1XHI/5UmWaw=
+
+Name: ecologylab/generic/FeatureVector.class
+SHA1-Digest: 2N1n0w9BfdbFNPxMgiPH6WdL1RE=
+
+Name: ecologylab/serialization/library/endnote/DateList.class
+SHA1-Digest: dpt1m8LddbRWkDTGeUR7yk9IlFE=
+
+Name: ecologylab/serialization/library/xaml/CanvasState.class
+SHA1-Digest: 84+DVyKJqEd59LzoSwU1HVZKxc4=
+
+Name: ecologylab/appframework/types/prefs/ChoiceFloat.java
+SHA1-Digest: 8fed6HN580M7M44XNF+9vL853pc=
+
+Name: ecologylab/serialization/annotations/Hint.class
+SHA1-Digest: n5/AfgYt1Xf/dzpwDze+8mthN1I=
+
+Name: ecologylab/serialization/simpl_descriptor_classes.java
+SHA1-Digest: K8ZcIrn1J+YQS8hLrVVRDtGOVc0=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/HTTPGet
+ ClientSessionManager.java
+SHA1-Digest: d7q+axbxD2S/GGKSr5eJYD+53/Q=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXPars
+ er$State.class
+SHA1-Digest: oVA1c0OIB8Q8g/Noo51SWb/yLUU=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXArticle.class
+SHA1-Digest: HQaaN4K376X7s72M3quhQX+bv+g=
+
+Name: ecologylab/tests/serialization/ItemTest.java
+SHA1-Digest: xCEEIVWngf65o2knLE+z+h+eyQs=
+
+Name: ecologylab/oodss/distributed/client/NIOClient.java
+SHA1-Digest: Lr0arusNLA6Rdj+fhnF9AyVZWt0=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/CfTextToken
+ .java
+SHA1-Digest: iPudjy1PbT2MgY63IZoC902FLgg=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXEntr
+ yTranslationScope.class
+SHA1-Digest: X7nMPq1tPk+eHjQLrDxy1F3pc4Y=
+
+Name: ecologylab/appframework/types/prefs/PrefDouble.class
+SHA1-Digest: wDyDpQcI+G8CBJcXR2c0fhvfVls=
+
+Name: ecologylab/standalone/researchnotebook/testxml/ImageResult.java
+SHA1-Digest: 01tRhp758rrtvVg98SAy8OJCBoU=
+
+Name: ecologylab/serialization/deserializers/ISimplDeserializationPost
+ .class
+SHA1-Digest: DDsq6BS77OEuHAowy12ueCjtTHQ=
+
+Name: ecologylab/serialization/library/apple/BooleanProperty.java
+SHA1-Digest: neI86cgeyNFp0Kz04vFtL2EtPEM=
+
+Name: ecologylab/serialization/annotations/simpl_descriptor_classes.ja
+ va
+SHA1-Digest: EbSiSlzWcHmKcmZwqGoKPk7EPoE=
+
+Name: ecologylab/oodss/messages/ResponseMessage.java
+SHA1-Digest: KmJJMHVOncoxJ8SyCI8+FISHQCk=
+
+Name: ecologylab/generic/HashSetWriteSynch.java
+SHA1-Digest: wImW/wBxbdIpgC9nxpZrDFl1KGw=
+
+Name: ecologylab/serialization/library/geom/Rectangular.java
+SHA1-Digest: fRInyWM0q00XqUPQ3hcqa9whMDo=
+
+Name: ecologylab/net/ConnectionHelperJustRemote.class
+SHA1-Digest: j3SyWrL2WKosikXOhcSO++pAVI0=
+
+Name: ecologylab/serialization/deserializers/ISimplDeserializationPost
+ .java
+SHA1-Digest: ZnEDlGT1K3oxKDyrnaenr7hV6FI=
+
+Name: ecologylab/serialization/ElementState$simpl_composite_as_scalar_
+ value.class
+SHA1-Digest: VwzJ/sR52yyUbH10Wao+aLKG2G0=
+
+Name: ecologylab/net/ConnectionAdapter.class
+SHA1-Digest: uUuabS8+pjbzitWLV4XicJWd31Y=
+
+Name: ecologylab/serialization/types/scalar/FieldType.java
+SHA1-Digest: nq1FYX56aS95LVGYVGYTAwukyWo=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/SeedSet.jav
+ a
+SHA1-Digest: LtwF0gcjsXXBanPuq1A9YXWCwmM=
+
+Name: ecologylab/generic/ThreadMaster.java
+SHA1-Digest: DrOKAfkPn6lMbdDw91VhQ4UJay0=
+
+Name: ecologylab/oodss/distributed/server/NIODatagramServer.java
+SHA1-Digest: oDJ3im/8X1k9RKM/PLcrEomQl9w=
+
+Name: ecologylab/appframework/OutOfMemoryErrorHandler.class
+SHA1-Digest: vJJJoMc8hY7xVBL/ujmEKgyr1ZI=
+
+Name: ecologylab/oodss/distributed/client/NIOClient$SocketWriter.class
+SHA1-Digest: k0d0a/Hk4yJ9pWDR3xMykJxWO3c=
+
+Name: ecologylab/standalone/TestNameSpace.java
+SHA1-Digest: kNaiOfZEyhYrsalDqvqx06ieoCA=
+
+Name: toolbarButtonGraphics/media/Movie16.gif
+SHA1-Digest: IuHOSIA9ERJf/+nTmAChlKxXYmM=
+
+Name: ecologylab/oodss/distributed/impl/Manager.java
+SHA1-Digest: 0ZY+Z1Tj640PI/Lup1807w2HK+8=
+
+Name: ecologylab/collections/BasicFloatSet.java
+SHA1-Digest: o3hJE0mFJuDIO8nOTmTRmgV08fA=
+
+Name: ecologylab/serialization/library/apple/PListTranslations.java
+SHA1-Digest: vqaqg2qeSpaF3Scm7ciX77zXvF4=
+
+Name: ecologylab/oodss/distributed/client/ClientStatusListener.class
+SHA1-Digest: UKMtBSPWy75Wd7GmvA1ix7vG25Q=
+
+Name: ecologylab/serialization/annotations/simpl_scalar.java
+SHA1-Digest: AmSJ92rHrpTmm+tp6fIJ5AI+I3U=
+
+Name: ecologylab/serialization/FieldTypes.class
+SHA1-Digest: uztkq0UIbte3JsrfWexMsO5D/Rc=
+
+Name: ecologylab/oodss/logging/Logging$LogWriter.class
+SHA1-Digest: J2JpSYOBO5oy/2YbENKiFEIPVPk=
+
+Name: ecologylab/generic/RestrictedFileSystemView$FileSystemRoot.class
+SHA1-Digest: 6pkJqQfAwi7CAgpOG2EwywJIobo=
+
+Name: ecologylab/appframework/types/prefs/MetaPref.java
+SHA1-Digest: qR1kSA2tELxmHAJm7AeAUILN2Sw=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXInProceedings.java
+SHA1-Digest: LNI32mN3nUYizwsAW7esb+M8LjQ=
+
+Name: ecologylab/standalone/researchnotebook/testxml/bingImageResult.x
+ ml
+SHA1-Digest: 8IZbW4npQkNR5NGnfIV0J6x6FqY=
+
+Name: ecologylab/oodss/messages/PingRequest.java
+SHA1-Digest: 4AUTCg7zBEg7RVT+BBH73cRc8vY=
+
+Name: ecologylab/sensor/location/EarthData.java
+SHA1-Digest: YGQXiAb5s0n+/RrF1nKb/BKFNIw=
+
+Name: ecologylab/generic/ClassAndCollectionIterator.class
+SHA1-Digest: yVw8B0y6PnmEuP6CwgkCXdtX9sc=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Values.java
+SHA1-Digest: 0adLCWyQp5L6Dw7vd9Bk+TEGXBk=
+
+Name: toolbarButtonGraphics/media/FastForward24.gif
+SHA1-Digest: 495a5Hu3hs35Fl1sXX4hWd6O4t0=
+
+Name: ecologylab/serialization/library/media/Credit.java
+SHA1-Digest: XE5B6/UhP97XTm4l20FhD9fj1Eg=
+
+Name: ecologylab/serialization/RootElementException.java
+SHA1-Digest: 6WfEgp/eN0FUqAN9FqTSmD8hd8k=
+
+Name: ecologylab/serialization/library/xaml/CanvasState.java
+SHA1-Digest: jdf+KVm4QFCfKqhgz1FC0RDmn+4=
+
+Name: ecologylab/serialization/library/jnlp/JnlpState.java
+SHA1-Digest: TxpoVsc2dESgQM6H+rN56yKula0=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Preferences
+ .class
+SHA1-Digest: fYjzGphPYc3glCU/qtnx7zu7W/I=
+
+Name: ecologylab/serialization/library/apple/ArrayProperty.java
+SHA1-Digest: NnlTeibf4rLBIP7GEHOHSxSYMys=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Results.java
+SHA1-Digest: Wsz9ZRlIMS0DNI1ed8LS5347KyI=
+
+Name: ecologylab/oodss/exceptions/ClientOfflineException.java
+SHA1-Digest: 7Ozq8IrXtBENhPAexHIu2u5UYGA=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestItem.class
+SHA1-Digest: 7BnY+XGfcJbGmeJs19XKekyWiLo=
+
+Name: ecologylab/serialization/ElementStateJSONPushHandler.java
+SHA1-Digest: HKVaTEAeNdXuS9kVGKmWHV5456k=
+
+Name: ecologylab/oodss/distributed/common/ClientConstants.class
+SHA1-Digest: V2xAwGl/bvyO1OdDLUHW5sFmyao=
+
+Name: ecologylab/oodss/logging/playback/LogPlaybackControls.class
+SHA1-Digest: ZEnRTx990urUJwgs/2sv/9UBeAk=
+
+Name: lib/svnjavahl.jar
+SHA1-Digest: Cnn1GR5fP+Ny6LiOobMtbQRMypk=
+
+Name: ecologylab/collections/ConcurrentHashSet.class
+SHA1-Digest: bhq1OnjGXfTicKrd9ECt8cDrIok=
+
+Name: ecologylab/serialization/library/apple/Property.java
+SHA1-Digest: zG1lVrTru/yrZdiYs8BXSfYCUfg=
+
+Name: ecologylab/net/ParsedURL.java
+SHA1-Digest: 8gU8g4ey35+T8twUa4w1D/FV5XY=
+
+Name: ecologylab/appframework/StatusReporter.java
+SHA1-Digest: Jw+wNUOq8t7h7ytZklUDj/U17L0=
+
+Name: ecologylab/tests/XmlTextInCollection.java
+SHA1-Digest: QnsXYpfw+KqC1PF320CELra1YsA=
+
+Name: ecologylab/tests/PURLTester.java
+SHA1-Digest: RQuX41a0WHtfiXQ7sgmpLGPBfAQ=
+
+Name: ecologylab/serialization/simpl_use_equals_equals.java
+SHA1-Digest: 1XBUwM0/PIAyoITeO3KNs4mnWR8=
+
+Name: ecologylab/net/UserAgent.class
+SHA1-Digest: GtwTegDPVt0XQJVxY956O9a3kkM=
+
+Name: ecologylab/appframework/types/prefs/Pref.class
+SHA1-Digest: ijgTT5IoCqdZu55P2hbBixS2kEg=
+
+Name: ecologylab/appframework/UndoRedo.class
+SHA1-Digest: a2Ru4e6O4Belud1Ro7lhcLnu/uM=
+
+Name: ecologylab/generic/ColorChooserDialog$Closer.class
+SHA1-Digest: /jbB3H5rt0krd7RBT8isEul954U=
+
+Name: ecologylab/serialization/deserializers/parsers/tlv/TLVParser.jav
+ a
+SHA1-Digest: o9nbZCh+3iary0f/852jnnkb0Wo=
+
+Name: ecologylab/oodss/messages/ResponseMessage.class
+SHA1-Digest: paiahNoQBlf1K8hMRYd6zD9NGik=
+
+Name: ecologylab/appframework/SimpleDownloadProcessor.class
+SHA1-Digest: t2J8SYpsp2pP92Ap93FtORUQUyk=
+
+Name: ecologylab/serialization/serializers/binaryformats/TLVSerializer
+ $2.class
+SHA1-Digest: PosnaJa+yKTVZGiSfgxSFE+yLU0=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionListPanel.j
+ ava
+SHA1-Digest: SIbfOOIZ01P9MgZuS8eRHmpiE4Q=
+
+Name: ecologylab/serialization/types/scalar/ByteType.java
+SHA1-Digest: UXAvPFNAE99t4o9x0hRVwLq+7x8=
+
+Name: ecologylab/concurrent/Downloadable.java
+SHA1-Digest: Jwi4CzDeucJSmb3iU9/5cgbhmmg=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$5.class
+SHA1-Digest: +AO06RggrXqMoHiu8/DAW74DQu8=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/Datagra
+ mClientSessionManager.java
+SHA1-Digest: 6CLyuDBYLOqewHInfzPsL9B+ucQ=
+
+Name: ecologylab/serialization/XMLTools.class
+SHA1-Digest: gUovpd+qyaN4MqbxDXkYcByq72k=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/binaryformat
+ s/TLVPullDeserializer.java
+SHA1-Digest: zJVIjTJUD9YeNn2PxRVHi1aTG0U=
+
+Name: ecologylab/tests/TestXMLFormat.java
+SHA1-Digest: MpwEyk5wSW72qf6wMKjHpwn/4E0=
+
+Name: ecologylab/generic/ClassAndCollectionIterator.java
+SHA1-Digest: rRB6q2PjupOpYGTPnaH2H//SKdE=
+
+Name: NIOLoggingServer.launch
+SHA1-Digest: 77WeceUdhPbguspk/ztFF7/eBN8=
+
+Name: ecologylab/serialization/library/geom/PolygonState.java
+SHA1-Digest: jbgaF4XXlvDStKMWk+JCO2Gf0hc=
+
+Name: ecologylab/oodss/messages/UrlMessage.java
+SHA1-Digest: ULsl+vlwwypGbBdErmBql3rcPiw=
+
+Name: ecologylab/collections/package.html
+SHA1-Digest: OztugCEdfKNqcMEx6g7tGUlz5MY=
+
+Name: ecologylab/serialization/library/apple/DataProperty.class
+SHA1-Digest: wdf3Mt18AjkKuGc/8gQSJ/0xlgM=
+
+Name: ecologylab/serialization/library/apple/DataProperty.java
+SHA1-Digest: Iy7TIN3tp9grKSfG9Z9O27VTjag=
+
+Name: ecologylab/collections/DLL.java
+SHA1-Digest: 41jVVuW0JLmhoqONUFSOim95ZGw=
+
+Name: ecologylab/serialization/library/html/Table.java
+SHA1-Digest: fao0TRPrHlb/LSA8bm0J6fj2Vvw=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/www.stratfor.com-45204e327cae0918fca7717b1bba56aa6bcba428.jpg
+SHA1-Digest: yHN7XBuhh6oO0haQHT+iWQqhiDk=
+
+Name: ecologylab/oodss/exceptions/BadClientException.java
+SHA1-Digest: 31ds+SPPhmwkA/xx3tXAfbcKHSE=
+
+Name: ecologylab/collections/MergeD.class
+SHA1-Digest: LyCRlS7twwk8DL6txqp2UBpHDu0=
+
+Name: ecologylab/serialization/library/rest/RESTTranslationSpace.class
+SHA1-Digest: /y8hwY4RVHy5Tv2k3Seq6Xu5Dnk=
+
+Name: ecologylab/collections/PrioritizedPool$PoolIterator.class
+SHA1-Digest: vTboGWV998lkiAHyZUN44Nihfro=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Document.cl
+ ass
+SHA1-Digest: 6llLsb0VjcAWo+ArjHRJWzTBl6I=
+
+Name: ecologylab/tests/serialization/Base.java
+SHA1-Digest: ga8ohXEsjguChK/oQRrEftVcIYA=
+
+Name: ecologylab/serialization/types/scalar/PatternType.java
+SHA1-Digest: M12ht8kkupqo7H3rdRXotiT8N+A=
+
+Name: ecologylab/serialization/library/icdl/Response.class
+SHA1-Digest: np8h405BLDjxDkVWHzHnDztPTDc=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionTreePanel$C
+ ollection.class
+SHA1-Digest: EN3t/JzCue0z8nw/f5ClI2tg/Zk=
+
+Name: ecologylab/oodss/logging/package.html
+SHA1-Digest: 6LhXKG36trV2hqAMFi0Nf0ijIPA=
+
+Name: ecologylab/oodss/logging/Logging$MemoryMappedFileLogWriter.class
+SHA1-Digest: GVRfIu5E2ACPXy8sD4uLvyY7bPM=
+
+Name: ecologylab/generic/text/DecimalFormatSymbols.class
+SHA1-Digest: FNZHlBq7l5C+hlponDGU1jA7+t8=
+
+Name: ecologylab/serialization/TranslationsClassProvider.java
+SHA1-Digest: a9YdOLBYu7Hxp0xJ9ONVNxsTVzs=
+
+Name: toolbarButtonGraphics/media/Stop24.gif
+SHA1-Digest: OSUqYUjlnn4nj+UZAJTCWBux0nc=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXForm
+ atException.java
+SHA1-Digest: UK9oBUcXf4TTPEiWhFGfsMnnlcg=
+
+Name: ecologylab/generic/StringBuilderBaseUtils.class
+SHA1-Digest: UiXjCx+yOSF1kL8eNFAigpJanVs=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestSubItem.java
+SHA1-Digest: ViqyaJp3i4nOCklfimlNoDdXxq0=
+
+Name: ecologylab/appframework/macos/MacOSApp.java
+SHA1-Digest: DNNmSRTEendRbW/hjISlj1xerfs=
+
+Name: ecologylab/pools/HashMapPool.java
+SHA1-Digest: PD6Z/yFwnq2Xl6vZHWUlyTwkpWc=
+
+Name: ecologylab/io/Assets.java
+SHA1-Digest: 3cDpyfRt5hvzLDFQ5uoy/RR019w=
+
+Name: ecologylab/appframework/types/prefs/PrefFile.java
+SHA1-Digest: 7WHaK7v4wDFwohnzW2mC73oegUk=
+
+Name: ecologylab/appframework/Memory.java
+SHA1-Digest: 44gxuE9cIl1pA1f2Ve917zYl0v8=
+
+Name: ecologylab/generic/ResourcePool.class
+SHA1-Digest: eisc/Gzjgl53O5MrmXIHYSJAjKI=
+
+Name: ecologylab/serialization/serializers/stringformats/JSONSerialize
+ r.class
+SHA1-Digest: NE/6/hh0AFoE2d7ec6HUkCtwsoQ=
+
+Name: ecologylab/oodss/distributed/common/SessionObjects.class
+SHA1-Digest: 4ODzitVuPAYiGHmswyI05dp7PeE=
+
+Name: ecologylab/serialization/library/rss/RssTranslations.class
+SHA1-Digest: xR2kiMZdmJBDKjzQcQZ1v6FNuno=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/TCPClie
+ ntSessionManager.java
+SHA1-Digest: jU2dWxJEt6ASY7h0o02n63wyMbg=
+
+Name: ecologylab/generic/DoubleSlot.java
+SHA1-Digest: bi3GV/VjuIkQgmAvnRB+fFcC7rY=
+
+Name: ecologylab/serialization/library/opml/Outline.class
+SHA1-Digest: fcC3thSdLL1GuEBTsnjQGN1xM8E=
+
+Name: ecologylab/appframework/types/AppFrameworkTranslations.java
+SHA1-Digest: 0hEM1Ar255Ycp/rHo/2cGbKcS+c=
+
+Name: ecologylab/serialization/types/scalar/Makefile
+SHA1-Digest: 7ktGkBFIaRYWwTxXPb18l9bY70Q=
+
+Name: ecologylab/oodss/messages/SubmitHttpRequest.class
+SHA1-Digest: nZhieuH/ZSjz9RxPtMyy8vtt0ng=
+
+Name: ecologylab/serialization/annotations/simpl_composite_as_scalar.c
+ lass
+SHA1-Digest: +ABt2oGdPYw90fHPnK0PZVZ+sxg=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Anchor.class
+SHA1-Digest: u9QeXC1b7CApdSkYlOiMaakOOkA=
+
+Name: ecologylab/generic/HashSetWriteSynch.class
+SHA1-Digest: 1YQ0lUxHPtt+gBI7EY+MSEfbrjA=
+
+Name: ecologylab/serialization/library/xaml/FrameworkElementState.java
+SHA1-Digest: NR+fQ3uEO/WPZPIZfqRo9K11Dzw=
+
+Name: ecologylab/generic/ResourcePoolWithSize.java
+SHA1-Digest: nPH6utBvM/VtQJnhiTamen8S9GA=
+
+Name: ecologylab/oodss/messages/InitConnectionResponse.class
+SHA1-Digest: 3xch5rH7qtS3yzLm+EE9o3ObcDk=
+
+Name: ecologylab/oodss/distributed/common/ServerConstants.class
+SHA1-Digest: 08fmvS9NnWQcVJietHGbU/hRqzU=
+
+Name: ecologylab/serialization/library/jnlp/information/HomepageElemen
+ t.java
+SHA1-Digest: Tpzhnqd5qN4uRvcrjfpepbRzEFU=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/BibTeXPullDeserializer.java
+SHA1-Digest: FURT0hs75zBglHWXi7bZX1Y06/8=
+
+Name: ecologylab/serialization/annotations/simpl_classes.java
+SHA1-Digest: ape19imhNMDJ2LpZl8MwOlg/CQo=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefSet.class
+SHA1-Digest: c1EUo/RAmgC+7wnN4MbfWQ2eg6Q=
+
+Name: ecologylab/serialization/serializers/binaryformats/TLVSerializer
+ .java
+SHA1-Digest: 3TbHqZFLxRptLy8FBIVPZiUdwdU=
+
+Name: ecologylab/appframework/PropertiesAndDirectories.class
+SHA1-Digest: DJzN0ZSnwh0F22yJUSJj1/kuz0M=
+
+Name: ecologylab/collections/ArrayListLA.java
+SHA1-Digest: Ie1wZy/Jnr4M5gX0MDsuO7sU3CI=
+
+Name: ecologylab/generic/DomTools.class
+SHA1-Digest: vy1d3xmW4yKoloHC2VIPNKBjBcg=
+
+Name: ecologylab/standalone/TestXMLTag.class
+SHA1-Digest: InZtcJxsv90B8XsxNQ076l61IGo=
+
+Name: ecologylab/serialization/types/SimplType.java
+SHA1-Digest: h64S/QFRCF3PtClQQsJqZ/7aBbk=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionTreePanel.c
+ lass
+SHA1-Digest: swdV9xPp+XiXptxzWKAegScwn7I=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestItem.java
+SHA1-Digest: xy2Htlf1qFZ45cn+rteiDDU+0Cw=
+
+Name: ecologylab/generic/ColorChooserDialog$2.class
+SHA1-Digest: f535RTAWRfHEkCfdbv4JwZuyGnI=
+
+Name: ecologylab/oodss/logging/LoggingContextScope.java
+SHA1-Digest: 0FYXVLVtO31QFsJxleISnRDFPqI=
+
+Name: ecologylab/serialization/ElementStateTLVHandler.class
+SHA1-Digest: dKuGX0mUiyV+k9GriBY+RGJwKOc=
+
+Name: ecologylab/serialization/ElementStateOrmBase.class
+SHA1-Digest: cxf8+TRKQypQTlfxgDyWlv39K80=
+
+Name: ecologylab/concurrent/BatchDownload.class
+SHA1-Digest: kwePPfReQHdbWPRMwlSAoLZSWtw=
+
+Name: ecologylab/generic/Colors.java
+SHA1-Digest: +solMXsCIm0e5LHHABoJfTDQ/kI=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestXml_Ecologyla
+ b$TestXml2State.class
+SHA1-Digest: Gswujt+fYWbQ07PTg/mUnDSPSVw=
+
+Name: ecologylab/oodss/logging/NIOLoggingServer.class
+SHA1-Digest: W9iUP+B3dmnvdZMYmicgzZOMgi0=
+
+Name: ecologylab/serialization/serializers/stringformats/XMLSerializer
+ .java
+SHA1-Digest: PdjwbSpj54u+kVonDjIg2ZiH1w0=
+
+Name: ecologylab/serialization/types/element/ElementTypeTranslationsPr
+ ovider.java
+SHA1-Digest: vriRuupgI0d3StdlLLf+nefC1UE=
+
+Name: ecologylab/serialization/ElementState$simpl_map.class
+SHA1-Digest: NxZTIkcImbZm3njswySPyjfN6mI=
+
+Name: ecologylab/serialization/library/geom/Vector2d.java
+SHA1-Digest: Jqmg+U+MQMBKr6qgXMO6Z3QxchU=
+
+Name: ecologylab/oodss/distributed/impl/NIOCore$SocketModeChangeReques
+ tType.class
+SHA1-Digest: bHQviNAI6Imjl+zXjPXAgAlxPRI=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXPhdThesis.class
+SHA1-Digest: qVyn00m+k/e10mllVPrpO0SwgOQ=
+
+Name: ecologylab/serialization/library/geom/Vector2dFloat.java
+SHA1-Digest: HpGtLiXjxnFtW7gy+Fda9ILs1WI=
+
+Name: ecologylab/generic/StringBuilderBaseUtils.java
+SHA1-Digest: 0/ab4mftEOj5tr92dNSbspuhT2k=
+
+Name: ecologylab/generic/CappedResourcePool.class
+SHA1-Digest: 3jb12m46vG5VbS5nSctNLFQvFno=
+
+Name: ecologylab/collections/PrefixCollection.class
+SHA1-Digest: ErOtsf+mAs+NbH5r6caIaSP4AEs=
+
+Name: ecologylab/standalone/researchnotebook/testxml/search_ref.xml
+SHA1-Digest: QhQQwOgUDKrqv3+BUUjbkiPXa5s=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/www.korea.net-korea_201008_m.jpg
+SHA1-Digest: SRJsR7njFAgW8EsD24XKP/hvUUU=
+
+Name: ecologylab/serialization/library/endnote/TitleList.java
+SHA1-Digest: JUIntc0fvBIg0T3r7O7THZI9YwU=
+
+Name: config/preferences/prefs.zip
+SHA1-Digest: rNx7PfwTT3aFeMAp3kKsrmKRYBA=
+
+Name: ecologylab/serialization/library/endnote/TitleList.class
+SHA1-Digest: pbXICUJD8VBEGtparxrYtNGlO2g=
+
+Name: ecologylab/serialization/types/scalar/StringType.class
+SHA1-Digest: GViBN9N//Gd+xu25WPWb8IrotH0=
+
+Name: ecologylab/serialization/ElementState$simpl_map_key_field.class
+SHA1-Digest: Z8S/T7YQQQrL5ZR3HrALxiSI9ac=
+
+Name: ecologylab/serialization/annotations/bibtex_type.class
+SHA1-Digest: 8qghllIiCkuUImaHVZnqqFDH5WI=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXTechReport.class
+SHA1-Digest: YF65+ecFKcc5jIllQTB2LlOR/lo=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore.class
+SHA1-Digest: hqpfWWPonxv4a60ferFZ43PSTj8=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXEntr
+ yTranslationScope.java
+SHA1-Digest: xkoPitocSBCMIC5xePuLVUDWhN0=
+
+Name: config/preferences/uvaSiteGuideExample_two_clusters_v2.xml
+SHA1-Digest: ziFB1ED+SoBXR/RyXSujfTV+YaA=
+
+Name: ecologylab/serialization/TranslationScope$GRAPH_SWITCH.class
+SHA1-Digest: ZtsQH/p8ux+N4AiD+A+bhKNtgS8=
+
+Name: ecologylab/appframework/ClassRegistry.java
+SHA1-Digest: U5wdWK0rolq7a0JORi5OoQUHkpw=
+
+Name: ecologylab/serialization/types/scalar/ShortType.class
+SHA1-Digest: Pi5JsPskQgpKpjJNfic9pTTHXVI=
+
+Name: toolbarButtonGraphics/media/Pause16.gif
+SHA1-Digest: bxJFmgNOEkRCfh+Jps6ym61sV5Y=
+
+Name: ecologylab/oodss/messages/SubmitHttpRequest.java
+SHA1-Digest: LYZp9+cDypHbWmS+PwJ3ha7Bllw=
+
+Name: ecologylab/oodss/logging/playback/LogPlaybackControls$2.class
+SHA1-Digest: +ttl/oJqjQVQvUb+jcUa1iNT0mo=
+
+Name: ecologylab/serialization/library/media/Description.class
+SHA1-Digest: f+WXHaJHEH7y2DduZ2v34cFaLQE=
+
+Name: ecologylab/collections/PrefixCollection.java
+SHA1-Digest: QjmPQaOSHmukmJS9qcPRVO0hLiU=
+
+Name: ecologylab/serialization/types/scalar/ReferenceBooleanType.class
+SHA1-Digest: TeD7kMotuO1+Rcng0+JFTVU69ZU=
+
+Name: ecologylab/oodss/logging/Prologue.java
+SHA1-Digest: zmwKkHJlyLmNOSAo7lTvkcMpMG8=
+
+Name: ecologylab/serialization/deserializers/ISimplDeserializationPre.
+ class
+SHA1-Digest: 2w/D8HEI5pRmtMM6S01qc9awZKc=
+
+Name: ecologylab/collections/PrefixPhrase.java
+SHA1-Digest: 6IXTllCRn3PX3lRl2uqMnLGOtWI=
+
+Name: ecologylab/oodss/messages/ShutdownRequest.java
+SHA1-Digest: zA/qarRn/ThAtiu95YZW7N+Tqrg=
+
+Name: ecologylab/collections/WeightingStrategy.class
+SHA1-Digest: hlD1iqbSEhbahuKidinslH73gGk=
+
+Name: ecologylab/serialization/library/rest/ResultsInfo.java
+SHA1-Digest: gpNEVcR7mZ9EuoSKIoJWeNpZKLY=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$8.class
+SHA1-Digest: IN+Y5vyDcjE/AC8efZN6/1AUIgQ=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2-
+ images/farm5.static.flickr.com-4667691647_dfc3999000_m.jpg
+SHA1-Digest: E6TiliW7VqvNxC2Gp3dF3foRugI=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Thumbnail.java
+SHA1-Digest: g1EhJj7dTwW+dg3EvA7Tq3Yg8N8=
+
+Name: ecologylab/serialization/library/opml/Body.class
+SHA1-Digest: /Kyu7bCh7Cu20aDxFZ83cfNXOsE=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Extent.java
+SHA1-Digest: Dvf1U3XUi1ERoljbBnvinGrlipY=
+
+Name: ecologylab/serialization/library/geom/Vector2dFloat.class
+SHA1-Digest: k2Q+j6YB3m+7szVrgdQFWyMUOfw=
+
+Name: ecologylab/oodss/distributed/common/ServerConstants.java
+SHA1-Digest: omaC6COG7Mfj/iOL/x7FLQeH9eI=
+
+Name: ecologylab/serialization/serializers/FormatSerializer.java
+SHA1-Digest: K/oMqimrp/X4mkrlYOQs2cz+WBA=
+
+Name: ecologylab/serialization/SIMPLTranslationException.class
+SHA1-Digest: gIVacgbb1qm/V/43BZMAn+zaDzU=
+
+Name: LICENSE.txt
+SHA1-Digest: Vv36h5GJyupG+atihRyp9lnwpME=
+
+Name: ecologylab/oodss/distributed/impl/Shutdownable.java
+SHA1-Digest: wRtZO+Vnk9uGIoRwk6Hd8ppiLvc=
+
+Name: ecologylab/serialization/library/html/A.class
+SHA1-Digest: pSgnnaFd3AXX/uX3TcG/Wx2wOyg=
+
+Name: ecologylab/tests/serialization/RssPolyWrapTest.class
+SHA1-Digest: MJlnTs2OJDGI18YuXoUCxWfYX84=
+
+Name: ecologylab/tests/serialization/objectGraphTest/PointEqEq.class
+SHA1-Digest: R1KNJ8b4e6k54ux7QySS08jPj08=
+
+Name: ecologylab/serialization/library/yahoo/ResultSet.java
+SHA1-Digest: WNiK1jEy2u+PNibKsJTE2z6kuIE=
+
+Name: ecologylab/generic/ObjectOrHashMap$OOHMEntry.class
+SHA1-Digest: ArJ/wc7zt7b+Hi6nba+jNbI3/2g=
+
+Name: ecologylab/collections/GenericWeightSet.class
+SHA1-Digest: 3DhwBmltX51nLCJWj1/YrcArxq4=
+
+Name: ecologylab/serialization/XMLTranslationExceptionTypes.class
+SHA1-Digest: EX7EswPk38IR1vK+rHJodRYfOeE=
+
+Name: ecologylab/serialization/library/xaml/TextBlockState.java
+SHA1-Digest: EPV0ug3+llui4KwhlPO1XOQxcvQ=
+
+Name: ecologylab/collections/SyncLinkedList.class
+SHA1-Digest: V+Xefe1x1/duc6L8xHVVHSvZwAw=
+
+Name: ecologylab/serialization/library/jnlp/information/ShortcutElemen
+ t.class
+SHA1-Digest: rJRNCm/G32mS9OO8wadnYN08Kt4=
+
+Name: ecologylab/serialization/types/scalar/BooleanType.class
+SHA1-Digest: tYUviiT6ap1tj3At2UhwKxRWW1U=
+
+Name: toolbarButtonGraphics/media/StepForward16.gif
+SHA1-Digest: cF66TD8Jv7XNEbZFUExzUXBhKLk=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/BibTeXPars
+ er.java
+SHA1-Digest: J2CrCr+eTiPyKfKHhTV6LK2wZ74=
+
+Name: ecologylab/serialization/bibtex/BibTeXEvents.java
+SHA1-Digest: jnuWL8Lb4+ebb55uKzbk7PkoE+k=
+
+Name: config/preferences/prefs.xml
+SHA1-Digest: UM/jMGlkA832B0eFPUIWOnIByGw=
+
+Name: ecologylab/generic/CharBufferPool.class
+SHA1-Digest: Gsf7PZOR/IgrywCDI/93gcuQwz4=
+
+Name: ecologylab/serialization/types/scalar/ReferenceIntegerType.class
+SHA1-Digest: CEcGzVXw2sKyFSFVZ9OFjH9fF1Q=
+
+Name: ecologylab/serialization/types/scalar/ReferenceType.java
+SHA1-Digest: TSpufwYJxm6LgzBWiSpjBNdJvHg=
+
+Name: ecologylab/serialization/library/jnlp/applet/AppletDesc.class
+SHA1-Digest: xbeiXvZC8EHeLRu3Ry96X0+JwF8=
+
+Name: ecologylab/oodss/distributed/server/NIOServerProcessor.java
+SHA1-Digest: 2qBIqmsImvzwIvGzsdmd7W1rJHc=
+
+Name: ecologylab/concurrent/DownloadState.java
+SHA1-Digest: 6JDOxVIm1PJizxOmfaZuxsd5HdA=
+
+Name: ecologylab/serialization/types/scalar/FloatType.class
+SHA1-Digest: Si9en2/SbVehwGfgGCV4mXukLiw=
+
+Name: ecologylab/oodss/distributed/exception/MessageTooLargeException.
+ java
+SHA1-Digest: wYUAzf4yqRmYiHQJ1hkKdtO189M=
+
+Name: ecologylab/oodss/distributed/client/NIOClient$SocketReader.class
+SHA1-Digest: FNxp2kTAkQHFG0Lmz75uRQLQdcg=
+
+Name: ecologylab/serialization/types/scalar/DoubleType.class
+SHA1-Digest: 0bg5iHEejKxxownhOGCM/StFh04=
+
+Name: ecologylab/appframework/types/prefs/RangeIntState.class
+SHA1-Digest: JHGqQ2P81KE1Z2VTXlR+nhWJcrk=
+
+Name: ecologylab/serialization/library/apple/plist.xml
+SHA1-Digest: F6dutCHi1lC8lZFgDdGP0QH9LKE=
+
+Name: ecologylab/generic/AutoCleanerMap.class
+SHA1-Digest: Rrpt+d71IPhBbcx4+xZMQL7F7TI=
+
+Name: ecologylab/oodss/messages/HttpRequest.java
+SHA1-Digest: kEQOPCcA+x3rc6+4rRGOmihA8Rs=
+
+Name: ecologylab/serialization/types/element/StringState.class
+SHA1-Digest: rFNwWwyVXC2Ls4x9ShqdafuMRsY=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestItems.class
+SHA1-Digest: ezdCvUqgNO9PRUGVQ2kDiFTdrZQ=
+
+Name: ecologylab/serialization/bibtex/BibTeXParser$State.class
+SHA1-Digest: JBeUYfvxLluadQzOaH0j+KBnUas=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/PullDeserial
+ izer.class
+SHA1-Digest: jOCzTn0y1APIgGePKZNvVTr7YO0=
+
+Name: ecologylab/serialization/library/feedburner/Feedburner.class
+SHA1-Digest: 72af2wF8eSQh50iIsaJh7X61TRw=
+
+Name: config/preferences/logplaybackparams.xml
+SHA1-Digest: eu4YUc2ZwQmTwsMitNUCG4scI+g=
+
+Name: ecologylab/serialization/XMLFilenameFilter.class
+SHA1-Digest: mZ2xhdQMgSFm4AZ34wrzo0yJwpk=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionListPanel.c
+ lass
+SHA1-Digest: a505GOAh3QoT+uMh+Toag3crsYk=
+
+Name: ecologylab/serialization/MetaInformation.java
+SHA1-Digest: wQ1Ern8SkhACS9WbLX42/N4G/EI=
+
+Name: ecologylab/oodss/distributed/server/ServerMessages.java
+SHA1-Digest: bHNUfj6lameRJkJINcyXS5wzU0k=
+
+Name: ecologylab/platformspecifics/FundamentalPlatformSpecifics.class
+SHA1-Digest: xbU3Dr4BHsT12H+edpkiW4nkFPE=
+
+Name: ecologylab/appframework/types/AppFrameworkTranslations.class
+SHA1-Digest: BmNJF3Na8EY/g2wl/xcww0vywEk=
+
+Name: ecologylab/serialization/library/itunes/package.html
+SHA1-Digest: Cu5OzqB7eTItEkPoBdgMlCCBzn4=
+
+Name: ecologylab/generic/text/Format.class
+SHA1-Digest: z2ng2T44pHKcu2EmXC8a9jFrMm0=
+
+Name: ecologylab/serialization/library/rss/NewFile.xml
+SHA1-Digest: 1siob0Far2XOIc9ANH0Q4BeCDZ4=
+
+Name: ecologylab/oodss/distributed/client/ClientStatusListener.java
+SHA1-Digest: l0v5jzwV4VPRghx6GsHL2f/UZqo=
+
+Name: ecologylab/net/ConnectionHelperJustRemote.java
+SHA1-Digest: gkR0JglVhqE0IFfzGQtq2g5dPvM=
+
+Name: ecologylab/serialization/library/endnote/Record.class
+SHA1-Digest: cAZL7qeHopy/iaQCHWFiwgb3qUw=
+
+Name: ecologylab/oodss/distributed/exception/MessageTooLargeException.
+ class
+SHA1-Digest: twKG1h3Tfqnag54qlWXRvov3ke0=
+
+Name: ecologylab/serialization/bibtex/BibTeXParser.java
+SHA1-Digest: zLaEW1/+kFmXxBW50qj/7XcpGiE=
+
+Name: ecologylab/serialization/library/jnlp/information/AssociationEle
+ ment.java
+SHA1-Digest: M0kwf71iSkLwtA2Bq3SFJvbb9v0=
+
+Name: ecologylab/serialization/serializers/stringformats/JSONSerialize
+ r.java
+SHA1-Digest: fM5F6EEjmeSFC1g+cev0ge5gOXo=
+
+Name: ecologylab/standalone/xmlpolymorph/Schmannel.xml
+SHA1-Digest: 08B1G4xUHHuAzxBFi9hRL6Piyuw=
+
+Name: ecologylab/oodss/messages/MessageTypes.java
+SHA1-Digest: uftEH8SnxsvkBgizlO0jovdV484=
+
+Name: ecologylab/io/ZipDownload.class
+SHA1-Digest: EV00gb1YlEczp2VoSQauV+RXUCQ=
+
+Name: ecologylab/serialization/types/scalar/ShortType.java
+SHA1-Digest: EWxhy4r+6ZSomxpL9+MMCTiBCpE=
+
+Name: ecologylab/appframework/ApplicationEnvironment.class
+SHA1-Digest: BwAgxy1r0jC/kfNwDvIqbS/5jxA=
+
+Name: ecologylab/tests/serialization/RssPolyWrapTest.java
+SHA1-Digest: kaH19iOdx5rgFTD5QiDWPchN5Sw=
+
+Name: ecologylab/serialization/library/itunes/Itunes.java
+SHA1-Digest: YorXs+r1Y09ISWtOf/Mcmq0zsGg=
+
+Name: ecologylab/appframework/types/prefs/ChoiceBoolean.java
+SHA1-Digest: 4mik4t8SXDQ/+hpDn8R7EoKGRZ4=
+
+Name: ecologylab/generic/text/Format$FieldDelegate.class
+SHA1-Digest: OZRE1rmtjlFYBGQaKZ5TDTOKx18=
+
+Name: ecologylab/io/DownloadProcessor.class
+SHA1-Digest: 0ZnA/xh67U0DdKvB0luWox+hnRA=
+
+Name: ecologylab/appframework/types/prefs/PreferenceOp.class
+SHA1-Digest: M8RcpltTl7t3y9YK6HMNHwqznYI=
+
+Name: ecologylab/standalone/xmlpolymorph/SchmItem.class
+SHA1-Digest: ugNHvbEsduCFj7aR/gpKumxl3kc=
+
+Name: ecologylab/oodss/messages/PingRequest.class
+SHA1-Digest: lzdGH/ymR59CD3+PKzJ4F0Z1ePE=
+
+Name: ecologylab/serialization/library/rss/RDFState.class
+SHA1-Digest: VANnC2zW8msH/Btzjpzie7f7+BI=
+
+Name: ecologylab/serialization/library/apple/TrueProperty.class
+SHA1-Digest: D3WnfewV/bZV3OpVC2xHfy9Dkh4=
+
+Name: ecologylab/serialization/library/jnlp/resource/Property.class
+SHA1-Digest: pt1Ewa9fQqrXZ35V7q5UZx0IKWs=
+
+Name: ecologylab/oodss/logging/playback/LogPlaybackControlModel.java
+SHA1-Digest: S28PUDSXKt3FkC3X8G31t6QoQQY=
+
+Name: ecologylab/collections/GenericElement.java
+SHA1-Digest: AQPMGdRVRj50JtgRq2KpCyrD4z8=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1_
+ images/www.life.com-filmstrip.jpg
+SHA1-Digest: hzdsdwQSryUqPYdthAFchRqxkGg=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXInProceedings.j
+ ava
+SHA1-Digest: RUxNAuxkY156O4bSBz0traeLzI8=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/farm5.static.flickr.com-4252900227_f530f8c74e_m.jpg
+SHA1-Digest: Sup4WPthzZ/+Y4yL9403esDikHg=
+
+Name: ecologylab/collections/RunnablePool.class
+SHA1-Digest: 4p36MXafTsYyRTKR/vi/8eATPFQ=
+
+Name: ecologylab/serialization/types/scalar/CompositeAsScalarType.clas
+ s
+SHA1-Digest: BL6QJ5/VRn/5bhgODBZH0CHCg7w=
+
+Name: ecologylab/oodss/exceptions/package.html
+SHA1-Digest: lwJqMy/iPa5IBkpJLerZEGTRETI=
+
+Name: ecologylab/generic/text/DigitList.class
+SHA1-Digest: hBKJ6kwqy7Gcx+EW2+TLi3QNHoY=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$1.class
+SHA1-Digest: Krm07Zca6Z3dxmX49zOHJF4DCz4=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Category.ja
+ va
+SHA1-Digest: cqyomYAKyAbq3BQKAzMpAa7bU0M=
+
+Name: ecologylab/serialization/ElementState$simpl_scope.class
+SHA1-Digest: bYik9Yy02or2c5ejzUN6SDydlDA=
+
+Name: ecologylab/serialization/library/jnlp/information/Description.ja
+ va
+SHA1-Digest: FQPwtwAiIM9RncFKDoIqt+jHwtI=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/HTTPPos
+ tClientSessionManager.class
+SHA1-Digest: ejTM6fATYhposJFjIufgA4+H1Gw=
+
+Name: ecologylab/standalone/TestClient.java
+SHA1-Digest: R40scn39UXCz7EBx39R3bPE1P0c=
+
+Name: ecologylab/oodss/messages/ServiceMessage.java
+SHA1-Digest: IOx7PJZN9862zc1b95yIrufO3Ng=
+
+Name: ecologylab/oodss/logging/playback/ExtensionFilter.java
+SHA1-Digest: yG42rHeFlPcE1CwoKBk/DzcUKW4=
+
+Name: ecologylab/appframework/types/prefs/PrefSet.class
+SHA1-Digest: b5aeRqZisfX1HDPJ79pkJehMmtk=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefColor.java
+SHA1-Digest: fq7ZoDClPaAs/TJNVJ6mJQqEvMg=
+
+Name: ecologylab/serialization/library/rest/RestSearchResult.class
+SHA1-Digest: sW3Ho46RxgonaGe8u8AazhdxnCQ=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/TextChunk.c
+ lass
+SHA1-Digest: gISo2ATPa3ayxx4wzetjUGnzO2o=
+
+Name: ecologylab/appframework/types/prefs/PrefSetBaseClassProvider.jav
+ a
+SHA1-Digest: f/pJ8TUl3VQjy09iTnBF139A0kg=
+
+Name: ecologylab/serialization/library/xaml/XamlTranslations.class
+SHA1-Digest: Wiz4xrOy+0al91exmPHBPB5kptw=
+
+Name: ecologylab/collections/ValueFactory3.java
+SHA1-Digest: MeKY3LzhCFfX+gPhxsWj7MMPR24=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/ContainerSe
+ t.class
+SHA1-Digest: 8XOfdKnCzduTnuqlHVidQMjxXyo=
+
+Name: ecologylab/net/PURLConnection.java
+SHA1-Digest: CheONkLslpkJbkWkCh/A0RmoaW8=
+
+Name: ecologylab/serialization/annotations/Hint.java
+SHA1-Digest: /k47TinyoDJEgVOvzaGyXNqMTuE=
+
+Name: ecologylab/generic/CharBufferPool.java
+SHA1-Digest: FZzF128OHeOIeKeCF6YF6sj1TVw=
+
+Name: ecologylab/serialization/types/element/package.html
+SHA1-Digest: lF10qtLU7kPMvnldaWs8uTG2Lt0=
+
+Name: ecologylab/serialization/types/scalar/FileType.java
+SHA1-Digest: pXzGmKbVCjPSMfzGOpu/4DWkLPI=
+
+Name: ecologylab/serialization/library/xaml/PanelChildState.java
+SHA1-Digest: DYR9NmtmlK7L4aZ9wnJERWZ2Bgs=
+
+Name: ecologylab/standalone/xmlpolymorph/Schmannel.java
+SHA1-Digest: vENW02M8L4pphmZeoqg1w/jJ8Ho=
+
+Name: ecologylab/standalone/xmlpolymorph/SchmItem.java
+SHA1-Digest: 75KepMVAxAmEvzc33Vgd0VJBHhc=
+
+Name: ecologylab/serialization/types/scalar/FloatType.java
+SHA1-Digest: hV/jK470ZSvRuvCHAwsizw7A9ec=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Surrogate.j
+ ava
+SHA1-Digest: 2r+REod7iTguGTff2L7qVEuTzAk=
+
+Name: ecologylab/serialization/ClassDescriptor.class
+SHA1-Digest: /Pb2uShMa2C8EjOT3gKNlirBtfs=
+
+Name: ecologylab/io/NIOTools$1.class
+SHA1-Digest: 2WJFSZSs9JNHdfRzY5EcIkSWX3E=
+
+Name: ecologylab/standalone/researchnotebook/testxml/SearchResponseSta
+ te.java
+SHA1-Digest: hbtjcrfchMpoEpHJ4DDkPXiIE+w=
+
+Name: ecologylab/sql/PreparedStatementWithAutoClose.java
+SHA1-Digest: NkhtQaKr0rPAFsShzyDNqGkV4NM=
+
+Name: ecologylab/generic/CharsetDecoderPool.class
+SHA1-Digest: cP3wScHsw0rBHHOaIwt6hyAwELc=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXInBook.class
+SHA1-Digest: jS/MPv6EnNv04CR+VhTpmcRBW90=
+
+Name: ecologylab/serialization/library/html/Tr.java
+SHA1-Digest: ZcafCy18+rUotluiEbQJGMICCBg=
+
+Name: lib/org.ant4eclipse_1931.jar
+SHA1-Digest: i+cZA9cHtqsY5T2h/+IgmD08vps=
+
+Name: ecologylab/serialization/serializers/binaryformats/TLVSerializer
+ .class
+SHA1-Digest: 8IiOWXY5Cr3V3Th7k/wlZ+Z1K5k=
+
+Name: ecologylab/oodss/distributed/impl/AbstractNIOServer.java
+SHA1-Digest: SS0AhuxXdsCWwpz+w9w2tqzLZa8=
+
+Name: ecologylab/collections/PrioritizedPool.java
+SHA1-Digest: rSaZfIkZ3UpiBM6e79nSWs573sY=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Set.class
+SHA1-Digest: DYgkSTHVG9no7hFphg71lrRQH0w=
+
+Name: ecologylab/serialization/library/endnote/XmlState.java
+SHA1-Digest: cAj+0yCCzia33qEZMtlJreNrMbc=
+
+Name: ecologylab/serialization/library/geom/Ellipse2DDoubleState.java
+SHA1-Digest: HWQddLi5IMC8FHArTyOq5m8kAog=
+
+Name: ecologylab/generic/ValueFactory2.java
+SHA1-Digest: EfxoMpSs9i+TJ4sgTwaQLw0KYxo=
+
+Name: ecologylab/oodss/distributed/impl/MessageWithMetadataPool.class
+SHA1-Digest: cNxENHv/EEvh9KK4I4WlXWhOJ40=
+
+Name: ecologylab/io/XMLFileFilter.class
+SHA1-Digest: EL2DijAESg+H6tpiOts2ypW1K/U=
+
+Name: ecologylab/oodss/distributed/impl/NIODatagramCore$MessageMetaDat
+ aPool.class
+SHA1-Digest: WVbXK4kEsL1Xvu2r8lgYaZygaoI=
+
+Name: ecologylab/oodss/distributed/impl/NIOCore$SocketModeChangeReques
+ tPool.class
+SHA1-Digest: ugyd/P2WHEV2GbhWqbqtdyKMMRk=
+
+Name: ecologylab/serialization/serializers/FormatSerializer.class
+SHA1-Digest: 3JBMClXSN5Qos0JD4Yh9H3zITEc=
+
+Name: ecologylab/oodss/messages/BadSemanticContentResponse.java
+SHA1-Digest: V2JmGzoDDSykXzsbi7dlltiaN7U=
+
+Name: ecologylab/collections/MultiAncestorScope$1.class
+SHA1-Digest: 9cTJ4oPJFJCLCQN3D8SS2pGDEsA=
+
+Name: ecologylab/serialization/TranslationContext.java
+SHA1-Digest: L+6bFaftgtdWENL7Mp4boeZniO8=
+
+Name: ecologylab/oodss/logging/translationScope/LoggingTranslationsPro
+ vider.class
+SHA1-Digest: GWVBvhA7C6yDB6c3CNSdusC4A64=
+
+Name: ecologylab/appframework/ApplicationEnvironment.java
+SHA1-Digest: psbpHCOrsEBzsBKQE7p4V230cRg=
+
+Name: ecologylab/concurrent/RaiseMonitor.java
+SHA1-Digest: 8MKM0QFrqJ09xNir8CdyEA+Mso8=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Extent.clas
+ s
+SHA1-Digest: yFkfxhZ+VIZNiM0pWetkkrrdWNw=
+
+Name: ecologylab/serialization/library/rss/Channel.java
+SHA1-Digest: NT71udpgvCr6jLMK/eHemUJcCmM=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXPhdThesis.java
+SHA1-Digest: xjtBRoNjMfSKwe5vJvIps3gqz1g=
+
+Name: ecologylab/oodss/messages/DefaultServicesTranslations.java
+SHA1-Digest: 10A0cjoWAUDVEFzq9Hv03BFDSYE=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefBoolean.java
+SHA1-Digest: LbY5e8p/sTdgJ7D6GVrDBV6O3Pc=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/SurrogateSe
+ t.java
+SHA1-Digest: XGMJ0TaX0vLZNazjlAV+iqhI+LM=
+
+Name: ecologylab/serialization/library/rss/RssState.java
+SHA1-Digest: iIpQnCVWEoAGGbG+FLFHCdOig5A=
+
+Name: lib/svnClientAdapter.jar
+SHA1-Digest: mSPKKfHWRXZPtCfWResRx4Bv96M=
+
+Name: ecologylab/serialization/deserializers/parsers/tlv/TLVParser.cla
+ ss
+SHA1-Digest: EiQgp7G91HZiI4HTMkhTPh+yazw=
+
+Name: ecologylab/serialization/annotations/simpl_nowrap.java
+SHA1-Digest: 8/L5bl+Sn1UylRF8G6LakhzVDcY=
+
+Name: ecologylab/appframework/types/prefs/PrefSet.java
+SHA1-Digest: pfxSufa/h0mRj2halLZNTMaXk/c=
+
+Name: ecologylab/generic/ObjectOrHashMap.class
+SHA1-Digest: TPDmueAVFo3Dk3YuJmObAP9ZAes=
+
+Name: ecologylab/serialization/library/yahoo/ResultSet.class
+SHA1-Digest: bgK/Rp06gZyXoF/q+mzH67vYWQw=
+
+Name: ecologylab/appframework/types/prefs/PrefBoolean.java
+SHA1-Digest: Ty/kg0V3pNewo7bjeXtcloTRQ4U=
+
+Name: ecologylab/generic/DoubleSlot.class
+SHA1-Digest: pRZc47OZAAhC/GM5X3GtAGJB27g=
+
+Name: ecologylab/serialization/library/xaml/WindowState.class
+SHA1-Digest: TcMsVNDLdxydYsuUwfQYHjyNEwA=
+
+Name: ecologylab/collections/SetElement.class
+SHA1-Digest: aG1GHkkyzzH+GW9JWcyZrjYlfW4=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefInt.class
+SHA1-Digest: OwVaI8m1Al0IWcUZsWNMJBE6MBU=
+
+Name: ecologylab/serialization/ElementStateJSONHandler.class
+SHA1-Digest: giO9V7hFQtNRM5zXixgctqXuSr8=
+
+Name: ecologylab/serialization/IJavaParser.java
+SHA1-Digest: mscQWhSLUF8d7+LkKfe5OsMEQWU=
+
+Name: ecologylab/appframework/UndoRedo.java
+SHA1-Digest: 27bxDLkxxGSkKLLfC0SyybP0xWs=
+
+Name: ecologylab/serialization/NameSpaceDecl.java
+SHA1-Digest: G+65p1mOtzDFiTRPSZSr1bJexDQ=
+
+Name: ecologylab/serialization/ElementState.class
+SHA1-Digest: yaOLMe9F2SA1tsXSCpPY3ZSEv8I=
+
+Name: ecologylab/serialization/library/rest/RestSearchResult.java
+SHA1-Digest: 6O3mXvxWSqmuZrexyD4c+pTpl+w=
+
+Name: ecologylab/serialization/library/html/Span.java
+SHA1-Digest: quUMgLSlBxJnyoWASqgt+dszXUc=
+
+Name: ecologylab/serialization/library/jnlp/information/OfflineAllowed
+ Element.class
+SHA1-Digest: WqVAiUKsTpv6ihK9aRsISF/bc/g=
+
+Name: ecologylab/appframework/PropertiesAndDirectories.java
+SHA1-Digest: XQtfUZ73+0HK03jUS86x6x6D9Z8=
+
+Name: ecologylab/serialization/library/endnote/Author.java
+SHA1-Digest: XqMmkzdziQsMSye4899kyxImZjs=
+
+Name: ecologylab/serialization/AbstractTranslationContextPool.java
+SHA1-Digest: brjDynx/KkinD9N9sUeraCMd7mk=
+
+Name: ecologylab/generic/text/EfficientDecimalFormat.class
+SHA1-Digest: kOwpA05y+N43H55xYToVO2RepkY=
+
+Name: ecologylab/oodss/distributed/client/NIOClient.class
+SHA1-Digest: yreH+kCjHywDnpBRF1YgNQEDAIA=
+
+Name: ecologylab/io/Downloadable.java
+SHA1-Digest: otb71DrSAvlVvl60f/Q4I73az5w=
+
+Name: ecologylab/serialization/simpl_inherit.java
+SHA1-Digest: +CvdJpMmaP4I7+L2vPnXpt95qZQ=
+
+Name: ecologylab/serialization/library/yahoo/Result.class
+SHA1-Digest: Xx0KUiCFjV3mrQIfu6/zJLLLgew=
+
+Name: ecologylab/serialization/annotations/simpl_use_equals_equals.jav
+ a
+SHA1-Digest: kV6ls+UhPtDMu5W2Iv6cWuLZ9C4=
+
+Name: ecologylab/appframework/types/prefs/PrefLong.class
+SHA1-Digest: IknGZxKcevF+Sj5Y4wPljV4FlpU=
+
+Name: ecologylab/serialization/types/scalar/ReferenceFloatType.class
+SHA1-Digest: 6xSF5gUo44pHLnSbaxtJVE2/3ps=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXPhdThesis.java
+SHA1-Digest: aoYWlBkl1yGE6zazhGViPZuabz4=
+
+Name: ecologylab/appframework/ApplicationProperties.java
+SHA1-Digest: 9zV6s2RgS85zzN7B/DjsI8H4zxs=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/Session
+ Handle.class
+SHA1-Digest: L+g9UzqzssysE+sYLNks0Gu/Go0=
+
+Name: ecologylab/textformat/NamedStyle.java
+SHA1-Digest: tQC96IvSYajLNlZB80/kXZO/oLE=
+
+Name: ecologylab/tests/serialization/objectGraphTest/ListEqEq.java
+SHA1-Digest: iyF34qSJ2pmtZE4EH4nUNfOkPlo=
+
+Name: ecologylab/serialization/annotations/simpl_format.class
+SHA1-Digest: x91hby/PRBcmkl6W80YA9k+bWCo=
+
+Name: ecologylab/serialization/FieldDescriptor.java
+SHA1-Digest: 9f2u3QpuUH33c1kzyEC5kaNeVR4=
+
+Name: ecologylab/tests/serialization/objectGraphTest/ObjectGraphTest.c
+ lass
+SHA1-Digest: DDXoPNnV0HbmGXQ6V2MkeyafZgs=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Thumbnail.class
+SHA1-Digest: OVZlWUa7M/0FKW4Zq8lUnqzGVAo=
+
+Name: ecologylab/serialization/types/CollectionType.class
+SHA1-Digest: PUMucw7kY9mgQmSofhTX4RLARtU=
+
+Name: ecologylab/serialization/types/scalar/ClassType.java
+SHA1-Digest: VYJYeU9Mujr7hs/yNkSSoD8ywA4=
+
+Name: ecologylab/serialization/bibtex/entrytypes/AbstractBibTeXEntry.c
+ lass
+SHA1-Digest: nh9Od8fha/CnCTXEQNMrIlBc4zQ=
+
+Name: ecologylab/generic/Continuation.java
+SHA1-Digest: GsxJKMWP3hbnwkCFLlhpzY8hnbk=
+
+Name: ecologylab/platformspecifics/IFundamentalPlatformSpecifics.class
+SHA1-Digest: RSd2CHbcqtSlPdi4hhoTBlpAUlI=
+
+Name: ecologylab/serialization/types/scalar/DateType.class
+SHA1-Digest: DbXtkNhgIVJRgo/N7HlJCM0oa7g=
+
+Name: ecologylab/serialization/library/endnote/KeywordList.class
+SHA1-Digest: raLG+cDzvXVg0dKda4GC3I33RiM=
+
+Name: ecologylab/serialization/types/CrossLanguageTypeConstants.class
+SHA1-Digest: TTnnh9AMxngPLNw9YC/AUWYa6EU=
+
+Name: ecologylab/generic/RestrictedFileSystemView.java
+SHA1-Digest: SSg7YSjqT1EYC6U7qhWxoNh7JNc=
+
+Name: ecologylab/serialization/deserializers/ISimplDeserializationPre.
+ java
+SHA1-Digest: lj0MpqTCsEQtGkVlHfGHFKSqOHw=
+
+Name: ecologylab/serialization/tlv/Utils.class
+SHA1-Digest: Iz4mrPEWPoHqL5RDQTxWl5QZLBg=
+
+Name: ecologylab/tests/TestReferenceAndPrimitiveScalars.class
+SHA1-Digest: JDjxAdGoOZkS103BdlztLY70AFI=
+
+Name: ecologylab/serialization/library/apple/FalseProperty.class
+SHA1-Digest: NpN0TnZ9YdA+GSYoHMOpU+im8TU=
+
+Name: ecologylab/serialization/types/scalar/IntType.class
+SHA1-Digest: 6NkyHji1Uz9DAbHrQ1P66K7LALs=
+
+Name: ecologylab/generic/HashMapArrayList.class
+SHA1-Digest: pWTDGe4RYbmvByxDUU3EXK6fdxs=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3.
+ xml
+SHA1-Digest: gvk1Vv4rS8enX3jktmGZsnXUGuo=
+
+Name: ecologylab/appframework/SingletonApplicationEnvironment$WindowSi
+ ze.class
+SHA1-Digest: Usa10hAzrNOUV/V1hMgjt5rNe5c=
+
+Name: ecologylab/generic/StringBuilderPool.java
+SHA1-Digest: pNPTVU9WhYXjZOvDvnkfN2TA26s=
+
+Name: ecologylab/oodss/messages/SubmitMessage.class
+SHA1-Digest: MOLVjqXoALyMRfGqLtIHw77Jats=
+
+Name: ecologylab/serialization/types/element/IntState.java
+SHA1-Digest: 5Mt89QdwY5LJ6+mLAfiEcEV2Trc=
+
+Name: ecologylab/serialization/library/apple/RealProperty.java
+SHA1-Digest: mC8N9pLylg9vqUhjySSY72DzjC4=
+
+Name: ecologylab/serialization/ElementStateBibTeXHandler.java
+SHA1-Digest: VhVbPd8Y1N991KHhkL2ARjAoTHk=
+
+Name: ecologylab/serialization/library/jnlp/resource/Jar.class
+SHA1-Digest: svrZn9OHkn3nF3NacZmOI9wuOvI=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1.
+ jpg
+SHA1-Digest: zCu8h3WoWzV8x64Gh9669H8KA/Y=
+
+Name: ecologylab/serialization/types/SimplType.class
+SHA1-Digest: 73JVSANv96IYo2N8GlLwncJ1v4k=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Text.class
+SHA1-Digest: JB056X/+cG+WWcj1v5F2RJSaie4=
+
+Name: ecologylab/oodss/exceptions/BadClientException.class
+SHA1-Digest: f9GcJpOPQVaHy3t/XesVamL/dpo=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestChannel.class
+SHA1-Digest: DX7mmtTEkh9kpxEPHTjBEdTcD7Y=
+
+Name: ecologylab/appframework/types/prefs/PrefFloat.class
+SHA1-Digest: 26mZg8hNZMgXffaWO3/50OvnmLY=
+
+Name: ecologylab/serialization/ElementStateSAXHandler.java
+SHA1-Digest: prc303/D6QfaKyFCyhLJ5z3PkIk=
+
+Name: ecologylab/collections/ValueFactory3.class
+SHA1-Digest: P54G/KZaljAV2Sm0RDm0EP/IXuw=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Image.java
+SHA1-Digest: SLXQb8Bzm5dUeyy60sDC+KfqjKE=
+
+Name: ecologylab/standalone/researchnotebook/testxml/Query.class
+SHA1-Digest: 2alZJEl3q/m5P0ZMz57mtbV70+0=
+
+Name: ecologylab/serialization/types/TypeRegistry.java
+SHA1-Digest: cSO4utWW+442CR65yFRd2Jg5kmM=
+
+Name: ecologylab/serialization/serializers/ISimplSerializationPre.clas
+ s
+SHA1-Digest: ACgbFOVNPTm63ByFW7Aot1Qg2MU=
+
+Name: ecologylab/oodss/messages/InitConnectionResponse.java
+SHA1-Digest: 2YZGrbaVHbx/gbhRlhe5esWnhW0=
+
+Name: ecologylab/oodss/logging/LogEvent.java
+SHA1-Digest: /Q/kZqbdU7BTiTBr/tDJisVhbf8=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/NamedStyle.
+ java
+SHA1-Digest: KNjfO2/skd7TUTYPCdHlFZyXGOM=
+
+Name: ecologylab/serialization/annotations/bibtex_tag.java
+SHA1-Digest: L2lylFVAlBMdkew7TZ4kgpEbSII=
+
+Name: ecologylab/generic/ResourcePoolWithSize.class
+SHA1-Digest: FOYV0IbVs2QC0s2RZP6hGDbuY6o=
+
+Name: ecologylab/oodss/messages/Pong.java
+SHA1-Digest: lYuWQUvhbfpepnKKbHQKiH0xRNA=
+
+Name: ecologylab/appframework/types/prefs/PrefOpTranslations.class
+SHA1-Digest: MK0Cj8ZV54tJvsb3j6ij8dqFeC0=
+
+Name: ecologylab/appframework/types/prefs/ValueChangedListener.class
+SHA1-Digest: wl+kq7Lgx5s6IOdScwE5kzYTCeQ=
+
+Name: ecologylab/generic/Describable.class
+SHA1-Digest: sfVQ5eCZKekC2LyaQ+hoVDc0bAA=
+
+Name: ecologylab/serialization/Makefile
+SHA1-Digest: 5Q5ghhZTy2Ul+sApujsHrsseJJE=
+
+Name: ecologylab/standalone/PrefsEditorAp.class
+SHA1-Digest: VNs/nSZo0F2qzy9/xg1XUtJXWPc=
+
+Name: ecologylab/serialization/library/media/Content.class
+SHA1-Digest: lJpSTXacfR8twVWKZkiwKkm/u1Q=
+
+Name: ecologylab/serialization/ElementState$bibtex_tag.class
+SHA1-Digest: gHRy//qXZfQ1SWMqL1TFOuv19Ys=
+
+Name: ecologylab/serialization/library/itunes/Itunes.class
+SHA1-Digest: AADLkyagAvESVLa11NXnrck9rD8=
+
+Name: ecologylab/serialization/library/rss/Channel2.java
+SHA1-Digest: Djvvr69LXlOUxUTnKSbjb88Hw90=
+
+Name: ecologylab/oodss/messages/OkResponse.class
+SHA1-Digest: ICqGLPL7+kr2IbwzZ4M56Q+sDtc=
+
+Name: ecologylab/oodss/messages/BadSemanticContentResponse.class
+SHA1-Digest: fTbiGgHnBg+O+W8yMqFJSUbTQOE=
+
+Name: ecologylab/generic/Debug.class
+SHA1-Digest: tW7XHTrRsm9lVbCqop66N58tBfs=
+
+Name: ecologylab/oodss/messages/CloseMessage.class
+SHA1-Digest: PaCkxE+gMW3vrK2bKXm9/su2URc=
+
+Name: ecologylab/serialization/ElementState$simpl_scalar.class
+SHA1-Digest: 6a/3PbsKDJh+gg8UkZeGpQ+E/qc=
+
+Name: ecologylab/collections/ArrayListLA.class
+SHA1-Digest: Fzsm6YRs4PhhvmlXAo6TIuY5/WI=
+
+Name: ecologylab/generic/ColorChooserDialog$3.class
+SHA1-Digest: KaOHiiAIwQiwZ3QqJnpR+DBwI50=
+
+Name: ecologylab/generic/Line2D.class
+SHA1-Digest: 0GzgzKP2ECWdy+sYPihLHWFnL4A=
+
+Name: ecologylab/oodss/messages/UrlMessage.class
+SHA1-Digest: 3EhW2gByKdiqEG1y2C7okfVdAzA=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Visual.java
+SHA1-Digest: aEl5XT12QeZTRwqIBlMmXTujRAo=
+
+Name: ecologylab/generic/FloatSlot.java
+SHA1-Digest: uRLWRrNh56NCQrlenLjbVTJ6s3w=
+
+Name: ecologylab/generic/Bounds.java
+SHA1-Digest: +Aaa0MnYYUfxGT3kw6Q5WY4UxiM=
+
+Name: ecologylab/appframework/types/prefs/PrefDouble.java
+SHA1-Digest: RwDK8nPGcOlHjeNcZb5Hy5mIdEk=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor.class
+SHA1-Digest: CYfyxkLqi66fDjCE9zY+YGFKSuQ=
+
+Name: ecologylab/serialization/ScalarUnmarshallingContext.java
+SHA1-Digest: Zuc7g/t0c+cPkhL14d1EYKjN4bY=
+
+Name: ecologylab/serialization/ElementState$simpl_bind_to.class
+SHA1-Digest: I/Sd8kV8ra3mm01OqqrfG8A4VNg=
+
+Name: ecologylab/serialization/serializers/stringformats/BibtexSeriali
+ zer.class
+SHA1-Digest: L/FxhDrz94iZ8gZWKzCrv4kjXR8=
+
+Name: ecologylab/oodss/distributed/impl/AbstractNIOServer.class
+SHA1-Digest: ms+rf8hi+LwjCyW++u6wPKMCHOg=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/TestComposi
+ tion.java
+SHA1-Digest: ClnIOwUEqpzUg0jnl5Drfkm6BYQ=
+
+Name: ecologylab/serialization/XMLTranslationExceptionTypes.java
+SHA1-Digest: 1OWdyPGo2zK5wJr7cOVVI2X2XCU=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXInProceedings.class
+SHA1-Digest: PjfWaZO9/8VjtFU2Gz5Lfo3phoA=
+
+Name: ecologylab/serialization/annotations/simpl_scope.class
+SHA1-Digest: IduzzL9Jn12XpVcoFcxAL/+8/r4=
+
+Name: ecologylab/net/UserAgent.java
+SHA1-Digest: 2wXUp1BozHV4epYBxnWtcIe/bXw=
+
+Name: ecologylab/serialization/library/apple/IntegerProperty.class
+SHA1-Digest: iVGrrNZ4Qlv1ha/zTlrIhDbRpkY=
+
+Name: ecologylab/serialization/types/scalar/ReferenceLongType.class
+SHA1-Digest: HkeFX9MjUvRHDGyj16GglOZngVk=
+
+Name: ecologylab/appframework/types/prefs/PrefString.class
+SHA1-Digest: OOk3aysDmtMxn6X3G0GYNFTA5yk=
+
+Name: ecologylab/serialization/library/opml/Opml.java
+SHA1-Digest: OmkcdQ1w2zfqXjBw0dpnZu20eRo=
+
+Name: ecologylab/serialization/library/geom/Line2DDoubleState.java
+SHA1-Digest: f223/2MPXrSn1VYoSIfjqAYTmiE=
+
+Name: ecologylab/collections/VectorLA.java
+SHA1-Digest: AArwjxJIE5KJwqKi3PAFZpnlG4I=
+
+Name: ecologylab/serialization/TranslationsClassProvider.class
+SHA1-Digest: seD/CxBBPZY9Y1r8XJc5ihOJjDo=
+
+Name: ecologylab/oodss/messages/ContinuedHTTPGetRequest.class
+SHA1-Digest: JfCAGfZ4zA09uSY6/O1zKENC2jQ=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Anchors.jav
+ a
+SHA1-Digest: 1a5vR72fd7IwfOUXKlAHDeZCBoQ=
+
+Name: ecologylab/oodss/messages/CloseMessage.java
+SHA1-Digest: taKv+Oir2XvK5uYPce1j1cklTd8=
+
+Name: ecologylab/serialization/library/geom/RectangularShape.class
+SHA1-Digest: lfJBEx9kOTo4GFbFBMstaUkPAj0=
+
+Name: ecologylab/serialization/ObservableElementState.class
+SHA1-Digest: qCxpjt61vPWWFxbp9vmsCt18vZs=
+
+Name: ecologylab/io/ZipDownload.java
+SHA1-Digest: AWFuEQWfCkK8HYJIAZJvtsl9koQ=
+
+Name: ecologylab/io/ByteBufferPool.class
+SHA1-Digest: VQ3IOoQrpdL5ga7/eG0tovXTrrE=
+
+Name: lib/ecj-3.6.jar
+SHA1-Digest: VhjMaU0eHOiVb6RBtVHItpBUf6s=
+
+Name: ecologylab/collections/CollectionTools.class
+SHA1-Digest: MVF+ioOsqD/A+JlC79M0lAXpAo0=
+
+Name: ecologylab/serialization/annotations/simpl_classes.class
+SHA1-Digest: v2oQevPaeH1Vf6j2ow7ttbV5np4=
+
+Name: ecologylab/generic/SwingTools.class
+SHA1-Digest: 43+k/R/MGsZy2Y9BUZ3HpZ/vxQk=
+
+Name: ecologylab/serialization/library/geom/Line2DDoubleState.class
+SHA1-Digest: mlQmFPgydAoi6GMAxNzockpGwgk=
+
+Name: ecologylab/serialization/annotations/simpl_scalar.class
+SHA1-Digest: 20SdNljheiRDashyq1m/abiyvyM=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /AbstractBibTeXEntry.java
+SHA1-Digest: qLblmMIw+KeIKZ3xUzjyWDqq9uE=
+
+Name: ecologylab/serialization/TranslationScope.java
+SHA1-Digest: 9ak+Df2MFuWDpI/e0n/FSwayJCU=
+
+Name: ecologylab/serialization/ElementStateTLVHandler.java
+SHA1-Digest: cQjbT0HR8BiDzpsEoExlfedvpr0=
+
+Name: ecologylab/serialization/library/jnlp/information/RelatedContent
+ Element.java
+SHA1-Digest: zUXGQax9i9bFQdvIWuA5W3Z5nRc=
+
+Name: ecologylab/serialization/library/endnote/TestEndnoteXML.java
+SHA1-Digest: qE9KyHbcP8Zk0fsatBoo8pHwUL4=
+
+Name: ecologylab/oodss/distributed/impl/Shutdownable.class
+SHA1-Digest: 6oxDpNPsNa7jRhJuFgYlKXQlt+w=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Search.clas
+ s
+SHA1-Digest: iHSTnQxdRUzLNbL9azhs8r7kW18=
+
+Name: ecologylab/collections/FloatWeightSet$DefaultWeightStrategy.clas
+ s
+SHA1-Digest: 9Gq+1sMjMOqj/mlmw6nI7deFRx4=
+
+Name: ecologylab/serialization/library/geom/Vector2d.class
+SHA1-Digest: CIGw2y/v/ylfknf+Mo4Tq+BSoO0=
+
+Name: ecologylab/oodss/distributed/impl/MessageWithMetadata.java
+SHA1-Digest: t7vjTG1xuajSlewCOGsmpv6SGQU=
+
+Name: ecologylab/sensor/location/EarthData.class
+SHA1-Digest: j8yRMFFdRwQGa2GsQzG8cBQ+A64=
+
+Name: ecologylab/oodss/messages/InitConnectionRequest.java
+SHA1-Digest: XFtGkOneX5dqw9P13zhQVjlislI=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition1.
+ html
+SHA1-Digest: Fl59qPx+2EvX1LUmNm1SuNdXSOk=
+
+Name: ecologylab/serialization/tlv/TLVEvents.class
+SHA1-Digest: hbDpjybaZBFxQysCklOzSe+sACA=
+
+Name: ecologylab/serialization/library/rss/RssTranslations.java
+SHA1-Digest: 2HGyrmAlVP5WGAHgqdoyTjrpZ3Y=
+
+Name: ecologylab/serialization/library/xaml/WindowState.java
+SHA1-Digest: eyFAvfhntAZ+VRnr0L5R+ZQ4YPQ=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/StringPullDeserializer.class
+SHA1-Digest: fnEr8JnRz/OpXAMbP/HsU5wK4Zc=
+
+Name: ecologylab/oodss/distributed/server/varieties/WebLaunchAppServer
+ .java
+SHA1-Digest: RB9xnlPGxhFoGcE1Ed2E5LiC3vU=
+
+Name: ecologylab/oodss/distributed/client/NIODatagramClient.java
+SHA1-Digest: Q18F/LTKHXS0JK7wLhpBPFTzclo=
+
+Name: ecologylab/oodss/distributed/common/SessionObjects.java
+SHA1-Digest: gmYYCymrm2w82NT/TjnK+zC2Vik=
+
+Name: ecologylab/serialization/ElementStateJSONPushHandler.class
+SHA1-Digest: vMZMJPBjK8xPp3n7BhrZoffMRwY=
+
+Name: ecologylab/appframework/package.html
+SHA1-Digest: q7Hw+bTXKJWpPZnek8zMpvB3NIE=
+
+Name: ecologylab/serialization/CharacterConstants.class
+SHA1-Digest: vHotA8L4sFwz99Puvq9lJMbcGyk=
+
+Name: ecologylab/oodss/messages/ExplanationResponse.class
+SHA1-Digest: gBQNFdTIMSqToZtodZOVY4y1i6k=
+
+Name: ecologylab/generic/IntSlot.class
+SHA1-Digest: 5j9+XLqztQLBlaS9oFyQWL1TKw4=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Untraversab
+ leSet.java
+SHA1-Digest: yJfEB31xjDJ7LpmIAeRn9wdBuJM=
+
+Name: ecologylab/serialization/library/icdl/Response.java
+SHA1-Digest: Kmnzv81EwQNdQptmz5j/CAcB9kA=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestSubItem2.java
+SHA1-Digest: TTGaCdotQAyrfS5aeafmmDOrU3U=
+
+Name: ecologylab/serialization/types/scalar/ParsedURLType.java
+SHA1-Digest: 7OLO9mmt+tj5zfJjSX8QCIC0xI8=
+
+Name: ecologylab/serialization/serializers/binaryformats/BinarySeriali
+ zer.class
+SHA1-Digest: Xx9wfAYBaUumgqvvE7UpkSxlIkw=
+
+Name: ecologylab/standalone/package.html
+SHA1-Digest: FS7fchGBZZ+SNwFfBd+1zGpbT2k=
+
+Name: ecologylab/oodss/distributed/impl/PreppedRequestPool.class
+SHA1-Digest: EikaesKedwHGIToC7ulxCCNwmQc=
+
+Name: ecologylab/serialization/library/xaml/FrameworkElementState.clas
+ s
+SHA1-Digest: v68M3FxpV3XwXKZ79fxK0EsTam8=
+
+Name: ecologylab/serialization/annotations/simpl_db.java
+SHA1-Digest: ZeXuibLBkLlU2Gm6jqied5AXiPo=
+
+Name: ecologylab/serialization/types/scalar/CharType.java
+SHA1-Digest: jCfjISdTKL8UFsyPPY9CZmMGct4=
+
+Name: ecologylab/serialization/types/TypeRegistry.class
+SHA1-Digest: UmB5dEnQJCDCSGDGF9adgjKtNwY=
+
+Name: ecologylab/serialization/library/html/Td.java
+SHA1-Digest: IPMA+HPnyCZO/OKXWmlri2tSCJ4=
+
+Name: ecologylab/serialization/ElementState$simpl_classes.class
+SHA1-Digest: ++fyMONv2/I9aAZ+5WeQhrmW5XU=
+
+Name: ecologylab/generic/RestrictedFileSystemView.class
+SHA1-Digest: 9sFm71NRCwc88+T/IRrcskYLByc=
+
+Name: ecologylab/generic/ValueFactory.class
+SHA1-Digest: S9RPb5rrlnl21tHg3We3/yn5dBk=
+
+Name: ecologylab/generic/Base64Coder.class
+SHA1-Digest: z0X3Nl+bfE1MXFjlfgsARxUcaOk=
+
+Name: ecologylab/appframework/ClassRegistry.class
+SHA1-Digest: b9kd9MLg8prE3GF+QcNiiRz7MWE=
+
+Name: ecologylab/sql/ConnectionWithAutoClose.java
+SHA1-Digest: gxq/M0e2TFzjLIeyMculqLsOYmg=
+
+Name: ecologylab/serialization/DescriptorBase.class
+SHA1-Digest: +xp7VFg/nefDFbRPLQoAnSotLlo=
+
+Name: ecologylab/io/LockFile.class
+SHA1-Digest: UC6v3yHhT3VZQ1bTovbZ5u6e5Kc=
+
+Name: ecologylab/tests/ClassTagged.class
+SHA1-Digest: J3pJiuip3XTrqKhEISCzZ2Cays4=
+
+Name: ecologylab/tests/Composed.class
+SHA1-Digest: YQ3CvEfDyBG5oOnXlsDik8jIgJc=
+
+Name: ecologylab/io/NIOTools.java
+SHA1-Digest: pTFpZQkgM7EcCxSdJR/pDn48lRI=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/StringPullDeserializer.java
+SHA1-Digest: n66LBUNam7T6B8Xm5SJJK/BcxLQ=
+
+Name: ecologylab/generic/CharArrayPool.class
+SHA1-Digest: xT0js4dZvs7quFDqOesGyt1ePc4=
+
+Name: ecologylab/serialization/serializers/binaryformats/BinarySeriali
+ zer.java
+SHA1-Digest: FZwm91s5HoM6uaG8PtaLn3nrcWg=
+
+Name: ecologylab/serialization/library/jnlp/information/Icon.class
+SHA1-Digest: CzuySbWkv1n5Mb3IiSPhUa/n0Bk=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Categories.
+ class
+SHA1-Digest: doIv6azmKEJo4kvd9oPwujgQGfs=
+
+Name: ecologylab/collections/GenericPrioritizedPool.class
+SHA1-Digest: N0Olj5F0m+cwBuwaSakaXNumvzY=
+
+Name: ecologylab/serialization/ElementState$FORMAT.class
+SHA1-Digest: /LddZTSS81//uokQUSAhPeB9xrk=
+
+Name: ecologylab/serialization/library/jnlp/resource/ResourceElement.c
+ lass
+SHA1-Digest: jmZ/mrpi1S9fYJ/BFqZveNthl5I=
+
+Name: ecologylab/serialization/annotations/bibtex_key.java
+SHA1-Digest: LVGPOyEORs/LviqMjLqe1oSzrw0=
+
+Name: ecologylab/generic/StartAndStoppable.class
+SHA1-Digest: N4AZzRk0sPG5iUD/Y8qI9cc4kBw=
+
+Name: ecologylab/collections/ChildPrefixMap.java
+SHA1-Digest: jXwL5X9qJ5KrxHv25ZyrPww4UK4=
+
+Name: ecologylab/generic/DebugMode.class
+SHA1-Digest: n2chVsyCvsvGPlNs47E9ukSV0wI=
+
+Name: ecologylab/collections/FloatSetElement.class
+SHA1-Digest: tsfJBxxlezYWhUq15wi26m1ALOE=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Thumbinners
+ .java
+SHA1-Digest: KhePdS4FD52mIlKo+iJ8W6gXkqE=
+
+Name: ecologylab/serialization/library/jnlp/information/Icon.java
+SHA1-Digest: odW4tSEwXX45l25SJtBhssvvt1Q=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionPreviewPane
+ l.java
+SHA1-Digest: 1RifOCNhi5BaTKcTMrHv4hOkF+c=
+
+Name: ecologylab/serialization/serializers/ISimplSerializationPost.jav
+ a
+SHA1-Digest: UFOp+7TSXqJLPqShKTfmcMYZOmk=
+
+Name: ecologylab/oodss/messages/package.html
+SHA1-Digest: xuaK8zmlX2AO1GM1yLIOBDiW91Q=
+
+Name: ecologylab/generic/ConfParser.java
+SHA1-Digest: Ab0QCvumZA5TMd2gacZw3BCUbxQ=
+
+Name: ecologylab/serialization/library/opml/Opml.class
+SHA1-Digest: I0jf9OFl8TF0BqbCz+X8Yhwjflk=
+
+Name: ecologylab/standalone/TestClient.class
+SHA1-Digest: O3h0dJ8lVk1n5VQwX7+mcfKWqhE=
+
+Name: ecologylab/serialization/library/endnote/Records.class
+SHA1-Digest: IXyonkjMeas6uC3/YAyRQ3YxqvA=
+
+Name: ecologylab/generic/ImageTools$MyImageWriteParam.class
+SHA1-Digest: e6nbdn459Wy+lR/Q2KxTL39ESOU=
+
+Name: ecologylab/generic/OneLevelNestingIterator.class
+SHA1-Digest: puNAfw+B2ZjPgr5hhz1XMD7o8zw=
+
+Name: ecologylab/standalone/JNLPTestApp.class
+SHA1-Digest: jUQ1J2bh8sugrtRPJ5JPhbrQG1E=
+
+Name: ecologylab/collections/GenericWeightSet.java
+SHA1-Digest: U6NkuxQKTzMTTsc9ZlPciBB6ruI=
+
+Name: ecologylab/standalone/fields.xml
+SHA1-Digest: C6fsqBYDZBU0SmMJWpVHQw+O9Bs=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Document.ja
+ va
+SHA1-Digest: CyAL2XIhq5n8h8Ty/Akv7RA8x8Q=
+
+Name: ecologylab/oodss/distributed/impl/NIONetworking.java
+SHA1-Digest: kXp/mIO5vB7aJdqCOAQhwq9Od7U=
+
+Name: ecologylab/generic/MathTools.java
+SHA1-Digest: eaXrAkofFCQwNaCQs5AeaN1nbQM=
+
+Name: ecologylab/serialization/library/feedburner/Feedburner.java
+SHA1-Digest: QKfPMr1Vp78A26Xn6NDRu3HVIhk=
+
+Name: ecologylab/serialization/types/ScalarType.class
+SHA1-Digest: rwITEOimo5926LjBdhUZQdlibwU=
+
+Name: ecologylab/serialization/annotations/simpl_hints.java
+SHA1-Digest: oZfLFyJ1bKQdgiXqHU0Umve9U/o=
+
+Name: ecologylab/appframework/SingletonApplicationEnvironment.java
+SHA1-Digest: VgDmrSkS48IZ4HXOrKPYYiHAJII=
+
+Name: ecologylab/serialization/annotations/simpl_collection.class
+SHA1-Digest: cJq4g5I9hHPwiZ4w/tQVBRnvWzU=
+
+Name: ecologylab/oodss/distributed/server/DoubleThreadedNIOServer.java
+SHA1-Digest: DVVLsoZL58T7a/et2yS5E1rPkzs=
+
+Name: ecologylab/tests/FieldTagged.class
+SHA1-Digest: f7BvS/5FE7u0y+RZqYF/nLr+9vY=
+
+Name: ecologylab/serialization/RootElementException.class
+SHA1-Digest: 7x063GrG8O4mtWQrPiDrghPqMPI=
+
+Name: lib/ant4eclipse-0.5.0.rc1.jar
+SHA1-Digest: nzDV4v+hEZb9/CSDOMsFCKLl3R8=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Visual.clas
+ s
+SHA1-Digest: b7CkOgdkvJOevVDWbnxvVGbV2kY=
+
+Name: ecologylab/tests/FieldTagged.java
+SHA1-Digest: w0gy+svvimHGl99ctoddmLijmPA=
+
+Name: ecologylab/serialization/types/scalar/EnumeratedType.class
+SHA1-Digest: m8XWY6hiwLc8szEl+EyDDGkUpJg=
+
+Name: ecologylab/oodss/logging/Logging.java
+SHA1-Digest: qWONhHx3nupmIhe1dA+6cmi6XjM=
+
+Name: ecologylab/serialization/types/FundamentalTypes.class
+SHA1-Digest: xNAjWc6qkN8Eq0YYLiup/oGotd0=
+
+Name: ecologylab/appframework/types/prefs/PrefDelayedOp.java
+SHA1-Digest: OT5yb1wn8ap1RjwcXsZOKI7Nw/0=
+
+Name: ecologylab/appframework/types/prefs/ChoiceFloat.class
+SHA1-Digest: jY4GnYU8tzwiUXazRD5ybEPhN/o=
+
+Name: ecologylab/serialization/annotations/bibtex_tag.class
+SHA1-Digest: T3TeCfGMos5OzyrZD9vy22PjqJc=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Text.java
+SHA1-Digest: Cz0cynFH6m/cuEtpqzkiYqSaeCc=
+
+Name: ecologylab/collections/FloatSetElement.java
+SHA1-Digest: aUJzc3WNNxAuNhKg98gd4YGV6BI=
+
+Name: ecologylab/oodss/distributed/impl/NIOServerIOThread.class
+SHA1-Digest: P+QUqfu7AFazmvA/XPhtGvvlFK4=
+
+Name: ecologylab/serialization/types/scalar/ByteType.class
+SHA1-Digest: sx1oQbVR0wsn/YqzJRlIBUZBSEQ=
+
+Name: ecologylab/concurrent/DownloadMonitor.java
+SHA1-Digest: p3iakU1+pNpukXONVyWJ7G9KG40=
+
+Name: build.xml
+SHA1-Digest: vKO/eGvZovI3wSahfMuaXD5DFx4=
+
+Name: ecologylab/oodss/distributed/server/varieties/HttpGetServer.clas
+ s
+SHA1-Digest: V1bIx9geIYsXdgkk3/d6fcM/vbo=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionTreePanel$T
+ reeListener.class
+SHA1-Digest: 1vdjei2p/yfE0CZHEYhtmpQN40I=
+
+Name: ecologylab/collections/Scope.java
+SHA1-Digest: 9gz8+nniMfMb3Eeiahzn9jhpCOE=
+
+Name: ecologylab/serialization/ImageSerializationContext.class
+SHA1-Digest: kDQymtTLf/ZkjKhN0SNLjrGQQoI=
+
+Name: ecologylab/collections/VectorLA.class
+SHA1-Digest: OaBHfh5kaOlYZnO9VIpasrlzwy8=
+
+Name: ecologylab/appframework/types/prefs/gui/PrefsEditor$10.class
+SHA1-Digest: iFaokVzz+3l3OqR2olBZle0MLPY=
+
+Name: ecologylab/concurrent/ThreadDebugger.class
+SHA1-Digest: WYJpBrxTO4M95PQ74jXYG5LaKVs=
+
+Name: ecologylab/serialization/SimplTypesScope.java
+SHA1-Digest: 2flZ06pSVzi+kcwxdyL5YcBh97c=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefBoolean.class
+SHA1-Digest: KHSUzkCU0aqh7LQwEJc6A4CC/+o=
+
+Name: ecologylab/standalone/researchnotebook/gui/ResearchNotebook$Acti
+ onHandler.class
+SHA1-Digest: KFr4dxVXbDrb1vMJv6FNDdXCUXU=
+
+Name: ecologylab/serialization/types/scalar/IntType.java
+SHA1-Digest: J3XhwnGYEXUg8iRuNzlmeUlEtlk=
+
+Name: ecologylab/serialization/SaverState.java
+SHA1-Digest: nWG+VzcxXz1Q97s3ROOGh052Oic=
+
+Name: ecologylab/serialization/NameSpaceDecl.class
+SHA1-Digest: /rWWU7W/D4soou9AfXHFHFR1bMA=
+
+Name: ecologylab/serialization/ClassDescriptor$1.class
+SHA1-Digest: 7O3h4WDxPh5pA9sruUC+3vxxX1I=
+
+Name: ecologylab/standalone/researchnotebook/gui/CollectionPreviewPane
+ l.class
+SHA1-Digest: Wr2dGRMF0s0eeyoLeFJukWju9CY=
+
+Name: ecologylab/collections/ArrayListFloatSet.java
+SHA1-Digest: ggzEB1EX4oQAbhTjD4LO3vtnFB4=
+
+Name: toolbarButtonGraphics/media/Rewind16.gif
+SHA1-Digest: JONhBK6GDLH0M9fa42/4FNZreXA=
+
+Name: ecologylab/serialization/AbstractTranslationContextPool.class
+SHA1-Digest: RAXLxi+B3uXsEURyJIhvARLE+74=
+
+Name: ecologylab/serialization/annotations/simpl_inherit.class
+SHA1-Digest: c/3dFM6Eg5JngRcmpsdtFvFHNQ8=
+
+Name: ecologylab/serialization/deserializers/parsers/tlv/TLVEvents.jav
+ a
+SHA1-Digest: r6fcANSJFbnE9eYxWbWdZmaonDU=
+
+Name: ecologylab/appframework/EnvironmentGeneric.class
+SHA1-Digest: 2IPZ+73dt0vQmD5dWxyIThAPs2Q=
+
+Name: ecologylab/oodss/logging/playback/LogPlayer.class
+SHA1-Digest: b47w2VWWnMSHuyrhldhp5A0rtD0=
+
+Name: ecologylab/collections/OverlappingAnyKeySets.java
+SHA1-Digest: QU4WqaP95na0zXUByFNZx2xZnx0=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/TextChunk.j
+ ava
+SHA1-Digest: 0+axm7A0M+ioYrB/0hMt37aUT2Y=
+
+Name: ecologylab/appframework/types/prefs/PrefInt.java
+SHA1-Digest: D1vkDoHuA2Ww7WoWCKqVs0u/PgQ=
+
+Name: ecologylab/collections/DLL.class
+SHA1-Digest: DsKUWBwWPCOCjKbwzJIFW2pvapk=
+
+Name: ecologylab/appframework/TraceSlots.class
+SHA1-Digest: DNrO7Ralk0ySePTxMcxsjQgGDGY=
+
+Name: ecologylab/serialization/library/apple/PListTranslations.class
+SHA1-Digest: Ix00L6CZgAyrZS5Ug6syOUzGxTs=
+
+Name: ecologylab/serialization/library/dc/DcTag.class
+SHA1-Digest: rMMmXvwvYgieBwREYk+DK7AxLeo=
+
+Name: toolbarButtonGraphics/media/FastForward16.gif
+SHA1-Digest: xacKHRYPQ5hnTfwXWqNlhiBwGSg=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXBook.java
+SHA1-Digest: p3/uDLcO7Wa6G+NKyxNEZFx5Wp4=
+
+Name: ecologylab/serialization/library/jnlp/information/InformationEle
+ ment.java
+SHA1-Digest: AcaRXefx0cT+DRS7oNOSg9Maeuo=
+
+Name: ecologylab/oodss/distributed/common/BaseStates.java
+SHA1-Digest: 7PPt8yRG9hm+Bc7przXSrIy9hw0=
+
+Name: ecologylab/serialization/annotations/simpl_other_tags.java
+SHA1-Digest: z5ANS+w0PbEwq8I8J60XZJ3jwXA=
+
+Name: ecologylab/appframework/types/prefs/ChoiceInt.java
+SHA1-Digest: r6TQsq9O+oLtdiNzyP8u7uSsih0=
+
+Name: ecologylab/generic/Palette.class
+SHA1-Digest: ToR27y9gxFBnbJQCtvwhJ8o13Ts=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition3-
+ images/l.yimg.com-fp_0810_003.jpg
+SHA1-Digest: xKu46id1CKp5ZzY/SNylN3dheCY=
+
+Name: ecologylab/oodss/distributed/impl/PreppedRequest.class
+SHA1-Digest: N3shrXpACA88aY/mxMWi9bTosQE=
+
+Name: ecologylab/generic/BooleanSlot.class
+SHA1-Digest: zPzBlv3QHK+tRCKOTKPDQ3OMdEk=
+
+Name: ecologylab/serialization/library/icdl/ICDLTranslations.class
+SHA1-Digest: G3WHQoJ8KBLQitx/bdh4S9g4Xz0=
+
+Name: ecologylab/serialization/types/scalar/ReferenceIntegerType.java
+SHA1-Digest: Rzzc10eJu3bp8VTd2E0j1urP5x8=
+
+Name: ecologylab/serialization/library/dc/Dc.class
+SHA1-Digest: bqHSdD3FIXo0eweDG1NJRLZAMn8=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefFile.class
+SHA1-Digest: dv/WX2xBcWWsiBiH58fl3MvyZwI=
+
+Name: ecologylab/concurrent/ThreadDebugger$1.class
+SHA1-Digest: URNROvLLv/Tg4Tb7akNdvyPl5Dw=
+
+Name: ecologylab/generic/ScaledValueObserver.class
+SHA1-Digest: m43KNSFSAFkjLAfbbfHeN9Sdr80=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXBook.java
+SHA1-Digest: cYdtyFoR8HWDA4BYeCLM6pam/4U=
+
+Name: ecologylab/serialization/bibtex/entrytypes/BibTeXTechReport.java
+SHA1-Digest: jyuVYWcPUfR8kHaST8ltB6ZVjx8=
+
+Name: ecologylab/io/Downloadable.class
+SHA1-Digest: 4yVdouZwpfc3EGNstkRbSjilUOw=
+
+Name: ecologylab/serialization/formatenums/BinaryFormat.class
+SHA1-Digest: TqFLDQ4kXAjbPCrP6Asqnfb+L2s=
+
+Name: ecologylab/serialization/MetaInformation$Argument.class
+SHA1-Digest: IX6ec5yhfKaKUbidBLQKrKE2dzU=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXBook.class
+SHA1-Digest: Ca5FeV0IS8EB01aTLwTdCNfqi5M=
+
+Name: ecologylab/serialization/ElementState$DbHint.class
+SHA1-Digest: UafQfiQOem+2Iv+XtHMr+A2+U6s=
+
+Name: ecologylab/generic/Generic.java
+SHA1-Digest: LttBZW+Lh+b7UUBIrPlEn5iTui4=
+
+Name: ecologylab/standalone/researchnotebook/testxml/TestItems.java
+SHA1-Digest: zmx6J8hfemeTxkIFz7mCFrStz/s=
+
+Name: ecologylab/oodss/logging/playback/LogPlayer.java
+SHA1-Digest: Y4MOOb9h0aCmzyqD0Kt8Gm/QxSw=
+
+Name: ecologylab/appframework/types/AssetState.class
+SHA1-Digest: rEpP/VxF2EDENSIIgs+Lcu3V1+w=
+
+Name: ecologylab/serialization/library/bibtex/Entry.class
+SHA1-Digest: OQyXU8IV8/81S1qgGX91VVrfcTs=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/stringformat
+ s/XMLPullDeserializer.java
+SHA1-Digest: 9fr8ILKWlikeAPED8MLPRQu/0Wg=
+
+Name: ecologylab/oodss/logging/Logging$NetworkLogWriter.class
+SHA1-Digest: 9K+lI0RGx97arfb3FS5lRJ0aeq4=
+
+Name: lib/org.eclipse.osgi_3.2.0.v20060601.jar
+SHA1-Digest: kI9wLYRmSbzckhkKCaQs/GaozyM=
+
+Name: ecologylab/tests/serialization/ChannelTest.class
+SHA1-Digest: 92G5MfyPSAh4nbFG1Mc0AYgXrYE=
+
+Name: ecologylab/serialization/types/scalar/ClassType.class
+SHA1-Digest: RpyTGoVDUPjugBxv8qkfQybxE1U=
+
+Name: ecologylab/oodss/logging/SendEpilogue.class
+SHA1-Digest: V6iiiAoOOf60gaISKbvLxVlAZwA=
+
+Name: ecologylab/collections/MultiAncestorScope.java
+SHA1-Digest: 6x/Vxs0tuGh4XNvKr0Ss7s/de6o=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/TextElement
+ .class
+SHA1-Digest: u1WatIi17L7YYXxR57xkQRgQbK8=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/TextElement
+ .java
+SHA1-Digest: UbK2QZGGSJr33RZQ8qHpaAnX5Ak=
+
+Name: ecologylab/generic/Palette.java
+SHA1-Digest: qxFJ6Ci1+7ZLT212lvBqeFwOgGs=
+
+Name: ecologylab/serialization/library/geom/TestFloats.class
+SHA1-Digest: PfPBKA2IGFBUl+X8D+3E+HRA90Y=
+
+Name: ecologylab/serialization/formatenums/Format.class
+SHA1-Digest: o75EjCtPHisnhbN6OEs6qix6unA=
+
+Name: ecologylab/serialization/library/jnlp/applet/AppletDesc.java
+SHA1-Digest: kJGGXFvszRBNWYBtmAizO4ZAoas=
+
+Name: ecologylab/serialization/annotations/simpl_map_key_field.class
+SHA1-Digest: /WtfPs2dCiPiEmPcu8hliJ1greE=
+
+Name: ecologylab/serialization/library/endnote/Keyword.class
+SHA1-Digest: znVa+9GXYB0c7ibBoMb15Cknk00=
+
+Name: toolbarButtonGraphics/media/StepBack16.gif
+SHA1-Digest: 7DkzXURmUSsZGOoHiz7fNzmZhRY=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Thumbinner.
+ java
+SHA1-Digest: Js8Ztp3q7S9owmrmqe/BJKEnR6c=
+
+Name: ecologylab/serialization/types/scalar/UUIDType.java
+SHA1-Digest: OaH9qmIHevtGuvuUG0VdIiKnKhA=
+
+Name: ecologylab/collections/ArrayListInBounds.java
+SHA1-Digest: 9MbJ0659TB+RUpgLUO1zncpU3/0=
+
+Name: ecologylab/generic/StringInputStream.class
+SHA1-Digest: NB3tZQnpyK4Hp4en/3DaRcIM9hE=
+
+Name: ecologylab/standalone/researchnotebook/collageData/composition2-
+ images/www.sos.state.tx.us-hp-photo-business-austinbank.jpg
+SHA1-Digest: JrczFDWfW0NYh9Kg113P1WfUDqg=
+
+Name: ecologylab/appframework/types/prefs/MetaPrefColor.class
+SHA1-Digest: IhDt9JHnPf3nv4onVmaG3z6ExzY=
+
+Name: ecologylab/generic/ThreadMaster.class
+SHA1-Digest: ePXmGKWreJ8kHZJ2LNkWIRoZu6o=
+
+Name: ecologylab/serialization/XMLReaderPool.java
+SHA1-Digest: yfyO1N4rri43cKSYDgdnsBhx9Ys=
+
+Name: ecologylab/oodss/logging/MixedInitiativeOp.class
+SHA1-Digest: sa/hPYPW0bRIl09vKcqH02XQDao=
+
+Name: ecologylab/serialization/GenericTypeVar.class
+SHA1-Digest: Qh5uStiUovdSpFu4zgdsSayDFUw=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Traversable
+ Set.class
+SHA1-Digest: DRfCyEeroD1KdJ5+kM5R8lFZyAE=
+
+Name: ecologylab/serialization/library/yahoo/ThumbnailState.java
+SHA1-Digest: VzH9C/+CIzmezOzDFlhvxgUWIAo=
+
+Name: ecologylab/serialization/ElementStateJSONHandler.java
+SHA1-Digest: trEjCgNAGUWrIYFvpsaWaAn2yuo=
+
+Name: ecologylab/concurrent/Monitor.class
+SHA1-Digest: R9p/nEEeASj4zNvOKDAthgKCE2Y=
+
+Name: ecologylab/serialization/deserializers/parsers/bibtex/entrytypes
+ /BibTeXInBook.class
+SHA1-Digest: Lcj7L0bB5RsAi4rDy/l9rdywPtg=
+
+Name: ecologylab/serialization/library/jnlp/information/OfflineAllowed
+ Element.java
+SHA1-Digest: gpSDAVAsYbxNF76EXMEWQ/if9wE=
+
+Name: ecologylab/serialization/deserializers/pullhandlers/PullDeserial
+ izer.java
+SHA1-Digest: z15rSzKpnUvYcMUQfaV4lJao7ug=
+
+Name: ecologylab/serialization/annotations/simpl_map.java
+SHA1-Digest: WDbqGZB1jST1yuWevstE55sHGqE=
+
+Name: ecologylab/serialization/types/element/Mappable.class
+SHA1-Digest: 2PaEDX9lUUa3JADnvhiyUPos7mQ=
+
+Name: ecologylab/oodss/logging/playback/View.class
+SHA1-Digest: Ceez+PgT1u9VK1xGuD2DAKy3bSk=
+
+Name: ecologylab/serialization/types/scalar/StringBuilderType.java
+SHA1-Digest: VHFdmVYT4ZsDSreIsEvj/s7lUkQ=
+
+Name: ecologylab/serialization/library/geom/package.html
+SHA1-Digest: hnLVA3yELCmxLKMMZKkF88P86fY=
+
+Name: ecologylab/appframework/types/prefs/PrefFloat.java
+SHA1-Digest: N6wPPdhLC82sAryWL0wP8smKwIA=
+
+Name: ecologylab/standalone/JNLPTestApp.java
+SHA1-Digest: stykpgNMeI4fL2PwsjEKNjRPHuI=
+
+Name: ecologylab/serialization/annotations/simpl_filter.java
+SHA1-Digest: fZlcc3E26i1LKSbI1+ZPYopXLHY=
+
+Name: ecologylab/io/Assets.class
+SHA1-Digest: bwKa7KRbFQe0GFH9xgg+HDsowlc=
+
+Name: ecologylab/serialization/library/jnlp/applet/Param.class
+SHA1-Digest: 971bv+Mi/LA6ORUbunzhgqc+5eY=
+
+Name: ecologylab/serialization/deserializers/pushhandlers/ElementState
+ BibTeXHandler.class
+SHA1-Digest: dkHhpu8HeNQSs8BmlUwuCUb+Qv0=
+
+Name: ecologylab/generic/NewPorterStemmer.java
+SHA1-Digest: oE4Grgq5yoLmJD57uh6ROe96j0U=
+
+Name: ecologylab/collections/AbstractSetElement.class
+SHA1-Digest: ZGiohI+MZUPjNpg7pDp5T/XL8XE=
+
+Name: ecologylab/appframework/types/prefs/PrefVisual.java
+SHA1-Digest: K500kRl6wtK6aMipa0YNBkb+95g=
+
+Name: ecologylab/oodss/distributed/server/varieties/HttpGetServer.java
+SHA1-Digest: GVmpQNqt/2F4NebLs5mBgyUsEUU=
+
+Name: ecologylab/oodss/distributed/server/clientsessionmanager/BaseSes
+ sionManager.class
+SHA1-Digest: Pio/9iZ4ccmGAfq5KFet6Ug3Rxw=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/Screen.clas
+ s
+SHA1-Digest: ldP6soItTM0c325eGT1HZkxWQ0E=
+
+Name: ecologylab/serialization/annotations/simpl_descriptor_classes.cl
+ ass
+SHA1-Digest: 4ZuV2R8jt5PtRdc+JX/97JkJ3es=
+
+Name: ecologylab/serialization/ElementState$bibtex_key.class
+SHA1-Digest: e0/SEAVpAgAL358iK8F/xXTYFyo=
+
+Name: ecologylab/serialization/SIMPLTranslationException.java
+SHA1-Digest: W77RBZKNr/ZjMU9xdVURh2t+/G4=
+
+Name: ecologylab/oodss/logging/translationScope/MixedInitiativeOpClass
+ esProvider.java
+SHA1-Digest: b0Y5PMfFkXaVn/a9RZ2Hg7PumLM=
+
+Name: ecologylab/net/MimeType.java
+SHA1-Digest: kFGwmzDkimrh1ATNL67HXeAJn2Y=
+
+Name: ecologylab/oodss/messages/InitConnectionRequest.class
+SHA1-Digest: /ETgLpBaQX5QnhhusJTlXu06c48=
+
+Name: ecologylab/serialization/formatenums/StringFormat.java
+SHA1-Digest: KaW9cUKw2v7SS5T+13OCaJ4fJAo=
+
+Name: ecologylab/appframework/types/AssetsTranslations.java
+SHA1-Digest: aE78Z6Wd1Hwfp1b86A+Z+0RC8tY=
+
+Name: ecologylab/oodss/logging/playback/PlaybackControlCommands.java
+SHA1-Digest: lT9Qn8yr9bKGjjbHt725ddYv2R0=
+
+Name: ecologylab/oodss/distributed/server/NIOServerDataReader.class
+SHA1-Digest: CyEN6y2yNkJIz5U3wZoIpMqmLbw=
+
+Name: ecologylab/generic/ConfParser.class
+SHA1-Digest: 21qAT3sABwXsP3jkTSkKImbX4Hs=
+
+Name: ecologylab/standalone/researchnotebook/compositionTS/InterestMod
+ elEntry.class
+SHA1-Digest: RGlHHRyIsM4YT2bIfRbUKlKSYOs=
+

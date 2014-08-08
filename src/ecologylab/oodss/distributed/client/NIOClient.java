@@ -8,6 +8,7 @@ import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.BindException;
@@ -33,6 +34,7 @@ import java.util.zip.InflaterInputStream;
 import ecologylab.collections.Scope;
 import ecologylab.generic.Debug;
 import ecologylab.generic.Generic;
+import ecologylab.generic.StringBuilderPool;
 import ecologylab.generic.StringTools;
 import ecologylab.oodss.distributed.common.ClientConstants;
 import ecologylab.oodss.distributed.common.LimitedInputStream;
@@ -50,9 +52,9 @@ import ecologylab.oodss.messages.ResponseMessage;
 import ecologylab.oodss.messages.SendableRequest;
 import ecologylab.oodss.messages.ServiceMessage;
 import ecologylab.oodss.messages.UpdateMessage;
+import ecologylab.serialization.formatenums.Format;
 import ecologylab.serialization.SIMPLTranslationException;
 import ecologylab.serialization.SimplTypesScope;
-import ecologylab.serialization.formatenums.Format;
 import ecologylab.serialization.formatenums.StringFormat;
 
 /**
@@ -228,7 +230,7 @@ public class NIOClient<S extends Scope> extends Debug implements ClientConstants
 	 * 
 	 * @see ecologylab.oodss.distributed.legacy.ServicesClientBase#connect()
 	 */
-	public boolean connect(int timeoutMilli)
+	public boolean connect()
 	{
 		debug(5, "initializing connection...");
 		if (this.connectImpl())
@@ -241,7 +243,7 @@ public class NIOClient<S extends Scope> extends Debug implements ClientConstants
 			ResponseMessage initResponse = null;
 			try
 			{
-				initResponse = this.sendMessage(new InitConnectionRequest(this.sessionId), timeoutMilli);
+				initResponse = this.sendMessage(new InitConnectionRequest(this.sessionId));
 			}
 			catch (MessageTooLargeException e)
 			{
@@ -277,11 +279,6 @@ public class NIOClient<S extends Scope> extends Debug implements ClientConstants
 
 		debug(5, "connected? " + this.connected());
 		return connected();
-	}
-	
-	public boolean connect()
-	{
-	  return connect(-1);
 	}
 
 	/**
@@ -1382,7 +1379,6 @@ public class NIOClient<S extends Scope> extends Debug implements ClientConstants
 
 	public class Reconnecter implements Runnable
 	{
-		@Override
 		public void run()
 		{
 			if (blocker != null)

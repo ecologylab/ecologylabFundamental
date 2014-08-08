@@ -11,7 +11,6 @@ public class SubmitMessage extends RequestMessage
 		
 	}
 
-	@Override
 	public ResponseMessage performService(Scope objectRegistry) 
 	{	
 		return OkResponse.get();

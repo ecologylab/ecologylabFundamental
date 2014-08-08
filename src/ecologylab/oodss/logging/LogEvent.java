@@ -53,6 +53,7 @@ abstract public class LogEvent extends RequestMessage<LoggingContextScope>
 	/**
 	 * Save the logging messages to the pre-set writer.
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public ResponseMessage performService(LoggingContextScope contextScope)
 	{

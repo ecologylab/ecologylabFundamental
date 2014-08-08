@@ -46,8 +46,7 @@ public class Description extends ElementState implements IMappable<String>
     /**
      * @see ecologylab.serialization.types.element.IMappable#key()
      */
-    @Override
-	public String key()
+    public String key()
     {
         return desc;
     }

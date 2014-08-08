@@ -50,7 +50,6 @@ implements BasicFloatSet<T>
 	* 			 0 for recompute upwards from el.
 	* 			 1 for recompute all.
 	**/
-	@Override
 	public void delete(T el, int recompute)
 	{
 		remove(el);
@@ -78,14 +77,12 @@ implements BasicFloatSet<T>
     * 
     * @return
     */
-   @Override
-public T lastElement()
+   public T lastElement()
    {
 	  int size	= size();
    	  return (size == 0) ? null : get(size - 1);
    }
 
-	@Override
 	public void decrement(T el) 
 	{
 	}

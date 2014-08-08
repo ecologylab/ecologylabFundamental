@@ -81,7 +81,7 @@ public class JSONSerializer extends StringSerializer implements FieldTypes
 
 		writeObjectStart(rootObjectFieldDescriptor, appendable, withTag);
 
-		//numOfFields = 0;
+		numOfFields = 0;
 		
 		ClassDescriptor<? extends FieldDescriptor> classDescriptor = getClassDescriptor(object);
 		
@@ -115,23 +115,25 @@ public class JSONSerializer extends StringSerializer implements FieldTypes
 				writeSimplIdAttribute(object, appendable, allFieldDescriptors.size() <= 0);
 			}
 		}
-			
+		
 		ArrayList<? extends FieldDescriptor> attributeFieldDescriptors = classDescriptor.attributeFieldDescriptors();
-		int numOfFields = serializeFieldsHelper(appendable, object, translationContext, attributeFieldDescriptors, 0);
+		serializeFieldsHelper(appendable, object, translationContext, attributeFieldDescriptors);
 		ArrayList<? extends FieldDescriptor> elementFieldDescriptors = classDescriptor.elementFieldDescriptors();
-		serializeFieldsHelper(appendable, object, translationContext, elementFieldDescriptors,numOfFields);
+		serializeFieldsHelper(appendable, object, translationContext, elementFieldDescriptors);
 	}
 
-	private int serializeFieldsHelper(Appendable appendable, Object object,
+	private void serializeFieldsHelper(Appendable appendable, Object object,
 			TranslationContext translationContext,
-			ArrayList<? extends FieldDescriptor> fieldDescriptorList, int numOfFields) throws SIMPLTranslationException,
+			ArrayList<? extends FieldDescriptor> fieldDescriptorList) throws SIMPLTranslationException,
 			IOException
 	{
-		
 		for (FieldDescriptor childFd : fieldDescriptorList)
 		{
+			if (childFd.isUsageExcluded(FieldUsage.SERIALIZATION_IN_STREAM))
+				continue;
+
 			if (isSerializable(childFd, object))
-			{				
+			{
 				if (numOfFields++ > 0)
 					appendable.append(',');
 
@@ -157,11 +159,10 @@ public class JSONSerializer extends StringSerializer implements FieldTypes
 				}
 			}
 		}
-		return numOfFields;
 	}
 
 	/**
-	 * check if the field is of default value or null. we don't have to serialize that field
+	 * check if the fild is of default value or null. we don't have to serialize that field
 	 * 
 	 * @param childFd
 	 * @param object
@@ -230,28 +231,24 @@ public class JSONSerializer extends StringSerializer implements FieldTypes
 	{
 		Object collectionObject = childFd.getValue(object);
 		Collection<?> compositeCollection = XMLTools.getCollection(collectionObject);
-		
-		if(compositeCollection != null)
+		int numberOfItems = 0;
+
+		writeWrap(childFd, appendable, false);
+		writeCollectionStart(childFd, appendable);
+		for (Object collectionComposite : compositeCollection)
 		{
-			int numberOfItems = 0;
-	
-			writeWrap(childFd, appendable, false);
-			writeCollectionStart(childFd, appendable);
-			for (Object collectionComposite : compositeCollection)
-			{
-				FieldDescriptor collectionObjectFieldDescriptor = childFd.isPolymorphic() ? getClassDescriptor(
-						collectionComposite).pseudoFieldDescriptor()
-						: childFd;
-	
-				serialize(collectionComposite, collectionObjectFieldDescriptor, appendable,
-						translationContext, false);
-	
-				if (++numberOfItems < compositeCollection.size())
-					appendable.append(',');
-			}
-			writeCollectionEnd(appendable);
-			writeWrap(childFd, appendable, true);
+			FieldDescriptor collectionObjectFieldDescriptor = childFd.isPolymorphic() ? getClassDescriptor(
+					collectionComposite).pseudoFieldDescriptor()
+					: childFd;
+
+			serialize(collectionComposite, collectionObjectFieldDescriptor, appendable,
+					translationContext, false);
+
+			if (++numberOfItems < compositeCollection.size())
+				appendable.append(',');
 		}
+		writeCollectionEnd(appendable);
+		writeWrap(childFd, appendable, true);
 	}
 
 	/**
@@ -271,25 +268,23 @@ public class JSONSerializer extends StringSerializer implements FieldTypes
 		Collection<?> compositeCollection = XMLTools.getCollection(collectionObject);
 		int numberOfItems = 0;
 
-		if(compositeCollection != null)
-		{		
-			writePolymorphicCollectionStart(childFd, appendable);
-			for (Object collectionComposite : compositeCollection)
-			{
-				FieldDescriptor collectionObjectFieldDescriptor = childFd.isPolymorphic() ? getClassDescriptor(
-						collectionComposite).pseudoFieldDescriptor()
-						: childFd;
-	
-				writeStart(appendable);
-				serialize(collectionComposite, collectionObjectFieldDescriptor, appendable,
-						translationContext, true);
-				writeClose(appendable);
-	
-				if (++numberOfItems < compositeCollection.size())
-					appendable.append(',');
-			}
-			writeCollectionEnd(appendable);
+		writePolymorphicCollectionStart(childFd, appendable);
+		for (Object collectionComposite : compositeCollection)
+		{
+			FieldDescriptor collectionObjectFieldDescriptor = childFd.isPolymorphic() ? getClassDescriptor(
+					collectionComposite).pseudoFieldDescriptor()
+					: childFd;
+
+			writeStart(appendable);
+			serialize(collectionComposite, collectionObjectFieldDescriptor, appendable,
+					translationContext, true);
+			writeClose(appendable);
+
+			if (++numberOfItems < compositeCollection.size())
+				appendable.append(',');
 		}
+		writeCollectionEnd(appendable);
+
 	}
 
 	/**
@@ -309,19 +304,16 @@ public class JSONSerializer extends StringSerializer implements FieldTypes
 		Collection<?> scalarCollection = XMLTools.getCollection(scalarCollectionObject);
 		int numberOfItems = 0;
 
-		if(scalarCollection != null)
+		writeWrap(childFd, appendable, false);
+		writeCollectionStart(childFd, appendable);
+		for (Object collectionObject : scalarCollection)
 		{
-			writeWrap(childFd, appendable, false);
-			writeCollectionStart(childFd, appendable);
-			for (Object collectionObject : scalarCollection)
-			{
-				writeCollectionScalar(collectionObject, childFd, appendable, translationContext);
-				if (++numberOfItems < scalarCollection.size())
-					appendable.append(',');
-			}
-			writeCollectionEnd(appendable);
-			writeWrap(childFd, appendable, true);
+			writeCollectionScalar(collectionObject, childFd, appendable, translationContext);
+			if (++numberOfItems < scalarCollection.size())
+				appendable.append(',');
 		}
+		writeCollectionEnd(appendable);
+		writeWrap(childFd, appendable, true);
 	}
 
 	/**
@@ -473,10 +465,10 @@ public class JSONSerializer extends StringSerializer implements FieldTypes
 		appendable.append(':');
 		appendable.append('"');
 		appendable.append(((Integer) object.hashCode()).toString());
-		appendable.append('"');
 
 		if (!last)
 		{
+			appendable.append('"');
 			appendable.append(',');
 		}
 	}

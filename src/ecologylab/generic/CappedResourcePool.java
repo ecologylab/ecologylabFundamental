@@ -2,8 +2,8 @@ package ecologylab.generic;
 
 public abstract class CappedResourcePool<T> extends ResourcePool<T>
 {
-	private int maximumSize;
-	
+	private final int			maximumSize;
+
 	protected CappedResourcePool(boolean instantiateResourcesInPool, int initialPoolSize,
 			int minimumPoolSize, int maximumSize, boolean checkMultiRelease)
 	{
@@ -16,11 +16,22 @@ public abstract class CappedResourcePool<T> extends ResourcePool<T>
 	{
 		this.notify();
 	}
-	
+
+	/**
+	 * Determines if this pool can produce a resource or not. This method is not synchronized, but
+	 * might be used in contexts where it is better to fail fast.
+	 * 
+	 * @return
+	 */
+	public boolean canAcquire()
+	{
+		return !(this.getPoolSize() == 0 && this.getCapacity() * 2 > maximumSize);
+	}
+
 	@Override
 	protected synchronized void onAcquire()
 	{
-		while(this.getPoolSize() == 0 && this.getCapacity() * 2 > maximumSize)
+		while (!canAcquire())
 		{
 			Debug.println("Waiting for pool to free up!");
 			try
@@ -32,6 +43,6 @@ public abstract class CappedResourcePool<T> extends ResourcePool<T>
 				e.printStackTrace();
 			}
 		}
-		
+
 	}
 }

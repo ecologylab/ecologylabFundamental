@@ -44,7 +44,6 @@ public class UserAgent extends ElementState implements IMappable<String>
 		return defaultAgent;
 	}
 
-	@Override
 	public String key()
 	{
 		return name;

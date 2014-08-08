@@ -43,46 +43,52 @@ import ecologylab.serialization.formatenums.StringFormat;
  */
 public abstract class NIODatagramCore<S extends Scope> extends Debug implements NetworkingConstants
 {
-	protected long																																		currentUIDIndex				= 1;
+	protected long																																					currentUIDIndex				= 1;
 
-	private MessageWithMetadataPool<ServiceMessage<S>, MessageMetaData>								messagePool						= new MessageWithMetadataPool<ServiceMessage<S>, MessageMetaData>(4,
-																																																																																						4);
+	private final MessageWithMetadataPool<ServiceMessage<S>, MessageMetaData>								messagePool						= new MessageWithMetadataPool<ServiceMessage<S>, MessageMetaData>(
+																																																										4,
+																																																										4);
 
-	private MessageMetaDataPool																												metaDataPool					= new MessageMetaDataPool();
+	private final MessageMetaDataPool																												metaDataPool					= new MessageMetaDataPool();
 
-	protected static final int																												MAX_DATAGRAM_SIZE			= 10000;
+	protected static final int																															MAX_DATAGRAM_SIZE			= 10000;
 
-	protected static final int																												HEADER_SIZE						= Long.SIZE / 8;
+	protected static final int																															HEADER_SIZE						= Long.SIZE / 8;
 
-	protected static final int																												UDP_HEADER_SIZE				= 8;
+	protected static final int																															UDP_HEADER_SIZE				= 8;
 
-	protected static final int																												MAX_MESSAGE_SIZE			= MAX_DATAGRAM_SIZE
-																																																							- HEADER_SIZE
-																																																							- UDP_HEADER_SIZE;
+	protected static final int																															MAX_MESSAGE_SIZE			= MAX_DATAGRAM_SIZE
+																																																										- HEADER_SIZE
+																																																										- UDP_HEADER_SIZE;
 
-	private SynchronousQueue<MessageWithMetadata<ServiceMessage<S>, MessageMetaData>>	outgoingMessageQueue	= new SynchronousQueue<MessageWithMetadata<ServiceMessage<S>, MessageMetaData>>();
+	private final SynchronousQueue<MessageWithMetadata<ServiceMessage<S>, MessageMetaData>>	outgoingMessageQueue	= new SynchronousQueue<MessageWithMetadata<ServiceMessage<S>, MessageMetaData>>();
 
-	protected Selector																																selector;
+	protected Selector																																			selector;
 
-	protected SimplTypesScope																												translationScope;
+	protected SimplTypesScope																																translationScope;
 
-	protected S																																				objectRegistry;
+	protected S																																							objectRegistry;
 
-	private PacketHandlerPool																													handlerPool						= new PacketHandlerPool();
+	protected final PacketHandlerPool																												handlerPool;																																															// =
+																																																																																																		// new
+																																																																																																		// PacketHandlerPool();
 
-	protected PacketSender																														sender								= new PacketSender();
+	protected PacketSender																																	sender								= new PacketSender();
 
-	protected PacketReciever																													reciever							= new PacketReciever();
+	protected PacketReciever																																reciever							= generatePacketReciever();
 
-	protected boolean																																	doCompress						= false;
+	protected boolean																																				doCompress						= false;
 
-	protected Deflater																																deflater							= new Deflater(Deflater.BEST_COMPRESSION);
+	protected Deflater																																			deflater							= new Deflater(
+																																																										Deflater.BEST_COMPRESSION);
 
-	protected Inflater																																inflater							= new Inflater();
+	protected Inflater																																			inflater							= new Inflater();
 
-	private CharsetDecoder																														decoder								= CHARSET.newDecoder();
+	private final CharsetDecoder																														decoder								= CHARSET
+																																																										.newDecoder();
 
-	private CharsetEncoder																														encoder								= CHARSET.newEncoder();
+	private final CharsetEncoder																														encoder								= CHARSET
+																																																										.newEncoder();
 
 	/**
 	 * Base constructor. Opens the socket and sets up the state objects.
@@ -91,8 +97,11 @@ public abstract class NIODatagramCore<S extends Scope> extends Debug implements 
 	 * @param objectRegistry
 	 * @param useCompression
 	 */
-	public NIODatagramCore(SimplTypesScope translationScope, S objectRegistry, boolean useCompression)
+	public NIODatagramCore(SimplTypesScope translationScope, S objectRegistry,
+			boolean useCompression, int initialPoolSize,
+			int minimumPoolSize, int maximumSize)
 	{
+		this.handlerPool = new PacketHandlerPool(initialPoolSize, minimumPoolSize, maximumSize);
 		this.translationScope = translationScope;
 		this.objectRegistry = objectRegistry;
 		this.doCompress = useCompression;
@@ -106,6 +115,16 @@ public abstract class NIODatagramCore<S extends Scope> extends Debug implements 
 			debug("Failed to open selector!");
 			e.printStackTrace();
 		}
+	}
+
+	protected PacketReciever generatePacketReciever()
+	{
+		return new PacketReciever();
+	}
+
+	public NIODatagramCore(SimplTypesScope translationScope, S objectRegistry, boolean useCompression)
+	{
+		this(translationScope, objectRegistry, useCompression, 1, 1, 32);
 	}
 
 	public NIODatagramCore(SimplTypesScope translationScope, S objectRegistry)
@@ -158,6 +177,12 @@ public abstract class NIODatagramCore<S extends Scope> extends Debug implements 
 	protected class PacketHandlerPool extends CappedResourcePool<PacketHandler>
 	{
 		private boolean	shuttingDown	= false;
+
+		public PacketHandlerPool(int initialPoolSize,
+				int minimumPoolSize, int maximumSize)
+		{
+			super(true, initialPoolSize, minimumPoolSize, maximumSize, true);
+		}
 
 		public PacketHandlerPool()
 		{
@@ -220,19 +245,19 @@ public abstract class NIODatagramCore<S extends Scope> extends Debug implements 
 	 */
 	protected class PacketHandler implements Runnable
 	{
-		private PacketHandlerPool	pool;
+		private final PacketHandlerPool	pool;
 
-		private long							uid;
+		private long										uid;
 
-		private ServiceMessage<S>	message						= null;
+		private ServiceMessage<S>				message						= null;
 
-		private SelectionKey			recievedOnSocket	= null;
+		private SelectionKey						recievedOnSocket	= null;
 
-		private InetSocketAddress	recievedFrom			= null;
+		private InetSocketAddress				recievedFrom			= null;
 
-		private boolean						done							= false;
+		private boolean									done							= false;
 
-		private Thread						t									= null;
+		private Thread									t									= null;
 
 		public PacketHandler(PacketHandlerPool pool)
 		{
@@ -594,8 +619,8 @@ public abstract class NIODatagramCore<S extends Scope> extends Debug implements 
 										if (recieveBuffer.hasArray())
 										{
 											decompressedSize = inflater.inflate(recieveBuffer.array(),
-																													0,
-																													recieveBuffer.capacity());
+													0,
+													recieveBuffer.capacity());
 
 											if (decompressedSize == 0)
 											{
@@ -626,12 +651,12 @@ public abstract class NIODatagramCore<S extends Scope> extends Debug implements 
 
 									messageBuffer.flip();
 
-									ServiceMessage<S> message = (ServiceMessage<S>) translationScope.deserialize(	messageBuffer,
-																																																StringFormat.XML);
+									ServiceMessage<S> message = (ServiceMessage<S>) translationScope.deserialize(
+											messageBuffer,
+											StringFormat.XML);
 									message.setSender(address.getAddress());
 
-									PacketHandler handler = handlerPool.acquire();
-									handler.processMessage(uid, message, key, address);
+									handleProcessMessage(key, address, uid, message);
 								}
 								catch (ClosedChannelException e)
 								{
@@ -668,6 +693,13 @@ public abstract class NIODatagramCore<S extends Scope> extends Debug implements 
 			}
 
 			handlerPool.shutdown();
+		}
+
+		protected void handleProcessMessage(SelectionKey key, InetSocketAddress address,
+				long uid, ServiceMessage<S> message)
+		{
+			PacketHandler handler = handlerPool.acquire();
+			handler.processMessage(uid, message, key, address);
 		}
 	}
 

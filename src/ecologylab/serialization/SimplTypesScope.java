@@ -45,12 +45,14 @@ public final class SimplTypesScope extends ElementState
 		ON, OFF
 	}
 
-	public static GRAPH_SWITCH graphSwitch = GRAPH_SWITCH.OFF;
+	public static GRAPH_SWITCH																						graphSwitch								= GRAPH_SWITCH.OFF;
+
+	private static final int																							GUESS_CLASSES_PER_TSCOPE	= 5;
 
 	@simpl_scalar
-	private String name;
+	private/* final */String																							name;
 
-	private SimplTypesScope[] inheritedTypesScopes;
+	private SimplTypesScope[]																							inheritedTypesScopes;
 
 	/**
 	 * Fundamentally, a SimplTypesScope consists of a set of class simple names. These are mapped to
@@ -61,48 +63,25 @@ public final class SimplTypesScope extends ElementState
 	 * there are multiple possibilities. This is the case when internal and external versions of a
 	 * message and its constituents are defined for a messaging API.
 	 */
-	private Scope<ClassDescriptor<? extends FieldDescriptor>> entriesByClassSimpleName = new Scope<ClassDescriptor<? extends FieldDescriptor>>();
+	private final Scope<ClassDescriptor<? extends FieldDescriptor>>							entriesByClassSimpleName	= new Scope<ClassDescriptor<? extends FieldDescriptor>>();
 
-	private Scope<ClassDescriptor<? extends FieldDescriptor>> entriesByClassName = new Scope<ClassDescriptor<? extends FieldDescriptor>>();
+	private final Scope<ClassDescriptor<? extends FieldDescriptor>>							entriesByClassName				= new Scope<ClassDescriptor<? extends FieldDescriptor>>();
 
 	@simpl_nowrap
 	@simpl_map("class_descriptor")
-	private Scope<ClassDescriptor<? extends FieldDescriptor>> entriesByTag = new Scope<ClassDescriptor<? extends FieldDescriptor>>();
+	private final Scope<ClassDescriptor<? extends FieldDescriptor>>							entriesByTag							= new Scope<ClassDescriptor<? extends FieldDescriptor>>();
 
-	private HashMap<Integer, ClassDescriptor<? extends FieldDescriptor>> entriesByTLVId = new HashMap<Integer, ClassDescriptor<? extends FieldDescriptor>>();
+	private final HashMap<Integer, ClassDescriptor<? extends FieldDescriptor>>	entriesByTLVId						= new HashMap<Integer, ClassDescriptor<? extends FieldDescriptor>>();
 
-	private Scope<ClassDescriptor<? extends FieldDescriptor>> entriesByBibTeXType = new Scope<ClassDescriptor<? extends FieldDescriptor>>();
+	private final Scope<ClassDescriptor<? extends FieldDescriptor>>							entriesByBibTeXType				= new Scope<ClassDescriptor<? extends FieldDescriptor>>();
 
-	private final Scope<Class<?>> nameSpaceClassesByURN = new Scope<Class<?>>();
-	
-	/**
-	 * Scope containing all enumerations by their cross platform name
-	 */
-	private Scope<EnumerationDescriptor> enumerationsBySimpleName = new Scope<EnumerationDescriptor>();
-	
-	/**
-	 * Scope containing all enumerations by their tag name
-	 */
-	@simpl_nowrap
-	@simpl_map("enumeration_descriptor")
-	private Scope<EnumerationDescriptor> enumerationsByTag = new Scope<EnumerationDescriptor>();
+	private final Scope<Class<?>>																					nameSpaceClassesByURN			= new Scope<Class<?>>();
 
-	private static HashMap<String, SimplTypesScope> allTypesScopes = new HashMap<String, SimplTypesScope>();
+	private static HashMap<String, SimplTypesScope>												allTypesScopes						= new HashMap<String, SimplTypesScope>();
 
-	/**
-	 * SimplTypesScope has some global static "AllTypesScopes" scopes which can
-	 *  interfere with idempotent execution of tests.
-	 * Run this method to reset the global scope before running test code to give you a clean slate.
-	 */
-	public static void ResetAllTypesScopes()
-	{
-		System.out.println("----------- RESETTING -----------");
-		SimplTypesScope.allTypesScopes = new HashMap<String, SimplTypesScope>();
-	}
-	
-	public static final String STATE = "State";
+	public static final String																						STATE											= "State";
 
-	private boolean performFilters;
+	private boolean																												performFilters;
 
 	static
 	{
@@ -125,7 +104,6 @@ public final class SimplTypesScope extends ElementState
 	private SimplTypesScope(String name)
 	{
 		this.name = name;
-		addSimplTypesScope(name);
 	}
 
 	/**
@@ -551,64 +529,25 @@ public final class SimplTypesScope extends ElementState
 	 */
 	public void addTranslation(Class<?> classObj)
 	{
-		// Enumerated types behave a bit differently.
-		if(classObj.isEnum())
+		ClassDescriptor entry = ClassDescriptor.getClassDescriptor(classObj);
+		String tagName = entry.getTagName();
+
+		entriesByTag.put(entry.getTagName(), entry);
+		entriesByClassSimpleName.put(entry.getDescribedClassSimpleName(), entry);
+		entriesByClassName.put(classObj.getName(), entry);
+
+		entriesByTLVId.put(entry.getTagName().hashCode(), entry);
+		entriesByBibTeXType.put(entry.getBibtexType(), entry);
+
+		ArrayList<String> otherTags = entry.otherTags();
+		if (otherTags != null)
 		{
-			if(!this.enumerationsBySimpleName.containsKey(classSimpleName(classObj)))
+			for (String otherTag : otherTags)
 			{
-				EnumerationDescriptor ed;
-				try
+				if ((otherTag != null) && (otherTag.length() > 0))
 				{
-					// Add if it isnt there already.
-					ed = EnumerationDescriptor.get(classObj);
-				}
-				catch(SIMPLDescriptionException sde)
-				{
-					// We need to wrap this to not upset the API, for now. 
-					throw new RuntimeException(sde);
-				}
-				
-				this.enumerationsByTag.put(ed.getTagName(), ed);
-				this.enumerationsBySimpleName.put(ed.getName(), ed);
-				
-				// Don't think we have other tags here, we really just need simple name
-				// But putting it here just in case. 
-				ArrayList<String> otherTags = ed.otherTags();
-				if (otherTags != null)
-				{
-					for (String otherTag : otherTags)
-					{
-						if ((otherTag != null) && (!otherTag.isEmpty()))
-						{
-							enumerationsByTag.put(otherTag, ed);
-						}
-					}
-				}
-			}
-		}
-		else
-		{
-			// Add a class!
-			ClassDescriptor entry = ClassDescriptor.getClassDescriptor(classObj);
-			String tagName = entry.getTagName();
-	
-			entriesByTag.put(entry.getTagName(), entry);
-			entriesByClassSimpleName.put(entry.getDescribedClassSimpleName(), entry);
-			entriesByClassName.put(classObj.getName(), entry);
-	
-			entriesByTLVId.put(entry.getTagName().hashCode(), entry);
-			entriesByBibTeXType.put(entry.getBibtexType(), entry);
-	
-			ArrayList<String> otherTags = entry.otherTags();
-			if (otherTags != null)
-			{
-				for (String otherTag : otherTags)
-				{
-					if ((otherTag != null) && (otherTag.length() > 0))
-					{
-						entriesByTag.put(otherTag, entry);
-						entriesByTLVId.put(otherTag.hashCode(), entry);
-					}
+					entriesByTag.put(otherTag, entry);
+					entriesByTLVId.put(otherTag.hashCode(), entry);
 				}
 			}
 		}
@@ -633,7 +572,7 @@ public final class SimplTypesScope extends ElementState
 		removeTranslation(correspondingClassFor(classObj));
 		addTranslation(classObj);
 	}
-	// * You could even call it a ... Doppelganger, if you wanted to. 
+	// * You could even call it a ... Doppelg�nger, if you wanted to. 
 	
 
 	private Class<?> correspondingClassFor(Class<?> dummyObj)
@@ -694,6 +633,7 @@ public final class SimplTypesScope extends ElementState
 	 * @param classObj
 	 *          The object for the class.
 	 */
+
 	public void addTranslation(ClassDescriptor classObj)
 	{
 		ClassDescriptor entry = classObj;
@@ -743,6 +683,19 @@ public final class SimplTypesScope extends ElementState
 	private ClassDescriptor xmlTagToTranslationEntry(String xmlTag)
 	{
 		return getClassDescriptorByTag(xmlTag);
+		/*
+		 * TranslationEntry entry = entriesByTag.get(xmlTag); if (entry == null) { String
+		 * defaultPackageName = this.defaultPackageName; if (defaultPackageName != null) { String
+		 * classSimpleName = XMLTools.classNameFromElementName(xmlTag); entry = new
+		 * TranslationEntry(defaultPackageName, classSimpleName, xmlTag); if (entry.empty) { if
+		 * (inheritedTranslationScopes != null) { // recurse through inherited, continuing to seek a
+		 * translation for (TranslationScope inherited : inheritedTranslationScopes) { entry =
+		 * inherited.xmlTagToTranslationEntry(xmlTag); if (entry != null) { // got one from an inherited
+		 * TranslationScope // register translation for the inherited entry in this
+		 * entriesByTag.put(xmlTag, entry); entriesByClassSimpleName.put(classSimpleName, entry); break;
+		 * } } } } } else { // empty entry construction added by andruid 11/11/07 entry = new
+		 * TranslationEntry(xmlTag); // new empty entry } } return entry;
+		 */
 	}
 
 	/**
@@ -922,6 +875,7 @@ public final class SimplTypesScope extends ElementState
 	 *          a set of Classes to be used as a part of this SimplTypesScope
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static SimplTypesScope get(String name, Class... translations)
 	{
 		SimplTypesScope result = lookup(name);
@@ -949,6 +903,7 @@ public final class SimplTypesScope extends ElementState
 	 * @param translations
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static SimplTypesScope get(String name, SimplTypesScope inheritedTranslations,
 			Class[]... translations)
 	{
@@ -977,6 +932,7 @@ public final class SimplTypesScope extends ElementState
 	 * @param translations
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static SimplTypesScope get(String name, SimplTypesScope inheritedTranslations,
 			Class... translations)
 	{
@@ -1043,6 +999,7 @@ public final class SimplTypesScope extends ElementState
 	 *          a list of previous translation scopes to build upon.
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static SimplTypesScope get(String name, SimplTypesScope[] inheritedTranslationsSet,
 			Class... translations)
 	{
@@ -1071,6 +1028,7 @@ public final class SimplTypesScope extends ElementState
 	 *          a list of previous translation scopes to build upon.
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static SimplTypesScope get(String name, SimplTypesScope[] inheritedTranslationsSet,
 			Class[]... translations)
 	{
@@ -1114,6 +1072,7 @@ public final class SimplTypesScope extends ElementState
 	 * @param defaultPackageName
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static SimplTypesScope get(String name, NameSpaceDecl[] nameSpaceDecls,
 			SimplTypesScope[] inheritedTranslationsSet, Class... translations)
 	{
@@ -1141,7 +1100,7 @@ public final class SimplTypesScope extends ElementState
 	 */
 	public static SimplTypesScope get(String name, SimplTypesScope... inheritedTranslations)
 	{
-		return get(name, inheritedTranslations, (Class []) null);
+		return get(name, inheritedTranslations, (Class[]) null);
 	}
 
 	/**
@@ -1153,6 +1112,7 @@ public final class SimplTypesScope extends ElementState
 	 * @param translations
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static SimplTypesScope get(String name,
 			Collection<SimplTypesScope> inheritedTranslationsSet, Class... translations)
 	{
@@ -1208,6 +1168,7 @@ public final class SimplTypesScope extends ElementState
 		ArrayList<ClassDescriptor<? extends FieldDescriptor>> result = classDescriptors;
 		if (result == null)
 		{
+			// result = entriesByClassSimpleName.values();
 			result = new ArrayList<ClassDescriptor<? extends FieldDescriptor>>(entriesByTag.values()); // we use entriesByTag so that overriding works well.
 			this.classDescriptors = result;
 		}
@@ -1249,16 +1210,7 @@ public final class SimplTypesScope extends ElementState
 
 	private void addSimplTypesScope(String name)
 	{
-		synchronized(allTypesScopes)
-		{
-			if(!allTypesScopes.containsKey(name))
-			{
-				// TODO: Concurrency? yo. 
-				allTypesScopes.put(name, this);
-			}else{
-				//throw new RuntimeException("OH NO EVERYTHING IS AMISS FOR: " + name);
-			}
-		}
+		allTypesScopes.put(name, this);
 	}
 
 	
@@ -1279,16 +1231,18 @@ public final class SimplTypesScope extends ElementState
 
 	public Object deserialize(File file, Format format) throws SIMPLTranslationException
 	{
-		TranslationContext translationContext= new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(file, translationContext, null, format);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
 	public Object deserialize(File file, DeserializationHookStrategy deserializationHookStrategy,
 			Format format) throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(file, translationContext, deserializationHookStrategy, format);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1296,8 +1250,9 @@ public final class SimplTypesScope extends ElementState
 			DeserializationHookStrategy deserializationHookStrategy, Format format)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(parsedURL, translationContext, deserializationHookStrategy, format);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1309,8 +1264,9 @@ public final class SimplTypesScope extends ElementState
 
 	public Object deserialize(ParsedURL parsedURL, Format format) throws SIMPLTranslationException
 	{
-		TranslationContext translationContext =  new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(parsedURL, translationContext, null, format);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1327,9 +1283,10 @@ public final class SimplTypesScope extends ElementState
 			DeserializationHookStrategy deserializationHookStrategy, Format format)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(inputStream, translationContext, deserializationHookStrategy, format,
 				null);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1337,9 +1294,10 @@ public final class SimplTypesScope extends ElementState
 			DeserializationHookStrategy deserializationHookStrategy, Format format, Charset charSet)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(inputStream, translationContext, deserializationHookStrategy, format,
 				charSet);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1358,16 +1316,18 @@ public final class SimplTypesScope extends ElementState
 	public Object deserialize(InputStream inputStream, Format format)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(inputStream, translationContext, null, format, null);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
 	public Object deserialize(InputStream inputStream, Format format, Charset charSet)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(inputStream, translationContext, null, format, charSet);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1389,8 +1349,9 @@ public Object deserialize(InputStream inputStream, TranslationContext translatio
 
 	public Object deserialize(URL url, Format format) throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(new ParsedURL(url), translationContext, null, format);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1407,9 +1368,10 @@ public Object deserialize(InputStream inputStream, TranslationContext translatio
 			DeserializationHookStrategy deserializationHookStrategy, StringFormat stringFormat)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		StringPullDeserializer pullDeserializer = PullDeserializer.getStringDeserializer(this,
 				translationContext, deserializationHookStrategy, stringFormat);
+		TranslationContextPool.get().release(translationContext);
 		return pullDeserializer.parse(charSequence);
 	}
 
@@ -1422,8 +1384,9 @@ public Object deserialize(InputStream inputStream, TranslationContext translatio
 	public Object deserialize(CharSequence charSequence, StringFormat stringFormat)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		Object obj = deserialize(charSequence, translationContext, null, stringFormat);
+		TranslationContextPool.get().release(translationContext);
 		return obj;
 	}
 
@@ -1901,8 +1864,9 @@ public Object deserialize(InputStream inputStream, TranslationContext translatio
 	public static void serialize(Object object, Appendable appendable, StringFormat stringFormat)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		serialize(object, appendable, stringFormat, translationContext);
+		TranslationContextPool.get().release(translationContext);
 	}
 
 	/**
@@ -1918,8 +1882,9 @@ public Object deserialize(InputStream inputStream, TranslationContext translatio
 	public static StringBuilder serialize(Object object, StringFormat stringFormat)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		StringBuilder sb = serialize(object, stringFormat, translationContext);
+		TranslationContextPool.get().release(translationContext);
 		return sb;
 	}
 
@@ -1936,8 +1901,9 @@ public Object deserialize(InputStream inputStream, TranslationContext translatio
 	public static void serialize(Object object, StringBuilder stringBuilder, StringFormat stringFormat)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		serialize(object, stringBuilder, stringFormat, translationContext);
+		TranslationContextPool.get().release(translationContext);
 	}
 
 	/**
@@ -1971,7 +1937,8 @@ public Object deserialize(InputStream inputStream, TranslationContext translatio
 	public static void serialize(Object object, File file, Format format)
 			throws SIMPLTranslationException
 	{
-		TranslationContext translationContext = new TranslationContext();
+		TranslationContext translationContext = TranslationContextPool.get().acquire();
 		serialize(object, file, format, translationContext);
+		TranslationContextPool.get().release(translationContext);
 	}
 }
