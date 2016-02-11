@@ -9,15 +9,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * A collection of objects that belong to binary categories. Lazilly
- * instantiates the necessary intersections of the categories. Maximum
- * categories are determined dynamically. Uses bit-masks to indicate container
- * relationships.
+ * A collection of objects that belong to binary categories. Lazily instantiates the necessary
+ * intersections of the categories. Maximum categories are determined dynamically. Uses bit-masks to
+ * indicate container relationships.
  * 
  * 63 is the maximum number of binary categories for this class.
  * 
- * Does not allow multiple identical objects in the same set (per the rules of
- * Set).
+ * Does not allow multiple identical objects in the same set (per the rules of Set).
  * 
  * @author Zachary O. Toups (zach@ecologylab.net)
  * @author William Hamilton (bill@ecologylab.net)
@@ -29,7 +27,7 @@ public class OverlappingSets<O extends Object>
 	 * masks indicating the container set. For example, 0001 indicates an object
 	 * is contained only in set 1, 1001 indicates the sets 1 and 4.
 	 */
-	private Map<Long, List<O>>	setMap;
+	private final Map<Long, List<O>>	setMap;
 
 	public OverlappingSets()
 	{

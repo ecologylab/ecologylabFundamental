@@ -135,7 +135,7 @@ public class FieldDescriptor extends DescriptorBase implements FieldTypes, IMapp
 	@Deprecated
 	// we now use the package name to infer namespaces.
 	@simpl_map("library_namespace")
-	private HashMap<String, String>										libraryNamespaces						= new HashMap<String, String>();
+	private final HashMap<String, String>										libraryNamespaces						= new HashMap<String, String>();
 
 	@simpl_scalar
 	private int																				type;
